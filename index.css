@@ -52,6 +52,11 @@ header .navbar ul li a:hover {
     transition: 0.5s;
 }
 
+/* Main section */
+main {
+    height: 600px;
+}
+
 /* Footer section */
 footer {
     background-color: #066;
