@@ -63,6 +63,8 @@ footer {
     height: 100px;
 }
 footer .navbar {
+    margin: 30px 400px;
+    text-align: center;
     position: absolute;
 }
 footer .navbar ul li {
