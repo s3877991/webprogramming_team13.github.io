@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopiverse - Contact Us</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <header>
+        <div class="ourheader">
+            <div class="logo">
+                <h1><a href="index.html">SHOPIVERSE</a></h1>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Fees</a></li>
+                    <li><a href="#">Browse</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a class="active" href="contactus.html">Contact us</a></li>
+                    <li><a href="#">My account</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="form">
+            <div class="container">
+                <h2>Contact us</h2>
+                <h3>Feel free to contact us</h3>
+                <form method="get" action="#">
+
+                    <div>
+                        <label for="purpose">Contact purpose:</label><br>
+                        <select id="purpose">
+                            <option>Personal</option>
+                            <option>Business</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="name">Full Name:</label><br>
+                        <input type="text" name="name" maxlength="50" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" name="email">
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" name="phone" minlength="9" maxlength="13">
+                    </div>
+
+                    <div id="contact_method">
+                        <label>Preferred contact method</label>
+                        <ul>
+                            <li>
+                              <input type="radio" name="contact_method" value="email">
+                              <label for="contact_email">Email</label>
+                            </li>
+                            <li>
+                              <input type="radio" name="contact_method" value="phone">
+                              <label for="contact_phone">Phone</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="contact_days">
+                        <label>Contact day of week</label>
+                        <ol>
+                          <li>
+                            <input type="checkbox" name="contact_days[]" value="mon">
+                            <label for="contact_day_mon">Monday</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" name="contact_days[]" value="tue">
+                            <label for="contact_day_tue">Tuesday</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" name="contact_days[]" value="wed">
+                            <label for="contact_day_wed">Wednesday</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" name="contact_days[]" value="thu">
+                            <label for="contact_day_thu">Thursday</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" name="contact_days[]" value="fri">
+                            <label for="contact_day_fri">Friday</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" name="contact_days[]" value="sat">
+                            <label for="contact_day_sat">Saturday</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" name="contact_days[]" value="un">
+                            <label for="contact_day_sun">Sunday</label>
+                          </li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message"></textarea>
+                    </div>
+
+                    <div class="button">
+                        <input type="reset" value="   Clear   ">
+                        <input type="submit" value="   Send   ">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="ourfooter">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Copyright</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

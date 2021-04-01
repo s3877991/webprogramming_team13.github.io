@@ -1,0 +1,77 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Section */
+header {
+    background: #099;
+    height: 70px;
+    z-index: 12;
+    position: sticky;
+    top: 0;
+}
+header h1 a {
+    position: absolute;
+    width: 200px;
+    top: 15px;
+    left: 5%;
+    color: white;
+    text-decoration: none;
+}
+header .navbar ul {
+    float: right;
+    margin: 0 40px;
+    list-style: none;
+}
+header .navbar ul li {
+    display: inline-block;
+    line-height: 70px;
+    margin: 0;
+}
+header .navbar ul li a {
+    position: relative;
+    text-align: center;
+    padding: 24px 22px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    width: 100%;
+    text-transform: uppercase;
+}
+header .navbar .active {
+    background-color: #066;
+}
+header .navbar ul li a:hover {
+    background-color: #066;
+    transition: 0.5s;
+}
+
+/* Main section */
+main {
+    height: 600px;
+}
+
+/* Footer section */
+footer {
+    background-color: #066;
+    height: 100px;
+}
+footer .navbar {
+    position: absolute;
+    text-align: center;
+}
+footer .navbar ul li {
+    display: inline;
+    padding: 50px;
+}
+footer .navbar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
