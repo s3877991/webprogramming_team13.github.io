@@ -60,10 +60,10 @@ main {
 /* Footer section */
 footer {
     background-color: #066;
-    height: 100px;
+    height: 105px;
 }
 footer .navbar {
-    margin: 30px 400px;
+    margin: 35px 400px;
     text-align: center;
     position: absolute;
 }
