@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shopiverse - Home</title>
-    <link rel="stylesheet" href="header-and-footer.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-
 <body>
     <header>
-        <nav>
-            <div id="logo">SHOPIVERSE</div>
-            <label for="res-menu" class="toggle" id='main-toggle'><span class="nav-icon"></span></label>
-            <input type="checkbox" id="res-menu">
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">About us</a></li>
-                <li><a href="fees.html">Fees</a></li>
-                <li>
-                    <!-- Browse Drop Down -->
-                    <label for="drp-dwn-btn" class="toggle">Browse <i class="material-icons">expand_more</i></label>
-                    <a href="#">Browse <i class="material-icons">expand_more</i></a>
-                    <input type="checkbox" id="drp-dwn-btn">
-                    <ul class="sub-menu">
-                        <li><a href="browse-store-1.html">Name</a></li>
-                        <li><a href="browse-store-2.html">Category</a></li>
-                    </ul>
-                </li>
-                <li><a href="contactus.html">Contact us</a></li>
-                <li><a href="faqs.html">Faqs</a></li>
-                <li><a href="login.html">My Account</a></li>
-            </ul>
-        </nav>
+        <div class="ourheader">
+            <div class="logo">
+                <h1><a href="index.html">SHOPIVERSE</a></h1>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="fees.html">Fees</a></li>
+                    <li><a class="drp-btn" href="#">Browse <i class="material-icons">expand_more</i></a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="browse-store-1.html">Name</a></li>
+                                <li><a href="browse-store-2.html">Category</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contactus.html">Contact us</a></li>
+                    <li><a href="login.html">My account</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -52,5 +50,4 @@
         </div>
     </footer>
 </body>
-
 </html>
