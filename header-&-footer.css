@@ -196,9 +196,9 @@ footer p {
         margin: 0;
     }
 }
-@media all and (max-width: 390px) {
+@media all and (max-width: 400px) {
     header #logo a {
-        font-size: 30px;
+        font-size: 25px;
         padding: 0 20px;
     }
 }
