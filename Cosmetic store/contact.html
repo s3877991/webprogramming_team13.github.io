@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cosmetic</title>
+
+  <link rel="stylesheet" href="cosmetic-store.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<header>
+  <nav class="navbar navbar-expand-sm nav-bg">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" id="logo" href="#">
+      <img src="image/mac-cosmetics-vector-logo.png" alt="logo">
+      <!--'object-fit: cover'to crop image-->
+    </a>
+
+    <!-- Links -->
+    <ul class="navbar-nav nav-links">
+      <a class="nav-link link" href="cosmetic-store.html">
+        <li class="nav-item">Home</li>
+      </a>
+      <a class="nav-link link" href="about-us.html">
+        <li class="nav-item">About Us</li>
+      </a>
+
+      <!-- DROPDOWN NEEDS TO BE FIXED -->
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Products
+        </a>
+        <div class="dropdown-menu" id="dropdown-text">
+          <a class="dropdown-item" href="browse-by-category.html">Category</a>
+          <a class="dropdown-item" href="#">Date</a>
+        </div>
+      </li>
+
+      <a class="nav-link link" href="contact.html">
+        <li class="nav-item">Contact</li>
+      </a>
+    </ul>
+  </nav>
+</header>
+
+<body>
+    <br><br>
+    <h1>Contact Us</h1>
+    <br><br>
+        <form method="get" action="cosmetic-store.html">
+            <label for="purpose">Purpose of contact:</label>
+            <select name="purpose" id="purpose">
+                <option value="Complaints">Complaints</option>
+                <option value="Questions">Questions</option>
+                <option value="Questions">Work</option>
+            </select>
+            <br><br>
+            <label for="name">Name:</label> <input required type="text" maxlength="50" id="name">
+            <br><br>
+            <label for="email">Email:</label> <input required type="email" id="email">
+            <br><br>   
+            <label for="phone">Phone:</label> <input required type="number" id="phone">
+            <br><br>
+            <p>Preffered contact method:</p>
+            <label for="email">Email</label> <input required type="radio" id="email" name="method">
+            <label for="phone">Phone</label> <input required type="radio" id="phone" name="method">
+            <br><br>
+            <p>Contact day(s):</p>
+            <label for="Monday">Monday</label> <input type="checkbox" id="Monday"> <br>
+            <label for="Tuesday">Tuesday</label> <input type="checkbox" id="Tuesday"> <br>
+            <label for="Wednesday">Wednesday</label> <input type="checkbox" id="Wednesday"> <br>
+            <label for="Thursday">Thursday</label> <input type="checkbox" id="Thursday"> <br>
+            <label for="Friday">Friday</label> <input type="checkbox" id="Friday"> <br>
+            <label for="Saturday">Saturday</label> <input type="checkbox" id="Saturday"> <br>
+            <label for="Monday">Sunday</label> <input type="checkbox" id="Sunday"> <br>
+            <br><br>
+            <label for="message">Message:</label> 
+            <textarea name="message" id="message" cols="20" rows="10"></textarea>
+            <br><br>
+            <input type="submit" value="Send">
+            <br><br>
+            <input type="reset" value="Clear">
+        </form>
+</body>
+<br><br><br>
+
+<footer>
+    <span><a href="#">Copyright</a></span>
+    <span><a href="#">Terms of Service</a></span>
+    <span><a href="#">Privacy Policy</a></span>
+</footer>
+</html>
