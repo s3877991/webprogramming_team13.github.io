@@ -1,5 +1,5 @@
 /* To define new fonts which is not available in IDE */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* STYLE OF THE WHOLE PAGE */
 body {
@@ -88,15 +88,24 @@ header nav a {
 }
 .active {
     background-color: #f00;               /* When users click on any item, they'll be move to another page in which that item is highlighted */
+    color: #600;
 }
 header nav ul li:hover {                    /* Main menu in hover states */
     background-color: #f00;
+    transition: 0.5s;
+}
+header nav ul li a:hover {
+    color: #600;
     transition: 0.5s;
 }
 header nav ul li ul li:hover {              /* Sub menu in hover states */
     background-color: #f00;
     transition: 0.5s;
 }
+header nav ul li ul li a:hover {
+    color: #600;
+    transition: 0.5s;
+} 
 header nav ul ul {                          /* To make the sub menu dropdown, we have to make it disappear first */
     display: none;
     position: absolute;
