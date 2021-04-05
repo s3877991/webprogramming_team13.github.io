@@ -5,6 +5,10 @@ Lecturer/Tutor: Tri Dang Tran
 
 Project Group 13
 
+Our GitHub repository: https://github.com/shynkwanchi/webprogramming_team13.github.io
+
+Our Website: https://shynkwanchi.github.io/webprogramming_team13.github.io/
+
 # Group Members:
 Phan Do Ngoc Linh - s3881557
 
