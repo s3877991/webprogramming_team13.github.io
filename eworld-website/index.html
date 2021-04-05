@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="header-&-footer.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Eworld - World of tech stores</title>
+</head>
+
+<body>
+    <!--Header section with navigation bar-->
+    <header>
+        <nav>
+            <!--Logo of the website name-->
+            <div id="logo"><a href="index.html">Eworld</a></div>
+
+            <!--When the website is used in small-screen devices, the navigation icon appears-->
+            <label for="dropdown-main" class="toggle" id="main-toggle">
+                <span class="navigation-icon"></span>
+            </label>
+            <input type="checkbox" id="dropdown-main">
+
+            <!--Navigation-->
+            <ul class="menu">
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li>
+                    <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
+                    <label for="dropdown-sub" class="toggle">PRODUCTS <span
+                            class="material-icons">expand_more</span></label>
+                    <a href="#">PRODUCTS <span class="material-icons">expand_more</span></a>
+                    <input type="checkbox" id="dropdown-sub">
+                    <ul class="sub-menu">
+                        <li><a href="#">BY CATEGORY</a></li>
+                        <li><a href="#">BY CREATED TIME</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main content-->
+    <main>
+    
+    </main>
+
+    <!--Footer section with navigation bar-->
+    <footer>
+        <a href="copyright.html">Copyright</a>
+        <a href="tos.html">Terms of Service</a>
+        <a href="privacypolicy.html">Privacy Policy</a>
+        <div id="brief-description">
+            <em>
+                <h3>by <strong>Nguyen Quang Duy</strong></h3>
+                <p>Developed in 2021</p>
+            </em>
+        </div>
+    </footer>
+</body>
+
+</html>
