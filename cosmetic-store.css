@@ -1,0 +1,49 @@
+.nav-links {
+    position: absolute;
+    right: 10%;
+}
+
+#logo {
+    padding-left: 3%;
+}
+
+#logo img {
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.link li, .dropdown {
+    color: white;
+    padding: 17px 25px 17px 25px;
+}
+
+.dropdown a {
+    color: white;
+}
+
+.link:hover, .dropdown a:hover {
+    background-color: grey;
+}
+
+.link:hover li {
+    color: black;
+}
+
+.nav-bg {
+    background-color: black;
+}
+
+#dropdown-text a {
+    color: black;
+}
+
+li a:hover {
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
