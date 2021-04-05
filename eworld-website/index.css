@@ -15,5 +15,39 @@ html {
 
 /* STYLE OF MAIN SECTION IN HOME PAGE */
 main {
-    height: 900px;
+    margin: 20px;
+}
+[id^=sub-sect] {
+    padding: 40px 0 0 0;
+}
+.items-container {
+    display: flex;
+}
+.label {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 5px solid #000;
+    font-weight: bold;
+    font-size: 35px;
+}
+.item {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    width: 20%;
+}
+.item a {
+    text-decoration: none;
+}
+.item a h3, .item a p {
+    color: black;
+    text-align: center;
+}
+.item img {
+    height: 240px;
+    width: 240px;
+    padding: 15px;
+}
+.item:hover {
+    background-color: #ddd;
 }
