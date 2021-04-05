@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shopiverse - Home</title>
+    <link rel="stylesheet" href="header-&-footer.css">
     <link rel="stylesheet" href="register.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Register</title>
 </head>
+
 <body>
+    <!--Header section with navigation bar-->
     <header>
-        <div class="ourheader">
-            <div class="logo">
-                <h1><a href="index.html">SHOPIVERSE</a></h1>
-            </div>
-            <div class="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutus.html">About us</a></li>
-                    <li><a href="fees.html">Fees</a></li>
-                    <li><a class="drp-btn" href="#">Browse <i class="material-icons">expand_more</i></a>
-                        <div class="sub-menu">
-                            <ul>
-                                <li><a href="browse-store-1.html">Name</a></li>
-                                <li><a href="browse-store-2.html">Category</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                    <li><a href="contactus.html">Contact us</a></li>
-                    <li><a class="active" href="login.html">My account</a></li>
-                </ul>
-            </div>
-        </div>
+        <nav>
+            <!--Logo of the website name-->
+            <div id="logo"><a href="index.html">SHOPPIVERSE</a></div>
+
+            <!--When the website is used in small-screen devices, the navigation icon appears-->
+            <label for="dropdown-main" class="toggle" id="main-toggle">
+                <span class="navigation-icon"></span>
+            </label>
+            <input type="checkbox" id="dropdown-main">
+
+            <!--Navigation-->
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="fees.html">FEES</a></li>
+                <li>
+                    <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
+                    <label for="dropdown-sub" class="toggle">STORES <span
+                            class="material-icons">expand_more</span></label>
+                    <a href="">STORES <span class="material-icons">expand_more</span></a>
+                    <input type="checkbox" id="dropdown-sub">
+                    <ul class="sub-menu">
+                        <li><a href="browse-store-1.html">by NAME</a></li>
+                        <li><a href="browse-store-2.html">by CATEGORY</a></li>
+                    </ul>
+                </li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+                <li><a href="faqs.html">FAQS</a></li>
+                <li><a class="active" href="login.html">MY ACCOUNT</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!--Main content-->
     <main>
-
+    
     </main>
 
+    <!--Footer section with navigation bar-->
     <footer>
-        <div class="ourfooter">
-            <div class="navbar">
-                <ul>
-                    <li><a href="copyright.html">Copyright</a></li>
-                    <li><a href="tos.html">Terms of service</a></li>
-                    <li><a href="privacy-policy.html">Privacy policy</a></li>
-                </ul>
-            </div>
+        <a href="copyright.html">Copyright</a>
+        <a href="tos.html">Terms of Service</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <div id="brief-description">
+            <em>
+                <h3>by <strong>PROJECT GROUP 13</strong></h3>
+                <p>Developed in 2021</p>
+            </em>
         </div>
     </footer>
 </body>
+
 </html>

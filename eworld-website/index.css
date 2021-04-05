@@ -9,6 +9,9 @@ body {
     word-wrap: break-word !important;
     font-family: "Poppins", sans-serif;     /* When this font is already defined, it is able to be use to trigger the style of any selectors */
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /* STYLE OF MAIN SECTION IN HOME PAGE */
 main {
