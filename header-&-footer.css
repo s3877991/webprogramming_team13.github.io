@@ -138,7 +138,7 @@ footer p {
     margin: 10px;
 }
 
-/* Make header bar responsive in all mobile devices */
+/* Make header bar and footer bar responsive in all mobile devices */
 @media all and (max-width: 1155px) {
     header nav {
         margin: 0;
