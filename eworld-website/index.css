@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     word-wrap: break-word !important;
+    box-sizing: border-box;
     font-family: "Poppins", sans-serif;     /* When this font is already defined, it is able to be use to trigger the style of any selectors */
 }
 html {
@@ -14,11 +15,54 @@ html {
 }
 
 /* STYLE OF MAIN SECTION IN HOME PAGE */
-main {
+/* Banner area */
+.banner {
+    position: relative;
+    height: 700px;
+    background: url(eworld-banner.jpg) no-repeat fixed;
+    background-position: 50% 90%;
+    background-size: cover;
+}
+.banner .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.banner .container img {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+.banner .container h1 {
+    font-size: 70px;
+    margin: -20px;
+}
+.banner .container p {
+    font-size: 25px;
+    display: block;
     margin: 20px;
 }
+.btn {
+    padding: 8px 24px;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #f00;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s all;
+    margin-top: 10px;
+}
+.btn:hover {
+    background-color: #600;
+}
+
+/* Sub sections area */
 [id^=sub-sect] {
     padding: 40px 0 0 0;
+    margin: 0 40px;
 }
 .items-container {
     display: flex;
