@@ -6,6 +6,7 @@ body {
     font-size: 20px;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     word-wrap: break-word !important;
     font-family: "Poppins", sans-serif;     /* When this font is already defined, it is able to be use to trigger the style of any selectors */
 }
@@ -19,7 +20,7 @@ header {
     line-height: 60px;
     position: sticky;
     top: 0;
-    z-index: 99;
+    z-index: 10;
 }
 header:after {                              /* Self-clearing element */
     content: " ";
@@ -40,6 +41,12 @@ header #logo a {
     font-size: 36px;
     line-height: 60px;
     font-weight: bold;
+}
+header #logo img {
+    width: 35px;
+    height: 35px;
+    padding-right: 10px;
+    display: inline-block;
 }
 #main-toggle {                              /* Create a responsive navigation icon in header bar */
     cursor: pointer;                        /* When the mouse cursor touch this item, its icon will change into pointer icon, which means users can click this item */
@@ -129,6 +136,7 @@ footer {
     color: white;
     text-align: center;
     bottom: 0;
+    margin-top: 60px;
 }
 footer a {
     font-size: 25px;
