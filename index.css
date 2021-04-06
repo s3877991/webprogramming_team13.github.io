@@ -17,9 +17,9 @@ html {
 /* Banner area */
 .banner {
     position: relative;
-    height: 600px;
+    height: 690px;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(shoppiverse-banner.jpg) no-repeat fixed;
-    background-position: 50% 90%;
+    background-position: 50%;
     background-size: cover;
 }
 .banner .container {
@@ -43,14 +43,15 @@ html {
     padding: 8px 24px;
     font-size: 40px;
     text-decoration: none;
-    background-color: #f00;
-    color: white;
+    background-color: #f93;
+    color: #000;
     border-radius: 10px;
     transition: 0.3s all;
     margin-top: 10px;
 }
 .btn:hover {
-    background-color: #600;
+    background-color: #c60;
+    color: #fff;
 }
 
 /* Sub sections area */
@@ -63,8 +64,11 @@ html {
 }
 .label {
     text-transform: uppercase;
-    border-left: 5px solid #690;
+    text-align: center;
+    border-left: 10px solid #690;
+    border-right: 10px solid #690;
     background-color: #9c9;
+    padding-left: 30px;
     font-weight: bold;
     font-size: 30px;
     margin: 20px 40px;

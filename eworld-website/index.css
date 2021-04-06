@@ -65,10 +65,9 @@ html {
 }
 .items-container {
     display: flex;
-    margin: 0 40px;
+    margin: 20px 40px;
 }
 .label {
-    text-align: center;
     text-transform: uppercase;
     border-bottom: 5px solid #000;
     font-weight: bold;
