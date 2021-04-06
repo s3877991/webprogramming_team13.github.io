@@ -49,6 +49,7 @@ html {
     padding: 8px 24px;
     font-size: 30px;
     text-decoration: none;
+    font-weight: bold;
     background-color: #f00;
     color: white;
     border-radius: 10px;
