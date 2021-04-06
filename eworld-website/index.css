@@ -61,11 +61,11 @@ html {
 
 /* Sub sections area */
 [id^=sub-sect] {
-    padding: 40px 0 0 0;
-    margin: 0 40px;
+    padding: 60px 0 0 0;
 }
 .items-container {
     display: flex;
+    margin: 0 40px;
 }
 .label {
     text-align: center;
@@ -73,6 +73,7 @@ html {
     border-bottom: 5px solid #000;
     font-weight: bold;
     font-size: 35px;
+    margin: 0 40px;
 }
 .item {
     position: relative;
