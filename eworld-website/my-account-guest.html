@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="my-account-guess.css">
+    <link rel="stylesheet" href="header-&-footer.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <title>Shoppiverse - Universe of shopping malls</title>
+</head>
+
+<body>
+    <!--Header section with navigation bar-->
+    <header>
+        <nav>
+            <!--Logo of the website name-->
+            <div id="logo"><a href="index.html">SHOPPIVERSE</a></div>
+
+            <!--When the website is used in small-screen devices, the navigation icon appears-->
+            <label for="dropdown-main" class="toggle" id="main-toggle">
+                <span class="navigation-icon"></span>
+            </label>
+            <input type="checkbox" id="dropdown-main">
+
+            <!--Navigation-->
+            <ul class="menu">
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="fees.html">FEES</a></li>
+                <li>
+                    <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
+                    <label for="dropdown-sub" class="toggle">STORES <span
+                            class="material-icons">expand_more</span></label>
+                    <a href="#">STORES <span class="material-icons">expand_more</span></a>
+                    <input type="checkbox" id="dropdown-sub">
+                    <ul class="sub-menu">
+                        <li><a href="browse-store-1.html">by NAME</a></li>
+                        <li><a href="browse-store-2.html">by CATEGORY</a></li>
+                    </ul>
+                </li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+                <li><a href="faqs.html">FAQS</a></li>
+                <li><a href="login.html">MY ACCOUNT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Log in</h1>
+    <div class="not-yet">
+        <form action='app/processing.php' method='get' target='_blank'>
+            <label for="email">Email</label> 
+            <input id="email" type="email" name="email" value=''>
+            
+            <label for="phone">Phone</label>
+            <input id="phone" type="phone" name="number" value='' maxlength="11" minlength="9">
+            
+            <label for="password">Password</label>
+            <input id="password" type="password" name="pw" value=''></p>
+            <button type="submit">Log in</button>
+    </div>
+
+    </div>
+     <!--Footer section with navigation bar-->
+     <footer>
+        <a href="copyright.html">Copyright</a>
+        <a href="tos.html">Terms of Service</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <div id="brief-description">
+            <em>
+                <h3>by <strong>PROJECT GROUP 13</strong></h3>
+                <p>Developed in 2021</p>
+            </em>
+        </div>
+    </footer>
+</body>
+
+</html>
