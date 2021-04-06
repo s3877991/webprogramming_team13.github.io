@@ -14,6 +14,80 @@ html {
 }
 
 /* STYLE OF MAIN SECTION IN HOME PAGE */
-main {
-    height: 900px;
+/* Banner area */
+.banner {
+    position: relative;
+    height: 600px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(shoppiverse-banner.jpg) no-repeat fixed;
+    background-position: 50% 90%;
+    background-size: cover;
+}
+.banner .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.banner .container h1 {
+    font-size: 100px;
+    margin: -20px;
+}
+.banner .container p {
+    font-size: 36px;
+    display: block;
+    margin: 20px;
+}
+.btn {
+    padding: 8px 24px;
+    font-size: 40px;
+    text-decoration: none;
+    background-color: #f00;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s all;
+    margin-top: 10px;
+}
+.btn:hover {
+    background-color: #600;
+}
+
+/* Sub sections area */
+[id^=sub-sect] {
+    padding: 60px 0 0 0;
+}
+.items-container {
+    display: flex;
+    margin: 0 40px;
+}
+.label {
+    text-transform: uppercase;
+    border-left: 5px solid #690;
+    background-color: #9c9;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px 40px;
+    line-height: 60px;
+}
+.item {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    width: 25%;
+}
+.item a {
+    text-decoration: none;
+}
+.item a h3, .item a p {
+    color: black;
+    text-align: center;
+}
+.item img {
+    height: 250px;
+    width: 250px;
+    padding: 30px;
+}
+.item:hover {
+    background-color: #ddd;
 }
