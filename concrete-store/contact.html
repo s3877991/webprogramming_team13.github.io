@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+
+    <body>
+        <div class="topnav">
+            <a href="index.html" class="active">CONCRETE</a>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <div class="dropdown">
+              <button class="dropbtn">Products</button>
+              <div class="dropdown-content">
+                <a href="#">By time</a>
+                <a href="#">By category</a>
+              </div>
+            </div> 
+          </div>
+
+          <br><br>
+
+          <div class="form">
+            <h4>-Contact Us-</h4>
+            <lable for="pp">Contact purpose
+            <select id="pp">
+              <option value="complain">Complain</option>
+              <option value="request">Request</option>
+              <option value="recruit">Recruit</option>
+              <option value="guide">Guide</option>
+            </select>
+            </lable>
+            <form action='app/processing.php' method='get' target='_blank'>
+              <p>Name <input type="text" name="name" value=''/></p>
+              <p>Email <input type="email" name="email" value=''/></p>
+              <p>Phone <input type="phone" name="number" value='' maxlength="11" minlength="9"/></p>
+              <p>Contact method <input type="radio" name="method" value="email"/>Email
+                <input type="radio" name="method" value="phone"/>Phone</p>
+              
+              <p>Contact days
+              <input type="checkbox" name="day" value="mon"/>Monday
+              <input type="checkbox" name="day" value="tue"/>Tuesday
+              <input type="checkbox" name="day" value="wed"/>Wednesday
+              <input type="checkbox" name="day" value="Thu"/>Thursday
+              <input type="checkbox" name="day" value="fri"/>Friday
+              <input type="checkbox" name="day" value="sat"/>Saturday
+              <input type="checkbox" name="day" value="sun"/>Sunday
+              </p>
+              
+              <textarea cols="100" rows="10" name="comment">Input your messages here</textarea>
+              <br>
+              <button type="reset" class="reset">CLEAR</button>
+              <button type="submit" class="submit">SEND</button>
+          </div>
+
+          <br><br><br><br>
+
+          <div class="botnav">
+            <a href="copyright.html">Copyright</a>
+            <a href="tos.html">Terms of service</a>
+            <a href="privacy-policy.html" class="pripo">Privacy Policy</a>
+          </div> 
+    </body>
+</html>
