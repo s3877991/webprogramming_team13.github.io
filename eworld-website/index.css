@@ -96,7 +96,7 @@ html {
 .item h3 {
     height: 75px;
     font-size: 25px;
-    padding: 5px;
+    padding: 5px 10px;
 }
 .item .price {
     font-size: 20px;
