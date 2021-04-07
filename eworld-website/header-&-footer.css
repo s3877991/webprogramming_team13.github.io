@@ -97,6 +97,7 @@ header nav a {
 .active {
     background-color: #f00;               /* When users click on any item, they'll be move to another page in which that item is highlighted */
     color: #600;
+    font-weight: bold;
 }
 header nav ul li:hover {                    /* Main menu in hover states */
     background-color: #f00;
@@ -104,6 +105,7 @@ header nav ul li:hover {                    /* Main menu in hover states */
 }
 header nav ul li a:hover {
     color: #600;
+    font-weight: bold;
     transition: 0.5s;
 }
 header nav ul li ul li:hover {              /* Sub menu in hover states */
@@ -112,6 +114,7 @@ header nav ul li ul li:hover {              /* Sub menu in hover states */
 }
 header nav ul li ul li a:hover {
     color: #600;
+    font-weight: bold;
     transition: 0.5s;
 } 
 header nav ul ul {                          /* To make the sub menu dropdown, we have to make it disappear first */
@@ -131,6 +134,7 @@ nav ul li:hover > ul {                      /* When the mouse cursor touchs the 
 
 /* STYLE OF THE FOOTER SECTIONS */
 footer {
+    clear: both;
     background-color: #000;
     padding: 20px;
     color: white;
@@ -146,6 +150,8 @@ footer a {
 }
 footer a:hover {
     color: #f00;
+    font-weight: bold;
+    transition: 0.5s;
 }
 footer #brief-descrpition {
     margin-top: 30px;
@@ -157,6 +163,9 @@ footer p {
 
 /* Make header bar responsive in all mobile devices */
 @media all and (max-width: 768px) {
+    header {
+        top: 0;
+    }
     header nav {
         margin: 0;
     }
