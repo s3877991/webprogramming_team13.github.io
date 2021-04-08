@@ -162,7 +162,7 @@ footer p {
 }
 
 /* Make header bar responsive in all mobile devices */
-@media all and (max-width: 768px) {
+@media all and (max-width: 1000px) {
     header {
         top: 0;
     }
