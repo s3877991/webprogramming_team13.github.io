@@ -136,9 +136,48 @@ html {
     .item {
       width: calc(100% / 3);
     }
+    .banner {
+        height: 550px;
+    }
 }
 @media screen and (min-width: 860px) {
     .item {
       width: 25%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .banner .container h1 {
+        font-size: 60px;
+    }
+    .banner .container p {
+        font-size: 25px;
+    }
+    .btn {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .banner .container h1 {
+        font-size: 48px;
+    }
+    .banner .container p {
+        font-size: 21px;
+    }
+    .btn {
+        font-size: 30px;
+    }
+    .banner {
+        height: 500px
+    }
+}
+@media screen and (max-width: 350px) {
+    .banner .container h1 {
+        font-size: 40px;
+    }
+    .banner .container p {
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 25px;
     }
 }
