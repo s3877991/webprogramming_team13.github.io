@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="cosmetic-store.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNumber").value;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm nav-bg">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" id="logo" href="cosmetic-store.html">
+                <img src="image/mac-cosmetics-vector-logo.png" alt="logo">
+                <!--'object-fit: cover'to crop image-->
+            </a>
+
+            <!-- Links -->
+            <ul class="navbar-nav nav-links">
+                <a class="nav-link link" href="cosmetic-store.html">
+                    <li class="nav-item">Home</li>
+                </a>
+                <a class="nav-link link" href="about-us.html">
+                    <li class="nav-item">About Us</li>
+                </a>
+
+                <!-- DROPDOWN NEEDS TO BE FIXED -->
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" id="dropdown-text">
+                        <a class="dropdown-item" href="browse-by-category.html">Category</a>
+                        <a class="dropdown-item" href="browse-by-time.html">Date</a>
+                    </div>
+                </li>
+                <a class="nav-link link" href="contact.html">
+                    <li class="nav-item">Contact</li>
+                </a>
+            </ul>
+            <a class="cart" href="shopping-cart.html">
+                <img src="image/unnamed.png" alt="" style="width: 40px; text-align: right;">
+            </a>
+        </nav>
+    </header>
+
+    <br>
+    <h1>Order Placement</h1>
+    <br><br>
+    <table class="order-table" border="10">
+        <tr>
+            <td>
+                <h4>Product</h4>
+            </td>
+            <td>
+                <h4>Price</h4>
+            </td>
+            <td>
+                <h4>Quantity</h4>
+            </td>
+        </tr>
+        <tr>
+            <td><img class="order-pro" src="image/blush.png" alt="blush">Peach Blush</td>
+            <td>10$</td>
+            <td><input type="number" id="myNumber" value="1" max="10" min="1"></td>
+        </tr>
+        <tr>
+            <td><img class="order-pro" src="image/special-lipstick1.png.jpg" alt="lipstick">Matte Lipstick</td>
+            <td>19.99$</td>
+            <td><input type="number" id="myNumber" value="1" max="10" min="1"></td>
+        </tr>
+        <tr>
+            <td><img class="order-pro" src="image/brush.png" alt="foundation">Student Pro Brush</td>
+            <td>25$</td>
+            <td><input type="number" id="myNumber" value="1" max="10" min="1"></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <h5 style="font-size: 40px;">Total: 54.99$</h5>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <div style="position: absolute; right: 10%;" class="no-hover">
+        <a class="add-to-bag" href="thank-you.html">Order</a>
+        <a class="buy-now" href="#" style="color: black;">Continue Shopping</a>
+    </div>
+
+    <br><br><br>
+
+    <footer class="no-hover">
+        <span><a href="copyright.html">Copyright</a></span>
+        <span><a href="tos.html">Terms of Service</a></span>
+        <span><a href="privacy-policy.html">Privacy Policy</a></span>
+    </footer>
+
+</body>
+
+</html>
