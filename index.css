@@ -92,12 +92,9 @@ html {
     float: left;
 }
 .item h3 {
-    height: 75px;
+    line-height: 30px;
     font-size: 25px;
-    padding: 5px 10px;
-}
-#sub-sect-1 .item h3, #sub-sect-2 .item h3 {
-    height: 25px;
+    padding: 10px;
 }
 .item .price, .item .des {
     font-size: 20px;
