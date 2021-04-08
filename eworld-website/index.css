@@ -113,7 +113,7 @@ html {
     clear: both;
 }
 .item:hover {
-    background-color: lightgrey;
+    background-color: #eee;
     font-weight: bold;
     transition: 0.5s;
 }

@@ -56,43 +56,89 @@ html {
 }
 
 /* Sub sections area */
-[id^=sub-sect] {
-    padding: 60px 0 0 0;
+#sub-sect-1 {
+    padding: 70px 0 0 0;
 }
-.items-container {
-    display: flex;
-    margin: 0 40px;
-}
-.label {
-    text-transform: uppercase;
-    text-align: center;
-    border-left: 10px solid #690;
-    border-right: 10px solid #690;
-    background-color: #9c9;
-    padding-left: 30px;
-    font-weight: bold;
-    font-size: 30px;
-    margin: 20px 40px;
-    line-height: 60px;
-}
-.item {
-    position: relative;
-    display: inline-block;
-    padding: 10px;
-    width: 25%;
+#sub-sect-2, #sub-sect-3, #sub-sect-4 {
+    padding: 35px 0 0 0;
 }
 .item a {
+    color: #000;
     text-decoration: none;
 }
-.item a h3, .item a p {
-    color: black;
+.label {
+    font-size: 30px;
+    line-height: 60px;
     text-align: center;
+    font-weight: bold;
+    margin: 0 30px;
+    text-transform: uppercase;
+    background-color: #9c9;
+    border-left: 10px solid #690;
+    border-right: 10px solid #690;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 30px;
+}
+.item {
+    box-sizing: border-box;
+    margin: 5px auto;
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+.item h3 {
+    height: 75px;
+    font-size: 25px;
+    padding: 5px 10px;
+}
+#sub-sect-1 .item h3, #sub-sect-2 .item h3 {
+    height: 25px;
+}
+.item .price {
+    font-size: 20px;
+    color: #f00;
+}
+.rank {
+    color: #fc0;
 }
 .item img {
-    height: 250px;
-    width: 250px;
-    padding: 30px;
+    width: 70%;
+    margin: 10px 10px 0 10px;
+}
+.item image:after {
+    clear: both;
 }
 .item:hover {
-    background-color: #ddd;
+    background-color: #eee;
+    transition: 0.5s;
+}
+
+/* Make the page responsive */
+@media screen and (max-width: 470px) {
+    .item {
+      width: 100%;
+    }
+    .item img {
+        margin: 20px 0;
+    }
+}
+@media screen and (min-width: 470px) and (max-width: 690px) {
+    .item {
+      width: 50%;
+    }
+}
+@media screen and (min-width: 690px) and (max-width: 860px) {
+    .item {
+      width: calc(100% / 3);
+    }
+}
+@media screen and (min-width: 860px) {
+    .item {
+      width: 25%;
+    }
 }
