@@ -208,7 +208,7 @@ footer p {
         display: none;
     }
 }
-@media all and (max-width: 830px) {
+@media all and (max-width: 848px) {
     footer a {                              /* Resize the footer navigation bar */
         font-size: 20px;
         color: white;
@@ -216,7 +216,7 @@ footer p {
         margin: 30px 40px;
     }
 }
-@media all and (max-width: 683px) {
+@media all and (max-width: 688px) {
     footer a {                              /* Make the footer navigation items appear in single lines */
         display: block;                     
         width: 100%;
