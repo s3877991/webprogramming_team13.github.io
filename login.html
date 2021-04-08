@@ -50,7 +50,19 @@
 
     <!--Main content-->
     <main>
-    
+        <h1>Log in</h1>
+        <div class="not-yet">
+            <form action='app/processing.php' method='get' target='_blank'>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" value=''>
+
+                <label for="phone">Phone</label>
+                <input id="phone" type="phone" name="number" value='' maxlength="11" minlength="9">
+
+                <label for="password">Password</label>
+                <input id="password" type="password" name="pw" value=''></p>
+                <button type="submit">Log in</button>
+        </div>
     </main>
 
     <!--Footer section with navigation bar-->

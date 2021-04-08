@@ -14,6 +14,170 @@ html {
 }
 
 /* STYLE OF MAIN SECTION IN HOME PAGE */
-main {
-    height: 900px;
+/* Banner area */
+.banner {
+    position: relative;
+    height: 690px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(shoppiverse-banner.jpg) no-repeat fixed;
+    background-position: 50%;
+    background-size: cover;
+}
+.banner .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.banner .container h1 {
+    font-size: 100px;
+    margin: -20px;
+}
+.banner .container p {
+    font-size: 36px;
+    display: block;
+    margin: 20px;
+}
+.btn {
+    padding: 8px 24px;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #f93;
+    color: #000;
+    border-radius: 10px;
+    transition: 0.3s all;
+    margin-top: 10px;
+}
+.btn:hover {
+    background-color: #c60;
+    color: #fff;
+}
+
+/* Sub sections area */
+#sub-sect-1 {
+    padding: 70px 0 0 0;
+}
+#sub-sect-2, #sub-sect-3, #sub-sect-4 {
+    padding: 35px 0 0 0;
+}
+.item a {
+    color: #000;
+    text-decoration: none;
+}
+.label {
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 30px;
+    text-transform: uppercase;
+    background-color: #9c9;
+    border-left: 10px solid #690;
+    border-right: 10px solid #690;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 30px;
+}
+.item {
+    box-sizing: border-box;
+    margin: 5px auto;
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+.item h3 {
+    height: 75px;
+    font-size: 25px;
+    padding: 5px 10px;
+}
+#sub-sect-1 .item h3, #sub-sect-2 .item h3 {
+    height: 25px;
+}
+.item .price, .item .des {
+    font-size: 20px;
+    color: #f93;
+}
+.rank {
+    color: #fc0;
+}
+.item img {
+    width: 70%;
+    margin: 10px 10px 0 10px;
+}
+.item image:after {
+    clear: both;
+}
+.item:hover {
+    background-color: #eee;
+    transition: 0.5s;
+}
+
+/* Make the page responsive */
+@media screen and (max-width: 470px) {
+    .item {
+      width: 100%;
+    }
+    .item img {
+        margin: 20px 0;
+    }
+}
+@media screen and (min-width: 470px) and (max-width: 690px) {
+    .item {
+      width: 50%;
+    }
+}
+@media screen and (min-width: 690px) and (max-width: 860px) {
+    .item {
+      width: calc(100% / 3);
+    }
+    .banner {
+        height: 550px;
+    }
+}
+@media screen and (min-width: 860px) {
+    .item {
+      width: 25%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .banner .container h1 {
+        font-size: 60px;
+    }
+    .banner .container p {
+        font-size: 25px;
+    }
+    .btn {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .banner .container h1 {
+        font-size: 48px;
+    }
+    .banner .container p {
+        font-size: 21px;
+    }
+    .btn {
+        font-size: 30px;
+    }
+    .banner {
+        height: 500px
+    }
+}
+@media screen and (max-width: 350px) {
+    .banner .container h1 {
+        font-size: 40px;
+    }
+    .banner .container p {
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 25px;
+    }
 }
