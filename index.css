@@ -99,9 +99,9 @@ html {
 #sub-sect-1 .item h3, #sub-sect-2 .item h3 {
     height: 25px;
 }
-.item .price {
+.item .price, .item .des {
     font-size: 20px;
-    color: #f00;
+    color: #f93;
 }
 .rank {
     color: #fc0;
