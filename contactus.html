@@ -48,96 +48,143 @@
         </nav>
     </header>
 
+    <!--Main content-->
     <main>
-        <div class="form">
-            <div class="container">
-                <h2>Contact us</h2>
-                <h3>Feel free to contact us</h3>
-                <form method="get" action="#">
 
-                    <div>
-                        <label for="purpose">Contact purpose:</label><br>
+        <!--Contact form-->
+        <form method="get" action="index.html">
+            <div class="container">
+
+                <!--Title-->
+                <div class="title">
+                    <h1>Contact Us</h1>
+                    <p>Feel free to contact us</p>
+                </div>
+
+                <!--Purpose and full name area-->
+                <div class="flex-container">
+
+                    <div class="item flex">
+                        <label class="label" for="purpose">Your purpose</label>
+                        <br>
                         <select id="purpose">
-                            <option>Personal</option>
-                            <option>Business</option>
+                            <option id="shop-online">Shop online</option>
+                            <option id="complaints">Complaints</option>
+                            <option id="product-guarantee">Product guatantee</option>
+                            <option id="others">Others</option>
                         </select>
                     </div>
 
-                    <div>
-                        <label for="name">Full Name:</label><br>
-                        <input type="text" name="name" maxlength="50" required>
+                    <div class="item flex">
+                        <label class="label" for="name">Your name</label>
+                        <br>
+                        <input type="text" name="name" maxlength="50" placeholder="Enter your fullname" required>
                     </div>
 
-                    <div>
-                        <label for="email">Email Address:</label><br>
-                        <input type="email" name="email">
+                </div>
+
+                <div class="flex-container">
+
+                    <div class="item flex">
+                        <label class="label" for="email">Your email</label>
+                        <br>
+                        <input type="email" name="email" placeholder="Enter your email adress" required>
                     </div>
 
-                    <div>
-                        <label for="phone">Phone Number:</label><br>
-                        <input type="tel" name="phone" minlength="9" maxlength="13">
+                    <div class="item flex">
+                        <label class="label" for="phone">Your phone</label>
+                        <br>
+                        <input type="tel" name="phone" minlength=9 maxlength=13 placeholder="Enter your phone number"
+                            required>
                     </div>
 
-                    <div id="contact_method">
-                        <label>Preferred contact method</label>
-                        <ul>
-                            <li>
-                                <input type="radio" name="contact_method" value="email">
-                                <label for="contact_email">Email</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="contact_method" value="phone">
-                                <label for="contact_phone">Phone</label>
-                            </li>
-                        </ul>
+                </div>
+
+                <div class="flex-container">
+
+                    <div class="item flex">
+                        <label class="label" for="method">Preferred contact method</label>
                     </div>
 
-                    <div id="contact_days">
-                        <label>Contact day of week</label>
-                        <ol>
-                            <li>
-                                <input type="checkbox" name="contact_days[]" value="mon">
-                                <label for="contact_day_mon">Monday</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="contact_days[]" value="tue">
-                                <label for="contact_day_tue">Tuesday</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="contact_days[]" value="wed">
-                                <label for="contact_day_wed">Wednesday</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="contact_days[]" value="thu">
-                                <label for="contact_day_thu">Thursday</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="contact_days[]" value="fri">
-                                <label for="contact_day_fri">Friday</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="contact_days[]" value="sat">
-                                <label for="contact_day_sat">Saturday</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="contact_days[]" value="un">
-                                <label for="contact_day_sun">Sunday</label>
-                            </li>
-                        </ol>
+                    <div class="item radio">
+
+                        <input type="radio" name="method" value="email">
+                        <label class="options" for="email">Email</label>
+
+                        <input type="radio" name="method" value="phone">
+                        <label class="options" for="phone">Phone</label>
+
                     </div>
 
-                    <div>
-                        <label for="message">Message:</label><br>
-                        <textarea id="message"></textarea>
+                </div>
+
+                <div class="item-container">
+
+                    <label class="label" for="days">Preferred contact days</label>
+                    <br>
+                    <ul class="checkbox">
+
+                        <li>
+                            <input type="checkbox" name="mon" value="mon">
+                            <label class="options" for="mon">Monday</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="tue" value="tue">
+                            <label class="options" for="tue">Tuesday</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="wed" value="wed">
+                            <label class="options" for="wed">Wednesday</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="thu" value="thu">
+                            <label class="options" for="thu">Thursday</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="fri" value="fri">
+                            <label class="options" for="fri">Friday</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="sat" value="sat">
+                            <label class="options" for="sat">Saturday</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="sun" value="sun">
+                            <label class="options" for="sun">Sunday</label>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="item-container">
+
+                    <label class="label" for="message">Your message</label>
+                    <br>
+                    <textarea placeholder="Enter your message"></textarea>
+
+                </div>
+
+                <div class="button-container">
+
+                    <div class="button">
+                        <input type="reset" id="clear" value="Clear">
                     </div>
 
                     <div class="button">
-                        <input type="reset" value="   Clear   ">
-                        <input type="submit" value="   Send   ">
+                        <input type="submit" id="send" value="Send">
                     </div>
-                </form>
+
+                </div>
+
             </div>
-        </div>
+        </form>
+
     </main>
 
     <!--Footer section with navigation bar-->

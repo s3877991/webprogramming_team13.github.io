@@ -13,7 +13,132 @@ html {
     scroll-behavior: smooth;
 }
 
-/* STYLE OF MAIN SECTION IN HOME PAGE */
+/* HEADER & FOOTER SECTION */
+header {
+    margin: 0;
+}
+footer {
+    margin: 0;
+}
+
+/* STYLE OF MAIN SECTION*/
+/* Contact form */
 main {
-    height: 900px;
+    padding: 80px 0;
+    background-color: #9c9;
+}
+.container {
+    margin: 0px auto;
+    background-color: #fff;
+    width: fit-content;
+    padding: 15px 30px 20px 30px;
+}
+.container .title {
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 5px solid;
+}
+.container h1, .container p {
+    margin: 0;
+    padding: 0;
+}
+.options {
+    font-size: 15px;
+}
+.container .label {
+    font-weight: bold;
+}
+.button-container, .checkbox{
+    display: flex;
+}
+.checkbox {
+    flex-wrap: wrap;
+    list-style: none;
+}
+.checkbox li {
+    width: calc(100% / 3);
+}
+.flex, .radio {
+    margin: 15px;
+}
+.flex select, .flex input {
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background: none;
+    border: none;
+    border-bottom: 2px solid;
+}
+.flex select {
+    height: 35px;
+}
+.item-container, .button-container {
+    margin: 15px;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    max-height: 100px;
+    max-width: 100%;
+    border: none;
+    border-bottom: 2px solid;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.button-container {
+    justify-content: flex-end;
+}
+.button input {
+    margin: 0 5px;
+    height: 35px;
+    width: 100px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 17px;
+}
+#send {
+    background-color: #f93;
+    color: #000;
+}
+#send:hover {
+    background-color: #c60;
+    color: #fff;
+}
+#clear {
+    background-color: #ddd;
+}
+#clear:hover {
+    background-color: #ccc;
+}
+
+/* Make that contact form responsive */
+@media screen and (max-width: 480px) {
+    .checkbox li {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 390px) {
+    .checkbox li {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 640px) {
+    .flex-container {
+        display: flex;
+    }
+    .flex, .radio {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 761px) {
+    main {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 640px) {
+    .button-container {
+        justify-content: center;
+    }
 }
