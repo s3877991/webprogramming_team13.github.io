@@ -43,7 +43,7 @@ html {
     border: 3px solid #690;
 }
 
-/* Stores list */
+/* List of stores */
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -64,12 +64,11 @@ html {
 }
 .item h3 {
     font-size: 25px;
-}
-.item h3, .item h3 {
-    height: 25px;
+    height: 60px;
 }
 .item .price, .item .des {
     font-size: 20px;
+    height: 50px;
     color: #f93;
 }
 .rank {

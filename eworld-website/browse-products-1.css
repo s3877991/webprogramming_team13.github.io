@@ -1,5 +1,5 @@
 /* To define new fonts which is not available in IDE */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* STYLE OF THE WHOLE PAGE */
 body {
@@ -7,7 +7,8 @@ body {
     margin: 0;
     padding: 0;
     word-wrap: break-word !important;
-    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;     /* When this font is already defined, it is able to be use to trigger the style of any selectors */
 }
 html {
     scroll-behavior: smooth;
@@ -15,35 +16,24 @@ html {
 
 /* STYLE OF MAIN SECTION */
 /* Label and filter select area */
-.label {
-    line-height: 35px;
+.select {                                   
+    margin: 10px 30px;
+    border-bottom: 5px solid #f00;
+    text-align: center;
+}
+.select-container {                         /* Create a container div inside a section div in order to align that container div center */
+    font-size: 22.5px;
     font-weight: bold;
-    padding: 0 30px;
-    background-color: #9c9;
-    border-bottom: 5px solid #690;
-    border-top: 5px solid #690;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 15px 0;
 }
-.label h2 {
-    font-size: 30px;
-}
-.label .select{
-    margin: 24px 0;
-}
-.label select, .label label {
-    font-size: 20px;
-    font-family: 'Nunito', sans-serif;
-    margin: 3px;
-}
-.label select {
-    width: 200px;
-    border-radius: 15px;
-    border: 3px solid #690;
+.select-container select {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22.5px;
+    border: none;
+    border-bottom: 2.5px solid #000;
 }
 
-/* List of stores */
+/* List of products */
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -63,19 +53,22 @@ html {
     text-decoration: none;
 }
 .item h3 {
+    height: 75px;
     font-size: 25px;
-    height: 60px;
+    padding: 5px 10px;
 }
-.item .price, .item .des {
+.item .price {
     font-size: 20px;
-    height: 50px;
-    color: #f93;
+    color: #f00;
 }
 .rank {
     color: #fc0;
 }
+.created-date {
+    font-size: 13px;
+}
 .item img {
-    width: 70%;
+    width: 60%;
     margin: 10px 10px 0 10px;
 }
 .item image:after {
@@ -83,13 +76,14 @@ html {
 }
 .item:hover {
     background-color: #eee;
+    font-weight: bold;
     transition: 0.5s;
 }
 
 /* Make the page responsive */
 @media screen and (max-width: 470px) {
     .item {
-        width: 100%;
+      width: 100%;
     }
     .item img {
         margin: 20px 0;
@@ -97,28 +91,21 @@ html {
 }
 @media screen and (min-width: 470px) and (max-width: 690px) {
     .item {
-      width: 50%;
+        width: 50%;
     }
 }
 @media screen and (min-width: 690px) and (max-width: 860px) {
     .item {
-      width: calc(100% / 3);
-    }
-    .banner {
-        height: 550px;
+        width: calc(100% / 3);
     }
 }
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 860px) and (max-width: 1100px) {
     .item {
-      width: 25%;
+        width: 25%;
     }
 }
-@media screen and (max-width: 1100px) {
-    .label {
-        display: block;
-        text-align: center;
-    }
-    .label .select {
-        margin: 0;
+@media screen and (min-width: 1100px) {
+    .item {
+        width: 20%;
     }
 }

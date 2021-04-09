@@ -41,6 +41,11 @@ main {
     width: 100%;
 }
 
+/* STYLE OF FOOTER SECTION */
+footer {
+    margin: 0;
+}
+
 /* Make the page responsive */
 @media screen and (max-width: 900px) {
     .text {
