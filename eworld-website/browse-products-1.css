@@ -28,6 +28,7 @@ html {
 }
 .select-container select {
     font-family: 'Poppins', sans-serif;
+    width: 225px;
     font-size: 22.5px;
     border: none;
     border-bottom: 2.5px solid #000;

@@ -20,8 +20,8 @@ main {
 }
 /* Text section */
 .text {
-    margin: 25px 100px;
-    padding-bottom: 25px;
+    margin: 25px 100px 0 100px;
+    padding-bottom: 40px;
 }
 .text h1 {
     text-align: center;
