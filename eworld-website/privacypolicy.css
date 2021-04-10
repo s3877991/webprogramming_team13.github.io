@@ -1,0 +1,47 @@
+/* To define new fonts which is not available in IDE */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
+/* STYLE OF THE WHOLE PAGE */
+body {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word !important;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* STYLE OF MAIN SECTION*/
+/* Text section */
+.text {
+    margin: 50px 100px;
+}
+.text h1 {
+    text-align: center;
+}
+.text h2 {
+    color: #000;
+    border-bottom: 5px solid #f00;
+}
+.text h2, #note {
+    padding-top: 30px;
+}
+#update {
+    text-align: right;
+    font-style: italic;
+    font-size: 15px;
+}
+strong a {
+    text-decoration: none;
+    color: #f00;
+    font-weight: bold;
+}
+
+/* Make the page responsive */
+@media screen and (max-width: 950px) {
+    .text {
+        margin: 25px 50px;
+    }
+}
