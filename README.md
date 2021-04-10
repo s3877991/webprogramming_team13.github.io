@@ -25,6 +25,15 @@ Nguyen Hai Minh Trang:
 
 Nguyen Quang Duy:
 
++ Making responsive navigation bar for Mall Page in order to create webpage structures of Mall website.
+
++ Making Mall's Home page, Contact Us page and two Browse Stores pages.
+
++ Making a store website. Name: Eworld - Store of media technology.
+
 Nguyen Linh Chi:
 
 # References:
+1. Making responsive dropdown navigation bar: YouTube, FollowAndrew, viewed Apr 5 2021, <https://www.youtube.com/watch?v=7aGLkT4y4ls>
+
+2. Making flexboxes: CSS Tricks, Chris Coyer, viewed Apr 11 2021, <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
