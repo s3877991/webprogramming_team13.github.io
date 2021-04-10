@@ -33,6 +33,9 @@ main {
     color: #000;
     border-bottom: 5px solid #f00;
 }
+.text p {
+    text-align: justify;
+}
 .text h2, #note {
     padding-top: 30px;
 }
@@ -41,7 +44,7 @@ main {
     font-style: italic;
     font-size: 15px;
 }
-strong a {
+a {
     text-decoration: none;
     color: #f00;
     font-weight: bold;

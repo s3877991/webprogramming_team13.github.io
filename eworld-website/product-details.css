@@ -13,3 +13,270 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+/* STYLE OF MAIN CONTENT */
+main {
+    margin: 0 50px;
+}
+h1 {
+    margin: 20px 0 25px 0;
+}
+h2 {
+    font-size: 36px;
+    border-bottom: 5px solid #f00;
+    text-align: center;
+}
+#highlight, #description h3 {
+    font-weight: bold;
+    color: #f00;
+}
+#highlight {
+    text-decoration: none;
+}
+#description h3 {
+    font-style: italic;
+}
+
+/* Customers' choice area */
+.flex-container-1 {
+    display: flex;
+    margin-bottom: 20px;
+}
+.flex-container-1 h3 {
+    margin: 15px 0;
+}
+.image {
+    text-align: center;
+}
+.image img {
+    margin: 0 auto;
+    width: 100%;
+}
+.choice-1, .choice-2, .button-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.button-container {
+    justify-content: center;
+}
+.price {
+    color: #f00;
+    font-size: 25px;
+}
+.button {
+    margin: 30px 5px;
+    padding: 10px 0px;
+    border-radius: 8px;
+    text-align: center;
+    width: 45%;
+}
+.button:last-child {
+    background-color: #f00;
+}
+.button:last-child a {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.button:last-child:hover {
+    background-color: #600;
+}
+.button:first-child {
+    background-color: #ddd;
+}
+.button:first-child a {
+    color: #000;
+    text-decoration: none;
+}
+.button:first-child:hover {
+    background-color: #eee;
+}
+.options-1, .options-2 {
+    width: 50%;
+}
+
+/* Description */
+.gallery {
+    text-align: center;
+}
+.gallery img {
+    width: 50%;
+}
+
+/* Reccomeded products area */
+#recommended-products {
+    padding: 30px 0 0 0;
+}
+.item a {
+    color: #000;
+    text-decoration: none;
+}
+.label-2 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 5px solid #f00;
+}
+.flex-container-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 30px;
+}
+.item {
+    box-sizing: border-box;
+    margin: 5px auto;
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+.item h3 {
+    height: 75px;
+    font-size: 25px;
+    padding: 5px 10px;
+}
+.item .price {
+    font-size: 20px;
+    color: #f00;
+}
+.rank {
+    color: #fc0;
+}
+.item img {
+    width: 60%;
+    margin: 10px 10px 0 10px;
+}
+.item image:after {
+    clear: both;
+}
+.item:hover {
+    background-color: #eee;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+
+/* MAKE THE WHOLE PAGE RESPONSIVE */
+@media screen and (max-width: 540px) {
+    h1 {
+        font-size: 28px;
+        text-align: center;
+}
+}
+/* Customers' choice area */
+@media screen and (max-width: 350px) {
+    .options-1 {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 460px) {
+    h3 {
+        text-align: center;
+    }
+    .options-1, .options-2 {
+        margin: 5px 0;
+    }
+    .options-2 {
+        width: 100%;
+    }
+    .choice-2 {
+        display: block;
+    }
+    .button-container {
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .flex-container-1 {
+        display: block;
+    }
+    .avatar {
+        text-align: center;
+    }
+    .avatar img {
+        width: 100%;
+        height: 100%;
+    }
+    .button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1260px) {
+    .flex-container-1 {
+        display: block;
+    }
+    .avatar {
+        text-align: center;
+    }
+    .avatar img {
+        width: 500px;
+        height: 500px
+    }
+    .options-1 {
+        width: calc(100% / 3);
+    }
+}
+
+/* Description Area */
+/* Text */
+@media screen and (max-width: 1154px) {
+    main {
+        margin: 0 30px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+/* Gallery */
+@media screen and (max-width: 830px) {
+    .gallery img {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .gallery img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 370px) {
+    h2 {
+        font-size: 25px;
+    }
+}
+
+/* Recommended products area */
+@media screen and (max-width: 370px) {
+    .label-2 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .item {
+        width: 100%;
+    }
+    .item img {
+        margin: 20px 0;
+    }
+}
+@media screen and (min-width: 470px) and (max-width: 600px) {
+    .item {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 860px) {
+    .item {
+        width: calc(100% / 3);
+    }
+}
+@media screen and (min-width: 860px) and (max-width: 1100px) {
+    .item {
+        width: 25%;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .item {
+        width: 20%;
+    }
+}
