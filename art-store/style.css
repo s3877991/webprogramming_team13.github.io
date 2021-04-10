@@ -21,6 +21,16 @@ body {
     margin: 0;
 }
 
+.store-header {
+    width: 70%;
+    height: 310px;
+    background-color: rgb(240, 203, 229);
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
 ul {
     list-style-type: none;
     text-align: center;
@@ -28,31 +38,29 @@ ul {
 
 li {
     display: inline;
-    margin: 20px;
+    margin: auto;
     padding: 50px;
     font-family: 'Bad Script';
     font-size: 28px;
 }
 
 .banner {
-    margin: 20px;
-    padding: 5px;
-    padding-top: 50px;
+    margin: 30px;
+    padding: 20px;
+    padding-top: 20px;
     text-align: center;
+    margin-bottom: 0%;
+    background-color: mistyrose;
+    font-family: 'Gill Sans', sans-serif;
 }
 
 h1 {
     font-family: 'Dancing Script';
     font-weight: 400;
-    font-size: 180px;
+    font-size: 150px;
     text-align: center;
-    margin: 10px;
+    margin: 35px;
     padding: 20px;
-}
-
-
-h3 {
-    text-align: center;
 }
 
 img {
@@ -67,8 +75,38 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .image-container {
     margin: 100px;
+}
+
+.item-info {
+    text-align: center;
+}
+
+button {
+    border: none;
+    background-color: crimson;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: white;
+    color:crimson;
+    border: 2px solid crimson;
+}
+
+#bot-nav {
+    margin: 50px;
+}
+
+.browse-select-box {
+    font-size: 26px;
+    text-align: center;
+    display: block;
 }
