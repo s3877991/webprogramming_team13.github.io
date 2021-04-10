@@ -2,28 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tree Art Supplies</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Products</li>
-          <li>Contact</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="artabout.html">About Us</a></li>
+          <li><a href="artproducts.html">Products</a></li>
+          <li><a href="artcontact.html">Contact</a></li>
         </ul>
       </nav>
       <!--add store name and color for the heading later-->
-      <h1>STORE NAME</h1>
+      <div class="store-header">
+          <h1>store name</h1>
+      </div>
     </header>
     <main>
   
       <!--New products sub-section-->
       <section class="new-products">
-        <h2 id="banner">NEW PRODUCTS</h2>
+        <div class="banner"><h2>NEW PRODUCTS</h2></div>
         <div class="product-list-container">
 
           <div class="item">
@@ -41,7 +47,7 @@
                   <img src="images/copic-ciao-36-set.jpg" alt="Copic markers">
               </div>
               <div class="item-info">
-                  <h3>Copic Ciao STart 36 Color Set</h3>
+                  <h3>Copic Ciao Start 36 Color Set</h3>
                   <h4>$120.00</h4>
               </div>
           </div>
@@ -59,8 +65,9 @@
         </div>
       </section>
 
+      <!--Featured products sub-section-->
       <section class="featured-products">
-          <h2 id="banner">FEATURED PRODUCTS</h2>
+          <div class="banner"><h2>FEATURED PRODUCTS</h2></div>
           <div class="product-list-container">
 
             <div class="item">
@@ -68,7 +75,7 @@
                     <img src="images/staedtler-liner-6-set.jpg" alt="6 Staedtler Liners">
                 </div>
                 <div class="item-info">
-                    <h3>Staedtler Liners Set of 6</h3>
+                    <h3>Staedtler Liners Set 6</h3>
                     <h4>$12.00</h4>
                 </div>
             </div>
@@ -78,7 +85,7 @@
                     <img src="images/sakura-water-pen-set.jpg" alt="Sakura Water Pen">
                 </div>
                 <div class="item-info">
-                    <h3>Sakura Waterbrush Pen Set of 3</h3>
+                    <h3>Sakura Waterbrush Pen Set 3</h3>
                     <h4>$11.80</h4>
                 </div>
             </div>
@@ -88,18 +95,18 @@
                     <img src="images/canson-watercolor-paper.jpg" alt="Canson Watercolor Paper">
                 </div>
                 <div class="item-info">
-                    <h3>Canson XL Watercolor Textured Paper 30 Sheets</h3>
+                    <h3>Canson Watercolor Paper 30 Sheets</h3>
                     <h4>$14.62</h4>
                 </div>
             </div>
 
             <div class="item">
                 <div class="image-container">
-                    <img src="images/gansai-tambi-watercolor.jpg" alt="Gansai Watercolor">
+                    <img src="images/pandafly-watercolor.jpg" alt="Pandafly Watercolor">
                 </div>
                 <div class="item-info">
-                    <h3>Gansai Tambi Watercolor Set of 48</h3>
-                    <h4>$49.99</h4>
+                    <h3>Pandafly Watercolor Set 48</h3>
+                    <h4>$19.98</h4>
                 </div>
             </div>
 
@@ -108,16 +115,34 @@
                     <img src="images/marco-pastel-24-set.jpg" alt="Marco Pastel Pencil Colors">
                 </div>
                 <div class="item-info">
-                    <h3>Marco Pastel Color Pencils Set of 24</h3>
+                    <h3>Marco Pastel Color Pencils Set 24</h3>
                     <h4>$25.00</h4>
                 </div>
             </div>
+
+            <div class="item">
+                <div class="image-container">
+                    <img src="images/golden-maple-brushes.jpg" alt="Golden Maple Fine Detail Brushes">
+                </div>
+                <div class="item-info">
+                    <h3>Golden Maple Fine Detail Brushe Set</h3>
+                    <h4>$16.99</h4>
+                </div>
+            </div>
+
           </div>
-
       </section>
+    </main>
 
+    <footer>
+        <nav>
+            <ul>
+                <li>Copyright</li>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </nav>
+    </footer>
 
-
-    </main> 
   </body>
 </html>
