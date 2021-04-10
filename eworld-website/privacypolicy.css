@@ -14,10 +14,18 @@ html {
 }
 
 /* STYLE OF MAIN SECTION*/
-/* Text section */
-.text {
+main {
     margin: 50px 100px;
 }
+/* Image section */
+.image {
+    text-align: center;
+}
+.image img {
+    width: 250px;
+    height: 250px;
+}
+/* Text section */
 .text h1 {
     text-align: center;
 }
@@ -41,7 +49,13 @@ strong a {
 
 /* Make the page responsive */
 @media screen and (max-width: 950px) {
-    .text {
+    main {
         margin: 25px 50px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .image img {
+        width: 200px;
+        height: 200px;
     }
 }
