@@ -72,6 +72,8 @@ h2 {
     border-radius: 8px;
     text-align: center;
     width: fit-content;
+    border: none;
+    cursor: pointer;
 }
 .button-container input:last-child {
     background-color: #f00;
