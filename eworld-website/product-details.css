@@ -65,10 +65,10 @@ h2 {
 }
 .button {
     margin: 30px 5px;
-    padding: 10px 0px;
+    padding: 10px;
     border-radius: 8px;
     text-align: center;
-    width: 45%;
+    width: fit-content;
 }
 .button:last-child {
     background-color: #f00;
@@ -183,9 +183,6 @@ h2 {
     .choice-2 {
         display: block;
     }
-    .button-container {
-        display: block;
-    }
 }
 @media screen and (max-width: 600px) {
     .flex-container-1 {
@@ -198,9 +195,11 @@ h2 {
         width: 100%;
         height: 100%;
     }
+    .button-container {
+        display: block;
+    }
     .button {
-        width: 100%;
-        margin: 10px 0;
+        width: 95%;
     }
 }
 @media screen and (min-width: 600px) and (max-width: 1260px) {
