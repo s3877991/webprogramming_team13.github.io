@@ -1,0 +1,26 @@
+/* To define new fonts which is not available in IDE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* STYLE OF THE WHOLE PAGE */
+body {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word !important;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;     /* When this font is already defined, it is able to be use to trigger the style of any selectors */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* STYLE OF MAIN SECTION */
+main {
+    background-color: #ddd;
+}
+header {
+    margin: 0;
+}
+footer {
+    margin: 0;
+}
