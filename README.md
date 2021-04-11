@@ -35,5 +35,6 @@ Nguyen Linh Chi:
 
 # References:
 1. Making responsive dropdown navigation bar: YouTube, FollowAndrew, viewed Apr 5 2021, <https://www.youtube.com/watch?v=7aGLkT4y4ls>
-
 2. Making flexboxes: CSS Tricks, Chris Coyer, viewed Apr 11 2021, <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
+3. Making responsive shopping cart page: YouTube, Easy Tutorials, viewed Apr 12 2021, <https://www.youtube.com/watch?v=oXrlgOEiy6o>
+
