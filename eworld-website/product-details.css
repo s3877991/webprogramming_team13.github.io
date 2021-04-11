@@ -63,35 +63,51 @@ h2 {
     color: #f00;
     font-size: 25px;
 }
-.button {
-    margin: 30px 5px;
+/* Button Area */
+.button-container input {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px 10px;
     padding: 10px;
     border-radius: 8px;
     text-align: center;
     width: fit-content;
 }
-.button:last-child {
+.button-container input:last-child {
     background-color: #f00;
-}
-.button:last-child a {
     font-weight: bold;
     color: #fff;
-    text-decoration: none;
 }
-.button:last-child:hover {
+.button-container input:last-child:hover {
     background-color: #600;
 }
-.button:first-child {
+.button-container input:first-child {
     background-color: #ddd;
-}
-.button:first-child a {
     color: #000;
     text-decoration: none;
 }
-.button:first-child:hover {
+.button-container input:first-child:hover {
     background-color: #eee;
 }
+
 .options-1, .options-2 {
+    width: 50%;
+}
+
+/* Specifications area */
+table {
+    margin: 0 auto 30px;
+    border-collapse: collapse;
+}
+table tr td {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+table tr .property {
+    font-weight: bold;
+    width: 30%;
+}
+table tr .value {
     width: 50%;
 }
 
@@ -162,7 +178,7 @@ h2 {
     h1 {
         font-size: 28px;
         text-align: center;
-}
+    }
 }
 /* Customers' choice area */
 @media screen and (max-width: 350px) {
@@ -197,9 +213,11 @@ h2 {
     }
     .button-container {
         display: block;
+        margin-bottom: 30px;
     }
-    .button {
-        width: 95%;
+    .button-container input {
+        width: 100%;
+        margin: 10px 0;
     }
 }
 @media screen and (min-width: 600px) and (max-width: 1260px) {
@@ -217,7 +235,6 @@ h2 {
         width: calc(100% / 3);
     }
 }
-
 /* Description Area */
 /* Text */
 @media screen and (max-width: 1154px) {

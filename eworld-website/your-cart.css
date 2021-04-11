@@ -208,7 +208,7 @@ th:last-child {
         text-align: center;
     }
     .button {
-        width: 89%;
-        margin: 20px;
+        width: 80%;
+        margin: 15px auto;
     }
 }
