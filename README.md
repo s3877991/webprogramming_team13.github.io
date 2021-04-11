@@ -25,11 +25,11 @@ Nguyen Hai Minh Trang:
 
 Nguyen Quang Duy:
 
-+ Making responsive navigation bar for Mall Page in order to create webpage structures of Mall website.
++ Making responsive navigation bar for Mall Page in order to create webpage structures of Mall website. ==> COMPLETED.
 
-+ Making Mall's Home page, Contact Us page and two Browse Stores pages.
++ Making Mall's Home page, Contact Us page and two Browse Stores pages. ==> COMPLETED.
 
-+ Making a store website. Name: Eworld - Store of media technology.
++ Making a store website. Name: Eworld - Store of media technology. ==> COMPLETED.
 
 Nguyen Linh Chi:
 
