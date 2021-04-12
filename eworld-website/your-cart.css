@@ -83,6 +83,7 @@ td a {
 td a:hover {
     color: #600;
     font-weight: bold;
+    transition: 0.5s;
 }
 img {
     width: 100px;
@@ -133,6 +134,7 @@ th:last-child {
 }
 .button:last-child:hover {
     background-color: #600;
+    transition: 0.5s;
 }
 .button:first-child {
     background-color: #ddd;
@@ -143,6 +145,7 @@ th:last-child {
 }
 .button:first-child:hover {
     background-color: #eee;
+    transition: 0.5s;
 }
 
 

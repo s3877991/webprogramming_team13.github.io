@@ -58,6 +58,7 @@ html {
 .btn:hover {
     background-color: #600;
     font-weight: bold;
+    transition: 0.5s;
 }
 
 /* Sub sections area */

@@ -33,6 +33,10 @@ h2 {
 #highlight {
     text-decoration: none;
 }
+#highlight:hover {
+    color: #600;
+    transition: 0.5s;
+}
 #description h3 {
     font-style: italic;
 }
@@ -82,6 +86,7 @@ h2 {
 }
 .button-container input:last-child:hover {
     background-color: #600;
+    transition: 0.5s;
 }
 .button-container input:first-child {
     background-color: #ddd;
@@ -90,6 +95,7 @@ h2 {
 }
 .button-container input:first-child:hover {
     background-color: #eee;
+    transition: 0.5s;
 }
 
 .options-1, .options-2 {

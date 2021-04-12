@@ -79,6 +79,7 @@ main {
 .btn a:hover {
     font-weight: bold;
     background-color: #600;
+    transition: 0.5s;
 }
 
 /* In copyright HTML file */
@@ -110,9 +111,11 @@ main {
     }
     .btn:hover {
         background-color: #600;
+        transition: 0.5s;
     }
     .btn a:hover {
         background: none;
+        transition: 0.5s;
     }
 }
 
