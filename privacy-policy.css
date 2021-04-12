@@ -16,15 +16,15 @@ html {
 /* STYLE OF MAIN SECTION IN HOME PAGE */
 main {
     height: 900px;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
-h2 {
+main h2 {
     text-align: center;
     text-decoration: underline;
 }
 
-a {
+main a {
     text-decoration: none;
     color: red;
 }
