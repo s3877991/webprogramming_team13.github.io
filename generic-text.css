@@ -1,0 +1,47 @@
+/* To define new fonts which is not available in IDE */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
+/* STYLE OF THE WHOLE PAGE */
+body {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word !important;
+    font-family: 'Nunito', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* STYLE OF MAIN SECTION*/
+main {
+    margin: 50px 100px;
+}
+/* In Terms of service and Privacy Policy HTML file */
+/* Text section */
+.text h1 {
+    text-align: center;
+}
+.text p {
+    text-align: justify;
+}
+.text h2{
+    padding-top: 10px;
+}
+.text a {
+    text-decoration: none;
+    color: #f93;
+    font-weight: bold;
+}
+.text a:hover {
+    text-decoration: none;
+    color: #c60;
+    transition: 0.5s;
+}
+
+/* MAKE THE PAGE RESPONSIVE */
+@media screen and (max-width: 950px) {
+    main {
+        margin: 25px 50px;
+    }
+}
