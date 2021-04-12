@@ -13,34 +13,25 @@ html {
     scroll-behavior: smooth;
 }
 
-/* STYLE OF MAIN SECTION IN HOME PAGE */
-/* Label and filter select area */
-.label {
-    line-height: 35px;
-    font-weight: bold;
-    padding: 0 30px;
-    background-color: #9c9;
-    border-bottom: 5px solid #690;
-    border-top: 5px solid #690;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+/* STYLE OF MAIN SECTION */
+main {
+    margin: 30px 50px;
 }
-.label h2 {
-    font-size: 30px;
+/* Filter select area */
+.select {
+    line-height: 30px;
+    margin: 15px 0;
+    text-align: right;
 }
-.label .select{
-    margin: 24px 0;
-}
-.label select, .label label {
+.select select {
     font-size: 20px;
     font-family: 'Nunito', sans-serif;
     margin: 3px;
 }
-.label select {
+.select select {
     width: 100px;
-    border-radius: 15px;
-    border: 3px solid #690;
+    border: none;
+    border-bottom: 1px solid;
 }
 
 /* List of stores */
@@ -104,9 +95,6 @@ html {
     .item {
       width: calc(100% / 3);
     }
-    .banner {
-        height: 550px;
-    }
 }
 @media screen and (min-width: 860px) {
     .item {
@@ -118,10 +106,9 @@ html {
         display: block;
         text-align: center;
     }
-    .label .select {
-        margin: 0;
-    }
-    .label h2 {
-        font-size: 24px;
+}
+@media screen and (max-width: 800px) {
+    .select {
+        text-align: center;
     }
 }

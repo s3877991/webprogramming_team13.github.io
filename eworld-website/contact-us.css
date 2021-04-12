@@ -97,6 +97,7 @@ textarea {
     font-family: 'Poppins', sans-serif;
     border: none;
     border-radius: 17px;
+    cursor: pointer;
 }
 #send {
     background-color: #f00;
