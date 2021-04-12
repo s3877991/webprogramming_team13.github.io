@@ -103,12 +103,14 @@ textarea {
 #send:hover {
     background-color: #c60;
     color: #fff;
+    transition: 0.5s;
 }
 #clear {
     background-color: #ddd;
 }
 #clear:hover {
     background-color: #ccc;
+    transition: 0.5s;
 }
 
 /* Make that contact form responsive */
