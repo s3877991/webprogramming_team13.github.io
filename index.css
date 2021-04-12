@@ -57,6 +57,7 @@ main {
 .btn:hover {
     background-color: #c60;
     color: #fff;
+    transition: 0.5s;
 }
 
 /* Sub sections area */
