@@ -24,19 +24,16 @@ footer {
 /* STYLE OF MAIN SECTION*/
 /* Contact form */
 main {
-    padding: 80px 0;
-    background-color: #9c9;
+    padding: 30px 0;
 }
 .container {
     margin: 0px auto;
-    background-color: #fff;
     width: fit-content;
     padding: 15px 30px 20px 30px;
 }
 .container .title {
     text-align: center;
     margin-bottom: 15px;
-    border-bottom: 5px solid;
 }
 .container h1, .container p {
     margin: 0;
@@ -84,7 +81,7 @@ textarea {
     border: none;
     border-bottom: 2px solid;
     font-size: 15px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 .button-container {
     justify-content: flex-end;
@@ -94,9 +91,10 @@ textarea {
     height: 35px;
     width: 100px;
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     border: none;
     border-radius: 17px;
+    cursor: pointer;
 }
 #send {
     background-color: #f93;
@@ -130,11 +128,6 @@ textarea {
     }
     .flex, .radio {
         width: 100%;
-    }
-}
-@media screen and (max-width: 761px) {
-    main {
-        padding: 0;
     }
 }
 @media screen and (max-width: 640px) {

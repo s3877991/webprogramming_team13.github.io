@@ -13,7 +13,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* STYLE OF MAIN SECTION*/
+/* STYLE OF MAIN SECTION */
 main {
     margin: 50px 100px;
 }
@@ -25,6 +25,8 @@ main {
     width: 250px;
     height: 250px;
 }
+
+/* In Terms of service and Privacy Policy HTML file */
 /* Text section */
 .text h1 {
     text-align: center;
@@ -44,13 +46,48 @@ main {
     font-style: italic;
     font-size: 15px;
 }
-a {
+.text a {
     text-decoration: none;
     color: #f00;
     font-weight: bold;
 }
+.text a:hover {
+    text-decoration: none;
+    color: #600;
+    transition: 0.5s;
+}
 
-/* Make the page responsive */
+/* In Thank You HTML file */
+/* Text section */
+.text-2 h1 {
+    text-align: center;
+    margin: 10px auto;
+}
+/* Button area */
+.btn {
+    margin: 70px 0;
+    text-align: center;
+}
+.btn a {
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #f00;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.btn a:hover {
+    font-weight: bold;
+    background-color: #600;
+}
+
+/* In copyright HTML file */
+.text-3 {
+    text-align: center;
+}
+
+/* MAKE THE PAGE RESPONSIVE */
 @media screen and (max-width: 950px) {
     main {
         margin: 25px 50px;
@@ -60,5 +97,29 @@ a {
     .image img {
         width: 200px;
         height: 200px;
+    }
+}
+
+/* Make the button on Thank you HTML file display evenly */
+@media screen and (max-width: 494px) {
+    .btn {
+        background-color: #f00;
+        border-radius: 10px;
+    }
+    .btn a {
+        background: none;
+    }
+    .btn:hover {
+        background-color: #600;
+    }
+    .btn a:hover {
+        background: none;
+    }
+}
+
+/* Edit the heading on Copyright */
+@media screen and (max-width: 324px) {
+    .text-3 h1 {
+        font-size: 34px;
     }
 }
