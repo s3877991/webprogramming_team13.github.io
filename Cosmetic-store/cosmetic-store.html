@@ -6,55 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home</title>
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="cosmetic-store.css" type="text/css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-sm nav-bg">
-      <!-- Brand/logo -->
-      <a class="navbar-brand" id="logo" href="cosmetic-store.html">
-        <img src="image/mac-cosmetics-vector-logo.png" alt="logo">
-        <!--'object-fit: cover'to crop image-->
-      </a>
-
-      <!-- Links -->
-      <ul class="navbar-nav nav-links">
-        <a class="nav-link link" href="cosmetic-store.html">
-          <li class="nav-item">Home</li>
-        </a>
-        <a class="nav-link link" href="about-us.html">
-          <li class="nav-item">About Us</li>
-        </a>
-
-        <!-- DROPDOWN NEEDS TO BE FIXED -->
-
-        <!-- Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-            Products
-          </a>
-          <div class="dropdown-menu dropdown1" id="dropdown-text">
-            <a class="dropdown-item" href="browse-by-category.html">Category</a>
-            <a class="dropdown-item" href="browse-by-time.html">Date</a>
-          </div>
+    <nav>
+      <ul>
+        <li class="nav-item"><a href="cosmetic-store.html">Home</a></li>
+        <li class="nav-item"><a href="about-us.html">About Us</a></li>
+        <li class="nav-item"><a href="#">Product</a>
+          <ul class="dropdown">
+            <li><a class="cate" href="browse-by-category.html">Categories</a></li>
+            <li><a href="browse-by-time.html">Created Time</a></li>
+          </ul>
         </li>
-        <a class="nav-link link" href="contact.html">
-          <li class="nav-item">Contact</li>
-        </a>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
       </ul>
-      <a class="cart" href="shopping-cart.html">
-        <img src="image/unnamed.png" alt="" style="width: 40px; text-align: right;">
-      </a>
+      <li class="nav-image nav-item"><a href="shopping-cart.html"><img src="image/unnamed.png" alt=""
+            style="width: 40px; text-align: right;"></a></li>
+      <a href="cosmetic-store.html"><img id="logo-img" src="image/mac-cosmetics-vector-logo.png" alt=""></a>
     </nav>
   </header>
 
   <h2 style="font-size: 50px;">NEW PRODUCTS</h2>
-  <table>
+  <table class="home-table">
     <tr>
       <td>
         <a href="product1.html">
@@ -84,21 +62,21 @@
     <tr>
       <td>
         <a href="product1.html">
-        <img class="new-product-image" src="image/liquidlipstick1.jfif" alt="lipstick">
-        <h1>Liquid Lipstick</h1>
-      </a>
+          <img class="new-product-image" src="image/liquidlipstick1.jfif" alt="lipstick">
+          <h1>Liquid Lipstick</h1>
+        </a>
       </td>
       <td>
         <a href="product1.html">
-        <img class="new-product-image" src="image/brush.png" alt="brush">
-        <h1>Student Pro Brush</h1>
-      </a>
+          <img class="new-product-image" src="image/brush.png" alt="brush">
+          <h1>Student Pro Brush</h1>
+        </a>
       </td>
       <td>
         <a href="product1.html">
-        <img id="pro-img" class="new-product-image" src="image/warm-neutral-palette.jpg" alt="Eyeshadow">
-        <h1>Warm Neutral Eyeshadow</h1>
-      </a>
+          <img id="pro-img" class="new-product-image" src="image/warm-neutral-palette.jpg" alt="Eyeshadow">
+          <h1>Warm Neutral Eyeshadow</h1>
+        </a>
       </td>
     </tr>
   </table>

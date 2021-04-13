@@ -1,62 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+< <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cart</title>
-
+    <title>Home</title>
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="cosmetic-store.css" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myNumber").value;
-            document.getElementById("demo").innerHTML = x;
-        }
-    </script>
-</head>
-
-<body>
+  </head>
+  
+  <body>
     <header>
-        <nav class="navbar navbar-expand-sm nav-bg">
-            <!-- Brand/logo -->
-            <a class="navbar-brand" id="logo" href="cosmetic-store.html">
-                <img src="image/mac-cosmetics-vector-logo.png" alt="logo">
-                <!--'object-fit: cover'to crop image-->
-            </a>
-
-            <!-- Links -->
-            <ul class="navbar-nav nav-links">
-                <a class="nav-link link" href="cosmetic-store.html">
-                    <li class="nav-item">Home</li>
-                </a>
-                <a class="nav-link link" href="about-us.html">
-                    <li class="nav-item">About Us</li>
-                </a>
-
-                <!-- DROPDOWN NEEDS TO BE FIXED -->
-
-                <!-- Dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        Products
-                    </a>
-                    <div class="dropdown-menu" id="dropdown-text">
-                        <a class="dropdown-item" href="browse-by-category.html">Category</a>
-                        <a class="dropdown-item" href="browse-by-time.html">Date</a>
-                    </div>
-                </li>
-                <a class="nav-link link" href="contact.html">
-                    <li class="nav-item">Contact</li>
-                </a>
+      <nav>
+        <ul>
+          <li class="nav-item"><a href="cosmetic-store.html">Home</a></li>
+          <li class="nav-item"><a href="about-us.html">About Us</a></li>
+          <li class="nav-item"><a href="#">Product</a>
+            <ul class="dropdown">
+              <li><a class="cate" href="browse-by-category.html">Categories</a></li>
+              <li><a href="browse-by-time.html">Created Time</a></li>
             </ul>
-            <a class="cart" href="shopping-cart.html">
-                <img src="image/unnamed.png" alt="" style="width: 40px; text-align: right;">
-            </a>
-        </nav>
+          </li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+        <li class="nav-image nav-item"><a href="shopping-cart.html"><img src="image/unnamed.png" alt=""
+              style="width: 40px; text-align: right;"></a></li>
+        <a href="cosmetic-store.html"><img id="logo-img" src="image/mac-cosmetics-vector-logo.png" alt=""></a>
+      </nav>
     </header>
 
     <br>
@@ -77,17 +49,17 @@
         <tr>
             <td><img class="order-pro" src="image/blush.png" alt="blush">Peach Blush</td>
             <td>10$</td>
-            <td><input type="number" id="myNumber" value="1" max="10" min="1"></td>
+            <td><input type="number" id="Quantityr" value="1" max="10" min="1"></td>
         </tr>
         <tr>
             <td><img class="order-pro" src="image/special-lipstick1.png.jpg" alt="lipstick">Matte Lipstick</td>
             <td>19.99$</td>
-            <td><input type="number" id="myNumber" value="1" max="10" min="1"></td>
+            <td><input type="number" id="Quantity" value="1" max="10" min="1"></td>
         </tr>
         <tr>
             <td><img class="order-pro" src="image/brush.png" alt="foundation">Student Pro Brush</td>
             <td>25$</td>
-            <td><input type="number" id="myNumber" value="1" max="10" min="1"></td>
+            <td><input type="number" id="Quantity" value="1" max="10" min="1"></td>
         </tr>
         <tr>
             <td colspan="3">
