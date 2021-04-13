@@ -97,6 +97,7 @@ textarea {
     font-family: 'Poppins', sans-serif;
     border: none;
     border-radius: 17px;
+    cursor: pointer;
 }
 #send {
     background-color: #f00;
@@ -104,12 +105,14 @@ textarea {
 }
 #send:hover {
     background-color: #600;
+    transition: 0.5s;
 }
 #clear {
     background-color: #ddd;
 }
 #clear:hover {
     background-color: #eee;
+    transition: 0.5s;
 }
 
 /* Make that contact form responsive */

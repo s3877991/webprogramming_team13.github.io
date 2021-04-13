@@ -41,7 +41,7 @@
                     </ul>
                 </li>
                 <li><a href="contact-us.html">CONTACT</a></li>
-                <li><a href="#">YOUR ORDER</a></li>
+                <li><a href="your-cart.html">YOUR CART</a></li>
             </ul>
         </nav>
     </header>
@@ -61,79 +61,166 @@
                 </div>
 
                 <div class="variations">
+                    <form method="GET" action="your-cart.html">
+                        <h3 class="label">Choose your favorite version</h3>
+                        <div class="choice-1">
 
-                    <h3 class="label">Choose your favorite version</h3>
-                    <div class="choice-1">
+                            <div class="options-1">
+                                <input type="radio" name="version" value="128gb" required>
+                                <label for="version">
+                                    <span class="storage">128GB</span>
+                                    <br>
+                                    <span class="price">$1264.78</span>
+                                </label>
+                            </div>
 
-                        <div class="options-1">
-                            <input type="radio" name="version" value="128gb">
-                            <label for="version">
-                                <span class="storage">128GB</span>
-                                <br>
-                                <span class="price">$1264.78</span>
-                            </label>
+                            <div class="options-1">
+                                <input type="radio" name="version" value="256gb" required>
+                                <label for="version">
+                                    <span class="storage">256GB</span>
+                                    <br>
+                                    <span class="price">$1386.52</span>
+                                </label>
+                            </div>
+
+                            <div class="options-1">
+                                <input type="radio" name="version" value="512gb" required>
+                                <label for="version">
+                                    <span class="storage">512GB</span>
+                                    <br>
+                                    <span class="price">$1638.70</span>
+                                </label>
+                            </div>
+
                         </div>
 
-                        <div class="options-1">
-                            <input type="radio" name="version" value="256gb">
-                            <label for="version">
-                                <span class="storage">256GB</span>
-                                <br>
-                                <span class="price">$1386.52</span>
-                            </label>
+                        <h3 class="label">Choose your favorite color</h3>
+                        <div class="choice-2">
+
+                            <div class="options-2">
+                                <input type="radio" name="color" value="blue" required>
+                                <label for="color">Pacific Blue</label>
+                            </div>
+
+                            <div class="options-2">
+                                <input type="radio" name="color" value="gold" required>
+                                <label for="color">Gold</label>
+                            </div>
+
+                            <div class="options-2">
+                                <input type="radio" name="color" value="silver" required>
+                                <label for="color">Silver</label>
+                            </div>
+
+                            <div class="options-2">
+                                <input type="radio" name="color" value="black" required>
+                                <label for="color">Graphite</label>
+                            </div>
+
                         </div>
 
-                        <div class="options-1">
-                            <input type="radio" name="version" value="512gb">
-                            <label for="version">
-                                <span class="storage">512GB</span>
-                                <br>
-                                <span class="price">$1638.70</span>
-                            </label>
+                        <div class="button-container">
+
+                            <input type="button" id="add-to-cart" value="Add to cart">
+                            <input type="submit" id="buy-now" value="BUY NOW!">
+
                         </div>
-
-                    </div>
-
-                    <h3 class="label">Choose your favorite color</h3>
-                    <div class="choice-2">
-
-                        <div class="options-2">
-                            <input type="radio" name="color" value="blue">
-                            <label for="color">Pacific Blue</label>
-                        </div>
-
-                        <div class="options-2">
-                            <input type="radio" name="color" value="gold">
-                            <label for="color">Gold</label>
-                        </div>
-
-                        <div class="options-2">
-                            <input type="radio" name="color" value="silver">
-                            <label for="color">Silver</label>
-                        </div>
-
-                        <div class="options-2">
-                            <input type="radio" name="color" value="black">
-                            <label for="color">Graphite</label>
-                        </div>
-
-                    </div>
-
-                    <div class="button-container">
-
-                        <div class="button">
-                            <a href="">Add to cart <span class="material-icons">add_shopping_cart</span></a>
-                        </div>
-
-                        <div class="button">
-                            <a href="your-order.html">BUY NOW!</a>
-                        </div>
-
-                    </div>
-
+                    </form>
                 </div>
 
             </div>
+        </section>
+
+        <hr>
+
+        <!--Specifications area-->
+        <section id="specifications">
+            <h2>Specifications</h2>
+
+            <table>
+
+                <tr>
+                    <td class="property">Display</td>
+                    <td class="value">
+                        6.7 inches Super Retina XDR
+                        <br>
+                        458 ppi (2778 x 1284)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="property">Weight</td>
+                    <td class="value">228 grams</td>
+                </tr>
+
+                <tr>
+                    <td class="property">Operating System</td>
+                    <td class="value">iOS 14</td>
+                </tr>
+
+                <tr>
+                    <td class="property">Processor</td>
+                    <td class="value">Apple A14 Bionic</td>
+                </tr>
+
+                <tr>
+                    <td class="property">Memory</td>
+                    <td class="value">6GB RAM</td>
+                </tr>
+
+                <tr>
+                    <td class="property">Storage</td>
+                    <td class="value">128GB, 256GB, 512GB</td>
+                </tr>
+
+                <tr>
+                    <td class="property">Network</td>
+                    <td class="value">5G Technology</td>
+                </tr>
+
+                <tr>
+                    <td class="property">Rear Camera</td>
+                    <td class="value">
+                        Wide: 12MP, F/1.6
+                        <br>
+                        Ultrawide: 12MP, F/2.4
+                        <br>
+                        Telephoto: 12MP, F/2.2
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="property">Front Camera</td>
+                    <td class="value">Selfie: 12MP, F/2.2</td>
+                </tr>
+
+                <tr>
+                    <td class="property">Battery</td>
+                    <td class="value">3,687 mAh Li-Ion</td>
+                </tr>
+
+                <tr>
+                    <td class="property">Other Features</td>
+                    <td class="value">
+                        IP68 Water resistance
+                        <br>
+                        Face ID
+                        <br>
+                        15W Fast Charging
+                        <br>
+                        LiDAR Sensor
+                        <br>
+                        MagSafe Wirreless Charger
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="property">Colors</td>
+                    <td class="value">Pacific Blue, Gold, Silver, Graphite</td>
+                </tr>
+
+            </table>
+
         </section>
 
         <hr>
@@ -194,7 +281,7 @@
             <h3>Powerful performance</h3>
             <p>
                 Apart from those improvements, there's a thing known as the heart and the core of the 2020 flagship, a
-                5-nanometer A14 SoC chip.
+                5-nanometer A14 Bionic chip.
                 It makes the phone have a great performance and even greater than its opponents.
             </p>
             <div class="gallery">
@@ -276,8 +363,8 @@
             <p>
                 Currently, Eworld has become an official Apple authorized distributor in the world, promising to
                 bring customers high-quality
-                products at the most reasonable prices. If you want to buy iPhone 12 Pro Max, click <a
-                    href="#title" id="highlight">"BUY NOW!"</a> for
+                products at the most reasonable prices. If you want to buy iPhone 12 Pro Max, click <a href="#title"
+                    id="highlight">"BUY NOW!"</a> for
                 free delivery. This product is guaranteed genuinely in 12 months.
             </p>
 

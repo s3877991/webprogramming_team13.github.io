@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
-    <title>Log in</title>
+    <title>Log In</title>
 </head>
 
 <body>
@@ -50,19 +50,50 @@
 
     <!--Main content-->
     <main>
-        <h1>Log in</h1>
-        <div class="not-yet">
-            <form action='app/processing.php' method='get' target='_blank'>
-                <label for="email">Email</label>
-                <input id="email" type="email" name="email" value=''>
+        <section id="log-in">
+            <div class="flex-container">
 
-                <label for="phone">Phone</label>
-                <input id="phone" type="phone" name="number" value='' maxlength="11" minlength="9">
+                <div class="image">
+                    <img src="images/shopping-cart.png" alt="a woman moving a cart full of stuff">
+                </div>
 
-                <label for="password">Password</label>
-                <input id="password" type="password" name="pw" value=''></p>
-                <button type="submit">Log in</button>
-        </div>
+                <div class="form">
+                    <form method="get" action="profile.html">
+
+                        <div class="input">
+                            <label for="email">Your Email</label>
+                            <br>
+                            <input type="email" class="text-field" name="email" placeholder="Enter your email address"
+                                required>
+                        </div>
+
+                        <div class="input">
+                            <label for="password">Your Password</label>
+                            <br>
+                            <input type="password" class="text-field" name="pasword" placeholder="Enter your password"
+                                required>
+                        </div>
+
+                        <div class="action-1">
+                            <input type="submit" name="login" value="Log In">
+                        </div>
+
+                        <div class="action-2">
+                            <a href="forgot-password.html">Forgot your password?</a>
+                        </div>
+
+                        <hr>
+
+                        <div class="action-3">
+                            <p>Are you new to Shoppiverse?</p>
+                            <a href="register.html">Create New Account</a>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <!--Footer section with navigation bar-->
