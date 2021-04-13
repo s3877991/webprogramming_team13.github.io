@@ -31,7 +31,7 @@ Nguyen Quang Duy:
 
 + Making responsive navigation bar for Mall Page in order to create webpage structures of Mall website. ==> COMPLETED.
 
-+ Making Mall's Home page, Contact Us page, two Browse Stores pages, Log In page. ==> COMPLETED.
++ Making Mall's Home page, Contact Us page, two Browse Stores pages, Log In page, Forgot Password page. ==> COMPLETED.
 
 + Making a store website (fully RESPONSIVE). Name: Eworld - Store of Media Technology. ==> COMPLETED.
 
