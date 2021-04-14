@@ -14,6 +14,158 @@ html {
 }
 
 /* STYLE OF MAIN SECTION IN HOME PAGE */
+/* HEADER & FOOTER SECTION */
+header {
+    margin: 0;
+}
+footer {
+    margin: 0;
+}
+
+/* STYLE OF MAIN SECTION*/
+/* Register form */
 main {
-    height: 900px;
+    padding: 30px 0;
+}
+.container {
+    margin: 0px auto;
+    width: 40%;
+    padding: 15px 30px 20px 30px;
+}
+.container .title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.container h1, .container p {
+    margin: 0;
+    padding: 0;
+}
+.container .label {
+    font-weight: bold;
+}
+.button-container {
+    display: flex;
+}
+.flex, .radio {
+    margin: 15px;
+}
+.flex select, .flex input, .single-container select {
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    background: none;
+    border: none;
+    border-bottom: 2px solid;
+}
+.flex select {
+    height: 35px;
+}
+.single-container, .button-container {
+    margin: 15px;
+}
+.button-container {
+    justify-content: flex-end;
+}
+.button input {
+    margin: 0 5px;
+    height: 35px;
+    width: 100px;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+}
+#send {
+    background-color: #f93;
+    color: #000;
+}
+#send:hover {
+    background-color: #c60;
+    color: #fff;
+    transition: 0.5s;
+}
+#clear {
+    background-color: #ddd;
+}
+#clear:hover {
+    background-color: #ccc;
+    transition: 0.5s;
+}
+/* Upload avatar */
+.single-container .item {
+    text-align: center;
+}
+.single-container .item input {
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Specify the areas */
+.login, .name, .location, .user-type, .button-container {
+    margin: 30px 0;
+}
+
+/* Edit the Radio select */
+.store-owner {
+    display: none;
+}
+.options {
+    font-size: 17px;
+}
+#store-owner:checked ~ .store-owner {
+    display: block;
+}
+#shopper:checked ~ .store-owner {
+    display: none;
+}
+
+/* Another Action */
+.another-action {
+    text-align: center;
+}
+.another-action a {
+    color: #f93;
+    text-decoration: none;
+}
+.another-action a:hover {
+    color: #c60;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+/* MKE THAT REGISTATION FORM RESPONSIVE */
+@media screen and (max-width: 1350px) {
+    .container {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .container {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 860px) {
+    .container {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 740px) {
+    .container {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 660px) {
+    .flex-container {
+        display: flex;
+    }
+    .flex {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .button-container {
+        justify-content: center;
+    }
 }
