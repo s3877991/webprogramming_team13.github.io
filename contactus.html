@@ -53,7 +53,7 @@
 
         <!--Contact form-->
         <section id="contact-form">
-            <form method="get" action="index.html">
+            <form method="get" action="contactus.html">
                 <div class="container">
 
                     <!--Title-->
@@ -64,24 +64,26 @@
 
                     <hr>
 
-                    <!--Purpose and full name area-->
+                    <!--Input area-->
                     <div class="flex-container">
 
                         <div class="item flex">
                             <label class="label" for="purpose">Your purpose</label>
                             <br>
-                            <select id="purpose">
-                                <option id="shop-online">Shop online</option>
-                                <option id="complaints">Complaints</option>
-                                <option id="product-guarantee">Product guatantee</option>
-                                <option id="others">Others</option>
+                            <select id="purpose" required>
+                                <option value="" selected>Choose your purpose</option>
+                                <option value="business">Business</option>
+                                <option value="customer-care">Customer care</option>
+                                <option value="user-account">User account</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="others">Others</option>
                             </select>
                         </div>
 
                         <div class="item flex">
                             <label class="label" for="name">Your name</label>
                             <br>
-                            <input type="text" name="name" maxlength="50" placeholder="Enter your fullname" required>
+                            <input type="text" name="name" maxlength="50" placeholder="Enter your full name" required>
                         </div>
 
                     </div>
