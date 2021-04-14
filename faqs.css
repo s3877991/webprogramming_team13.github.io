@@ -15,5 +15,9 @@ html {
 
 /* STYLE OF MAIN SECTION IN HOME PAGE */
 main {
-    height: 900px;
+    margin: 3%;
+}
+
+h1 {
+    text-align: center;
 }
