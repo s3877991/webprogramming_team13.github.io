@@ -27,15 +27,19 @@ Phan Do Ngoc Linh:
 
 Nguyen Hai Minh Trang:
 
++ Make Mall's About Us page and FAQs page. ==> COMPLETED.
+
++ Making a store website (not RESPONSIVE). Name: M.A.C - Cosmetic store.
+
 Nguyen Quang Duy:
 
 + Making responsive navigation bar for Mall Page in order to create webpage structures of Mall website. ==> COMPLETED.
 
-+ Making Mall's Home page, Contact Us page, two Browse Stores pages, Log In page, Forgot Password page. ==> COMPLETED.
++ Making Mall's Home page, Contact Us page, two Browse Stores pages, Log In page, Forgot Password page, Register page, User Information page. ==> COMPLETED.
 
 + Making a store website (fully RESPONSIVE). Name: Eworld - Store of Media Technology. ==> COMPLETED.
 
-+ Edit, modify styles and contents of some pages.
++ Edit, modify styles and contents of some pages. Make all web pages RESPONSIVE.
 
 Nguyen Linh Chi:
 
