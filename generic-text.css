@@ -18,6 +18,15 @@ main {
     margin: 50px 100px;
 }
 /* In Terms of service and Privacy Policy HTML file */
+/* Image section */
+.image {
+    text-align: center;
+}
+.image img {
+    width: 250px;
+    height: 250px;
+}
+
 /* Text section */
 .text h1 {
     text-align: center;

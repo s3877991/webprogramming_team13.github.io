@@ -267,77 +267,70 @@
                         </div>
                     </div>
 
+                    <!--Your account types-->
+                    <div class="radio-container">
 
-                    <!--Shopper or shop owner-->
-                    <div class="user-type">
+                        <div class="flex">
+                            <label class="label" for="acc-type">Your account type</label>
+                            <br>
+                        </div>
 
-                        <!--Your account types-->
-                        <div class="radio-container">
+                        <div class="radio">
+
+                            <div>
+                                <input type="radio" name="acc-type" id="shopper" value="shopper" required>
+                                <label class="options" for="shopper">Shopper</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="acc-type" id="store-owner" value="store-owner" required>
+                                <label class="options" for="store-owner">Store owner</label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--3 additional inputs for shop owner type-->
+                    <div class="store-owner">
+
+                        <div class="flex-container">
 
                             <div class="flex">
-                                <label class="label" for="acc-type">Your account type</label>
+                                <label class="label" for="business-name">Business name</label>
                                 <br>
+                                <input type="text" name="business-name" placeholder="Enter your business name"
+                                    maxlength=50>
                             </div>
 
-                            <div class="radio">
-
-                                <div>
-                                    <input type="radio" name="acc-type" id="shopper" value="shopper" required>
-                                    <label class="options" for="shopper">Shopper</label>
-                                </div>
-
-                                <div>
-                                    <input type="radio" name="acc-type" id="store-owner" value="store-owner" required>
-                                    <label class="options" for="store-owner">Store owner</label>
-                                </div>
-
-                                <!--3 additional inputs for shop owner type-->
-                                <div class="store-owner">
-
-                                    <div class="flex-container">
-
-                                        <div class="flex">
-                                            <label class="label" for="business-name">Business name</label>
-                                            <br>
-                                            <input type="text" name="business-name"
-                                                placeholder="Enter your business name" maxlength=50>
-                                        </div>
-
-                                        <div class="flex">
-                                            <label class="label" for="store-name">Store name</label>
-                                            <br>
-                                            <input type="text" name="store-name" placeholder="Enter your store name"
-                                                maxlength=50>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="single-container">
-                                        <label class="label" for="store-category">Store category</label>
-                                        <div>
-                                            <select id="store-category">
-                                                <option value="" selected>Choose your category</option>
-                                                <option value="department">Department stores</option>
-                                                <option value="grocery">Grocery stores</option>
-                                                <option value="restaurant">Restaurant</option>
-                                                <option value="clothing">Clothing stores</option>
-                                                <option value="accessory">Accessory stores</option>
-                                                <option value="pharmacies">Pharmacies</option>
-                                                <option value="technology">Technology stores</option>
-                                                <option value="pet">Pet stores</option>
-                                                <option value="toy">Toy stores</option>
-                                                <option value="specialty">Specialty stores</option>
-                                                <option value="thrift">Thrift stores</option>
-                                                <option value="services">Services</option>
-                                                <option value="kiosks">Kiosks</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                </div>
-
+                            <div class="flex">
+                                <label class="label" for="store-name">Store name</label>
+                                <br>
+                                <input type="text" name="store-name" placeholder="Enter your store name" maxlength=50>
                             </div>
 
+                        </div>
+
+                        <div class="single-container">
+                            <label class="label" for="store-category">Store category</label>
+                            <div>
+                                <select id="store-category">
+                                    <option value="" selected>Choose your category</option>
+                                    <option value="department">Department stores</option>
+                                    <option value="grocery">Grocery stores</option>
+                                    <option value="restaurant">Restaurant</option>
+                                    <option value="clothing">Clothing stores</option>
+                                    <option value="accessory">Accessory stores</option>
+                                    <option value="pharmacies">Pharmacies</option>
+                                    <option value="technology">Technology stores</option>
+                                    <option value="pet">Pet stores</option>
+                                    <option value="toy">Toy stores</option>
+                                    <option value="specialty">Specialty stores</option>
+                                    <option value="thrift">Thrift stores</option>
+                                    <option value="services">Services</option>
+                                    <option value="kiosks">Kiosks</option>
+                                </select>
+                            </div>
                         </div>
 
                     </div>

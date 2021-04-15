@@ -108,17 +108,8 @@ main {
 }
 
 /* Edit the Radio select */
-.store-owner {
-    display: none;
-}
 .options {
     font-size: 17px;
-}
-#store-owner:checked ~ .store-owner {
-    display: block;
-}
-#shopper:checked ~ .store-owner {
-    display: none;
 }
 
 /* Another Action */

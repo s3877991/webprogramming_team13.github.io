@@ -8,6 +8,7 @@ body {
     padding: 0;
     word-wrap: break-word !important;
     font-family: 'Poppins', sans-serif;
+    background-color: #ddd;
 }
 html {
     scroll-behavior: smooth;
@@ -25,7 +26,6 @@ footer {
 /* Contact form */
 main {
     padding: 80px 0;
-    background-color: #ddd;
 }
 .container {
     margin: 0px auto;

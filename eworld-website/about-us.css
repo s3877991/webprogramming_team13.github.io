@@ -9,15 +9,12 @@ body {
     word-wrap: break-word !important;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;     /* When this font is already defined, it is able to be use to trigger the style of any selectors */
+    background-color: #ddd;
 }
 html {
     scroll-behavior: smooth;
 }
 
-/* STYLE OF MAIN SECTION */
-main {
-    background-color: #ddd;
-}
 /* Text section */
 .text {
     margin: 10px 100px 0 100px;
@@ -43,11 +40,6 @@ main {
 }
 .image img {
     width: 100%;
-}
-
-/* STYLE OF FOOTER SECTION */
-footer {
-    margin: 0;
 }
 
 /* Make the page responsive */

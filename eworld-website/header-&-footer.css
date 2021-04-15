@@ -9,6 +9,7 @@ body {
     box-sizing: border-box;
     word-wrap: break-word !important;
     font-family: "Poppins", sans-serif;     /* When this font is already defined, it is able to be use to trigger the style of any selectors */
+    min-height: 100vh;
 }
 html {
     scroll-behavior: smooth;
@@ -139,7 +140,8 @@ footer {
     padding: 20px;
     color: white;
     text-align: center;
-    bottom: 0;
+    position: sticky;
+    top: 100%;
     margin-top: 60px;
 }
 footer a {

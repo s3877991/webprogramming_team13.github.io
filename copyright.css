@@ -13,18 +13,29 @@ html {
     scroll-behavior: smooth;
 }
 
-/* STYLE OF MAIN SECTION IN HOME PAGE */
+/* STYLE OF MAIN SECTION*/
 main {
-    height: 500px;
+    margin: 50px 100px;
+}
+.image {
+    text-align: center;
+}
+.image img {
+    width: 250px;
+    height: 250px;
+}
+.text {
+    text-align: center;
+}
+.text p {
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.statement {
-    white-space: pre-line;
-    display: block;
-    margin: 70px;
-    padding: 10%;
-    text-align: center;
-    font-size: 35px;
-    font-weight:bolder;
+/* MAKE THE PAGE RESPONSIVE */
+@media screen and (max-width: 500px) {
+    main {
+        margin: 25px 50px;
+    }
 }
 
