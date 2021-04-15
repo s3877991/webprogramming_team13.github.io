@@ -55,3 +55,12 @@ main {
         margin: 25px 50px;
     }
 }
+@media screen and (max-width:360px) {
+    .image img {
+        width: 100%;
+        height: 100%;
+    }
+    .text p {
+        text-align: left;
+    }
+}
