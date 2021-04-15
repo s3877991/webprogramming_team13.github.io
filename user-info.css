@@ -1,0 +1,115 @@
+/* To define new fonts which is not available in IDE */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
+/* STYLE OF THE WHOLE PAGE */
+body {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word !important;
+    font-family: 'Nunito', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* STYLE OF HEADER AND FOOTER */
+header {
+    margin: 0;
+}
+footer {
+    margin: 0;
+}
+
+/* STYLE OF MAIN SECTION */
+main {
+    margin: 50px 100px;
+}
+
+/* Title area */
+.title {
+    text-align: center;
+}
+
+/* Avatar area */
+.avatar {
+    text-align: center;
+    margin: 50px 0;
+}
+.avatar img {
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Identity area (Desktop mode) */
+table {
+    margin: 0 auto 30px;
+    border-collapse: collapse;
+}
+table tr td {
+    padding: 10px 5px;
+}
+table tr .property {
+    font-weight: bold;
+    width: 50%;
+}
+table tr .value {
+    width: 50%;
+}
+
+/* Identity area (Mobile mode) */
+#mobile {
+    margin-bottom: 50px;
+}
+#mobile .item {
+    margin-bottom: 40px;
+}
+#mobile .property {
+    font-weight: bold;
+    font-size: 24px;
+}
+#mobile .value {
+    font-size: 18px;
+    margin: -20px 0;
+}
+
+/* Style the anchor tags */
+#mobile a, #desktop a {
+    text-decoration: none;
+    font-style: italic;
+    color: #000;
+}
+/* Add hover effect to the anchor tags */
+#mobile a:hover, #desktop a:hover {
+    color: #f93;
+    font-weight: bold;
+}
+
+/* MAKE THE WHOLE PAGE RESPONSIVE */
+@media screen and (max-width: 650px) {
+    main {
+        margin: 30px;
+    }
+    #desktop {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+    .avatar img {
+        width: 70%;
+    }
+}
+@media screen and (min-width: 650px) {
+    #desktop {
+        display: block;
+    }
+    #mobile {
+        display: none;
+    }
+}
+@media screen and (min-width: 480px) {
+    #mobile {
+        text-align: center;
+    }
+}

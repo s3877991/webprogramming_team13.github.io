@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="header-&-footer.css">
+    <link rel="stylesheet" href="user-info.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <title>My Personal Information</title>
+</head>
+
+<body>
+    <!--Header section with navigation bar-->
+    <header>
+        <nav>
+            <!--Logo of the website name-->
+            <div id="logo"><a href="index.html">SHOPPIVERSE</a></div>
+
+            <!--When the website is used in small-screen devices, the navigation icon appears-->
+            <label for="dropdown-main" class="toggle" id="main-toggle">
+                <span class="navigation-icon"></span>
+            </label>
+            <input type="checkbox" id="dropdown-main">
+
+            <!--Navigation-->
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="fees.html">FEES</a></li>
+                <li>
+                    <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
+                    <label for="dropdown-sub" class="toggle">STORES <span
+                            class="material-icons">expand_more</span></label>
+                    <a href="">STORES <span class="material-icons">expand_more</span></a>
+                    <input type="checkbox" id="dropdown-sub">
+                    <ul class="sub-menu">
+                        <li><a href="browse-store-1.html">by NAME</a></li>
+                        <li><a href="browse-store-2.html">by CATEGORY</a></li>
+                    </ul>
+                </li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+                <li><a href="faqs.html">FAQS</a></li>
+                <li><a class="active" href="user-info.html">MY ACCOUNT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main content-->
+    <main>
+        <section id="user-info">
+
+            <!--Title-->
+            <div class="title">
+                <h1>MY PERSONAL INFORMATION</h1>
+            </div>
+
+            <hr>
+
+            <!--Avatar Area-->
+            <div class="avatar">
+                <img src="images/duy.jpg" alt="a man thinking">
+            </div>
+
+            <hr>
+
+            <!--Identity Area (Desktop Mode)-->
+            <div class="table" id="desktop">
+                <table>
+
+                    <tr>
+                        <td class="property">First Name</td>
+                        <td class="value">Nguyen Quang</a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="property">Last Name</td>
+                        <td class="value">Duy</td>
+                    </tr>
+
+                    <tr>
+                        <td class="property">Email Address</td>
+                        <td class="value"><a href="mailto:nguyenquangduy567@gmail.com">nguyenquangduy567@gmail.com</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="property">Phone Number</td>
+                        <td class="value"><a href="tel:+84972960321">+8497 296 0321</a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="property">Permanent Address</td>
+                        <td class="value">19/16 Doan Thi Diem, Ward 1, Phu Nhuan District</td>
+                    </tr>
+
+                    <tr>
+                        <td class="property">City</td>
+                        <td class="value">Ho Chi Minh City</td>
+                    </tr>
+
+                    <tr>
+                        <td class="property">Zipcode</td>
+                        <td class="value">700000</td>
+                    </tr>
+
+                    <tr>
+                        <td class="property">Country</td>
+                        <td class="value">Vietnam</td>
+                    </tr>
+
+                    <tr>
+                        <td class="property">Account Type</td>
+                        <td class="value">Shopper</td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <!--Identity Area (Mobile Mode)-->
+            <div class="list" id="mobile">
+
+                <div class="item">
+                    <p class="property">First Name</p>
+                    <p class="value">Nguyen Quang</a></p>
+                </div>
+
+                <div class="item">
+                    <p class="property">Last Name</p>
+                    <p class="value">Duy</p>
+                </div>
+
+                <div class="item">
+                    <p class="property">Email Address</p>
+                    <p class="value"><a href="mailto:nguyenquangduy567@gmail.com">nguyenquangduy567@gmail.com</a></p>
+                </div>
+
+                <div class="item">
+                    <p class="property">Phone Number</p>
+                    <p class="value"><a href="tel:+84972960321">+8497 296 0321</a></p>
+                </div>
+
+                <div class="item">
+                    <p class="property">Permanent Address</p>
+                    <p class="value">19/16 Doan Thi Diem, Ward 1, Phu Nhuan District</p>
+                </div>
+
+                <div class="item">
+                    <p class="property">City</p>
+                    <p class="value">Ho Chi Minh City</p>
+                </div>
+
+                <div class="item">
+                    <p class="property">Zipcode</p>
+                    <p class="value">700000</p>
+                </div>
+
+                <div class="item">
+                    <p class="property">Country</p>
+                    <p class="value">Vietnam</p>
+                </div>
+
+                <div class="item">
+                    <p class="property">Account Type</p>
+                    <p class="value">Shopper</p>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!--Footer section with navigation bar-->
+    <footer>
+        <a href="copyright.html">Copyright</a>
+        <a href="tos.html">Terms of Service</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <div id="brief-description">
+            <em>
+                <h3>by <strong>THE GANG</strong></h3>
+                <p>Developed in 2021</p>
+            </em>
+        </div>
+    </footer>
+</body>
+
+</html>
