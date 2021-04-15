@@ -1,0 +1,18 @@
+/* top and bottom navigation bar style */
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin: auto;
+    padding: 50px;
+    font-family: 'Bad Script';
+    font-size: 28px;
+}
+
+#bot-nav {
+    margin: 50px;
+}

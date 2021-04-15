@@ -1,0 +1,14 @@
+.browse-select-box {
+    font-size: 26px;
+    text-align: center;
+    display: block;
+}
+
+#about {
+    margin: 80px auto;
+    white-space: normal;
+    text-align: center;
+    font-family: 'Bad Script';
+    font-size: 24px;
+    font-weight: 300;
+}
