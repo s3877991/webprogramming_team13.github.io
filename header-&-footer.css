@@ -102,7 +102,7 @@ header nav ul li ul li:hover {              /* Sub menu in hover states */
 header nav ul ul {                          /* To make the sub menu dropdown, we have to make it disappear first */
     display: none;
     position: absolute;
-    top: 70px;                              
+    top: 69.5px;                              
 }
 header nav ul ul li {                       /* Remaster the submenu */
     width: 170px;

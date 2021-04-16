@@ -30,6 +30,7 @@ main {
 /* Text section */
 .text h1 {
     text-align: center;
+    font-size: 36px;
 }
 .text p {
     text-align: justify;

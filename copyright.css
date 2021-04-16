@@ -27,6 +27,9 @@ main {
 .text {
     text-align: center;
 }
+.text h1 {
+    font-size: 36px;
+}
 .text p {
     font-size: 25px;
     font-weight: bold;

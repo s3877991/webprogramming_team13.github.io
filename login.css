@@ -94,11 +94,11 @@ form {
 .action-3 a {
     padding: 10px 20px;
     color: #fff;
-    background-color: #0c3;
+    background-color: #393;
     border-radius: 20px;
 }
 .action-3 a:hover {
-    background-color: #393;
+    background-color: #0c3;
     font-weight: bold;
     transition: 0.5s;
 }

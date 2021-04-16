@@ -39,6 +39,9 @@ main {
     margin: 0;
     padding: 0;
 }
+.container .title h1 {
+    font-size: 36px;
+}
 .options {
     font-size: 15px;
 }
