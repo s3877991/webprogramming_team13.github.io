@@ -43,7 +43,7 @@ Nguyen Quang Duy:
 
 Nguyen Linh Chi:
 
-+ Make Mall's Fees page and Copyright page.
++ Make Mall's Fees page and Copyright page. ==> COMPLETED.
 
 + Make a store website (not RESPONSIVE). Name: Mojito - Art Stationery Store. ==> FAILED.
 
