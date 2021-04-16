@@ -23,6 +23,10 @@ h2 {
     padding-top: 25px;
 }
 
+h3 {
+    font-size: 28px;
+}
+
 .fee-table {
     margin: 20px auto;
     padding: 10px;
@@ -39,6 +43,10 @@ td, th {
     padding: 8px;
     word-wrap: break-word;
     width: 50%;
+}
+
+th {
+    background-color: #dddddd;
 }
 
 /* MAKE THE PAGE RESPONSIVE */
