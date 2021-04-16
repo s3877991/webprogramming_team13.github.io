@@ -15,5 +15,35 @@ html {
 
 /* STYLE OF MAIN SECTION IN HOME PAGE */
 main {
-    height: 900px;
+    height: 700px;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.fee-table {
+    margin: 20px auto;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    word-wrap: break-word;
+    width: 50%;
+}
+
+/* MAKE THE PAGE RESPONSIVE */
+@media screen and (max-width: 950px) {
+    main {
+        margin: 25px 50px;
+    }
 }
