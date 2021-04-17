@@ -1,4 +1,3 @@
-/* STYLE OF THE WHOLE PAGE */
 body {
     font-size: 20px;
     margin: 0;
@@ -6,11 +5,12 @@ body {
     word-wrap: break-word !important;
     font-family: sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
 }
 
-/* STYLE OF MAIN SECTION*/
+/* main content style */
 main {
     margin: 50px 100px;
     height: 500px;
@@ -26,7 +26,7 @@ main {
     font-weight: bold;
 }
 
-/* MAKE THE PAGE RESPONSIVE */
+/* responsive page style */
 @media screen and (max-width: 500px) {
     main {
         margin: 25px 50px;
