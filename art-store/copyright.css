@@ -1,0 +1,34 @@
+/* STYLE OF THE WHOLE PAGE */
+body {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word !important;
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* STYLE OF MAIN SECTION*/
+main {
+    margin: 50px 100px;
+    height: 500px;
+    padding-top: 70px;
+}
+
+.statement {
+    text-align: center;
+}
+
+.statement p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* MAKE THE PAGE RESPONSIVE */
+@media screen and (max-width: 500px) {
+    main {
+        margin: 25px 50px;
+    }
+}
