@@ -5,30 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mojito Art Supplies</title>
     <link href="index.css" rel="stylesheet">
-    <link href="navbar.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="responsive-nav.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div class="icon">
-        <img src="mojito.png" alt="mojito-logo">
-        <!--Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>-->
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="mojitoabout.html">About Us</a></li>
-          <li><a href="mojitoproducts.html">Products</a></li>
-          <li><a href="mojitocontact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <!--add store name and color for the heading later-->
-      <div class="store-header">
-          <h1>mojito</h1>
-      </div>
+        <nav>
+          <!--logo-->
+          <div id="logo">
+              <a href="index.html">
+                  <img src="mojito.png" alt="a glass of drink">MOJITO
+                  <!--Icons made by Freepikfrom www.flaticon.com-->
+              </a>
+          </div>
+    
+          <!--responsive nav icon-->
+          <label for="dropdown-main" class="toggle" id="main-toggle">
+              <span class="nav-icon"></span>
+          </label>
+          <input type="checkbox" id="dropdown-main">
+    
+          <!--navigation-->
+          <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="mojitoabout.html">About Us</a></li>
+              <li>
+                  <label for="dropdown-sub" class="toggle">
+                      Browse +
+                  </label>
+                  <a href="#">Browse +</a>
+                  <input type="checkbox" id="dropdown-sub">
+                  <ul>
+                      <li><a href="category.html">by CATEGORY</a></li>
+                      <li><a href="timecreated.html">by CREATED TIME</a></li>
+                  </ul>
+              </li>
+              <li><a href="mojitocontact.html">Contact</a></li>
+              <li><a href="">Your cart icon here</a></li>
+          </ul>
+        </nav>
     </header>
     <main>
   
@@ -150,7 +166,7 @@
     <!--Homepage footer-->
     <footer>
       <div id="bot-nav">
-        <nav>
+        <nav class="menu">
             <ul>
                 <li>Copyright</li>
                 <li>Terms of Service</li>
