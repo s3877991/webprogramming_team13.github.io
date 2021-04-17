@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="responsive-nav.css">
+    <link rel="stylesheet" href="mojitocart.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Eworld - Your Cart</title>
+</head>
+
+<body>
+    <!--Header section with navigation bar-->
+    <header>
+        <nav>
+            <!--Logo of the website name-->
+            <div id="logo"><a href="index.html"><img src="images/logo.png" alt="logo">Eworld</a></div>
+
+            <!--When the website is used in small-screen devices, the navigation icon appears-->
+            <label for="dropdown-main" class="toggle" id="main-toggle">
+                <span class="navigation-icon"></span>
+            </label>
+            <input type="checkbox" id="dropdown-main">
+
+            <!--Navigation-->
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mojitoabout.html">About us</a></li>
+                <li>
+                    <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
+                    <label for="dropdown-sub" class="toggle">Browse +</label>
+                    <a href="#">Browse +</a>
+                    <input type="checkbox" id="dropdown-sub">
+                    <ul class="sub-menu">
+                        <li><a href="category.html">by CATEGORY</a></li>
+                        <li><a href="timecreated.html">by CREATED TIME</a></li>
+                    </ul>
+                </li>
+                <li><a href="mojitocontact.html">Contact</a></li>
+                <li><a href="mojitocart.html">Your cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main content-->
+    <main>
+
+        <h1>YOUR SHOPPING CART</h1>
+
+        <hr>
+
+        <!--Order Placement Area -->
+        <section id="order-plcmnt">
+            <div class="small-container cart-page">
+
+                <!--List of products add to cart-->
+                <table>
+                    <tr>
+                        <th><strong>PRODUCT</strong></th>
+                        <th><strong>QUANTITY</strong></th>
+                        <th><strong>SUB-TOTAL</strong></th>
+                    </tr>
+
+                    <tr>
+                        <td>
+
+                            <div class="cart-info">
+                                <img src="images/iphone-12-pro-max.jpg" alt="a phone with a notch display">
+                                <div>
+                                    <p class="name">Apple iPhone 12 Pro Max</p>
+                                    <p class="price">$1264.78
+                                    <p>
+                                    <p class="version">128GB</p>
+                                    <p class="color">Graphite</p>
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td><input type="number" min="1" value="1"></td>
+                        <td>$1264.78</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+
+                            <div class="cart-info">
+                                <img src="images/macbook-pro-13.jpg" alt="a laptop">
+                                <div>
+                                    <p class="name">Apple Macbook Pro 13" 2019</p>
+                                    <p class="price">$1304.35</p>
+                                    <p class="version">256GB</p>
+                                    <p class="color">Gray</p>
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td><input type="number" min="1" value="1"></td>
+                        <td>$1304.35</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+
+                            <div class="cart-info">
+                                <img src="images/airpods-2.jpg" alt="earphones with a case">
+                                <div>
+                                    <p class="name">Apple Air Pods 2</p>
+                                    <p class="price">$143.04
+                                    <p>
+                                    <p class="color">White</p>
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td><input type="number" min="1" value="1"></td>
+                        <td>$143.04</td>
+                    </tr>
+
+                </table>
+
+                <hr>
+
+                <!--Total price-->
+                <div class="total-price">
+
+                    <table>
+                        <tr>
+                            <td><strong>SUB-TOTAL</strong></td>
+                            <td>$2712.17</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>TAX</strong></td>
+                            <td>$35.00</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong class="total">TOTAL</strong></td>
+                            <td><strong class="total">$2747.17</strong></td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="btn-area">
+            <div class="button-container">
+
+                <div class="button">
+                    <a href="product-details.html">Continue Shopping</a>
+                </div>
+
+                <div class="button">
+                    <a href="thankyou.html">ORDER</a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!--Footer section with navigation bar-->
+    <footer>
+        <a href="copyright.html">Copyright</a>
+        <a href="tos.html">Terms of Service</a>
+        <a href="privacypolicy.html">Privacy Policy</a>
+        <div id="brief-description">
+            <em>
+                <h3>by <strong>Nguyen Quang Duy</strong></h3>
+                <p>Developed in 2021</p>
+            </em>
+        </div>
+    </footer>
+
+</body>
+
+</html>
