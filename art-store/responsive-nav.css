@@ -1,3 +1,15 @@
+/* STYLE OF THE WHOLE PAGE */
+body {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word !important;
+    height: 100vh;
+}
+html {
+    scroll-behavior: smooth;
+}
+
 header, footer {
     margin: 0%;
     padding: 0%;
