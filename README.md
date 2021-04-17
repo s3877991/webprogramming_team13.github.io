@@ -19,19 +19,19 @@ Nguyen Quang Duy - s3877991
 Nguyen Linh Chi - s3878609
 
 # Group Contribution:
-Phan Do Ngoc Linh (20%):
+Phan Do Ngoc Linh (24%):
 
 + Make Mall's Privacy Policy page and Terms of Service page. ==> COMPLETED.
 
-+ Make a store website. Name: Millennium - Novel Bookstore. ==> FAILED (not RESPONSIVE).
++ Make a store website (not RESPONSIVE). Name: Millennium - Novel Bookstore. ==> COMPLETED.
 
-Nguyen Hai Minh Trang (20%):
+Nguyen Hai Minh Trang (24%):
 
 + Make Mall's About Us page and FAQs page. ==> COMPLETED.
 
-+ Make a store website. Name: M.A.C - Cosmetic store. ==> FAILED (not RESPONSIVE).
++ Make a store website (not RESPONSIVE). Name: M.A.C - Cosmetic store. ==> COMPLETED.
 
-Nguyen Quang Duy (40%):
+Nguyen Quang Duy (28%):
 
 + Write and update group progress on README.md file. ==> COMPLETED.
 
@@ -43,11 +43,14 @@ Nguyen Quang Duy (40%):
 
 + Edit, modify styles and contents of some pages. Make all web pages RESPONSIVE ==> COMPLETED.
 
-Nguyen Linh Chi (20%):
+Nguyen Linh Chi (24%):
 
 + Make Mall's Fees page and Copyright page. ==> COMPLETED.
 
-+ Make a store website. Name: Mojito - Art Stationery Store. ==> FAILED (not RESPONSIVE).
++ Make a store website (partly RESPONSIVE). Name: Mojito - Art Stationery Store. ==> COMPLETED.
+
+# CONFLICT:
+Because Duy insisted that all pages be responsive he was afraid that the rest of the group were unable to do this, so he had to cover some of their task without their permissions. However, his action led to an unexpected conflict right before DEADLINE. But in the end, it was finally resolved by Chi. In conclusion, all of group members had their faults, but the person who got the biggest consequence was Duy because he was the worst at group communication.
 
 # References:
 1. Making responsive dropdown navigation bar: YouTube, FollowAndrew, viewed Apr 5 2021, <https://www.youtube.com/watch?v=7aGLkT4y4ls>
