@@ -6,6 +6,7 @@
     <title>Contact us</title>
     <link href="index.css" rel="stylesheet">
     <link href="responsive-nav.css" rel="stylesheet">
+    <link href="contact.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
   </head>
@@ -50,48 +51,146 @@
 
     <!--main content-->
     <main>
-        <form method="get" action="index.html">
-            <p>Contact purpose:</p>
-            <select name="cpurpose">
-                <option value="1">Business</option>
-                <option value="2">Personal</option>
-            </select>
-            <fieldset>
-                <legend>About you</legend>
-                <p>Your name:
-                    <input type="text" name="fullname" placeholder="Enter your full name" /></p>
-                <p>Your email:
-                    <input type="email" name="email" placeholder="Enter your email" /></p>
-                <p>Your phone number:
-                    <input type="number" name="pnum" placeholder="Enter your phone number" /></p>
-            </fieldset>
-                
-            <p>Preferred contact method:</p>
-                <input type="radio" name="cmethod" id="email" value="1" /> <label for="email">Email</label>
-                <input type="radio" name="cmethod" id="phone" value="2" /> <label for="phone">Phone</label>
-    
-            <p>Contact day(s)</p>
-                <input type="checkbox" name="contact_time" id="mon" value="2" /> <label for="mon">Monday</label>
-                <input type="checkbox" name="contact_time" id="tue" value="3" /> <label for="tue">Tuesday</label>
-                <input type="checkbox" name="contact_time" id="wed" value="4" /> <label for="wed">Wednesday</label>
-                <input type="checkbox" name="contact_time" id="thu" value="5" /> <label for="thu">Thursday</label>
-                <input type="checkbox" name="contact_time" id="fri" value="6" /> <label for="fri">Friday</label>
-                <input type="checkbox" name="contact_time" id="sat" value="7" /> <label for="sat">Saturday</label>
-                <input type="checkbox" name="contact_time" id="sun" value="8" /> <label for="sun">Sunday</label>
-    
-    
-            <p>Additional message (Optional)</p>
-            <textarea cols="100" rows="10" placeholder="Enter your message here..." name="message"></textarea>
+        <!--contact form-->
+        <section id="contact-form">
+            <form method="get" action="contact.html">
+                <div class="container">
 
-            <div class="button">
-                <button type="submit" name="action" value="1">Submit</button>
-                <button type="reset" name="action" value="2">Reset</button>
-            </div>
-            
-        </form>  
+                    <!--title-->
+                    <div class="title">
+                        <h1>CONTACT US</h1>
+                    </div>
+
+                    <hr>
+
+                    <!--input-->
+                    <div class="flex-container">
+
+                        <div class="item flex">
+                            <label class="label" for="cpurpose">Contact purpose</label>
+                            <br>
+                            <select name="cpurpose" required>
+                                <option value="" selected>Choose your purpose</option>
+                                <option value="1">Business</option>
+                                <option value="2">Customer service</option>
+                                <option value="3">User account</option>
+                                <option value="4">Feedback</option>
+                                <option value="5">Others</option>
+                            </select>
+                        </div>
+
+                        <div class="item flex">
+                            <label class="label" for="name">Your name</label>
+                            <br>
+                            <input type="text" name="name" maxlength="50" placeholder="Enter your full name" required>
+                        </div>
+
+                    </div>
+
+                    <div class="flex-container">
+
+                        <div class="item flex">
+                            <label class="label" for="email">Your email</label>
+                            <br>
+                            <input type="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+
+                        <div class="item flex">
+                            <label class="label" for="phone">Your phone</label>
+                            <br>
+                            <input type="tel" name="phone" minlength=9 maxlength=13
+                                placeholder="Enter your phone number" required>
+                        </div>
+
+                    </div>
+
+                    <div class="flex-container">
+
+                        <div class="item flex">
+                            <label class="label" for="cmethod">Preferred contact method</label>
+                        </div>
+
+                        <div class="item radio">
+
+                            <input type="radio" id="email" name="cmethod" value="1">
+                            <label class="options" for="email">Email</label>
+
+                            <input type="radio" id="phone" name="cmethod" value="2">
+                            <label class="options" for="phone">Phone</label>
+
+                        </div>
+
+                    </div>
+
+                    <div class="item-container">
+
+                        <label class="label" for="contactday">Preferred contact days</label>
+                        <br>
+                        <ul class="checkbox">
+
+                            <li>
+                                <input type="checkbox" id="mon" name="time" value="2">
+                                <label class="options" for="mon">Monday</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="tue" name="time" value="3">
+                                <label class="options" for="tue">Tuesday</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="wed" name="time" value="4">
+                                <label class="options" for="wed">Wednesday</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="thu" name="time" value="5">
+                                <label class="options" for="thu">Thursday</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="fri" name="time" value="6">
+                                <label class="options" for="fri">Friday</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="sat" name="time" value="7">
+                                <label class="options" for="sat">Saturday</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="sun" name="time" value="8">
+                                <label class="options" for="sun">Sunday</label>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="item-container">
+
+                        <label class="label" for="message">Your message</label>
+                        <br>
+                        <textarea placeholder="Enter your message"></textarea>
+                    </div>
+
+                    <div class="button-container">
+
+                        <div class="button">
+                            <input type="reset" id="clear" value="Clear">
+                        </div>
+
+                        <div class="button">
+                            <input type="submit" id="send" value="Send">
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </section>
+
     </main>
 
-    <!--Homepage footer-->
+    <!--footer-->
     <footer>
         <div id="bot-nav">
           <nav class="menu">
