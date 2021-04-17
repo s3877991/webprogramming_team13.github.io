@@ -14,6 +14,9 @@ html {
 }
 
 /* STYLE OF MAIN SECTION */
+/* Original CSS code sourced and adapted for educational purposes:
+https://www.w3schools.com/howto/howto_css_cards.asp*/
+
 #title, .text {
   text-align: center;
   margin: 20px 50px;
