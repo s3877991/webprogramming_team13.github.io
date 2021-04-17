@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact us</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="responsive-nav.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+        <nav>
+          <!--logo-->
+          <div id="logo">
+              <a href="index.html">
+                  <img src="mojito.png" alt="a glass of drink">MOJITO
+                  <!--Icons made by Freepikfrom www.flaticon.com-->
+              </a>
+          </div>
+    
+          <!--responsive nav icon-->
+          <label for="dropdown-main" class="toggle" id="main-toggle">
+              <span class="nav-icon"></span>
+          </label>
+          <input type="checkbox" id="dropdown-main">
+    
+          <!--navigation-->
+          <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="mojitoabout.html">About Us</a></li>
+              <li>
+                  <label for="dropdown-sub" class="toggle">
+                      Browse +
+                  </label>
+                  <a href="#">Browse +</a>
+                  <input type="checkbox" id="dropdown-sub">
+                  <ul>
+                      <li><a href="#">by CATEGORY</a></li>
+                      <li><a href="#">by CREATED TIME</a></li>
+                  </ul>
+              </li>
+              <li><a href="mojitocontact.html">Contact</a></li>
+              <li><a href="">Your cart icon here</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <!--main content-->
+    <main>
+        <form method="get" action="index.html">
+            <p>Contact purpose:</p>
+            <select name="cpurpose">
+                <option value="1">Business</option>
+                <option value="2">Personal</option>
+            </select>
+            <fieldset>
+                <legend>About you</legend>
+                <p>Your name:
+                    <input type="text" name="fullname" placeholder="Enter your full name" /></p>
+                <p>Your email:
+                    <input type="email" name="email" placeholder="Enter your email" /></p>
+                <p>Your phone number:
+                    <input type="number" name="pnum" placeholder="Enter your phone number" /></p>
+            </fieldset>
+                
+            <p>Preferred contact method:</p>
+                <input type="radio" name="cmethod" id="email" value="1" /> <label for="email">Email</label>
+                <input type="radio" name="cmethod" id="phone" value="2" /> <label for="phone">Phone</label>
+    
+            <p>Contact day(s)</p>
+                <input type="checkbox" name="contact_time" id="mon" value="2" /> <label for="mon">Monday</label>
+                <input type="checkbox" name="contact_time" id="tue" value="3" /> <label for="tue">Tuesday</label>
+                <input type="checkbox" name="contact_time" id="wed" value="4" /> <label for="wed">Wednesday</label>
+                <input type="checkbox" name="contact_time" id="thu" value="5" /> <label for="thu">Thursday</label>
+                <input type="checkbox" name="contact_time" id="fri" value="6" /> <label for="fri">Friday</label>
+                <input type="checkbox" name="contact_time" id="sat" value="7" /> <label for="sat">Saturday</label>
+                <input type="checkbox" name="contact_time" id="sun" value="8" /> <label for="sun">Sunday</label>
+    
+    
+            <p>Additional message (Optional)</p>
+            <textarea cols="100" rows="10" placeholder="Enter your message here..." name="message"></textarea>
+
+            <div class="button">
+                <button type="submit" name="action" value="1">Submit</button>
+                <button type="reset" name="action" value="2">Reset</button>
+            </div>
+            
+        </form>  
+    </main>
+
+    <!--Homepage footer-->
+    <footer>
+        <div id="bot-nav">
+          <nav class="menu">
+              <ul>
+                  <li>Copyright</li>
+                  <li>Terms of Service</li>
+                  <li>Privacy Policy</li>
+              </ul>
+          </nav>
+        </div>
+    </footer>
+
+  </body>
+</html>
