@@ -12,6 +12,11 @@ body {
 html {
     scroll-behavior: smooth;
 }
+/* ADD ANIMATION RULES */
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
 
 /* STYLE OF MAIN SECTION */
 /* Original CSS code sourced and adapted for educational purposes:
@@ -74,6 +79,88 @@ hr {
 .flex image:after {
   clear: both;
 }
+.flex:hover {
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.5);
+  transition: 0.25s;
+}
+
+/* Style of Modal boxes */
+/* Original CSS code sourced and adapted for educational purposes:
+https://www.w3schools.com/howto/howto_css_modals.asp */
+
+.modal-container {
+  display: none;                           /* Hidden by default */
+  position: fixed;                         /* Stay in place */
+  z-index: 50;                             /* Sit on top but always under the nav bar*/
+  left: 0;
+  top: 0;
+  width: 100%;                              /* Full width */
+  height: 100%;                             /* Full height */
+  overflow: auto;                           /* Enable scroll if needed */
+  background-color: rgb(0,0,0);           /* Fallback color */
+  background-color: rgba(0,0,0,0.5);      /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fff;
+  border-radius: 25px;
+  margin: 80px auto;                        /* 80px from the top and centered */
+  padding: 20px;
+  width: 80%;                               /* Could be more or less, depending on screen size */
+  animation-name: zoom;                     /* Add animation for all modal boxes */
+  animation-duration: 0.3s;
+}
+.modal-content .identity, .modal-content .description{
+  margin: 25px 50px;
+}
+.modal-content .modal-name, .modal-content h3, .modal-content .modal-id{
+  text-align: center;
+}
+.modal-content .modal-name {
+  font-size: 30px;
+  margin-bottom: -25px;
+}
+.modal-content .modal-id{
+  font-size: 22px;
+  font-weight: bold;
+  color: orange;
+}
+.modal-content p{
+  text-align: justify;
+  margin: -20px 0 30px;
+}
+.modal-content ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin: -20px 0 30px;
+}
+.modal-image {
+  margin: 40px 0 20px;
+  text-align: center;
+}
+.modal-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 25%;
+  box-shadow: 0px 20px 10px rgba(0,0,0,0.4);
+}
+/* The Close Button */
+.close-modal {
+  text-align: right;
+}
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
 
 /* Make the page responsive */
 @media screen and (min-width: 300px) and (max-width: 489px) {
@@ -95,6 +182,21 @@ hr {
 @media screen and (min-width: 1103px) {
   .flex {
       width: 20%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .modal-content .info {
+    margin: 0 25px;
+  }
+  .modal-image img {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .modal-image img {
+    width: 200px;
+    height: 200px;
   }
 }
 
