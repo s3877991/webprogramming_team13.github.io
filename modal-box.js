@@ -15,21 +15,19 @@ let closes = document.getElementsByClassName("close");
 for (let index = 0; index < 4; index++) {
 
     // Display modal box
-    cards[index].onclick = function () {
+    cards[index].onclick = function() {
         bios[index].style.display = "block";
     }
 
     // Close modal box
     // If user click on close button
-    closes[index].onclick = function () {
+    closes[index].onclick = function() {
         bios[index].style.display = "none";
     }
 
     // If user click anywhere outside the modal
-    window.onclick = function (event) {
-        if (event.target == bios[index]) {
-            bios[index].style.display = "none";
-        }
+    bios[index].onclick = function() {
+        bios[index].style.display = "none";
     }
 
 }

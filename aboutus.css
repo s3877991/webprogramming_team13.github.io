@@ -50,6 +50,7 @@ hr {
   float: left;
   border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
 }
 .flex .mem-id {
   margin-top: 5px;
@@ -112,7 +113,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 .modal-content .identity, .modal-content .description{
   margin: 25px 50px;
 }
-.modal-content .modal-name, .modal-content h3, .modal-content .modal-id{
+.modal-content .modal-name, .modal-content h3, .modal-content .modal-id, .modal-content .birthday {
   text-align: center;
 }
 .modal-content .modal-name {
