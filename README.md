@@ -28,6 +28,7 @@ Phan Do Ngoc Linh ():
 2. JAVASCRIPT ASSIGNMENT:
     + Task 4: Contact Us form.
     + Task 7: Product Details.
+    + Task 9: Sample data.
 
 
 Nguyen Hai Minh Trang ():
@@ -39,6 +40,7 @@ Nguyen Hai Minh Trang ():
 2. JAVASCRIPT ASSIGNMENT:
     + Task 1: Cookies consent message.
     + Task 8: Order Placement.
+    + Task 9: Sample data.
 
 
 Nguyen Quang Duy ():
@@ -65,6 +67,7 @@ Nguyen Linh Chi ():
 2. JAVASCRIPT ASSIGNMENT:
     + Task 2: Carousel in Home page.
     + Task 6: Register form.
+    + Task 9: Sample data.
 
 # References:
 1. Making responsive dropdown navigation bar: YouTube, FollowAndrew, viewed Apr 5 2021, <https://www.youtube.com/watch?v=7aGLkT4y4ls>
@@ -75,5 +78,5 @@ Nguyen Linh Chi ():
 
 4. Making footer always stay at the bottom of the page: YouTube, smashtheshell, viewed Apr 16 2021, <https://www.youtube.com/watch?v=TaXql0h_wCA>
 
-5. Making responsive modal boxe with CSS and JavaScript: W3schools, n.d.
+5. Making responsive modal boxe with CSS and JavaScript: W3schools, n.d., viewed Apr 28 2021, <https://www.w3schools.com/howto/howto_css_modals.asp>
 
