@@ -53,7 +53,7 @@ Nguyen Quang Duy:
     + Edit, modify styles and contents of some pages. Make all web pages RESPONSIVE ==> COMPLETED.
 
 2. JAVASCRIPT ASSIGNMENT:
-    + Task 3: Modal box about member information ==> COMPLETED.
+    + Task 3: Display modal boxes ==> COMPLETED.
     + Task 5: Login status.
     + Task 9: Sample data.
 

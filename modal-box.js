@@ -1,3 +1,5 @@
+// Assigment 2: JAVASCRIPT ASSIGNMENT - TASK #3: Display modal boxes
+
 /* Original JS code sourced and adapted for educational purposes:
 https://www.w3schools.com/howto/howto_css_cards.asp */
 
