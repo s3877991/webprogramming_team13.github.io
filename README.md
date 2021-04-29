@@ -19,9 +19,9 @@ Nguyen Quang Duy - s3877991
 Nguyen Linh Chi - s3878609
 
 # Group Contribution:
-Phan Do Ngoc Linh ():
+Phan Do Ngoc Linh:
 
-1. HTML AND CSS ASSIGNMENT:
+1. HTML AND CSS ASSIGNMENT (24%):
     + Make Mall's Privacy Policy page and Terms of Service page. ==> COMPLETED.
     + Make a store website (not RESPONSIVE). Name: Millennium - Novel Bookstore. ==> COMPLETED.
 
@@ -31,9 +31,9 @@ Phan Do Ngoc Linh ():
     + Task 9: Sample data.
 
 
-Nguyen Hai Minh Trang ():
+Nguyen Hai Minh Trang:
 
-1. HTML AND CSS ASSIGNMENT:
+1. HTML AND CSS ASSIGNMENT (24%):
     + Make Mall's About Us page and FAQs page. ==> COMPLETED.
     + Make a store website (not RESPONSIVE). Name: M.A.C - Cosmetic store. ==> COMPLETED.
 
@@ -43,9 +43,9 @@ Nguyen Hai Minh Trang ():
     + Task 9: Sample data.
 
 
-Nguyen Quang Duy ():
+Nguyen Quang Duy:
 
-1. HTML AND CSS ASSIGNMENT:
+1. HTML AND CSS ASSIGNMENT (28%):
     + Write and update group progress on README.md file. ==> COMPLETED.
     + Making responsive navigation bar for Mall Page in order to create webpage wireframes of Mall website. ==> COMPLETED.
     + Making Mall's Home page, Contact Us page, two Browse Stores pages, Log In page, Forgot Password page, Register page, User Information page. ==> COMPLETED.
@@ -58,9 +58,9 @@ Nguyen Quang Duy ():
     + Task 9: Sample data.
 
 
-Nguyen Linh Chi ():
+Nguyen Linh Chi:
 
-1. HTML AND CSS ASSIGNMENT:
+1. HTML AND CSS ASSIGNMENT (24%):
     + Make Mall's Fees page and Copyright page. ==> COMPLETED.
     + Make a store website (partly RESPONSIVE). Name: Mojito - Art Stationery Store. ==> COMPLETED.
 
