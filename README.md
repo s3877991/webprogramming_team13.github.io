@@ -26,8 +26,8 @@ Phan Do Ngoc Linh ():
     + Make a store website (not RESPONSIVE). Name: Millennium - Novel Bookstore. ==> COMPLETED.
 
 2. JAVASCRIPT ASSIGNMENT:
+    + Task 1: Cookies consent message.
     + Task 4: Contact Us form.
-    + Task 7: Product Details.
     + Task 9: Sample data.
 
 
@@ -38,7 +38,7 @@ Nguyen Hai Minh Trang ():
     + Make a store website (not RESPONSIVE). Name: M.A.C - Cosmetic store. ==> COMPLETED.
 
 2. JAVASCRIPT ASSIGNMENT:
-    + Task 1: Cookies consent message.
+    + Task 7: Product Details.
     + Task 8: Order Placement.
     + Task 9: Sample data.
 
