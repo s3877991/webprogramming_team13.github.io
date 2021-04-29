@@ -10,13 +10,13 @@ Our GitHub repository: https://github.com/shynkwanchi/webprogramming_team13.gith
 Our Website: https://shynkwanchi.github.io/webprogramming_team13.github.io/
 
 # Group Members:
-Phan Do Ngoc Linh - s3881557
+Phan Do Ngoc Linh - s3881557.
 
-Nguyen Hai Minh Trang - s3878058
+Nguyen Hai Minh Trang - s3878058.
 
-Nguyen Quang Duy - s3877991
+Nguyen Quang Duy - s3877991.
 
-Nguyen Linh Chi - s3878609
+Nguyen Linh Chi - s3878609.
 
 # Group Contribution:
 Phan Do Ngoc Linh:
@@ -25,10 +25,10 @@ Phan Do Ngoc Linh:
     + Make Mall's Privacy Policy page and Terms of Service page. ==> COMPLETED.
     + Make a store website (not RESPONSIVE). Name: Millennium - Novel Bookstore. ==> COMPLETED.
 
-2. JAVASCRIPT ASSIGNMENT:
-    + Task 1: Cookies consent message.
-    + Task 4: Contact Us form.
-    + Task 9: Sample data.
+2. JAVASCRIPT ASSIGNMENT (--%):
+    + Task #1: Cookies consent message.
+    + Task #4: Contact Us form requirements.
+    + Task #9: Sample data.
 
 
 Nguyen Hai Minh Trang:
@@ -37,10 +37,10 @@ Nguyen Hai Minh Trang:
     + Make Mall's About Us page and FAQs page. ==> COMPLETED.
     + Make a store website (not RESPONSIVE). Name: M.A.C - Cosmetic store. ==> COMPLETED.
 
-2. JAVASCRIPT ASSIGNMENT:
-    + Task 7: Product Details.
-    + Task 8: Order Placement.
-    + Task 9: Sample data.
+2. JAVASCRIPT ASSIGNMENT (--%):
+    + Task #7: "Add to cart" button.
+    + Task #8: Order Placement.
+    + Task #9: Sample data.
 
 
 Nguyen Quang Duy:
@@ -52,10 +52,10 @@ Nguyen Quang Duy:
     + Make a store website (fully RESPONSIVE). Name: Eworld - Store of Media Technology. ==> COMPLETED.
     + Edit, modify styles and contents of some pages. Make all web pages RESPONSIVE ==> COMPLETED.
 
-2. JAVASCRIPT ASSIGNMENT:
-    + Task 3: Display modal boxes ==> COMPLETED.
-    + Task 5: Login status.
-    + Task 9: Sample data.
+2. JAVASCRIPT ASSIGNMENT (--%):
+    + Task #3: Display modal boxes ==> COMPLETED.
+    + Task #5: Login status ==> COMPLETED.
+    + Task #9: Sample data.
 
 
 Nguyen Linh Chi:
@@ -64,10 +64,10 @@ Nguyen Linh Chi:
     + Make Mall's Fees page and Copyright page. ==> COMPLETED.
     + Make a store website (partly RESPONSIVE). Name: Mojito - Art Stationery Store. ==> COMPLETED.
 
-2. JAVASCRIPT ASSIGNMENT:
-    + Task 2: Carousel in Home page.
-    + Task 6: Register form.
-    + Task 9: Sample data.
+2. JAVASCRIPT ASSIGNMENT (--%):
+    + Task #2: Carousel in Home page.
+    + Task #6: Register form requirements.
+    + Task #9: Sample data.
 
 # References:
 1. Making responsive dropdown navigation bar: YouTube, FollowAndrew, viewed Apr 5 2021, <https://www.youtube.com/watch?v=7aGLkT4y4ls>
