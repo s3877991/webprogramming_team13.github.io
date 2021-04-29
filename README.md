@@ -78,5 +78,5 @@ Nguyen Linh Chi:
 
 4. Making footer always stay at the bottom of the page: YouTube, smashtheshell, viewed Apr 16 2021, <https://www.youtube.com/watch?v=TaXql0h_wCA>
 
-5. Making responsive modal boxe with CSS and JavaScript: W3schools, n.d., viewed Apr 28 2021, <https://www.w3schools.com/howto/howto_css_modals.asp>
+5. Making responsive modal box with CSS and JavaScript: W3schools, n.d., viewed Apr 28 2021, <https://www.w3schools.com/howto/howto_css_modals.asp>
 
