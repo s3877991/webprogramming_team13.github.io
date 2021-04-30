@@ -56,6 +56,7 @@ Nguyen Quang Duy:
     + Task #3: Display modal boxes ==> COMPLETED.
     + Task #5: Login status ==> COMPLETED.
     + Task #9: Sample data.
+    + Modify Mall home page and add more stores ==> COMPLETED.
 
 
 Nguyen Linh Chi:
