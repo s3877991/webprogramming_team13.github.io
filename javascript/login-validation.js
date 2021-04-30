@@ -26,9 +26,7 @@ function loginValidation() {
         const errorMessage = document.getElementById("error-message");
 
         // Display invalid input field and its label
-        invalidFieldLabel[1].style.color = "#f00";
-        invalidField.style.borderBottom = "3px solid #f00";
-        errorMessage.style.display = "inline";
+        errorMessage.style.display = "block";
 
         return false;
     }
