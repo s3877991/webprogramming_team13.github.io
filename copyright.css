@@ -35,6 +35,7 @@ main {
     font-weight: bold;
 }
 
+
 /* MAKE THE PAGE RESPONSIVE */
 @media screen and (max-width: 500px) {
     main {

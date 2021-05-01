@@ -86,8 +86,26 @@ textarea {
     font-size: 15px;
     font-family: 'Nunito', sans-serif;
 }
+.form-control:hover {
+    border-color: #1dbfaf;
+}
+
+small {
+    visibility: hidden;
+    position: absolute;
+}
+
+.form-control.success input {
+    border:2px solid rgb(26, 167, 26);
+}
+
+.form-control.error input {
+    border:2px solid rgb(228, 29, 22);
+}
+
 .button-container {
     justify-content: flex-end;
+    margin-top: 40px;
 }
 .button input {
     margin: 0 5px;
@@ -115,6 +133,7 @@ textarea {
     background-color: #ccc;
     transition: 0.5s;
 }
+
 
 /* Make that contact form responsive */
 @media screen and (max-width: 480px) {
