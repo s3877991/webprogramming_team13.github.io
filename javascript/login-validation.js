@@ -18,10 +18,6 @@ function loginValidation() {
     Otherwise, users are moved to user information page, which means users log in SUCCESSFULLY. */
 
     if (password !== "password") {
-        // With CSS and JavaScript, the Log-in page will make users notice the invalid input field and label
-        const invalidFieldLabel = document.getElementsByClassName("label");
-        const invalidField = document.getElementById("password");
-
         // Activate the error message
         const errorMessage = document.getElementById("error-message");
 
