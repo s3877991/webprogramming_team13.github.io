@@ -120,6 +120,9 @@ table tr .value {
 }
 
 /* Description */
+#description p {
+    text-align: justify;
+}
 .gallery {
     text-align: center;
 }

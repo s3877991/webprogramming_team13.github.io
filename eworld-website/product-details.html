@@ -47,7 +47,7 @@
     </header>
 
     <!--Main Content-->
-    <main>
+    <main class="product-info">
         <h1 id="title">Apple iPhone 12 Pro Max</h1>
 
         <hr>
@@ -65,8 +65,8 @@
                         <h3 class="label">Choose your favorite version</h3>
                         <div class="choice-1">
 
-                            <div class="options-1">
-                                <input type="radio" name="version" value="128gb" required>
+                            <div class="options-1 add-to-cart-item">
+                                <input type="radio" name="version" value="128gb" checked required>
                                 <label for="version">
                                     <span class="storage">128GB</span>
                                     <br>
@@ -98,7 +98,7 @@
                         <div class="choice-2">
 
                             <div class="options-2">
-                                <input type="radio" name="color" value="blue" required>
+                                <input type="radio" name="color" value="blue" required checked>
                                 <label for="color">Pacific Blue</label>
                             </div>
 
@@ -121,8 +121,8 @@
 
                         <div class="button-container">
 
-                            <input type="button" id="add-to-cart" value="Add to cart">
-                            <input type="submit" id="buy-now" value="BUY NOW!">
+                            <input type="button" class="add-to-cart" value="Add to cart">
+                            <input type="submit" class="buy-now" value="BUY NOW!">
 
                         </div>
                     </form>
@@ -285,7 +285,7 @@
                 It makes the phone have a great performance and even greater than its opponents.
             </p>
             <div class="gallery">
-                <img src="images/apple-a14-soc-chip.png" alt="a electronic chip">
+                <img src="images/apple-a14-soc-chip.png" alt="an electronic chip">
             </div>
             <p>
                 The device is also equipped with Wi-Fi and and mobile network connectivity that does not just help you
@@ -413,7 +413,7 @@
                 </div>
 
                 <div class="item recommended">
-                    <a href="product-details.html">
+                    <a href="product-details-2.html">
                         <div class="image">
                             <img src="images/dell-laptop.jpg" alt="a laptop">
                         </div>
@@ -430,7 +430,7 @@
                 </div>
 
                 <div class="item recommended">
-                    <a href="product-details.html">
+                    <a href="product-details-2.html">
                         <div class="image">
                             <img src="images/canon-camera-2.jpg" alt="another camera made by Canon">
                         </div>
@@ -480,6 +480,9 @@
             </em>
         </div>
     </footer>
+
+    <!--Link to external JavaScript file-->
+    <script src="javascript/order-placement.js" async></script>
 </body>
 
 </html>

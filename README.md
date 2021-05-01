@@ -3,54 +3,72 @@ COSC2430 - Web Programming
 
 Lecturer/Tutor: Tri Dang Tran
 
-Project Group 13 - The Gang
+Project Group 13 - THE GANG
 
 Our GitHub repository: https://github.com/shynkwanchi/webprogramming_team13.github.io
 
 Our Website: https://shynkwanchi.github.io/webprogramming_team13.github.io/
 
 # Group Members:
-Phan Do Ngoc Linh - s3881557
+Phan Do Ngoc Linh - s3881557.
 
-Nguyen Hai Minh Trang - s3878058
+Nguyen Hai Minh Trang - s3878058.
 
-Nguyen Quang Duy - s3877991
+Nguyen Quang Duy - s3877991.
 
-Nguyen Linh Chi - s3878609
+Nguyen Linh Chi - s3878609.
 
 # Group Contribution:
-Phan Do Ngoc Linh (24%):
+Phan Do Ngoc Linh:
 
-+ Make Mall's Privacy Policy page and Terms of Service page. ==> COMPLETED.
+1. HTML AND CSS ASSIGNMENT (24%):
+    + Make Mall's Privacy Policy page and Terms of Service page. ==> COMPLETED.
+    + Make a store website (not RESPONSIVE). Name: Millennium - Novel Bookstore. ==> COMPLETED.
 
-+ Make a store website (not RESPONSIVE). Name: Millennium - Novel Bookstore. ==> COMPLETED.
+2. JAVASCRIPT ASSIGNMENT (--%):
+    + Task #1: Cookies consent message.
+    + Task #4: Contact Us form requirements.
+    + Task #9: Sample data.
 
-Nguyen Hai Minh Trang (24%):
 
-+ Make Mall's About Us page and FAQs page. ==> COMPLETED.
+Nguyen Hai Minh Trang:
 
-+ Make a store website (not RESPONSIVE). Name: M.A.C - Cosmetic store. ==> COMPLETED.
+1. HTML AND CSS ASSIGNMENT (24%):
+    + Make Mall's About Us page and FAQs page. ==> COMPLETED.
+    + Make a store website (not RESPONSIVE). Name: M.A.C - Cosmetic store. ==> COMPLETED.
 
-Nguyen Quang Duy (28%):
+2. JAVASCRIPT ASSIGNMENT (--%):
+    + Task #7: "Add to cart" button.
+    + Task #8: Order Placement.
+    + Task #9: Sample data.
 
-+ Write and update group progress on README.md file. ==> COMPLETED.
 
-+ Making responsive navigation bar for Mall Page in order to create webpage wireframes of Mall website. ==> COMPLETED.
+Nguyen Quang Duy:
 
-+ Making Mall's Home page, Contact Us page, two Browse Stores pages, Log In page, Forgot Password page, Register page, User Information page. ==> COMPLETED.
+1. HTML AND CSS ASSIGNMENT (28%):
+    + Write and update group progress on README.md file. ==> COMPLETED.
+    + Making responsive navigation bar for Mall Page in order to create webpage wireframes of Mall website. ==> COMPLETED.
+    + Making Mall's Home page, Contact Us page, two Browse Stores pages, Log In page, Forgot Password page, Register page, User Information page. ==> COMPLETED.
+    + Make a store website (fully RESPONSIVE). Name: Eworld - Store of Media Technology. ==> COMPLETED.
+    + Edit, modify styles and contents of some pages. Make all web pages RESPONSIVE ==> COMPLETED.
 
-+ Make a store website (fully RESPONSIVE). Name: Eworld - Store of Media Technology. ==> COMPLETED.
+2. JAVASCRIPT ASSIGNMENT (--%):
+    + Task #3: Display modal boxes ==> COMPLETED.
+    + Task #5: Login status ==> COMPLETED.
+    + Task #9: Sample data.
+    + Modify Mall home page and add more stores ==> COMPLETED.
 
-+ Edit, modify styles and contents of some pages. Make all web pages RESPONSIVE ==> COMPLETED.
 
-Nguyen Linh Chi (24%):
+Nguyen Linh Chi:
 
-+ Make Mall's Fees page and Copyright page. ==> COMPLETED.
+1. HTML AND CSS ASSIGNMENT (24%):
+    + Make Mall's Fees page and Copyright page. ==> COMPLETED.
+    + Make a store website (partly RESPONSIVE). Name: Mojito - Art Stationery Store. ==> COMPLETED.
 
-+ Make a store website (partly RESPONSIVE). Name: Mojito - Art Stationery Store. ==> COMPLETED.
-
-# CONFLICT:
-Because Duy insisted that all pages be responsive he was afraid that the rest of the group were unable to do this, so he had to cover some of their task without their permissions. However, his action led to an unexpected conflict right before DEADLINE. But in the end, it was finally resolved by Chi. In conclusion, all of group members had their faults, but the person who got the biggest consequence was Duy because he was the worst at group communication.
+2. JAVASCRIPT ASSIGNMENT (--%):
+    + Task #2: Carousel in Home page.
+    + Task #6: Register form requirements.
+    + Task #9: Sample data.
 
 # References:
 1. Making responsive dropdown navigation bar: YouTube, FollowAndrew, viewed Apr 5 2021, <https://www.youtube.com/watch?v=7aGLkT4y4ls>
@@ -60,4 +78,6 @@ Because Duy insisted that all pages be responsive he was afraid that the rest of
 3. Making responsive shopping cart page: YouTube, Easy Tutorials, viewed Apr 12 2021, <https://www.youtube.com/watch?v=oXrlgOEiy6o>
 
 4. Making footer always stay at the bottom of the page: YouTube, smashtheshell, viewed Apr 16 2021, <https://www.youtube.com/watch?v=TaXql0h_wCA>
+
+5. Making responsive modal box with CSS and JavaScript: W3schools, n.d., viewed Apr 28 2021, <https://www.w3schools.com/howto/howto_css_modals.asp>
 
