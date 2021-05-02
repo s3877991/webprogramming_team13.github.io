@@ -1,25 +1,26 @@
 .cookie-consent {
-    background: #2f3640;
+    background: #f5f6fa;
     position: fixed;
     bottom: -100%;
     left: 0;
     right: 0;
-    color: #f5f6fa;
+    color: rgb(14, 12, 12);
     padding: 0 32px;
-    transition: 400ms;
-    font-size: 15px;
+    transition: 0.5s;
+    font-size: 18px;
     box-shadow: 0 -2px 16px;
+    text-align: center;
 }
 
 .cookie-consent.active {
     bottom: 0;
 }
 .cookie-consent a {
-    color: #f5f6fa;
+    color: rgb(14, 12, 12);
 }
 
 .cookie-btn {
-    background: #e84118;
+    background: #f93;
     border: 0;
     color: #f5f6fa;
     padding: 12px 35px;
@@ -28,4 +29,8 @@
     border-radius: 15px;
     cursor: pointer;
     margin-right: 20px;
+}
+
+.cookie-btn:hover {
+    background: #c60;
 }
