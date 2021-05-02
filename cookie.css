@@ -19,6 +19,10 @@
     color: rgb(14, 12, 12);
 }
 
+.cookie-consent:hover a:hover {
+    color: brown;
+}
+
 .cookie-btn {
     background: #f93;
     border: 0;
