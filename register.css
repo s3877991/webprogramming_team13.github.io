@@ -83,6 +83,7 @@ main {
 }
 #send:hover {
     background-color: #c60;
+    font-weight: bold;
     color: #fff;
     transition: 0.5s;
 }
@@ -91,6 +92,7 @@ main {
 }
 #clear:hover {
     background-color: #ccc;
+    font-weight: bold;
     transition: 0.5s;
 }
 /* Upload avatar */

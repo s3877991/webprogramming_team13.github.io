@@ -25,7 +25,7 @@
 .cookie-consent:hover a:hover {
     color: #f93;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .cookie-btn {
@@ -45,5 +45,5 @@
     background: #c60;
     color: #fff;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.5s;
 }

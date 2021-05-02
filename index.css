@@ -57,6 +57,7 @@ main {
 .btn:hover {
     background-color: #c60;
     color: #fff;
+    font-weight: bold;
     transition: 0.5s;
 }
 
