@@ -133,6 +133,7 @@ footer a {
 footer a:hover {
     color: #066;
     text-shadow: 0px 2px 10px #fff;
+    font-weight: bold;
     transition: 0.5s;
 }
 footer #brief-descrpition {
