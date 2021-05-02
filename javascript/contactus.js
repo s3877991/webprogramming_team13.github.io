@@ -1,9 +1,9 @@
-const form = document.getElementById('form');
+const form = document.getElementById('.form');
 const userName = document.getElementById('userName');
 const email = document.getElementById('email');
 const phone = document.getElementById('phone');
 
-form.addEventListener('#send', e => {
+form.addEventListener('submit', e => {
 	e.preventDefault();
 	
 	checkInputs();
