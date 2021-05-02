@@ -1,6 +1,6 @@
 var addToCartButtons = document.getElementsByClassName('add-to-cart')
 var title = document.querySelector('#title').innerText
-var picture = document.getElementsByTagName('img')[0].src
+var picture = document.getElementById('item-image').src
 var price = document.querySelector('.add-to-cart-item label').innerText
 var color = document.querySelector('.choice-2 div.options-2 label').innerText
 
