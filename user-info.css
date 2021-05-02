@@ -81,8 +81,8 @@ table tr .value {
 }
 /* Add hover effect to the anchor tags */
 #mobile a:hover, #desktop a:hover {
-    color: #f93;
     font-weight: bold;
+    transition: 0.5s;
 }
 
 /* MAKE THE WHOLE PAGE RESPONSIVE */
