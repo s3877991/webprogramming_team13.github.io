@@ -1,3 +1,6 @@
+/* To define new fonts which is not available in IDE */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
 .cookie-consent {
     background: #f5f6fa;
     position: fixed;
@@ -20,15 +23,18 @@
 }
 
 .cookie-consent:hover a:hover {
-    color: brown;
+    color: #f93;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .cookie-btn {
     background: #f93;
     border: 0;
-    color: #f5f6fa;
+    color: #000;
     padding: 12px 35px;
-    font-size: 15px;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
     margin-bottom: 16px;
     border-radius: 15px;
     cursor: pointer;
@@ -37,4 +43,7 @@
 
 .cookie-btn:hover {
     background: #c60;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
 }
