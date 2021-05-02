@@ -116,6 +116,7 @@ small {
     border: none;
     border-radius: 17px;
     cursor: pointer;
+    float: right;
 }
 #send {
     background-color: #f93;

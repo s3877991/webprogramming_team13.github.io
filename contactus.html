@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cookie.css">
     <title>Shoppiverse - Contact Us</title>
 </head>
 
@@ -133,37 +134,37 @@
                         <ul class="checkbox">
 
                             <li>
-                                <input type="checkbox" name="checkbox" value="mon">
+                                <input type="checkbox" name="checkbox" value="mon" onclick='countCheckboxes()'>
                                 <label class="options" for="mon">Monday</label>
                             </li>
 
                             <li>
-                                <input type="checkbox" name="checkbox" value="tue">
+                                <input type="checkbox" name="checkbox" value="tue" onclick='countCheckboxes()'>
                                 <label class="options" for="tue">Tuesday</label>
                             </li>
 
                             <li>
-                                <input type="checkbox" name="checkbox" value="wed">
+                                <input type="checkbox" name="checkbox" value="wed" onclick='countCheckboxes()'>
                                 <label class="options" for="wed">Wednesday</label>
                             </li>
 
                             <li>
-                                <input type="checkbox" name="checkbox" value="thu">
+                                <input type="checkbox" name="checkbox" value="thu" onclick='countCheckboxes()'>
                                 <label class="options" for="thu">Thursday</label>
                             </li>
 
                             <li>
-                                <input type="checkbox" name="checkbox" value="fri">
+                                <input type="checkbox" name="checkbox" value="fri" onclick='countCheckboxes()'>
                                 <label class="options" for="fri">Friday</label>
                             </li>
 
                             <li>
-                                <input type="checkbox" name="checkbox" value="sat">
+                                <input type="checkbox" name="checkbox" value="sat" onclick='countCheckboxes()'>
                                 <label class="options" for="sat">Saturday</label>
                             </li>
 
                             <li>
-                                <input type="checkbox" name="checkbox" value="sun">
+                                <input type="checkbox" name="checkbox" value="sun" onclick='countCheckboxes()'>
                                 <label class="options" for="sun">Sunday</label>
                             </li>
 
@@ -207,13 +208,13 @@
             </em>
         </div>
     </footer>
-<<<<<<< HEAD
-=======
-
-    <!--Link to external JavaScript file-->
-    <script src="javascript/login-status.js"></script>
-</body>
->>>>>>> 06e89ac4cac5ae53a0c4444a08b7033cf14d251f
+    <!--Cookie-->
+    <div class="cookie-consent">
+        <h3>I USE COOKIES</h3>
+        <p>My website uses cookies necessarily for its basic functioning. By continuing browsing, you consent to my use of cookies and other technologies.</p>
+        <button class="cookie-btn">I agree</button>
+        <a href="#">Learn more</a>
+    </div>
 
     <script>
         let name = document.getElementById("name");
@@ -221,7 +222,8 @@
         let phone = document.getElementById("phone");
         let form = document.querySelector("form");
 
-        function checkValidation(){ 
+        function checkValidation(){
+
             if(name.value.trim()===""){
                 onError(name,"Name cannot be empty");
             }
@@ -293,7 +295,19 @@
         function phoneValidation() {            
             return /^([0-9]([-. ]?)){9,10}[^-. ]$/.test(phone);
         };
+
+        function countCheckboxes(){
+            var inputElems = document.getElementsByTagName("input");
+            var count = 0;
+            for (var i=0; i<inputElems.length; i++) {
+                if (inputElems[i].type === "checkbox" && inputElems[i].checked === true) {
+                count++;
+                }
+            }
+            
+        }
     </script>
+    <script src="javascript/cookie.js"></script>
 
 </body>
 </html>

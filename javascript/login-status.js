@@ -1,3 +1,4 @@
+
 // Assigment 2: JAVASCRIPT ASSIGNMENT - TASK #5: Login status
 
 // Activate login status in "My Account" button

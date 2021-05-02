@@ -1,0 +1,18 @@
+.cookie-consent.active {
+    bottom: 0;
+}
+.cookie-consent a {
+    color: #f5f6fa;
+}
+
+.cookie-btn {
+    background: #e84118;
+    border: 0;
+    color: #f5f6fa;
+    padding: 12px 35px;
+    font-size: 15px;
+    margin-bottom: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 20px;
+}
