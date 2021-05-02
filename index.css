@@ -177,16 +177,3 @@ main {
     }
 }
 
-.cookie-consent {
-    background: #2f3640;
-    position: fixed;
-    bottom: -100%;
-    left: 0;
-    right: 0;
-    color: #f5f6fa;
-    padding: 0 32px;
-    transition: 400ms;
-    font-size: 15px;
-    box-shadow: 0 -2px 16px;
-}
-
