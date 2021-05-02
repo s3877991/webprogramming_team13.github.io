@@ -124,6 +124,7 @@ small {
 }
 #send:hover {
     background-color: #c60;
+    font-weight: bold;
     color: #fff;
     transition: 0.5s;
 }
@@ -132,6 +133,7 @@ small {
 }
 #clear:hover {
     background-color: #ccc;
+    font-weight: bold;
     transition: 0.5s;
 }
 
