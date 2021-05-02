@@ -26,7 +26,7 @@ Phan Do Ngoc Linh:
     + Make a store website (not RESPONSIVE). Name: Millennium - Novel Bookstore. ==> COMPLETED.
 
 2. JAVASCRIPT ASSIGNMENT (--%):
-    + Task #1: Cookies consent message.
+    + Task #1: Cookies consent message. ==> COMPLETED.
     + Task #4: Contact Us form requirements.
     + Task #9: Sample data.
 
