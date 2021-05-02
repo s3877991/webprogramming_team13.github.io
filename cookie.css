@@ -46,3 +46,11 @@
     font-weight: bold;
     transition: 0.5s;
 }
+
+/* Make the cookie box responsive */
+@media screen and (max-width: 360px) {
+    .cookie-consent button, .cookie-consent a {
+        display: block;
+        margin:  20px auto;
+    }
+}
