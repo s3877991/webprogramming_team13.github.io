@@ -79,32 +79,37 @@
                                 <option value="feedback">Feedback</option>
                                 <option value="others">Others</option>
                             </select>
-                            <div id="error"></div>
                         </div>
 
                         <div class="item flex">
-                            <label class="label" for="name">Your name</label>
-                            <br>
-                            <input type="text" name="name" id="name" placeholder="Enter your full name" class="form-control">
-                            <small>Error message</small>
+                            <div class="form-control">
+                                <label class="label" for="name">Your name</label>
+                                <br>
+                                <input type="text" name="name" id="name" placeholder="Enter your full name">
+                                <small>Error message</small>
+                            </div>
                         </div>
                     </div>
 
                     <div class="flex-container">
                         <div class="item flex">
-                            <label class="label" for="email">Your email</label>
-                            <br>
-                            <form action="#">
-                                <input type="email" name="email" id = "email" placeholder="Enter your email address" class="form-control">
+                            <div class="form-control">
+                                <label class="label" for="email">Your email</label>
+                                <br>
+                                <form action="#">
+                                <input type="email" name="email" id = "email" placeholder="Enter your email address">
                                 <small>Error message</small>
-                            </form>
+                                </form>
+                            </div>
                         </div>
 
                         <div class="item flex">
-                            <label class="label" for="phone">Your phone</label>
-                            <br>
-                            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" class="form-control">
-                            <small>Error message</small>
+                            <div class="form-control">
+                                <label class="label" for="phone">Your phone</label>
+                                <br>
+                                <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+                                <small>Error message</small>
+                            </div>
                         </div>
 
                     </div>
@@ -134,37 +139,37 @@
                         <ul class="checkbox">
 
                             <li>
-                                <input type="checkbox" name="checkbox" value="mon" onclick='countCheckboxes()'>
+                                <input type="checkbox" name="checkbox" value="mon">
                                 <label class="options" for="mon">Monday</label>
                             </li>
 
                             <li>
-                                <input type="checkbox" name="checkbox" value="tue" onclick='countCheckboxes()'>
+                                <input type="checkbox" name="checkbox" value="tue">
                                 <label class="options" for="tue">Tuesday</label>
                             </li>
 
                             <li>
-                                <input type="checkbox" name="checkbox" value="wed" onclick='countCheckboxes()'>
+                                <input type="checkbox" name="checkbox" value="wed">
                                 <label class="options" for="wed">Wednesday</label>
                             </li>
 
                             <li>
-                                <input type="checkbox" name="checkbox" value="thu" onclick='countCheckboxes()'>
+                                <input type="checkbox" name="checkbox" value="thu">
                                 <label class="options" for="thu">Thursday</label>
                             </li>
 
                             <li>
-                                <input type="checkbox" name="checkbox" value="fri" onclick='countCheckboxes()'>
+                                <input type="checkbox" name="checkbox" value="fri">
                                 <label class="options" for="fri">Friday</label>
                             </li>
 
                             <li>
-                                <input type="checkbox" name="checkbox" value="sat" onclick='countCheckboxes()'>
+                                <input type="checkbox" name="checkbox" value="sat">
                                 <label class="options" for="sat">Saturday</label>
                             </li>
 
                             <li>
-                                <input type="checkbox" name="checkbox" value="sun" onclick='countCheckboxes()'>
+                                <input type="checkbox" name="checkbox" value="sun">
                                 <label class="options" for="sun">Sunday</label>
                             </li>
 
@@ -185,7 +190,7 @@
                         </div>
 
                         <div class="button">
-                            <input type="submit" id="send" value="Send" onclick="checkValidation()">
+                            <input type="submit" id="send" value="Send">
                         </div>
 
                     </div>
@@ -219,98 +224,8 @@
 
     <!--Link to external JavaScript file-->
     <script src="javascript/login-status.js"></script>
-    <script>
-        let name = document.getElementById("name");
-        let email = document.getElementById("email");
-        let phone = document.getElementById("phone");
-        let form = document.querySelector("form");
-
-        function checkValidation(){
-
-            if(name.value.trim()===""){
-                onError(name,"Name cannot be empty");
-            }
-            else{
-                if(!nameValidation(name.value.trim())) {
-                    onError(name,"Name is not valid");
-                }
-                else {
-                    onSuccess(name);
-                }
-            }
-            if(email.value.trim()===""){
-                onError(email,"Email cannot be empty");
-            }
-            else{
-                if(!emailValidation(email.value.trim())){
-                    onError(email,"Email is not valid");
-                }
-                else{
-                onSuccess(email);
-                }
-            }
-
-            if(phone.value.trim()===""){
-                onError(phone,"Phone number cannot be empty");
-            }
-            else{
-                if(!phoneValidation(phone.value.trim())){
-                    onError(phone,"Phone number is not valid");
-                }
-                else{
-                onSuccess(phone);
-                }
-            }
-        }
-        document.querySelector("send").addEventListener("send",(event)=>{
-            event.preventDefault();
-            checkValidation();
-        });
-
-        function onSuccess(input) {
-            let parent=input.parentElement;
-            let messageEle=parent.querySelector("small");
-            messageEle.style.visibility="hidden"; 
-            parent.classList.remove("error");
-            parent.classList.add("success");  
-        };
-
-        function onError(input,message){
-            let parent=input.parentElement;
-            let messageEle=parent.querySelector("small");
-            messageEle.style.visibility="visible";
-            messageEle.innerText=message;  
-            parent.classList.add("error");
-            parent.classList.remove("success");
-        };
-
-
-        function nameValidation() {    
-            return /[a-zA-Z]{3,}/.test(name);
-        };
-
-
-        function emailValidation() {
-            return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
-        };
-
-
-        function phoneValidation() {            
-            return /^([0-9]([-. ]?)){9,10}[^-. ]$/.test(phone);
-        };
-
-        function countCheckboxes(){
-            var inputElems = document.getElementsByTagName("input");
-            var count = 0;
-            for (var i=0; i<inputElems.length; i++) {
-                if (inputElems[i].type === "checkbox" && inputElems[i].checked === true) {
-                count++;
-                }
-            }
-            
-        }
-    </script>
     <script src="javascript/cookie.js"></script>
+    <script src="javascript/contactus.js"></script>
 
 </body>
 </html>
