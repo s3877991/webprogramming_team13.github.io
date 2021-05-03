@@ -8,5 +8,3 @@ let loginStatus = document.getElementById("my-account");
 if (sessionStorage.getItem("User email")) {
     loginStatus.href = "user-info.html";
 }
-
-
