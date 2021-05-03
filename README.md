@@ -27,7 +27,7 @@ Phan Do Ngoc Linh:
 
 2. JAVASCRIPT ASSIGNMENT (--%):
     + Task #1: Cookies consent message. ==> COMPLETED.
-    + Task #4: Contact Us form requirements ==> COMPLETED.
+    + Task #4: Contact Us form requirements ==> .
 
 
 Nguyen Hai Minh Trang:
@@ -37,7 +37,7 @@ Nguyen Hai Minh Trang:
     + Make a store website (not RESPONSIVE). Name: M.A.C - Cosmetic store. ==> COMPLETED.
 
 2. JAVASCRIPT ASSIGNMENT (--%):
-    + Task #7: "Add to cart" button ==> COMPLETED.
+    + Task #7: "Add to cart" button ==> .
     + Task #8: Order Placement.
     + Task #9: Sample data.
 
