@@ -37,7 +37,7 @@ Nguyen Hai Minh Trang:
     + Make a store website (not RESPONSIVE). Name: M.A.C - Cosmetic store. ==> COMPLETED.
 
 2. JAVASCRIPT ASSIGNMENT (--%):
-    + Task #7: "Add to cart" button ==> .
+    + Task #7: "Add to cart" button ==> COMPLETED.
     + Task #8: Order Placement.
     + Task #9: Sample data.
 
