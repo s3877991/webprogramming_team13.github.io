@@ -1,14 +1,18 @@
+// Assigment 2: JAVASCRIPT ASSIGNMENT - TASK #7: Order Placement
+
+// Loop through all the values, which are product information of a product, of the localStorage
 for (var i = 0; i < localStorage.length; i++) {
-    console.log(JSON.parse(localStorage.getItem(localStorage.key(i))))
     var productlist = JSON.parse(localStorage.getItem(localStorage.key(i)))
+    // Loop through all the detailed product info
     for (var item in productlist) {
+        // Allocate different product info into their cateogories
         var title = productlist[item]['name']
         var image = productlist[item]['image']
         var price = productlist[item]['price'].split("\n")[1]
         var version = productlist[item]['price'].split("\n")[0]
         var color = productlist[item]['color']
         var inCart = productlist[item]['inCart']
-
+        
         var cartTable = document.getElementById('order-table')
         var cartRow = document.createElement('tr')
         cartRow.classList.add('cart-items')
