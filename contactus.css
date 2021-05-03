@@ -107,6 +107,9 @@ textarea {
 .form-control.error input {
 	border-color: #f00;
 }
+#warning-message {
+    font-size: 17px;
+}
 .button-container {
     justify-content: flex-end;
     margin-top: 40px;

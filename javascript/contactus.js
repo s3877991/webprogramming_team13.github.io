@@ -63,3 +63,34 @@ function isEmail(email) {
 function isPhone(phone) {
 	return /^([0-9]([-. ]?)){9,10}[^-. ]$/.test(phone);
 }
+
+// Text message restrictions area
+message = document.getElementById("text-message");
+message.addEventListener("keyup", messageRestrictions);
+
+// Define functions
+function messageRestrictions() {
+  // Activate the message value
+  let textMessage = document.getElementById("text-message").value;
+
+  // Remove all spaces between words
+  let textMessageWithoutSpaces = textMessage.replace(/\s+/g, '');
+
+  // Count the length of letters
+  let lettersLength = textMessageWithoutSpaces.length;
+
+  // Activate warning message
+  let warning = document.getElementById('warning-message');
+  if (lettersLength < 50) {
+    warning.innerHTML = (50 - lettersLength) + " more letters are needed!";
+    warning.style.color = "#f00";
+  }
+  else if (lettersLength <= 500) {
+    warning.innerHTML = "You can type " + (500 - lettersLength) + " more letters";
+    warning.style.color = "#0c3";
+  }
+  else {
+    warning.innerHTML = "Deleting " + (lettersLength - 500) + " letters is needed!";
+   	warning.style.color = "#f00";
+  }
+}
