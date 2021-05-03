@@ -97,14 +97,15 @@ textarea {
 
 .form-control.error small {
 	visibility: visible;
+    color: #f00;
 }
 
 .form-control.success input {
-	border-color: #2ecc71;
+	border-color: #0c3;
 }
 
 .form-control.error input {
-	border-color: #e74c3c;
+	border-color: #f00;
 }
 .button-container {
     justify-content: flex-end;
