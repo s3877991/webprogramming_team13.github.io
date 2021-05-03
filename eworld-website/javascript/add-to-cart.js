@@ -38,4 +38,3 @@ function add_items_to_cart() {
     };
     localStorage.setItem('product', JSON.stringify(productlist))
 }
-
