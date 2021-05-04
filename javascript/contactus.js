@@ -1,13 +1,10 @@
-const form = document.getElementById('.form');
-const userName = document.getElementById('userName');
+
+const form = document.getElementById('form-id');
+const userName = document.getElementById('name');
 const email = document.getElementById('email');
 const phone = document.getElementById('phone');
 
-form.addEventListener('submit', e => {
-	e.preventDefault();
-	
-	checkInputs();
-});
+
 
 function checkInputs() {
 	// trim to remove the whitespaces
@@ -20,15 +17,16 @@ function checkInputs() {
 	} else if (!isName(userNameValue)) {
 		setErrorFor(userName, 'Not a valid name');
 	} else {
-		setSuccessFor(userName);
+        setSuccessFor(userName);
 	}
 	
 	if(emailValue === '') {
 		setErrorFor(email, 'Email cannot be blank');
+        
 	} else if (!isEmail(emailValue)) {
 		setErrorFor(email, 'Not a valid email');
 	} else {
-		setSuccessFor(email);
+        setSuccessFor(email);
 	}
 	
 	if(phoneValue === '') {
@@ -36,7 +34,7 @@ function checkInputs() {
 	} else if (!isPhone(phoneValue)) {
 		setErrorFor(phone, 'Not a valid number');
 	} else {
-		setSuccessFor(phone);
+        setSuccessFor(phone);
 	}
 }
 
@@ -63,3 +61,8 @@ function isEmail(email) {
 function isPhone(phone) {
 	return /^([0-9]([-. ]?)){9,10}[^-. ]$/.test(phone);
 }
+
+form.addEventListener('submit', e => {
+	e.preventDefault();
+	checkInputs();
+});

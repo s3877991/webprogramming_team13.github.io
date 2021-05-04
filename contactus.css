@@ -97,6 +97,7 @@ textarea {
 
 .form-control.error small {
 	visibility: visible;
+    color: #e74c3c;
 }
 
 .form-control.success input {
@@ -105,6 +106,7 @@ textarea {
 
 .form-control.error input {
 	border-color: #e74c3c;
+    background-color: rgb(255, 161, 213);
 }
 .button-container {
     justify-content: flex-end;
