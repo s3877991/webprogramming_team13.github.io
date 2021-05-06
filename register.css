@@ -111,15 +111,15 @@ main {
     display: none;
 }
 
-.success {
-    color: limegreen;
-    font-size: 16px;
-    display: none;
-}
-
 ul {
     color:grey;
     font-size: 16px;
+}
+
+/* Hide the section for store owners until 
+the store owner box is ticked */
+#store-info {
+    display: none;
 }
 
 /* Specify the areas */

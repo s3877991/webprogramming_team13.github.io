@@ -136,7 +136,7 @@ var zip = document.getElementById("zip");
 var zipErr = document.getElementById("zip-error");
 
 zip.addEventListener('input', function(e) {
-  var zipregex = /^[0-9]{4,6}$/;
+  var zipregex = /^[0-9]{4,6}$/; //regular expression for 4-6 digits
   var currentzip = e.target.value;
   var zipvalid = zipregex.test(currentzip);
 
@@ -146,3 +146,31 @@ zip.addEventListener('input', function(e) {
     zipErr.style.display = 'block'
   }
 })
+
+//DISPLAY SEPEREATE SECTION FOR STORE OWNER
+var store = document.getElementById("store-owner");
+store.addEventListener('click', display);
+
+function display() {
+  var storeinfo = document.getElementById("store-info");
+
+  if (storeinfo.style.display === 'none') {
+    storeinfo.style.display = 'block';
+  } else {
+    storeinfo.style.display = 'block'
+  }
+}
+
+//HIDE SECTION ON CLICKING SHOPPERS OPTION
+var shopper = document.getElementById("shopper");
+shopper.addEventListener('click', hide);
+
+function hide() {
+  var storeinfo = document.getElementById("store-info");
+  
+  if (storeinfo.style.display === 'none') {
+    storeinfo.style.display = 'none';
+  } else {
+    storeinfo.style.display = 'none'
+  }
+}
