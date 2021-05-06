@@ -58,6 +58,8 @@ retype.addEventListener('input', function(e) {
   var current_retype = e.target.value;
   var currentpass = pass.value;
 
+  /* display error message when current_retype 
+  does not have the same value as currentpass */
   if (currentpass == current_retype) {
     retypeErr.style.display = 'none'
   } else {
@@ -70,7 +72,7 @@ var fname = document.getElementById("first-name");
 var fnameErr = document.getElementById("fname-error");
 
 fname.addEventListener('input', function(e) {
-  var fnameregex = /^[A-Za-z]{3,}$/;
+  var fnameregex = /^[A-Za-z]{3,}$/; //at least 3 characters
   var current_fname = e.target.value;
   var fnamevalid = fnameregex.test(current_fname);
 
@@ -86,7 +88,7 @@ var lname = document.getElementById("last-name");
 var lnameErr = document.getElementById("lname-error");
 
 lname.addEventListener('input', function(e) {
-  var lnameregex = /^[A-Za-z]{3,}$/;
+  var lnameregex = /^[A-Za-z]{3,}$/; //at least 3 characters
   var current_lname = e.target.value;
   var lnamevalid = lnameregex.test(current_lname);
 
@@ -97,4 +99,34 @@ lname.addEventListener('input', function(e) {
   }
 })
 
-//VALIDATE CITY
+//VALIDATE ADDRESS
+var address = document.getElementById("address");
+var addressErr = document.getElementById("address-error");
+
+address.addEventListener('input', function(e) {
+  var addressregex = /^[A-Za-z]{3,}$/; //at least 3 characters
+  var current_address = e.target.value;
+  var addressvalid = addressregex.test(current_address);
+
+  if (addressvalid) {
+    addressErr.style.display = 'none'
+  } else {
+    addressErr.style.display = 'block'
+  }
+})
+
+//VALIDATE CITY NAME
+var city = document.getElementById("city");
+var cityErr = document.getElementById("city-error");
+
+city.addEventListener('input', function(e) {
+  var cityregex = /^[A-Za-z]{3,}$/; //at least 3 characters
+  var current_city = e.target.value;
+  var cityvalid = cityregex.test(current_city);
+
+  if (cityvalid) {
+    cityErr.style.display = 'none'
+  } else {
+    cityErr.style.display = 'block'
+  }
+})
