@@ -7,7 +7,7 @@
 var email = document.getElementById("email");
 var emailErr = document.getElementById("email-error");
 email.addEventListener('input', function(e) {
-  var emailregex = /^([a-zA-Z0-9\._]{3,})@([a-zA-Z]+\.)+([a-zA-Z]{2,5})$/; 
+  var emailregex = /^[a-zA-Z0-9]+[a-zA-Z0-9\._]{2,}@([a-zA-Z]+\.)+([a-zA-Z]{2,5})$/; 
   var currentmail = e.target.value;
   var mailvalid = emailregex.test(currentmail);
 
