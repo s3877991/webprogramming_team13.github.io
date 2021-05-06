@@ -53,8 +53,8 @@
     <main>
 
         <!--Registration Form-->
-        <section id="reg-form">
-            <form method="get" action="user-info.html">
+        <section>
+            <form name="regform" method="get" action="user-info.html">
                 <div class="container">
 
                     <!--Title-->
@@ -73,15 +73,17 @@
                             <div class="flex">
                                 <label class="label" for="email">Your email</label>
                                 <div>
-                                    <input type="email" name="email" placeholder="Enter your email adress" required>
+                                    <input type="email" id="email" placeholder="Enter your email adress" required>
+                                    <p class="error-alert">Invalid email</p>
                                 </div>
                             </div>
 
                             <div class="flex">
                                 <label class="label" for="phone">Your phone</label>
                                 <div>
-                                    <input type="tel" name="phone" minlength=9 maxlength=13
+                                    <input type="tel" id="phone" minlength=9 maxlength=13
                                         placeholder="Enter your phone number" required>
+                                    <p class="error-alert">Invalid phone number</p>
                                 </div>
                             </div>
 
@@ -93,14 +95,24 @@
                             <div class="flex">
                                 <label class="label" for="password">Your password</label>
                                 <div>
-                                    <input type="password" name="password" placeholder="Enter your password" required>
+                                    <input type="password" id="password" placeholder="Enter your password" required>
+                                    <p>
+                                        <ul>
+                                          <li>Contains 8-20 characters</li>
+                                          <li>Contains at least ONE uppercase letter</li>
+                                          <li>Contains at least ONE lowercase letter</li>
+                                          <li>Contains at least ONE digit number</li>
+                                          <li>Contains at least one special character !@#$%^&*</li>
+                                        </ul>
+                                    </p>
                                 </div>
                             </div>
 
                             <div class="flex">
-                                <label class="label" for="phone">Verify your password</label>
+                                <label class="label" for="retype-password">Verify your password</label>
                                 <div>
-                                    <input type="password" name="password" placeholder="Renter your password" required>
+                                    <input type="password" id="retype-password" placeholder="Renter your password" required>
+                                    <p class="error-alert">Please enter the same password</p>
                                 </div>
                             </div>
 
@@ -129,16 +141,28 @@
                             <div class="flex">
                                 <label class="label" for="first-name">First name</label>
                                 <div>
-                                    <input type="text" name="first-name" placeholder="Enter your first name"
-                                        maxlength=50 required>
+                                    <input type="text" id="first-name" placeholder="Enter your first name"
+                                        maxlength="50" minlength="3" required>
+                                    <p>
+                                        <ul>
+                                            <li>Contains at least 3 characters</li>
+                                        </ul>
+                                    </p>
+                                    <p class="error-alert">Invalid last name</p>
                                 </div>
                             </div>
 
                             <div class="flex">
                                 <label class="label" for="last-name">Last name</label>
                                 <div>
-                                    <input type="text" name="last-name" placeholder="Enter your last name" maxlength=50
-                                        required>
+                                    <input type="text" id="last-name" placeholder="Enter your last name" maxlength="50"
+                                        minlength="3" required>
+                                    <p>
+                                        <ul>
+                                            <li>Contains at least 3 characters</li>
+                                        </ul>
+                                    </p>
+                                    <p class="error-alert">Invalid last name</p>
                                 </div>
                             </div>
 
@@ -150,21 +174,31 @@
                     <!--Location-->
                     <div class="location">
                         <!--Your current location part 1-->
-                        <div class="flex-container">
+                        <div class="flex-container" id="residence">
 
                             <div class="flex">
                                 <label class="label" for="address">Address</label>
                                 <div>
-                                    <input type="text" name="address" placeholder="Enter your current address"
-                                        maxlength=50 required>
+                                    <input type="text" id="address" placeholder="Enter your current address"
+                                        maxlength="50" minlength="3" required>
+                                    <p>
+                                        <ul>
+                                            <li>Contains at least 3 characters</li>
+                                        </ul>
+                                    </p>
                                 </div>
                             </div>
 
                             <div class="flex">
                                 <label class="label" for="city">City</label>
                                 <div>
-                                    <input type="text" name="city" placeholder="Enter your current city" maxlength=30
-                                        required>
+                                    <input type="text" id="city" placeholder="Enter your current city" maxlength=30
+                                        minlength="3" required>
+                                    <p>
+                                        <ul>
+                                            <li>Contains at least 3 characters</li>
+                                        </ul>
+                                    </p>
                                 </div>
                             </div>
 
@@ -176,8 +210,10 @@
                             <div class="flex">
                                 <label class="label" for="zip">Zipcode</label>
                                 <div>
-                                    <input type="text" name="zip" placeholder="Enter your zipcode" minlength="4"
+                                    <input type="text" id="zip" placeholder="Enter your zipcode" minlength="4"
                                         maxlength="6" required>
+                                    <p>Contains from 4 - 6 digits</p>
+                                    <p class="error-alert">Invalid zipcode</p>
                                 </div>
                             </div>
 
@@ -384,6 +420,7 @@
     </div>
 
     <script src="javascript/cookie.js"></script>
+    <script src="javascript/register-validation.js"></script>
 </body>
 
 </html>
