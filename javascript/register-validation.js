@@ -23,7 +23,7 @@ var phone = document.getElementById("phone");
 var phoneErr = document.getElementById("phone-error");
 
 phone.addEventListener('input', function(e) {
-  var phoneregex = //a phone regex validation
+  var phoneregex = /^$/ //a phone regex validation
   var currentnum = e.target.value;
   var phonevalid = phoneregex.test(currentnum);
 
@@ -38,14 +38,29 @@ phone.addEventListener('input', function(e) {
 var pass = document.getElementById("password");
 var passErr = document.getElementById("pass-error");
 
-phone.addEventListener('input', function(e) {
-  var passregex = //a phone regex validation
-  var currentnum = e.target.value;
-  var phonevalid = phoneregex.test(currentnum);
+pass.addEventListener('input', function(e) {
+  var passregex = /^Caly$/ //a phone regex validation
+  var currentpass = e.target.value;
+  var passvalid = passregex.test(currentpass);
 
   if (passvalid) {
     passErr.style.display = 'none'
   } else {
     passErr.style.display = 'block'
+  }
+})
+
+// RETYPE PASSWORD
+var retype = document.getElementById("retype-password");
+var retypeErr = document.getElementById("retype-error");
+
+retype.addEventListener('input', function(e) {
+  var current_retype = e.target.value;
+  var currentpass = pass.value;
+
+  if (currentpass == current_retype) {
+    retypeErr.style.display= 'none'
+  } else {
+    retypeErr.style.display = 'block'
   }
 })
