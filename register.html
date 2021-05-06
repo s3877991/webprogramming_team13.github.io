@@ -74,7 +74,7 @@
                                 <label class="label" for="email">Your email</label>
                                 <div>
                                     <input type="email" id="email" placeholder="Enter your email adress" required>
-                                    <p class="error-alert">Invalid email</p>
+                                    <p class="error" id="email-error">Please enter a valid email</p>
                                 </div>
                             </div>
 
@@ -83,7 +83,7 @@
                                 <div>
                                     <input type="tel" id="phone" minlength=9 maxlength=13
                                         placeholder="Enter your phone number" required>
-                                    <p class="error-alert">Invalid phone number</p>
+                                    <p class="error" id="phone-error">Please enter a valid phone number</p>
                                 </div>
                             </div>
 
@@ -105,6 +105,7 @@
                                           <li>Contains at least one special character !@#$%^&*</li>
                                         </ul>
                                     </p>
+                                    <p class="error" id="pass-error">Please enter a valid password</p>
                                 </div>
                             </div>
 
@@ -112,7 +113,7 @@
                                 <label class="label" for="retype-password">Verify your password</label>
                                 <div>
                                     <input type="password" id="retype-password" placeholder="Renter your password" required>
-                                    <p class="error-alert">Please enter the same password</p>
+                                    <p class="error" id="retype-error">Please enter the same password</p>
                                 </div>
                             </div>
 
@@ -148,7 +149,7 @@
                                             <li>Contains at least 3 characters</li>
                                         </ul>
                                     </p>
-                                    <p class="error-alert">Invalid last name</p>
+                                    <p class="error">Invalid name</p>
                                 </div>
                             </div>
 
@@ -162,7 +163,7 @@
                                             <li>Contains at least 3 characters</li>
                                         </ul>
                                     </p>
-                                    <p class="error-alert">Invalid last name</p>
+                                    <p class="error">Invalid name</p>
                                 </div>
                             </div>
 
@@ -213,7 +214,7 @@
                                     <input type="text" id="zip" placeholder="Enter your zipcode" minlength="4"
                                         maxlength="6" required>
                                     <p>Contains from 4 - 6 digits</p>
-                                    <p class="error-alert">Invalid zipcode</p>
+                                    <p class="error">Invalid zipcode</p>
                                 </div>
                             </div>
 

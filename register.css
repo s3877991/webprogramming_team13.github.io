@@ -105,8 +105,14 @@ main {
 }
 
 /* Validate input data */
-.error-alert {
+.error {
     color: red;
+    font-size: 16px;
+    display: none;
+}
+
+.success {
+    color: limegreen;
     font-size: 16px;
     display: none;
 }
