@@ -1,10 +1,11 @@
-// Validate email
+// Add event listener upon entering inout in the text box
+// Validate input as user is typing in real time
+
+// The regex is still incorrect
+
+// VALIDATE EMAIL 
 var email = document.getElementById("email");
 var emailErr = document.getElementById("email-error");
-
-// Add event listener upon entering email in the text box
-// Validate input as user user is typing in real time
-// The regex is still incorrect
 email.addEventListener('input', function(e) {
   var emailregex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/; 
   var currentmail = e.target.value;
@@ -18,12 +19,12 @@ email.addEventListener('input', function(e) {
   }
 })
 
-// Validate phone number
+// VALIDATE PHONE NUMBER
 var phone = document.getElementById("phone");
 var phoneErr = document.getElementById("phone-error");
 
 phone.addEventListener('input', function(e) {
-  var phoneregex = /^$/ //a phone regex validation
+  var phoneregex = /^$/ //phone regex validation
   var currentnum = e.target.value;
   var phonevalid = phoneregex.test(currentnum);
 
