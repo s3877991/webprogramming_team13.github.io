@@ -73,9 +73,6 @@ function messageRestrictions() {
   // Activate the message value
   let textMessage = document.getElementById("text-message").value;
 
-  // Remove all spaces between words
-  let textMessageWithoutSpaces = textMessage.replace(/\s+/g, '');
-
   // Count the length of letters
   let lettersLength = textMessageWithoutSpaces.length;
 

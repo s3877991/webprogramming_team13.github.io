@@ -104,6 +104,24 @@ main {
     font-family: 'Nunito', sans-serif;
 }
 
+/* Validate input data */
+.error {
+    color: red;
+    font-size: 16px;
+    display: none;
+}
+
+ul {
+    color:grey;
+    font-size: 16px;
+}
+
+/* Hide the section for store owners until 
+the store owner box is ticked */
+#store-info {
+    display: none;
+}
+
 /* Specify the areas */
 .login, .name, .location, .user-type, .button-container {
     margin: 30px 0;
