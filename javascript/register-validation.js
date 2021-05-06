@@ -130,3 +130,19 @@ city.addEventListener('input', function(e) {
     cityErr.style.display = 'block'
   }
 })
+
+//VALIDATE ZIP CODE
+var zip = document.getElementById("zip");
+var zipErr = document.getElementById("zip-error");
+
+zip.addEventListener('input', function(e) {
+  var zipregex = /^[0-9]{4,6}$/;
+  var currentzip = e.target.value;
+  var zipvalid = zipregex.test(currentzip);
+
+  if (zipvalid) {
+    zipErr.style.display = 'none'
+  } else {
+    zipErr.style.display = 'block'
+  }
+})
