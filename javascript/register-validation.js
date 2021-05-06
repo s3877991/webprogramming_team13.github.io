@@ -39,7 +39,7 @@ var pass = document.getElementById("password");
 var passErr = document.getElementById("pass-error");
 
 pass.addEventListener('input', function(e) {
-  var passregex = /^Caly$/ //a phone regex validation
+  var passregex = /^Steve$/ //pass regex validation, steve is just a pseudo
   var currentpass = e.target.value;
   var passvalid = passregex.test(currentpass);
 
@@ -59,8 +59,42 @@ retype.addEventListener('input', function(e) {
   var currentpass = pass.value;
 
   if (currentpass == current_retype) {
-    retypeErr.style.display= 'none'
+    retypeErr.style.display = 'none'
   } else {
     retypeErr.style.display = 'block'
   }
 })
+
+// VALIDATE FIRST NAME
+var fname = document.getElementById("first-name");
+var fnameErr = document.getElementById("fname-error");
+
+fname.addEventListener('input', function(e) {
+  var fnameregex = /^[A-Za-z]{3,}$/;
+  var current_fname = e.target.value;
+  var fnamevalid = fnameregex.test(current_fname);
+
+  if (fnamevalid) {
+    fnameErr.style.display = 'none'
+  } else {
+    fnameErr.style.display = 'block'
+  }
+})
+
+//VALIDATE LAST NAME
+var lname = document.getElementById("last-name");
+var lnameErr = document.getElementById("lname-error");
+
+lname.addEventListener('input', function(e) {
+  var lnameregex = /^[A-Za-z]{3,}$/;
+  var current_lname = e.target.value;
+  var lnamevalid = lnameregex.test(current_lname);
+
+  if (lnamevalid) {
+    lnameErr.style.display = 'none'
+  } else {
+    lnameErr.style.display = 'block'
+  }
+})
+
+//VALIDATE CITY
