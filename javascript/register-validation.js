@@ -40,7 +40,7 @@ var pass = document.getElementById("password");
 var passErr = document.getElementById("pass-error");
 
 pass.addEventListener('input', function(e) {
-  var passregex = /^Steve$/ //pass regex validation, steve is just a pseudo
+  var passregex = /^SteveRogers$/ //pass regex validation, steve is just a pseudo
   var currentpass = e.target.value;
   var passvalid = passregex.test(currentpass);
 
