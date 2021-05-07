@@ -6,13 +6,27 @@ var title = document.querySelector('#title').innerText
 var picture = document.getElementById('item-image').src
 var price = document.querySelector('.add-to-cart-item label').innerText
 var color = document.querySelector('.choice-2 div.options-2 label').innerText
+var flashingMessage = document.querySelector('.modal-container')
+
+console.log(flashingMessage)
 
 for (let i = 0; i < addToCartButtons.length; i++) {
     button = addToCartButtons[i]
     button.addEventListener('click', () => {
-        add_items_to_cart()
+        if (localStorage.getItem('User name') == null) {
+            location.href = 'https://shynkwanchi.github.io/webprogramming_team13.github.io/login.html'
+        }
+        else {
+            flashingMessage.style.display = "block";
+            add_items_to_cart()
+        }
     }
-)}
+    )
+}
+
+flashingMessage.addEventListener('click', function(ev) {
+    flashingMessage.style.display = "none"
+})
 
 function add_items_to_cart() {
     // Put product info into an object called "product"
@@ -34,7 +48,7 @@ function add_items_to_cart() {
             // Update productlist
             productlist = {
                 ...productlist,
-                [product.name] : product,
+                [product.name]: product,
             }
         }
         // Update the number of "add to cart" clicks of the product
@@ -44,7 +58,7 @@ function add_items_to_cart() {
         // Update the number of "add to cart" clicks of the product
         product.inCart = 1;
         // Add the product to the productlist, the key is the name of the product and the value is the product information
-        productlist = {[product.name] : product};
+        productlist = { [product.name]: product };
     };
     localStorage.setItem('product', JSON.stringify(productlist))
 }

@@ -1,6 +1,5 @@
 // Assigment 2: JAVASCRIPT ASSIGNMENT - TASK #7: Order Placement
 
-
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
@@ -39,7 +38,6 @@ if (document.readyState == 'loading') {
             cartRow.innerHTML = cartRowContents
             cartTable.append(cartRow)
         }
-
     }
     ready()
 }
@@ -79,7 +77,6 @@ function updateCartTotal() {
     var itemsSubTotal = document.getElementsByClassName('sub-total')
     for (var i = 0; i < itemsSubTotal.length; i++) {
         subTotal = subTotal + parseFloat(itemsSubTotal[i].innerText.replace('$', ''))
-        console.log(itemsSubTotal[i].innerText)
         subTotal = Math.round(subTotal * 100) / 100
     }
     document.getElementById('items-sub-total').innerText = '$' + subTotal
