@@ -105,7 +105,7 @@ var address = document.getElementById("address");
 var addressErr = document.getElementById("address-error");
 
 address.addEventListener('input', function(e) {
-  var addressregex = /^[A-Za-z]{3,}$/; //at least 3 characters
+  var addressregex = /^([a-zA-Z0-9]+[, ]*[a-zA-Z0-9 ]+)+$/;
   var current_address = e.target.value;
   var addressvalid = addressregex.test(current_address);
 
@@ -121,7 +121,7 @@ var city = document.getElementById("city");
 var cityErr = document.getElementById("city-error");
 
 city.addEventListener('input', function(e) {
-  var cityregex = /^[A-Za-z]{3,}$/; //at least 3 characters
+  var cityregex = /^([a-zA-Z]{2,}[ ]*[a-zA-Z]+)+$/; //at least 3 characters
   var current_city = e.target.value;
   var cityvalid = cityregex.test(current_city);
 
