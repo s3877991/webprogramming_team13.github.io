@@ -5,7 +5,7 @@ for (let i = 0; i < orderPlacementPage.length; i++) {
 }
 function redirect(e) {
     e.preventDefault();
-    if (sessionStorage.getItem('User name') == null) {
+    if (sessionStorage.getItem('User email') == null) {
         window.location.href = 'https://shynkwanchi.github.io/webprogramming_team13.github.io/login.html';
         return false
     }

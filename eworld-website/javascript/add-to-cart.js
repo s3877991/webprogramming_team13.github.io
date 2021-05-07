@@ -13,7 +13,7 @@ console.log(flashingMessage)
 for (let i = 0; i < addToCartButtons.length; i++) {
     button = addToCartButtons[i]
     button.addEventListener('click', () => {
-        if (sessionStorage.getItem('User name') == null) {
+        if (sessionStorage.getItem('User email') == null) {
             location.href = 'https://shynkwanchi.github.io/webprogramming_team13.github.io/login.html'
         }
         else {
