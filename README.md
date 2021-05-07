@@ -65,7 +65,7 @@ Nguyen Linh Chi:
 
 2. JAVASCRIPT ASSIGNMENT (--%):
     + Task #2: Carousel in Home page.
-    + Task #6: Register form requirements.
+    + Task #6: Register form requirements ==> COMPLETED.
 
 # References:
 1. Making responsive dropdown navigation bar: YouTube, FollowAndrew, viewed Apr 5 2021, <https://www.youtube.com/watch?v=7aGLkT4y4ls>
