@@ -24,7 +24,7 @@ var phone = document.getElementById("phone");
 var phoneErr = document.getElementById("phone-error");
 
 phone.addEventListener('input', function(e) {
-  var phoneregex = /^$/ //phone regex validation
+  var phoneregex = /^([0-9]([-. ]?)){9,11}[^-. ]$/
   var currentnum = e.target.value;
   var phonevalid = phoneregex.test(currentnum);
 
@@ -40,7 +40,7 @@ var pass = document.getElementById("password");
 var passErr = document.getElementById("pass-error");
 
 pass.addEventListener('input', function(e) {
-  var passregex = /^SteveRogers$/ //pass regex validation, steve is just a pseudo
+  var passregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,20}$/
   var currentpass = e.target.value;
   var passvalid = passregex.test(currentpass);
 

@@ -61,7 +61,7 @@ function isEmail(email) {
 }
 	
 function isPhone(phone) {
-	return /^([0-9]([-. ]?)){9,10}[^-. ]$/.test(phone);
+	return /^([0-9]([-. ]?)){9,11}[^-. ]$/.test(phone);
 }
 
 // Text message restrictions area
