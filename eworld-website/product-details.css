@@ -213,6 +213,14 @@ table tr .value {
 .flashing-message .icon img {
     width: 30%;
 }
+#process-denied a {
+    color: #f00;
+    text-decoration: none;
+}
+#process-denied a:hover {
+    color: #600;
+    transition: 0.5s;
+}
 
 
 /* MAKE THE WHOLE PAGE RESPONSIVE */
