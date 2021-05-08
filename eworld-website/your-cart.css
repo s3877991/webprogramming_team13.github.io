@@ -109,6 +109,9 @@ th:last-child {
     color: #f00;
     font-style: italic;
 }
+#coupon {
+    width: 100%;
+}
 /* Button Area */
 .button-container {
     display: flex;
