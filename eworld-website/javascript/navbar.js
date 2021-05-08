@@ -1,13 +1,19 @@
-var orderPlacementPage = document.getElementsByClassName('your-cart')
+var orderPlacementPage = document.getElementsByClassName('your-cart');
+var processDenied = document.querySelector('#process-denied');
 for (let i = 0; i < orderPlacementPage.length; i++) {
-    button = orderPlacementPage[i]
-    button.addEventListener('click', redirect)
+    button = orderPlacementPage[i];
+    button.addEventListener('click', redirect);
 }
 function redirect(e) {
     e.preventDefault();
     if (sessionStorage.getItem('User email') == null) {
-        window.location.href = 'https://shynkwanchi.github.io/webprogramming_team13.github.io/login.html';
-        return false
+        processDenied.style.display = "block";
+        return false;
     }
-    return true
+    return true;
 }
+
+// Close the flashing message
+processDenied.addEventListener('click', function(ev) {
+    processDenied.style.display = "none";
+})

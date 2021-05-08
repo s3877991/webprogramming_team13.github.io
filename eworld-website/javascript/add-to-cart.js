@@ -27,10 +27,10 @@ for (let i = 0; i < addToCartButtons.length; i++) {
 
 // Close the flashing message
 flashingMessageConfirm.addEventListener('click', function(ev) {
-    flashingMessageConfirm.style.display = "none"
+    flashingMessageConfirm.style.display = "none";
 })
 flashingMessageDenied.addEventListener('click', function(ev) {
-    flashingMessageDenied.style.display = "none"
+    flashingMessageDenied.style.display = "none";
 })
 
 function add_items_to_cart() {
