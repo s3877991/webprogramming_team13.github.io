@@ -10,6 +10,7 @@ function redirect(e) {
         processDenied.style.display = "block";
         return false;
     }
+    orderPlacementPage.href = "your-cart.html";
     return true;
 }
 
