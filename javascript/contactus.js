@@ -1,3 +1,6 @@
+/* Original Javascript code sourced and adapted for educational purposes: 
+https://www.youtube.com/watch?v=rsd4FNGTRBw */
+
 const form = document.getElementById('form-id');
 const userName = document.getElementById('name');
 const email = document.getElementById('email');
