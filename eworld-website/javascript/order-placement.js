@@ -121,7 +121,6 @@ function addCoupon() {
     }
     else {
         alert('The coupon is invalid');
-        total = total;
         document.getElementById('total').innerText = '$' + total;
     }
 }
