@@ -27,7 +27,7 @@ Phan Do Ngoc Linh:
 
 2. JAVASCRIPT ASSIGNMENT (--%):
     + Task #1: Cookies consent message. ==> COMPLETED.
-    + Task #4: Contact Us form requirements ==> .
+    + Task #4: Contact Us form requirements ==> COMPLETED.
 
 
 Nguyen Hai Minh Trang:
