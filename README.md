@@ -25,7 +25,7 @@ Phan Do Ngoc Linh:
     + Make Mall's Privacy Policy page and Terms of Service page. ==> COMPLETED.
     + Make a store website (not RESPONSIVE). Name: Millennium - Novel Bookstore. ==> COMPLETED.
 
-2. JAVASCRIPT ASSIGNMENT (--%):
+2. JAVASCRIPT ASSIGNMENT (25%):
     + Task #1: Cookies consent message. ==> COMPLETED.
     + Task #4: Contact Us form requirements ==> COMPLETED.
 
@@ -36,7 +36,7 @@ Nguyen Hai Minh Trang:
     + Make Mall's About Us page and FAQs page. ==> COMPLETED.
     + Make a store website (not RESPONSIVE). Name: M.A.C - Cosmetic store. ==> COMPLETED.
 
-2. JAVASCRIPT ASSIGNMENT (--%):
+2. JAVASCRIPT ASSIGNMENT (25%):
     + Task #7: "Add to cart" button ==> COMPLETED.
     + Task #8: Order Placement. ==> COMPLETED
     + Task #9: Sample data. ==> COMPLETED
@@ -52,7 +52,7 @@ Nguyen Quang Duy:
     + Edit, modify styles and contents of some pages. Make all web pages RESPONSIVE ==> COMPLETED.
     + Finalize and compress all files and folders into a ZIP file ==> COMPLETED.
 
-2. JAVASCRIPT ASSIGNMENT (--%):
+2. JAVASCRIPT ASSIGNMENT (25%):
     + Task #3: Display modal boxes ==> COMPLETED.
     + Task #5: Login status ==> COMPLETED.
     + Write and update group progress on README.md file. ==> COMPLETED.
@@ -67,7 +67,7 @@ Nguyen Linh Chi:
     + Make Mall's Fees page and Copyright page. ==> COMPLETED.
     + Make a store website (partly RESPONSIVE). Name: Mojito - Art Stationery Store. ==> COMPLETED.
 
-2. JAVASCRIPT ASSIGNMENT (--%):
+2. JAVASCRIPT ASSIGNMENT (25%):
     + Task #2: Carousel in Home page. ==> COMPLETED.
     + Task #6: Register form requirements ==> COMPLETED.
 
