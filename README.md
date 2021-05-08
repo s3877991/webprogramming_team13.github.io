@@ -68,7 +68,7 @@ Nguyen Linh Chi:
     + Make a store website (partly RESPONSIVE). Name: Mojito - Art Stationery Store. ==> COMPLETED.
 
 2. JAVASCRIPT ASSIGNMENT (--%):
-    + Task #2: Carousel in Home page.
+    + Task #2: Carousel in Home page. ==> COMPLETED.
     + Task #6: Register form requirements ==> COMPLETED.
 
 # References:
