@@ -1,7 +1,7 @@
 #process-denied {
     display: none;                           /*Hidden by default*/
     position: fixed;                         /* Stay in place */
-    z-index: 50;                             /* Sit on top but always under the nav bar*/
+    z-index: 100;                             /* Sit on top but always under the nav bar*/
     left: 0;
     top: 0;
     width: 100%;                              /* Full width */
@@ -36,4 +36,33 @@
 #process-denied a:hover {
     color: #600;
     transition: 0.5s;
+}
+/* Make the flashbox responsive */
+@media screen and (max-width: 1325px) {
+    #process-denied .flashing-message {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 995px) {
+    #process-denied .flashing-message {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 800px) {
+    #process-denied .flashing-message {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 665px) {
+    #process-denied .flashing-message {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 665px) {
+    #process-denied .flashing-message {
+        width: 70%;
+    }
+    #process-denied .flashing-message .icon img {
+        width: 40%;
+    }
 }
