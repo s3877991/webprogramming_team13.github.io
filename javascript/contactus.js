@@ -15,6 +15,7 @@ function checkInputs(e) {
 	var isValidUserName = false;
 	var isValidEmailValue = false;
 	var isValidPhoneValue = false;
+	var isCheked = boxVal();
 	
 	// Set out different cases for Name value
 	if(userNameValue === '') {
@@ -46,7 +47,7 @@ function checkInputs(e) {
 	}
 
 	// If all the rules above are satisfied then: 
-	if (isValidEmailValue && isValidUserName && isValidPhoneValue) {
+	if (isValidEmailValue && isValidUserName && isValidPhoneValue && isCheked) {
 		alert("Form submitted! Thank you.")
 		return true;
 	}
@@ -114,7 +115,7 @@ function messageRestrictions() {
 	}
 }
 
-function boxVal() {
+function boxVal(event) {
 	if (document.getElementById('mon').checked == true ||
 	document.getElementById('tue').checked == true ||
 	document.getElementById('wed').checked == true ||
@@ -122,10 +123,10 @@ function boxVal() {
 	document.getElementById('fri').checked == true ||
 	document.getElementById('sat').checked == true ||
 	document.getElementById('sun').checked == true) {
-		return true
+		return true;
 	}
 	else {
-		alert("Please select");
+		alert("Please select at least one day!");
 		return false;
 	}
 }
