@@ -39,7 +39,7 @@ if (document.readyState == 'loading') {
             cartTable.append(cartRow);
         }
     }
-    ready()
+    ready();
 }
 
 updateCartTotal()
@@ -102,11 +102,12 @@ function addCoupon() {
     }
     else if (coupon.value == "COSC2430-DI") {
         total = total * 90 / 100;
-        total = Math.round(total * 100) / 100
+        total = Math.round(total * 100) / 100;
         document.getElementById('total').innerText = '$' + total;
     }
     else if (coupon.value == '') {
         document.getElementById('total').innerText = '$' + total;
     }
-    else { alert('The coupon is invalid'); }
+    else { alert('The coupon is invalid'); 
+}
 }
