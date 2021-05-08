@@ -13,9 +13,9 @@ email.addEventListener('input', function(e) {
 
   // display the error block if conditions are not met
   if (mailvalid) {
-    emailErr.style.display = 'none'
+    emailErr.style.display = 'none';
   } else {
-    emailErr.style.display = 'block'
+    emailErr.style.display = 'block';
   }
 })
 
@@ -29,9 +29,9 @@ phone.addEventListener('input', function(e) {
   var phonevalid = phoneregex.test(currentnum);
 
   if (phonevalid) {
-    phoneErr.style.display = 'none'
+    phoneErr.style.display = 'none';
   } else {
-    phoneErr.style.display = 'block'
+    phoneErr.style.display = 'block';
   }
 })
 
@@ -40,14 +40,14 @@ var pass = document.getElementById("password");
 var passErr = document.getElementById("pass-error");
 
 pass.addEventListener('input', function(e) {
-  var passregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,20}$/
+  var passregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,20}$/;
   var currentpass = e.target.value;
   var passvalid = passregex.test(currentpass);
 
   if (passvalid) {
-    passErr.style.display = 'none'
+    passErr.style.display = 'none';
   } else {
-    passErr.style.display = 'block'
+    passErr.style.display = 'block';
   }
 })
 
@@ -62,9 +62,9 @@ retype.addEventListener('input', function(e) {
   /* display error message when current_retype 
   does not have the same value as currentpass */
   if (currentpass == current_retype) {
-    retypeErr.style.display = 'none'
+    retypeErr.style.display = 'none';
   } else {
-    retypeErr.style.display = 'block'
+    retypeErr.style.display = 'block';
   }
 })
 
@@ -78,9 +78,9 @@ fname.addEventListener('input', function(e) {
   var fnamevalid = fnameregex.test(current_fname);
 
   if (fnamevalid) {
-    fnameErr.style.display = 'none'
+    fnameErr.style.display = 'none';
   } else {
-    fnameErr.style.display = 'block'
+    fnameErr.style.display = 'block';
   }
 })
 
@@ -94,9 +94,9 @@ lname.addEventListener('input', function(e) {
   var lnamevalid = lnameregex.test(current_lname);
 
   if (lnamevalid) {
-    lnameErr.style.display = 'none'
+    lnameErr.style.display = 'none';
   } else {
-    lnameErr.style.display = 'block'
+    lnameErr.style.display = 'block';
   }
 })
 
@@ -110,9 +110,9 @@ address.addEventListener('input', function(e) {
   var addressvalid = addressregex.test(current_address);
 
   if (addressvalid) {
-    addressErr.style.display = 'none'
+    addressErr.style.display = 'none';
   } else {
-    addressErr.style.display = 'block'
+    addressErr.style.display = 'block';
   }
 })
 
@@ -126,9 +126,9 @@ city.addEventListener('input', function(e) {
   var cityvalid = cityregex.test(current_city);
 
   if (cityvalid) {
-    cityErr.style.display = 'none'
+    cityErr.style.display = 'none';
   } else {
-    cityErr.style.display = 'block'
+    cityErr.style.display = 'block';
   }
 })
 
@@ -142,9 +142,9 @@ zip.addEventListener('input', function(e) {
   var zipvalid = zipregex.test(currentzip);
 
   if (zipvalid) {
-    zipErr.style.display = 'none'
+    zipErr.style.display = 'none';
   } else {
-    zipErr.style.display = 'block'
+    zipErr.style.display = 'block';
   }
 })
 
@@ -158,7 +158,7 @@ function display() {
   if (storeinfo.style.display === 'none') {
     storeinfo.style.display = 'block';
   } else {
-    storeinfo.style.display = 'block'
+    storeinfo.style.display = 'block';
   }
 }
 
@@ -172,6 +172,6 @@ function hide() {
   if (storeinfo.style.display === 'none') {
     storeinfo.style.display = 'none';
   } else {
-    storeinfo.style.display = 'none'
+    storeinfo.style.display = 'none';
   }
 }

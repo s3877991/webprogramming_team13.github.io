@@ -19,17 +19,17 @@ for (let index = 0; index < 4; index++) {
     // Display modal box
     cards[index].onclick = function() {
         bios[index].style.display = "block";
-    }
+    };
 
     // Close modal box
     // If user click on close button
     closes[index].onclick = function() {
         bios[index].style.display = "none";
-    }
+    };
 
     // If user click anywhere outside the modal
     bios[index].onclick = function() {
         bios[index].style.display = "none";
-    }
+    };
 
 }

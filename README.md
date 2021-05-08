@@ -54,7 +54,8 @@ Nguyen Quang Duy:
 2. JAVASCRIPT ASSIGNMENT (--%):
     + Task #3: Display modal boxes ==> COMPLETED.
     + Task #5: Login status ==> COMPLETED.
-    + Check and Modify pages to make them Responsive and Consistent ==> COMPLETED.
+    + Check and Modify pages and to make them Responsive and Consistent ==> COMPLETED.
+    + Check and Modify codes and to make it consistent, clean, efficient, run properly ==> COMPLETED.
 
 
 Nguyen Linh Chi:
