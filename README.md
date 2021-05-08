@@ -58,7 +58,7 @@ Nguyen Quang Duy:
     + Write and update group progress on README.md file. ==> COMPLETED.
     + Check and Modify pages and to make them Responsive and Consistent ==> COMPLETED.
     + Check and Modify codes and to make it consistent, clean, efficient, run properly ==> COMPLETED.
-    + Finalize and compress all files and folders into a ZIP file ==> .
+    + Finalize and compress all files and folders into a ZIP file ==> COMPLETED.
 
 
 Nguyen Linh Chi:
