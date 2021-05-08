@@ -32,6 +32,7 @@ function loginValidation() {
         there is no "Log out" or "Change Account" button, which means, when users access to "My Account" page 
         in a new tab, they have to log in to their accounts once again. */
         sessionStorage.setItem("User email", email);
+        sessionStorage.setItem("Login Successful", true);
 
         return true;
     }
