@@ -38,8 +38,8 @@ Nguyen Hai Minh Trang:
 
 2. JAVASCRIPT ASSIGNMENT (--%):
     + Task #7: "Add to cart" button ==> COMPLETED.
-    + Task #8: Order Placement.
-    + Task #9: Sample data.
+    + Task #8: Order Placement. ==> COMPLETED
+    + Task #9: Sample data. ==> COMPLETED
 
 
 Nguyen Quang Duy:
