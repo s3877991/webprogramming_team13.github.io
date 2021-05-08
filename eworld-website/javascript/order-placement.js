@@ -15,12 +15,15 @@ if (document.readyState == 'loading') {
             var version = productlist[item]['price'].split("\n")[0];
             var color = productlist[item]['color'];
             var inCart = productlist[item]['inCart'];
+
             var subTotal = updateSubTotal(price, inCart);
 
-            var cartTable = document.getElementById('order-table');
-            var cartRow = document.createElement('tr');
-            cartRow.classList.add('cart-items');
-            var cartRowContents = `
+            // Original CSS code sourced and adapted for educational purposes: https://www.youtube.com/watch?v=YeFzkC2awTM&t=1334s
+            //Display information of an item when it is added to the cart
+            var cart = document.getElementById('order-table');
+            var cartItem = document.createElement('tr');
+            cartItem.classList.add('cart-items');
+            var cartItemInfo = `
                     <td>
                         <div class="cart-info">
                             <img src=${image} alt="a phone with a notch display">
@@ -35,8 +38,8 @@ if (document.readyState == 'loading') {
                     </td>
                     <td><input class="quantity_input" type="number" min="0" value="${inCart}"></td>
                     <td class="sub-total">${subTotal}</td>`;
-            cartRow.innerHTML = cartRowContents;
-            cartTable.append(cartRow);
+            cartItem.innerHTML = cartItemInfo;
+            cart.append(cartItem);
         }
     }
     ready();
@@ -44,6 +47,11 @@ if (document.readyState == 'loading') {
 
 updateCartTotal()
 
+var applyCoupon = document.getElementById('coupon');
+applyCoupon.addEventListener('change', addCoupon);
+
+
+// Original CSS code sourced and adapted for educational purposes: https://www.youtube.com/watch?v=YeFzkC2awTM&t=1334s 
 function ready() {
     var quantityInputs = document.getElementsByClassName('quantity_input');
     for (var i = 0; i < quantityInputs.length; i++) {
@@ -52,6 +60,7 @@ function ready() {
     }
 }
 
+// Update subtotal when the items first added to cart
 function updateSubTotal(price, quantity) {
     var price = parseFloat((price).replace('$', ''));
     var quantity = parseFloat(quantity);
@@ -59,6 +68,8 @@ function updateSubTotal(price, quantity) {
     return '$' + subTotal;
 }
 
+
+// Update subtotal payment of the cart without coupon
 function updateCartSubTotal() {
     var priceElement = document.getElementsByClassName('price');
     var quantityElement = document.getElementsByClassName('quantity_input');
@@ -72,6 +83,7 @@ function updateCartSubTotal() {
     }
 }
 
+// Update total payment of the cart with/without coupon
 function updateCartTotal() {
     var subTotal = 0;
     var itemsSubTotal = document.getElementsByClassName('sub-total');
@@ -83,15 +95,14 @@ function updateCartTotal() {
     document.getElementById('total').innerText = '$' + subTotal;
 }
 
+// When user change the quantity
 function quantityChanged(event) {
     updateCartSubTotal();
     updateCartTotal();
     addCoupon();
 }
 
-var applyCoupon = document.getElementById('coupon');
-applyCoupon.addEventListener('change', addCoupon);
-
+// Add coupon
 function addCoupon() {
     var coupon = document.getElementById('coupon');
     var total = document.getElementById('items-sub-total').innerText.replace('$', '');
@@ -108,6 +119,7 @@ function addCoupon() {
     else if (coupon.value == '') {
         document.getElementById('total').innerText = '$' + total;
     }
-    else { alert('The coupon is invalid'); 
-}
+    else {
+        alert('The coupon is invalid');
+    }
 }

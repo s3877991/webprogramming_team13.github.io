@@ -33,6 +33,7 @@ flashingMessageDenied.addEventListener('click', function(ev) {
     flashingMessageDenied.style.display = "none";
 })
 
+// Original CSS code sourced and adapted for educational purposes: https://www.youtube.com/watch?v=PoTGs38DR9E&t=647s
 function add_items_to_cart() {
     // Put product info into an object called "product"
     product = {
