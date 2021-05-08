@@ -50,12 +50,15 @@ Nguyen Quang Duy:
     + Making Mall's Home page, Contact Us page, two Browse Stores pages, Log In page, Forgot Password page, Register page, User Information page. ==> COMPLETED.
     + Make a store website (fully RESPONSIVE). Name: Eworld - Store of Media Technology. ==> COMPLETED.
     + Edit, modify styles and contents of some pages. Make all web pages RESPONSIVE ==> COMPLETED.
+    + Finalize and compress all files and folders into a ZIP file ==> COMPLETED.
 
 2. JAVASCRIPT ASSIGNMENT (--%):
     + Task #3: Display modal boxes ==> COMPLETED.
     + Task #5: Login status ==> COMPLETED.
+    + Write and update group progress on README.md file. ==> COMPLETED.
     + Check and Modify pages and to make them Responsive and Consistent ==> COMPLETED.
     + Check and Modify codes and to make it consistent, clean, efficient, run properly ==> COMPLETED.
+    + Finalize and compress all files and folders into a ZIP file ==> .
 
 
 Nguyen Linh Chi:
