@@ -78,7 +78,7 @@ function isEmail(email) {
 }
 	
 function isPhone(phone) {
-	return /^([0-9]([-. ]?)){9,10}[^-. ]$/.test(phone);
+	return /^([0-9]([-. ]?)){9,11}[^-. ]$/.test(phone);
 }
 
 
@@ -95,7 +95,6 @@ function messageRestrictions() {
 
 	// Count the length of letters
 	let lettersLength = textMessageWithoutSpaces.length;
-
 	// Activate warning message
 	let warning = document.getElementById('warning-message');
 	if (lettersLength < 50) {

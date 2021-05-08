@@ -78,8 +78,7 @@ main {
 }
 .flex-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     margin: 10px 30px;
 }
@@ -177,4 +176,3 @@ main {
         font-size: 25px;
     }
 }
-

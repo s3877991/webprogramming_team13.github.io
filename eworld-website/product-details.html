@@ -41,7 +41,7 @@
                     </ul>
                 </li>
                 <li><a href="contact-us.html">CONTACT</a></li>
-                <li><a href="your-cart.html">YOUR CART</a></li>
+                <li class="your-cart"><a href="your-cart.html">YOUR CART</a></li>
             </ul>
         </nav>
     </header>
@@ -57,7 +57,8 @@
             <div class="flex-container-1">
 
                 <div class="avatar">
-                    <img id="item-image" src="images/iphone-12-pro-max.jpg" alt="an iPhone with a notch display and triple camera">
+                    <img id="item-image" src="images/iphone-12-pro-max.jpg"
+                        alt="an iPhone with a notch display and triple camera">
                 </div>
 
                 <div class="variations">
@@ -372,6 +373,25 @@
 
         <hr>
 
+        <!--Flashing message-->
+        <div class="flash-container" id="process-confirmed">
+            <div class="flashing-message">
+                <div class="icon">
+                    <img src="images/checked-icon.png" alt="a green circle with a tick on it">
+                </div>
+                <h1>Your item is added to cart!</h1>
+            </div>
+        </div>
+
+        <div class="flash-container" id="process-denied">
+            <div class="flashing-message">
+                <div class="icon">
+                    <img src="images/account.jpg" alt="a default avatar">
+                </div>
+                <h1>Please <a href="../login.html">Login</a> or <a href="../register.html">Register</a> to continue this process.</h1>
+            </div>
+        </div>
+
         <!--Recommended Products Area-->
         <section id="recommended-products">
             <h2 class="label-2">Recommened Products</h2>
@@ -483,6 +503,7 @@
 
     <!--Link to external JavaScript file-->
     <script src="javascript/add-to-cart.js"></script>
+    <script src="javascript/navbar.js" async></script>
 </body>
 
 </html>
