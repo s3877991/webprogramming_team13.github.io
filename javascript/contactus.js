@@ -113,3 +113,19 @@ function messageRestrictions() {
 		return false;
 	}
 }
+
+function boxVal() {
+	if (document.getElementById('mon').checked == true ||
+	document.getElementById('tue').checked == true ||
+	document.getElementById('wed').checked == true ||
+	document.getElementById('thu').checked == true ||
+	document.getElementById('fri').checked == true ||
+	document.getElementById('sat').checked == true ||
+	document.getElementById('sun').checked == true) {
+		return true
+	}
+	else {
+		alert("Please select");
+		return false;
+	}
+}
