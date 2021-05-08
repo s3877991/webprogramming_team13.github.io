@@ -12,7 +12,7 @@ let loginEmailAnchor = 'mailto:' + String(loginEmail);
 
 /* When users successfully log in to their account, their inputted email addresses will be saved temporally
 in the Web storage. In "User Information" page, the website will display those addresses with their link */
-if (loginEmail) {
+if (sessionStorage.getItem('Login Successful')) {
     // In desktop devices
     userEmail[0].innerHTML = loginEmail;
     userEmail[0].href = loginEmailAnchor;

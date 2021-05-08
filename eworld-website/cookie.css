@@ -1,0 +1,60 @@
+/* To define new fonts which is not available in IDE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.cookie-consent {
+    background: #f5f6fa;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    color: rgb(14, 12, 12);
+    padding: 0 32px;
+    transition: 0.5s;
+    font-size: 18px;
+    box-shadow: 0 -2px 16px;
+    text-align: center;
+}
+
+.cookie-consent.active {
+    bottom: 0;
+}
+.cookie-consent p {
+    font-weight: lighter;
+}
+.cookie-consent a {
+    font-weight: lighter;
+    color: rgb(14, 12, 12);
+}
+
+.cookie-consent a:hover {
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.cookie-btn {
+    background: #f00;
+    border: 0;
+    color: #fff;
+    padding: 12px 35px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.cookie-btn:hover {
+    background: #600;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+/* Make the cookie box responsive */
+@media screen and (max-width: 360px) {
+    .cookie-consent button, .cookie-consent a {
+        display: block;
+        margin:  20px auto;
+    }
+}

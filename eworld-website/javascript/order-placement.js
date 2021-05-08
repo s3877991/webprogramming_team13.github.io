@@ -33,7 +33,7 @@ if (document.readyState == 'loading') {
                             </div>
                         </div>
                     </td>
-                    <td><input class="quantity_input" type="number" min="1" value="${inCart}"></td>
+                    <td><input class="quantity_input" type="number" min="0" value="${inCart}"></td>
                     <td class="sub-total">${subTotal}</td>`;
             cartRow.innerHTML = cartRowContents;
             cartTable.append(cartRow);

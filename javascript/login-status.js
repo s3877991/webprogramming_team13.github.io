@@ -5,6 +5,6 @@ let loginStatus = document.getElementById("my-account");
 
 /* If users access to "My Account" page again, the website will redirect them to "User Information" page
  based on their email addresss saved teporally on Web storage */
-if (sessionStorage.getItem("User email")) {
+if (sessionStorage.getItem("Login Successful")) {
     loginStatus.href = "user-info.html";
 }
