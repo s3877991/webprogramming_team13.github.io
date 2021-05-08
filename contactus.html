@@ -70,7 +70,7 @@
                         <div class="item flex">
                             <label class="label" for="purpose">Your purpose</label>
                             <br>
-                            <select id="purpose">
+                            <select id="purpose" required>
                                 <br>
                                 <option value="" selected>Choose your purpose</option>
                                 <option value="business">Business</option>
@@ -133,54 +133,57 @@
                     </div>
 
                     <div class="item-container">
+                        <div id="available-days">
 
-                        <label class="label" for="days">Preferred contact days</label>
-                        <br>
-                        <ul class="checkbox">
+                            <label class="label" for="days">Preferred contact days</label>
+                            <br>
+                            <ul class="checkbox">
 
-                            <li>
-                                <input type="checkbox" name="checkbox" value="mon">
-                                <label class="options" for="mon">Monday</label>
-                            </li>
+                                <li>
+                                    <input type="checkbox" id="mon" value="mon">
+                                    <label class="options" for="mon">Monday</label>
+                                </li>
 
-                            <li>
-                                <input type="checkbox" name="checkbox" value="tue">
-                                <label class="options" for="tue">Tuesday</label>
-                            </li>
+                                <li>
+                                    <input type="checkbox" id="tue" value="tue">
+                                    <label class="options" for="tue">Tuesday</label>
+                                </li>
 
-                            <li>
-                                <input type="checkbox" name="checkbox" value="wed">
-                                <label class="options" for="wed">Wednesday</label>
-                            </li>
+                                <li>
+                                    <input type="checkbox" id="wed" value="wed">
+                                    <label class="options" for="wed">Wednesday</label>
+                                </li>
 
-                            <li>
-                                <input type="checkbox" name="checkbox" value="thu">
-                                <label class="options" for="thu">Thursday</label>
-                            </li>
+                                <li>
+                                    <input type="checkbox" id="thu" value="thu">
+                                    <label class="options" for="thu">Thursday</label>
+                                </li>
 
-                            <li>
-                                <input type="checkbox" name="checkbox" value="fri">
-                                <label class="options" for="fri">Friday</label>
-                            </li>
+                                <li>
+                                    <input type="checkbox" id="fri" value="fri">
+                                    <label class="options" for="fri">Friday</label>
+                                </li>
 
-                            <li>
-                                <input type="checkbox" name="checkbox" value="sat">
-                                <label class="options" for="sat">Saturday</label>
-                            </li>
+                                <li>
+                                    <input type="checkbox" id="sat" value="sat">
+                                    <label class="options" for="sat">Saturday</label>
+                                </li>
 
-                            <li>
-                                <input type="checkbox" name="checkbox" value="sun">
-                                <label class="options" for="sun">Sunday</label>
-                            </li>
+                                <li>
+                                    <input type="checkbox" id="sun" value="sun">
+                                    <label class="options" for="sun">Sunday</label>
+                                </li>
 
-                        </ul>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="item-container">
 
-                        <label class="label" for="message">Your message</label>
+                        <label class="label" for="text-message">Your message</label>
                         <br>
-                        <textarea placeholder="Enter your message"></textarea>
+                        <textarea placeholder="Enter your message" id="text-message" required onkeyup="messageRestrictions()"></textarea>
+                        <p id="warning-message"></p>
                     </div>
 
                     <div class="button-container">
@@ -190,13 +193,13 @@
                         </div>
 
                         <div class="button">
-                            <input type="submit" id="send" value="Send">
+                            <input type="submit" id="send" value="Send" onclick="alertMsg()">
                         </div>
-
                     </div>
 
                 </div>
             </form>
+            
         </section>
 
     </main>
@@ -226,6 +229,6 @@
     <script src="javascript/login-status.js"></script>
     <script src="javascript/cookie.js"></script>
     <script src="javascript/contactus.js"></script>
-
+    
 </body>
 </html>
