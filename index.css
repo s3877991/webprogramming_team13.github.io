@@ -82,53 +82,53 @@ main {
     justify-content: center;
     margin: 10px 30px;
 }
-.item {
+.flex-container .item {
     box-sizing: border-box;
     margin: 5px auto;
     text-align: center;
     width: 100%;
     float: left;
 }
-.item h3 {
+.flex-container .item h3 {
     line-height: 30px;
     font-size: 25px;
     padding: 10px;
 }
-.item .price, .item .des {
+.flex-container .item .price, .item .des {
     font-size: 20px;
     color: #f93;
 }
-.rank {
+.flex-container .rank {
     color: #fc0;
 }
-.item img {
+.flex-container .item img {
     width: 70%;
     margin: 10px 10px 0 10px;
 }
-.item image:after {
+.flex-container .item image:after {
     clear: both;
 }
-.item:hover {
+.flex-container .item:hover {
     background-color: #eee;
     transition: 0.5s;
 }
 
 /* Make the page responsive */
 @media screen and (max-width: 470px) {
-    .item {
+    .flex-container .item {
       width: 100%;
     }
-    .item img {
+    .flex-container .item img {
         margin: 20px 0;
     }
 }
 @media screen and (min-width: 470px) and (max-width: 690px) {
-    .item {
+    .flex-container .item {
       width: 50%;
     }
 }
 @media screen and (min-width: 690px) and (max-width: 860px) {
-    .item {
+    .flex-container .item {
       width: calc(100% / 3);
     }
     .banner {
@@ -136,7 +136,7 @@ main {
     }
 }
 @media screen and (min-width: 860px) {
-    .item {
+    .flex-container .item {
       width: 25%;
     }
 }
