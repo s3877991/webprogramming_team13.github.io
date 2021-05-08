@@ -1,4 +1,0 @@
-var store = document.getElementById("sub-sect-1");
-var syntheticEvent = new WheelEvent("syntheticWheel", {"deltaX": 4, "deltaMode": 0});
-
-console.log(syntheticEvent.deltaX);
