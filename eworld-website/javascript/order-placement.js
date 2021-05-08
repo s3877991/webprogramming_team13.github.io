@@ -120,7 +120,7 @@ function addCoupon() {
         document.getElementById('total').innerText = '$' + total;
     }
     else {
-        alert('The coupon is invalid');
         document.getElementById('total').innerText = '$' + total;
+        alert('The coupon is invalid');
     }
 }
