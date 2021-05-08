@@ -182,7 +182,7 @@ table tr .value {
     font-weight: bold;
     transition: 0.5s;
 }
-.modal-container {
+.flash-container {
     display: none;                           /*Hidden by default*/
     position: fixed;                         /* Stay in place */
     z-index: 50;                             /* Sit on top but always under the nav bar*/
@@ -193,18 +193,25 @@ table tr .value {
     overflow: auto;                           /* Enable scroll if needed */
     background-color: #000;                 /* Fallback color */
     background-color: rgba(0,0,0,0.5);      /* Black w/ opacity */
-  }
+}
 
 .flashing-message {
-    background-color: white;
-    position: fixed;
-    top: 35%;
-    left: 33%;
+    background-color: #fff;
+    margin: 22.5vh auto;
+    padding: 40px;
     border-radius: 10px;
-    width: 500px;
-    height: 250px;
+    width: 30%;
     text-align: center;
     font-size: 15px;
+}
+.flashing-message h1 {
+    margin: 30px auto 0;
+}
+.flashing-message .icon {
+    text-align: center;
+}
+.flashing-message .icon img {
+    width: 30%;
 }
 
 
@@ -329,5 +336,34 @@ table tr .value {
 @media screen and (min-width: 1100px) {
     .item {
         width: 20%;
+    }
+}
+/* Flashbox area */
+@media screen and (max-width: 1325px) {
+    .flashing-message {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 995px) {
+    .flashing-message {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .flashing-message {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 665px) {
+    .flashing-message {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 665px) {
+    .flashing-message {
+        width: 70%;
+    }
+    .flashing-message .icon img {
+        width: 40%;
     }
 }
