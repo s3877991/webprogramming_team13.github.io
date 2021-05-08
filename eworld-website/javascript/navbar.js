@@ -9,9 +9,11 @@ function redirect(e) {
     if (sessionStorage.getItem('User email') == null) {
         processDenied.style.display = "block";
         return false;
-    }
-    orderPlacementPage.href = "your-cart.html";
+    } 
+    else {
+    location.href = "your-cart.html";
     return true;
+}
 }
 
 // Close the flashing message
