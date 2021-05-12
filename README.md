@@ -22,54 +22,63 @@ Nguyen Linh Chi - s3878609.
 Phan Do Ngoc Linh:
 
 1. HTML AND CSS ASSIGNMENT (24%):
-    + Make Mall's Privacy Policy page and Terms of Service page. ==> COMPLETED.
-    + Make a store website (not RESPONSIVE). Name: Millennium - Novel Bookstore. ==> COMPLETED.
+    + Make Mall's Privacy Policy page and Terms of Service page ==> COMPLETED.
+    + Make a store website (not RESPONSIVE). Name: Millennium - Novel Bookstore ==> COMPLETED.
 
 2. JAVASCRIPT ASSIGNMENT (25%):
-    + Task #1: Cookies consent message. ==> COMPLETED.
+    + Task #1: Cookies consent message ==> COMPLETED.
     + Task #4: Contact Us form requirements ==> COMPLETED.
+
+3. FULLSTACK ASSIGNMENT (--%):
 
 
 Nguyen Hai Minh Trang:
 
 1. HTML AND CSS ASSIGNMENT (24%):
-    + Make Mall's About Us page and FAQs page. ==> COMPLETED.
-    + Make a store website (not RESPONSIVE). Name: M.A.C - Cosmetic store. ==> COMPLETED.
+    + Make Mall's About Us page and FAQs page ==> COMPLETED.
+    + Make a store website (not RESPONSIVE). Name: M.A.C - Cosmetic store ==> COMPLETED.
 
 2. JAVASCRIPT ASSIGNMENT (25%):
     + Task #7: "Add to cart" button ==> COMPLETED.
-    + Task #8: Order Placement. ==> COMPLETED
-    + Task #9: Sample data. ==> COMPLETED
+    + Task #8: Order Placement ==> COMPLETED.
+    + Task #9: Sample data ==> COMPLETED.
+
+3. FULLSTACK ASSIGNMENT (--%):
 
 
 Nguyen Quang Duy:
 
 1. HTML AND CSS ASSIGNMENT (28%):
-    + Write and update group progress on README.md file. ==> COMPLETED.
-    + Making responsive navigation bar for Mall Page in order to create webpage wireframes of Mall website. ==> COMPLETED.
-    + Making Mall's Home page, Contact Us page, two Browse Stores pages, Log In page, Forgot Password page, Register page, User Information page. ==> COMPLETED.
-    + Make a store website (fully RESPONSIVE). Name: Eworld - Store of Media Technology. ==> COMPLETED.
+    + Write and update group progress on README.md file ==> COMPLETED.
+    + Making responsive navigation bar for Mall Page in order to create webpage wireframes of Mall website ==> COMPLETED.
+    + Making Mall's Home page, Contact Us page, two Browse Stores pages, Log In page, Forgot Password page, Register page, User Information page ==> COMPLETED.
+    + Make a store website (fully RESPONSIVE). Name: Eworld - Store of Media Technology ==> COMPLETED.
     + Edit, modify styles and contents of some pages. Make all web pages RESPONSIVE ==> COMPLETED.
     + Finalize and compress all files and folders into a ZIP file ==> COMPLETED.
 
 2. JAVASCRIPT ASSIGNMENT (25%):
     + Task #3: Display modal boxes ==> COMPLETED.
     + Task #5: Login status ==> COMPLETED.
-    + Write and update group progress on README.md file. ==> COMPLETED.
+    + Write and update group progress on README.md file ==> COMPLETED.
     + Check and Modify pages and to make them Responsive and Consistent ==> COMPLETED.
     + Check and Modify codes and to make it consistent, clean, efficient, run properly ==> COMPLETED.
     + Finalize and compress all files and folders into a ZIP file ==> COMPLETED.
+
+3. FULLSTACK ASSIGNMENT (--%):
 
 
 Nguyen Linh Chi:
 
 1. HTML AND CSS ASSIGNMENT (24%):
-    + Make Mall's Fees page and Copyright page. ==> COMPLETED.
-    + Make a store website (partly RESPONSIVE). Name: Mojito - Art Stationery Store. ==> COMPLETED.
+    + Make Mall's Fees page and Copyright page ==> COMPLETED.
+    + Make a store website (partly RESPONSIVE). Name: Mojito - Art Stationery Store ==> COMPLETED.
 
 2. JAVASCRIPT ASSIGNMENT (25%):
-    + Task #2: Carousel in Home page. ==> COMPLETED.
+    + Task #2: Carousel in Home page ==> COMPLETED.
     + Task #6: Register form requirements ==> COMPLETED.
+
+3. FULLSTACK ASSIGNMENT (--%):
+
 
 # References:
 1. Making responsive dropdown navigation bar: YouTube, FollowAndrew, viewed Apr 5 2021, <https://www.youtube.com/watch?v=7aGLkT4y4ls>
