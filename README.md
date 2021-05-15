@@ -19,40 +19,40 @@ Nguyen Quang Duy - s3877991.
 Nguyen Linh Chi - s3878609.
 
 # Group Contribution:
-Phan Do Ngoc Linh:
+PHAN DO NGOC LINH:
 
-1. HTML AND CSS ASSIGNMENT (24%):
+1. HTML & CSS Assignment (24%):
     + Make Mall's Privacy Policy page and Terms of Service page ==> COMPLETED.
     + Make a store website (not RESPONSIVE). Name: Millennium - Novel Bookstore ==> COMPLETED.
 
-2. JAVASCRIPT ASSIGNMENT (25%):
+2. JavaScript Assignment (25%):
     + Task #1: Cookies consent message ==> COMPLETED.
     + Task #4: Contact Us form requirements ==> COMPLETED.
 
-3. FULLSTACK ASSIGNMENT (--%):
+3. Fullstack Assignment (--%):
     + Task #4: Implement the behavior in My Account and Login page ==> .
     + Task #8: Implement the behavior in Browse Products page ==> .
 
 
-Nguyen Hai Minh Trang:
+NGUYEN HAI MINH TRANG:
 
-1. HTML AND CSS ASSIGNMENT (24%):
+1. HTML & CSS Assignment (24%):
     + Make Mall's About Us page and FAQs page ==> COMPLETED.
     + Make a store website (not RESPONSIVE). Name: M.A.C - Cosmetic store ==> COMPLETED.
 
-2. JAVASCRIPT ASSIGNMENT (25%):
+2. JavaScript Assignment (25%):
     + Task #7: "Add to cart" button ==> COMPLETED.
     + Task #8: Order Placement ==> COMPLETED.
     + Task #9: Sample data ==> COMPLETED.
 
-3. FULLSTACK ASSIGNMENT (--%):
+3. Fullstack Assignment (--%):
     + Task #5: Register ==> .
     + Task #7: Implement behaviour in Store Home page ==> . 
 
 
-Nguyen Quang Duy:
+NGUYEN QUANG DUY:
 
-1. HTML AND CSS ASSIGNMENT (28%):
+1. HTML & CSS Assignment (28%):
     + Write and update group progress on README.md file ==> COMPLETED.
     + Making responsive navigation bar for Mall Page in order to create webpage wireframes of Mall website ==> COMPLETED.
     + Making Mall's Home page, Contact Us page, two Browse Stores pages, Log In page, Forgot Password page, Register page, User Information page ==> COMPLETED.
@@ -60,7 +60,7 @@ Nguyen Quang Duy:
     + Edit, modify styles and contents of some pages. Make all web pages RESPONSIVE ==> COMPLETED.
     + Finalize and compress all files and folders into a ZIP file ==> COMPLETED.
 
-2. JAVASCRIPT ASSIGNMENT (25%):
+2. JavaScript Assignment (25%):
     + Task #3: Display modal boxes ==> COMPLETED.
     + Task #5: Login status ==> COMPLETED.
     + Write and update group progress on README.md file ==> COMPLETED.
@@ -68,22 +68,22 @@ Nguyen Quang Duy:
     + Check and Modify codes and to make it consistent, clean, efficient, run properly ==> COMPLETED.
     + Finalize and compress all files and folders into a ZIP file ==> COMPLETED.
 
-3. FULLSTACK ASSIGNMENT (--%): 
+3. Fullstack Assignment (--%): 
     + Task #3: Create and develop an admin dashboard page ==> .
     + Task #9: Implement behaviour in Product Detail and Order Placement page ==> .
 
 
-Nguyen Linh Chi:
+NGUYEN LINH CHI:
 
-1. HTML AND CSS ASSIGNMENT (24%):
+1. HTML & CSS Assignment (24%):
     + Make Mall's Fees page and Copyright page ==> COMPLETED.
     + Make a store website (partly RESPONSIVE). Name: Mojito - Art Stationery Store ==> COMPLETED.
 
-2. JAVASCRIPT ASSIGNMENT (25%):
+2. JavaScript Assignment (25%):
     + Task #2: Carousel in Home page ==> COMPLETED.
     + Task #6: Register form requirements ==> COMPLETED.
 
-3. FULLSTACK ASSIGNMENT (--%):
+3. Fullstack Assignment (--%):
     + Task #2: Display stores and products based on data from CSV files ==> .
     + Task #6: Implement behaviour in browse stores pages ==> .
 
