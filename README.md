@@ -47,7 +47,7 @@ NGUYEN HAI MINH TRANG:
 
 3. Fullstack Assignment (--%):
     + Task #5: Register ==> .
-    + Task #7: Implement behaviour in Store Home page ==> . 
+    + Task #7: Implement the behavior in Store Home page ==> . 
 
 
 NGUYEN QUANG DUY:
@@ -70,7 +70,7 @@ NGUYEN QUANG DUY:
 
 3. Fullstack Assignment (--%): 
     + Task #3: Create and develop an admin dashboard page ==> .
-    + Task #9: Implement behaviour in Product Detail and Order Placement page ==> .
+    + Task #9: Implement the behavior in Product Detail and Order Placement page ==> .
 
 
 NGUYEN LINH CHI:
@@ -85,7 +85,7 @@ NGUYEN LINH CHI:
 
 3. Fullstack Assignment (--%):
     + Task #2: Display stores and products based on data from CSV files ==> .
-    + Task #6: Implement behaviour in browse stores pages ==> .
+    + Task #6: Implement the behavior in browse stores pages ==> .
 
 
 # References:
