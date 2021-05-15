@@ -30,6 +30,8 @@ Phan Do Ngoc Linh:
     + Task #4: Contact Us form requirements ==> COMPLETED.
 
 3. FULLSTACK ASSIGNMENT (--%):
+    + Task #4: Implement the behavior in My Account and Login page ==> .
+    + Task #8: Implement the behavior in Browse Products page ==> .
 
 
 Nguyen Hai Minh Trang:
@@ -44,6 +46,8 @@ Nguyen Hai Minh Trang:
     + Task #9: Sample data ==> COMPLETED.
 
 3. FULLSTACK ASSIGNMENT (--%):
+    + Task #5: Register ==> .
+    + Task #7: Implement behaviour in Store Home page ==> . 
 
 
 Nguyen Quang Duy:
@@ -65,6 +69,9 @@ Nguyen Quang Duy:
     + Finalize and compress all files and folders into a ZIP file ==> COMPLETED.
 
 3. FULLSTACK ASSIGNMENT (--%):
+    + Task #0: Download provided CSV files to get the data ==> COMPLETED. 
+    + Task #3: Create and develop an admin dashboard page ==> .
+    + Task #9: Implement behaviour in Product Detail and Order Placement page ==> .
 
 
 Nguyen Linh Chi:
@@ -78,6 +85,8 @@ Nguyen Linh Chi:
     + Task #6: Register form requirements ==> COMPLETED.
 
 3. FULLSTACK ASSIGNMENT (--%):
+    + Task #2: Display stores and products based on data from CSV files ==> .
+    + Task #6: Implement behaviour in browse stores pages ==> .
 
 
 # References:
