@@ -68,8 +68,7 @@ Nguyen Quang Duy:
     + Check and Modify codes and to make it consistent, clean, efficient, run properly ==> COMPLETED.
     + Finalize and compress all files and folders into a ZIP file ==> COMPLETED.
 
-3. FULLSTACK ASSIGNMENT (--%):
-    + Task #0: Download provided CSV files to get the data ==> COMPLETED. 
+3. FULLSTACK ASSIGNMENT (--%): 
     + Task #3: Create and develop an admin dashboard page ==> .
     + Task #9: Implement behaviour in Product Detail and Order Placement page ==> .
 
