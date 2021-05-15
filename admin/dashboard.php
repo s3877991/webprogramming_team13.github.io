@@ -1,3 +1,10 @@
+<?php
+    // Prevent unauthenicated users as well as hackers from logging to dashboard
+    session_start();
+    if (!isset($_SESSION('LoggedIn'))) {
+        header('location: install.php');
+    }
+?>
 <!DOCTYPE html>
 <html>
 
