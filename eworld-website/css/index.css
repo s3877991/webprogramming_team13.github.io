@@ -19,7 +19,7 @@ html {
 .banner {
     position: relative;
     height: 700px;
-    background: url(eworld-banner.jpg) no-repeat fixed;
+    background: url(../images/eworld-banner.jpg) no-repeat fixed;
     background-position: 50% 90%;
     background-size: cover;
 }

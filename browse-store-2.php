@@ -57,10 +57,19 @@
                     <label for="category">Your favourite category is</label>
                     <select id="category">
                         <option id="all">All</option>
-                        <option id="books">Books</option>
-                        <option id="cosmetics">Cosmetics</option>
-                        <option id="technology">Technology</option>
-                        <option id="stationery">Stationery</option>
+                        <option id="1">Department stores</option>
+                        <option id="2">Grocery stores</option>
+                        <option id="3">Restaurant</option>
+                        <option id="4">Clothing stores</option>
+                        <option id="5">Accessory stores</option>
+                        <option id="6">Pharmacies</option>
+                        <option id="7">Technology stores</option>
+                        <option id="8">Pet stores</option>
+                        <option id="9">Toy stores</option>
+                        <option id="10">Specialty stores</option>
+                        <option id="11">Thrift stores</option>
+                        <option id="12">Services</option>
+                        <option id="13">Kiosks</option>
                     </select>
                 </div>
         </section>
