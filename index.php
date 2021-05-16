@@ -19,7 +19,7 @@
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="index.html">SHOPPIVERSE</a></div>
+            <div id="logo"><a href="index.php">SHOPPIVERSE</a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -29,9 +29,9 @@
 
             <!--Navigation-->
             <ul class="menu">
-                <li><a class="active" href="index.html">HOME</a></li>
-                <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a href="fees.html">FEES</a></li>
+                <li><a class="active" href="index.php">HOME</a></li>
+                <li><a href="aboutus.php">ABOUT US</a></li>
+                <li><a href="fees.php">FEES</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
                     <label for="dropdown-sub" class="toggle">STORES <span
@@ -39,13 +39,13 @@
                     <a href="#">STORES <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
-                        <li><a href="browse-store-1.html">by NAME</a></li>
-                        <li><a href="browse-store-2.html">by CATEGORY</a></li>
+                        <li><a href="browse-store-1.php">by NAME</a></li>
+                        <li><a href="browse-store-2.php">by CATEGORY</a></li>
                     </ul>
                 </li>
-                <li><a href="contactus.html">CONTACT US</a></li>
-                <li><a href="faqs.html">FAQS</a></li>
-                <li><a href="login.html" id="my-account">MY ACCOUNT</a></li>
+                <li><a href="contactus.php">CONTACT US</a></li>
+                <li><a href="faqs.php">FAQS</a></li>
+                <li><a href="login.php" id="my-account">MY ACCOUNT</a></li>
             </ul>
         </nav>
     </header>
@@ -71,7 +71,7 @@
             <div class="slide-track">
 
                 <div class="slide">
-                    <a href="eworld-website/index.html">
+                    <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/eworld.png" alt="a letter e logo">
                         </div>
@@ -88,7 +88,7 @@
                 </div>
 
                 <div class="slide">
-                    <a href="eworld-website/index.html">
+                    <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/millennium.png" alt="a letter M logo">
                         </div>
@@ -105,7 +105,7 @@
                 </div>
 
                 <div class="slide">
-                    <a href="eworld-website/index.html">
+                    <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/mac.png" alt="M . A . C">
                         </div>
@@ -122,7 +122,7 @@
                 </div>
 
                 <div class="slide">
-                    <a href="eworld-website/index.html">
+                    <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/mojito.png" alt="a glass of drink with stars an dots">
                         </div>
@@ -139,7 +139,7 @@
                 </div>
 
                 <div class="slide">
-                    <a href="eworld-website/index.html">
+                    <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/nike.png" alt="a word 'NIKE' and a slash below it">
                         </div>
@@ -156,7 +156,7 @@
                 </div>
 
                 <div class="slide">
-                    <a href="eworld-website/index.html">
+                    <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/gucci.png" alt="a symbol and a name above">
                         </div>
@@ -173,7 +173,7 @@
                 </div>
 
                 <div class="slide">
-                    <a href="eworld-website/index.html">
+                    <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/tocotoco.jpg" alt="a black circle with many stars">
                         </div>
@@ -190,7 +190,7 @@
                 </div>
 
                 <div class="slide">
-                    <a href="eworld-website/index.html">
+                    <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/don-chicken.png" alt="a man sit on a big chicken">
                         </div>
@@ -220,7 +220,7 @@
                 <div class="slide-track">
 
                 <div class="slide">
-                    <a href="eworld-website/product-details.html">
+                    <a href="eworld-website/product-details.php">
                         <img src="eworld-website/images/galaxy-s21-ultra.jpeg" alt="a phone with quad camera">
                         <h3 class="name">Samsung Galaxy S21 Ultra</h3>
                         <p class="price">$1058.69</p>
@@ -235,7 +235,7 @@
                 </div>
 
                 <div class="slide">
-                    <a href="eworld-website/product-details-2.html">
+                    <a href="eworld-website/product-details-2.php">
                         <img src="images/book-2-responsive.png" alt="a cover page with some letters and a fingerprint">
                         <h3 class="name">Sapiens: A Brief History of Humankind - Yuval Noah Harari</h3>
                         <p class="price">$10.99</p>
@@ -250,7 +250,7 @@
                 </div>
 
                 <div class="slide">
-                    <a href="eworld-website/product-details.html">
+                    <a href="eworld-website/product-details.php">
                         <img src="images/matte-lipstick.png" alt="a lipstick">
                         <h3 class="name">Mattle Lipstick</h3>
                         <p class="price">$19.99</p>
@@ -265,7 +265,7 @@
                 </div>
 
                 <div class="slide">
-                    <a href="eworld-website/product-details-2.html">
+                    <a href="eworld-website/product-details-2.php">
                         <img src="images/faber-watercolor-pencil.jpg" alt="a box of colored pencils">
                         <h3 class="name">72 Faber Castell watercolor pencils set</h3>
                         <p class="price">$24.99</p>
@@ -280,7 +280,7 @@
                 </div>
 
                 <div class="slide">
-                    <a href="eworld-website/product-details.html">
+                    <a href="eworld-website/product-details.php">
                         <img src="images/nike-sneaker.jpg" alt="a sneaker">
                         <h3 class="name">Air Jordan 1 Mid</h3>
                         <p class="price">$140.83</p>
@@ -295,7 +295,7 @@
                 </div>
 
                 <div class="slide">
-                    <a href="eworld-website/product-details-2.html">
+                    <a href="eworld-website/product-details-2.php">
                         <img src="images/gucci-bag.jpg" alt="a handbag">
                         <h3 class="name">Marmont mini top handle bag</h3>
                         <p class="price">$2190</p>
@@ -310,7 +310,7 @@
                 </div>
 
                 <div class="slide">
-                    <a href="eworld-website/product-details.html">
+                    <a href="eworld-website/product-details.php">
                         <img src="images/matcha-milk-tea.jpg" alt="a cup of green milk tea">
                         <h3 class="name">Matcha milk tea</h3>
                         <p class="price">$1.07</p>
@@ -325,7 +325,7 @@
                 </div>
 
                 <div class="slide">
-                    <a href="eworld-website/product-details-2.html">
+                    <a href="eworld-website/product-details-2.php">
                         <img src="images/spicy-cheese-chicken.jpg" alt="a chicken dish">
                         <h3 class="name">Spicy cheese chicken</h3>
                         <p class="price">$13.04</p>
@@ -351,7 +351,7 @@
             <div class="flex-container">
 
                 <div class="item">
-                    <a href="eworld-website/index.html">
+                    <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/nike.png" alt="a word 'NIKE' and a slash below it">
                         </div>
@@ -368,7 +368,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.html">
+                    <a href="eworld-website/index.php">
                         <img src="images/eworld.png" alt="a letter e logo">
                         <h3 class="name">Eworld</h3>
                         <p class="des">Media Technology Store</p>
@@ -383,7 +383,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.html">
+                    <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/don-chicken.png" alt="a man sit on a big chicken">
                         </div>
@@ -400,7 +400,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.html">
+                    <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/tocotoco.jpg" alt="a black circle with many stars">
                         </div>
@@ -428,7 +428,7 @@
             <div class="flex-container">
 
                 <div class="item">
-                    <a href="eworld-website/product-details.html">
+                    <a href="eworld-website/product-details.php">
                         <img src="eworld-website/images/iphone-12-pro-max.jpg" alt="a phone with a notch display">
                         <h3 class="name">Apple iPhone 12 Pro Max</h3>
                         <p class="price">$1264.78</p>
@@ -443,7 +443,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/product-details-2.html">
+                    <a href="eworld-website/product-details-2.php">
                         <img src="images/nike-sneaker-2.jpg" alt="another sneaker">
                         <h3 class="name">Air Force 1 </h3>
                         <p class="price">$166.48</p>
@@ -458,7 +458,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/product-details.html">
+                    <a href="eworld-website/product-details.php">
                         <img src="images/black-diamond-milk-tea.jpg" alt="a cup of brown milk tea with topping">
                         <h3 class="name">Okinawan Black Diamond milk tea</h3>
                         <p class="price">$1.07</p>
@@ -473,7 +473,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/product-details-2.html">
+                    <a href="eworld-website/product-details-2.php">
                         <img src="images/brush.png" alt="10 make-up brushes varied in sizes">
                         <h3 class="name">M.A.C Student Pro Brush</h3>
                         <p class="price">$20</p>
@@ -494,9 +494,9 @@
 
     <!--Footer section with navigation bar-->
     <footer>
-        <a href="copyright.html">Copyright</a>
-        <a href="tos.html">Terms of Service</a>
-        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="copyright.php">Copyright</a>
+        <a href="tos.php">Terms of Service</a>
+        <a href="privacy-policy.php">Privacy Policy</a>
         <div id="brief-description">
             <em>
                 <h3>by <strong>THE GANG</strong></h3>

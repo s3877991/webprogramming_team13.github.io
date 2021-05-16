@@ -18,7 +18,7 @@
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="index.html"><img src="images/logo.png" alt="logo">Eworld</a></div>
+            <div id="logo"><a href="index.php"><img src="images/logo.png" alt="logo">Eworld</a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -28,8 +28,8 @@
 
             <!--Navigation-->
             <ul class="menu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about-us.html">ABOUT US</a></li>
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="about-us.php">ABOUT US</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
                     <label for="dropdown-sub" class="toggle">PRODUCTS <span
@@ -37,12 +37,12 @@
                     <a href="#">PRODUCTS <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
-                        <li><a href="browse-products-1.html">by CATEGORY</a></li>
-                        <li><a href="browse-products-2.html">by CREATED TIME</a></li>
+                        <li><a href="browse-products-1.php">by CATEGORY</a></li>
+                        <li><a href="browse-products-2.php">by CREATED TIME</a></li>
                     </ul>
                 </li>
-                <li><a href="contact-us.html">CONTACT</a></li>
-                <li class="your-cart"><a href="your-cart.html">YOUR CART</a></li>
+                <li><a href="contact-us.php">CONTACT</a></li>
+                <li class="your-cart"><a href="your-cart.php">YOUR CART</a></li>
             </ul>
         </nav>
     </header>
@@ -62,16 +62,16 @@
         </div>
         
         <div class="btn">
-            <a href="../index.html">Exit to Mall page</a>
+            <a href="../index.php">Exit to Mall page</a>
         </div>
 
     </main>
 
     <!--Footer section with navigation bar-->
     <footer>
-        <a href="copyright.html">Copyright</a>
-        <a href="tos.html">Terms of Service</a>
-        <a href="privacypolicy.html">Privacy Policy</a>
+        <a href="copyright.php">Copyright</a>
+        <a href="tos.php">Terms of Service</a>
+        <a href="privacypolicy.php">Privacy Policy</a>
         <div id="brief-description">
             <em>
                 <h3>by <strong>THE GANG</strong></h3>

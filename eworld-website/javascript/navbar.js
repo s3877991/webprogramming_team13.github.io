@@ -20,7 +20,7 @@ function redirect(e) {
         return false;
     } 
     else {
-    location.href = "your-cart.html";
+    location.href = "your-cart.php";
     return true;
 }
 }

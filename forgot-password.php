@@ -18,7 +18,7 @@
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="index.html">SHOPPIVERSE</a></div>
+            <div id="logo"><a href="index.php">SHOPPIVERSE</a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -28,9 +28,9 @@
 
             <!--Navigation-->
             <ul class="menu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a href="fees.html">FEES</a></li>
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="aboutus.php">ABOUT US</a></li>
+                <li><a href="fees.php">FEES</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
                     <label for="dropdown-sub" class="toggle">STORES <span
@@ -38,13 +38,13 @@
                     <a href="">STORES <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
-                        <li><a href="browse-store-1.html">by NAME</a></li>
-                        <li><a href="browse-store-2.html">by CATEGORY</a></li>
+                        <li><a href="browse-store-1.php">by NAME</a></li>
+                        <li><a href="browse-store-2.php">by CATEGORY</a></li>
                     </ul>
                 </li>
-                <li><a href="contactus.html">CONTACT US</a></li>
-                <li><a href="faqs.html">FAQS</a></li>
-                <li><a class="active" href="login.html">MY ACCOUNT</a></li>
+                <li><a href="contactus.php">CONTACT US</a></li>
+                <li><a href="faqs.php">FAQS</a></li>
+                <li><a class="active" href="login.php">MY ACCOUNT</a></li>
             </ul>
         </nav>
     </header>
@@ -54,7 +54,7 @@
         <section id="forgot-password">
 
             <div class="container">
-                <form method="get" action="forgot-password.html">
+                <form method="get" action="forgot-password.php">
 
                     <div class="label">
                         <h1>FORGOT YOUR PASSWORD?</h1>
@@ -80,7 +80,7 @@
                     <hr>
 
                     <div class="cancel">
-                        <a href="login.html">Cancel</a>
+                        <a href="login.php">Cancel</a>
                     </div>
 
                 </form>
@@ -91,9 +91,9 @@
 
     <!--Footer section with navigation bar-->
     <footer>
-        <a href="copyright.html">Copyright</a>
-        <a href="tos.html">Terms of Service</a>
-        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="copyright.php">Copyright</a>
+        <a href="tos.php">Terms of Service</a>
+        <a href="privacy-policy.php">Privacy Policy</a>
         <div id="brief-description">
             <em>
                 <h3>by <strong>THE GANG</strong></h3>
