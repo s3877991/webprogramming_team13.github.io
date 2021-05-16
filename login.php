@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="header-&-footer.css">
-    <link rel="stylesheet" href="forgot-password.css">
+    <link rel="stylesheet" href="css/header-&-footer.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="cookie.css">
-    <title>Forgot your password?</title>
+    <title>Log In</title>
 </head>
 
 <body>
@@ -51,41 +51,53 @@
 
     <!--Main content-->
     <main>
-        <section id="forgot-password">
+        <section id="log-in">
+            <div class="flex-container">
 
-            <div class="container">
-                <form method="get" action="forgot-password.html">
+                <div class="image">
+                    <img src="images/shopping-cart.png" alt="a cart with some stuffs">
+                </div>
 
-                    <div class="label">
-                        <h1>FORGOT YOUR PASSWORD?</h1>
-                        <p>
-                            Please enter your email address associated with your account,
-                            and you will recieve an email with a link to reset your password.
-                        </p>
-                    </div>
+                <div class="form">
+                    <form method="get" action="user-info.html" id="login-form">
 
-                    <hr>
+                        <div class="input">
+                            <label for="email" class="label">Your Email</label>
+                            <br>
+                            <input type="email" class="text-field" name="email" id="email"
+                                placeholder="Enter your email address" required>
+                        </div>
 
-                    <div class="input">
+                        <div class="input">
+                            <label for="password" class="label">Your Password</label>
+                            <br>
+                            <input type="password" class="text-field" name="pasword" id="password"
+                                placeholder="Enter your password" required>
+                        </div>
 
-                        <label for="email">Your Email</label>
-                        <br>
-                        <input type="email" class="text-field" name="email" placeholder="Enter your email address"
-                            required>
-                        <br>
-                        <input type="submit" name="login" value="Reset your password">
+                        <div class="error">
+                            <p id="error-message">Your email or password is INCORRECT</p>
+                        </div>
 
-                    </div>
+                        <div class="action-1">
+                            <input type="submit" name="login" value="Log In">
+                        </div>
 
-                    <hr>
+                        <div class="action-2">
+                            <a href="forgot-password.html">Forgot your password?</a>
+                        </div>
 
-                    <div class="cancel">
-                        <a href="login.html">Cancel</a>
-                    </div>
+                        <hr>
 
-                </form>
+                        <div class="action-3">
+                            <p>Are you new to Shoppiverse?</p>
+                            <a href="register.html">Create New Account</a>
+                        </div>
+
+                    </form>
+                </div>
+
             </div>
-
         </section>
     </main>
 
@@ -110,6 +122,8 @@
         <a href="#">Learn more</a>
     </div>
 
+    <!--Link to external JavaScript file-->
+    <script src="javascript/login-validation.js"></script>
     <script src="javascript/cookie.js"></script>
 </body>
 

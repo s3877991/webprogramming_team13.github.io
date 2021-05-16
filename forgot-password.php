@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="header-&-footer.css">
-    <link rel="stylesheet" href="generic-text.css">
+    <link rel="stylesheet" href="css/header-&-footer.css">
+    <link rel="stylesheet" href="css/forgot-password.css">
+    <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="cookie.css">
-    <title>Shoppiverse - FAQs</title>
+    <title>Forgot your password?</title>
 </head>
 
 <body>
@@ -43,69 +43,50 @@
                     </ul>
                 </li>
                 <li><a href="contactus.html">CONTACT US</a></li>
-                <li><a class="active" href="faqs.html">FAQS</a></li>
-                <li><a href="login.html" id="my-account">MY ACCOUNT</a></li>
+                <li><a href="faqs.html">FAQS</a></li>
+                <li><a class="active" href="login.html">MY ACCOUNT</a></li>
             </ul>
         </nav>
     </header>
 
     <!--Main content-->
     <main>
-        <section id="faqs">
-            <div class="text">
-                <h1>FREQUENTLY ASKED QUESTIONS</h1>
+        <section id="forgot-password">
 
-                <hr>
+            <div class="container">
+                <form method="get" action="forgot-password.html">
 
-                <h2>1/ How do I create a new account?</h3>
-                <p>Go to "My Account" on the navigation bar and choose "Create New Account".</p>
+                    <div class="label">
+                        <h1>FORGOT YOUR PASSWORD?</h1>
+                        <p>
+                            Please enter your email address associated with your account,
+                            and you will recieve an email with a link to reset your password.
+                        </p>
+                    </div>
 
-                <h2>2/ How much is the shipping fee?</h3>
-                <p>
-                    The shipping fee will be depend on the distance between your location and our company, there is no
-                    fixed cost.
-                </p>
+                    <hr>
 
-                <h2>
-                    3/ Can I buy from different shops and have my stuff delivered together only once so that I don't
-                    have to pay extra shipping fees?
-                </h2>
-                <p>
-                    We're sorry to say that it's not possible. Different shops might have different time preparing their
-                    products to be delivered, so we're afraid that we can't have everyhing prepared at the same time and 
-                    deliver to you all in once.
-                </p>
+                    <div class="input">
 
-                <h2>4/ Do you have worldwide shipping service?</h2>
-                <p>Yes, we do offer this service.</p>
+                        <label for="email">Your Email</label>
+                        <br>
+                        <input type="email" class="text-field" name="email" placeholder="Enter your email address"
+                            required>
+                        <br>
+                        <input type="submit" name="login" value="Reset your password">
 
-                <h2>5/ Can I order without an account?</h2>
-                <p>
-                    You have to create an account in order to add products into your cart and place an order. However,
-                    you can
-                    still view products without logging in.
-                </p>
+                    </div>
 
-                <h2>6/ Can I cancel an order?</h2>
-                <p>
-                    As long as the package is not being delivered yet, you can cancel your order placement without
-                    getting any
-                    extra charges.
-                </p>
+                    <hr>
 
-                <h2>7/ How many stores do you have?</h2>
-                <p>We have 4 stores in total.</p>
+                    <div class="cancel">
+                        <a href="login.html">Cancel</a>
+                    </div>
 
-                <h2>8/ Can I return the products and get a refund?</h2>
-                <p>
-                    Yes, you can contact us if you want to return the product. However, we only refund if it is the
-                    fault of the
-                    manufacturer or delivery.
-                </p>
-
+                </form>
             </div>
-        </section>
 
+        </section>
     </main>
 
     <!--Footer section with navigation bar-->
@@ -129,8 +110,6 @@
         <a href="#">Learn more</a>
     </div>
 
-    <!--Link to external JavaScript file-->
-    <script src="javascript/login-status.js"></script>
     <script src="javascript/cookie.js"></script>
 </body>
 

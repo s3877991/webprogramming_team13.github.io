@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="header-&-footer.css">
-    <link rel="stylesheet" href="browse-store-2.css">
+    <link rel="stylesheet" href="css/header-&-footer.css">
+    <link rel="stylesheet" href="css/browse-store-1.css">
+    <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="cookie.css">
-    <title>Shoppiverse - Browse Stores</title>
+    <title>Shoppiverse - Stores</title>
 </head>
 
 <body>
@@ -38,8 +38,8 @@
                     <a href="">STORES <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
-                        <li><a href="browse-store-1.html">by NAME</a></li>
-                        <li><a class="active" href="browse-store-2.html">by CATEGORY</a></li>
+                        <li><a class="active" href="browse-store-1.html">by NAME</a></li>
+                        <li><a href="browse-store-2.html">by CATEGORY</a></li>
                     </ul>
                 </li>
                 <li><a href="contactus.html">CONTACT US</a></li>
@@ -53,16 +53,38 @@
     <main>
 
         <section id="select">
-                <div class="select">
-                    <label for="category">Your favourite category is</label>
-                    <select id="category">
-                        <option id="all">All</option>
-                        <option id="books">Books</option>
-                        <option id="cosmetics">Cosmetics</option>
-                        <option id="technology">Technology</option>
-                        <option id="stationery">Stationery</option>
-                    </select>
-                </div>
+            <div class="select">
+                <label for="letter-start">Store names start with letter </label>
+                <select id="letter-start">
+                    <option id="all">All</option>
+                    <option id="a">A</option>
+                    <option id="b">B</option>
+                    <option id="c">C</option>
+                    <option id="d">D</option>
+                    <option id="e">E</option>
+                    <option id="f">F</option>
+                    <option id="g">G</option>
+                    <option id="h">H</option>
+                    <option id="i">I</option>
+                    <option id="j">J</option>
+                    <option id="k">K</option>
+                    <option id="l">L</option>
+                    <option id="m">M</option>
+                    <option id="n">N</option>
+                    <option id="o">O</option>
+                    <option id="p">P</option>
+                    <option id="q">Q</option>
+                    <option id="r">R</option>
+                    <option id="s">S</option>
+                    <option id="t">T</option>
+                    <option id="u">U</option>
+                    <option id="v">V</option>
+                    <option id="w">W</option>
+                    <option id="x">X</option>
+                    <option id="y">Y</option>
+                    <option id="z">Z</option>
+                </select>
+            </div>
         </section>
 
         <hr>
@@ -205,7 +227,6 @@
                         </p>
                     </a>
                 </div>
-
             </div>
         </section>
 
