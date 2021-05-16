@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="header-&-footer.css">
-    <link rel="stylesheet" href="your-cart.css">
-    <link rel="stylesheet" href="cookie.css">
+    <link rel="stylesheet" href="css/header-&-footer.css">
+    <link rel="stylesheet" href="css/generic-text.css">
+    <link rel="stylesheet" href="css/process-denied.css">
+    <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Eworld - Your Cart</title>
+    <title>Copyright</title>
 </head>
 
 <body>
@@ -42,7 +43,7 @@
                     </ul>
                 </li>
                 <li><a href="contact-us.html">CONTACT</a></li>
-                <li class="your-cart"><a class="active" href="your-cart.html">YOUR CART</a></li>
+                <li class="your-cart"><a href="your-cart.html">YOUR CART</a></li>
             </ul>
         </nav>
     </header>
@@ -50,62 +51,26 @@
     <!--Main content-->
     <main>
 
-        <h1>YOUR SHOPPING CART</h1>
+        <div class="image">
+            <img src="images/copyright.png" alt="a circle with a letter C inside it">
+        </div>
 
-        <hr>
+        <div class="text-3">
+            <h1>COPYRIGHT</h1>
+            <h3>Copyright <span class="material-icons">copyright</span> 2021, Eworld Technology Corporation.</h3>
+            <h3>All rights reserved.</h3>
+        </div>
 
-        <!--Order Placement Area -->
-        <section id="order-plcmnt">
-            <div class="small-container cart-page">
-
-                <!--List of products add to cart-->
-                <table id='order-table'>
-                    <tr>
-                        <th><strong>PRODUCT</strong></th>
-                        <th><strong>QUANTITY</strong></th>
-                        <th><strong>SUB-TOTAL</strong></th>
-                    </tr>
-                </table>
-
-                <hr>
-
-                <!--Total price-->
-                <div class="total-price">
-
-                    <table>
-                        <tr>
-                            <td><strong>SUB-TOTAL</strong></td>
-                            <td id="items-sub-total">$0</td>
-                        </tr>
-
-                        <tr>
-                            <td><strong>COUPON</strong></td>
-                            <td><input type="text" id="coupon"></td>
-                        </tr>
-                        <tr>
-                            <td><strong>TOTAL</strong></td>
-                            <td><strong id="total">$0</strong></td>
-                        </tr>
-                    </table>
-
+        <!--Flashing message-->
+        <div class="flash-container" id="process-denied">
+            <div class="flashing-message">
+                <div class="icon">
+                    <img src="images/account.jpg" alt="a default avatar">
                 </div>
-
+                <h1>Please <a href="../login.html">Login</a> or <a href="../register.html">Register</a> to continue this
+                    process.</h1>
             </div>
-        </section>
-
-        <section id="btn-area">
-            <div class="button-container">
-
-                <div class="button">
-                    <a href="product-details.html">Continue Shopping</a>
-                </div>
-
-                <div class="button">
-                    <a href="thankyou.html">ORDER</a>
-                </div>
-
-            </div>
-        </section>
+        </div>
 
     </main>
 
@@ -131,7 +96,8 @@
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="javascript/order-placement.js" async></script>
+    <script src="javascript/navbar.js" async></script>
+    <script src="../javascript/cookie.js"></script>
 </body>
 
 </html>

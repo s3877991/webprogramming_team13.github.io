@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="header-&-footer.css">
-    <link rel="stylesheet" href="generic-text.css">
-    <link rel="stylesheet" href="process-denied.css">
-    <link rel="stylesheet" href="cookie.css">
+    <link rel="stylesheet" href="css/header-&-footer.css">
+    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/process-denied.css">
+    <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Privacy Policy</title>
+    <title>Eworld - About Us</title>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
             <!--Navigation-->
             <ul class="menu">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="about-us.html">ABOUT US</a></li>
+                <li><a class="active" href="about-us.html">ABOUT US</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
                     <label for="dropdown-sub" class="toggle">PRODUCTS <span
@@ -48,59 +48,71 @@
         </nav>
     </header>
 
-    <!--Main content-->
+    <!--Main Content-->
     <main>
+
         <div class="image">
-            <img src="images/privacy-policy.png" alt="a paper with a shield in it">
+            <img src="images/eworld-banner-2.jpg" alt="a letter e logo">
         </div>
 
         <div class="text">
+            <h1>ABOUT US</h1>
 
-            <h1>PRIVACY POLICY</h1>
+            <hr>
+
+            <h2>What is Eworld?</h2>
             <p>
-                This privacy policy describes our policies and procedures on the collection, use and disclosure of your
-                information when you use the Service and tells you about your privacy rights and how the law protects
-                you.
+                Eworld is one of the world first class retailer store, which is specialized in selling genuine
+                technological devices in global markets. It is established in 1990 in New York, USA.
             </p>
             <p>
-                We use your personal data to provide and improve the Service. By using the service, you agree to the
-                collection and use of information in accordance with this privacy policy.
+                For many years, we have gradually become one of the most dependable address to customers from all over
+                the world. We always make efforts
+                to provide a variety of genuine products with the most reasonable prices in order to meet your needs.
             </p>
-
-            <h2>When do we collect your data?</h2>
-            <p>When you sign up and/or use our services, or when you become our partner.</p>
             <p>
-                When you send any type of form, including login form or other forms related to our products or services
-                via online or offline.
+                Going to Eworld store, you can be comfortable with our reputation and quality of products with their
+                prices lower than
+                commercial prices by 15%-20%. Besides, we always try our best to provide you with the best service
+                experiences.
             </p>
-            <p>When you interact with us through our social media platforms, or calls (which are also recorded).</p>
-            <p>When you provide us with your feedback or complaints.</p>
-            <p>When you send us your personal information for whatever reason.</p>
 
-            <h2>What type of data do we collect from you?</h2>
-            <p>Your full name.</p>
-            <p>Your gender.</p>
-            <p>Your date of birth.</p>
-            <p>Your email adresss.</p>
-            <p>Your phone number.</p>
-            <p>Your purchase information.</p>
-            <p>Your credit card number.</p>
+            <h2>Our activity principles</h2>
+            <p>
+                Eworld always acts by setting customers as our central object. And our effort to reach the expectation
+                is to satisfy them with provided
+                products and customer service. We are gradually building up outstanding customer service, showing the
+                worth of being one of the best worldwide retail stores.
+                The trusts and enthusiastic supports from our customers from many branches have partly affirmed our
+                staff's performance.
+            </p>
+            <ul>
+                <li>To our customer, we always work with with a spirit of seriousness, honesty and responsibility to
+                    bring the best service experience.</li>
+                <li>To our colleagues, we always learn, unite and support each other to form a working space with
+                    respect and fairness between employees.</li>
+                <li>To our partners, Eworld works based on respecting principle, creating community value and growing
+                    together.</li>
+            </ul>
 
-            <h2>What do we use your personal data for?</h2>
-            <p>To proceed your transaction with us.</p>
-            <p>To manage, control and provide you with instructions to use and interact with our services as well as our
-                social media platforms.</p>
-            <p>To enforce our ToS or any applicable end-users license agreements.</p>
-            <p>To identify or verify you.</p>
-            <p>To protect other users’ privacy and safety.</p>
-            <p>To allow other users to contact you.</p>
-            <p>To do researches, analysis, and development.</p>
-
-
-            <p id="note">If you have any questions about this privacy policy, You can contact us <strong><a
-                        href="contact-us.html">HERE</a></strong>.</p>
-
-            <p id="update">Last updated on April 11, 2021.</p>
+            <h2>Our visions</h2>
+            <p>
+                Over the years, we have constantly improved our services at our branches and supported our customers
+                through online media. Eworld is committed
+                to providing high-quality products with reputable guarantee, getting ready to support them as soon as
+                possible.
+            </p>
+            <p>
+                In the future, we will go on expanding our store braches system, aiming to make appearances in all
+                countries. Also, we always enhance our service quality, limit
+                risks, listen and recieve customers' feedbacks with a view to provide them with the best experience
+                while they are shopping in Eworld.
+            </p>
+            <p>
+                To summarize, Eworld hopes to be a pioneer in delivering our newest products to customers as soon as
+                possible, forming a mordern life where technology
+                connects and serves people.
+            </p>
 
         </div>
 
@@ -114,6 +126,7 @@
                     process.</h1>
             </div>
         </div>
+
 
     </main>
 
@@ -142,3 +155,5 @@
     <script src="javascript/navbar.js" async></script>
     <script src="../javascript/cookie.js"></script>
 </body>
+
+</html>

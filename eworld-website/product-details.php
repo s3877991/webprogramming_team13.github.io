@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="header-&-footer.css">
-    <link rel="stylesheet" href="product-details.css">
-    <link rel="stylesheet" href="cookie.css">
+    <link rel="stylesheet" href="css/header-&-footer.css">
+    <link rel="stylesheet" href="css/product-details.css">
+    <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Apple iPad Gen 8 10.2"</title>
+    <title>Apple iPhone 12 Pro Max</title>
 </head>
 
 <body>
@@ -48,8 +48,8 @@
     </header>
 
     <!--Main Content-->
-    <main>
-        <h1 id="title">Apple iPad Gen 8 10.2"</h1>
+    <main class="product-info">
+        <h1 id="title">Apple iPhone 12 Pro Max</h1>
 
         <hr>
 
@@ -58,7 +58,7 @@
             <div class="flex-container-1">
 
                 <div class="avatar">
-                    <img id="item-image" src="images/ipad-gen-8.png"
+                    <img id="item-image" src="images/iphone-12-pro-max.jpg"
                         alt="an iPhone with a notch display and triple camera">
                 </div>
 
@@ -68,20 +68,29 @@
                         <div class="choice-1">
 
                             <div class="options-1 add-to-cart-item">
-                                <input type="radio" name="version" value="32gb" checked required>
+                                <input type="radio" name="version" value="128gb" checked required>
                                 <label for="version">
-                                    <span class="storage">32GB</span>
+                                    <span class="storage">128GB</span>
                                     <br>
-                                    <span class="price">$369.57</span>
+                                    <span class="price">$1264.78</span>
                                 </label>
                             </div>
 
                             <div class="options-1">
-                                <input type="radio" name="version" value="128gb" required>
+                                <input type="radio" name="version" value="256gb" required>
                                 <label for="version">
-                                    <span class="storage">128GB</span>
+                                    <span class="storage">256GB</span>
                                     <br>
-                                    <span class="price">$473.91</span>
+                                    <span class="price">$1386.52</span>
+                                </label>
+                            </div>
+
+                            <div class="options-1">
+                                <input type="radio" name="version" value="512gb" required>
+                                <label for="version">
+                                    <span class="storage">512GB</span>
+                                    <br>
+                                    <span class="price">$1638.70</span>
                                 </label>
                             </div>
 
@@ -91,8 +100,13 @@
                         <div class="choice-2">
 
                             <div class="options-2">
-                                <input type="radio" name="color" value="black" required checked>
-                                <label for="color">Space Gray</label>
+                                <input type="radio" name="color" value="blue" required checked>
+                                <label for="color">Pacific Blue</label>
+                            </div>
+
+                            <div class="options-2">
+                                <input type="radio" name="color" value="gold" required>
+                                <label for="color">Gold</label>
                             </div>
 
                             <div class="options-2">
@@ -101,8 +115,8 @@
                             </div>
 
                             <div class="options-2">
-                                <input type="radio" name="color" value="gold" required>
-                                <label for="color">Gold</label>
+                                <input type="radio" name="color" value="black" required>
+                                <label for="color">Graphite</label>
                             </div>
 
                         </div>
@@ -130,78 +144,231 @@
                 <tr>
                     <td class="property">Display</td>
                     <td class="value">
-                        10.2 inches Retina
+                        6.7 inches Super Retina XDR
                         <br>
-                        264 ppi (2160 x 1620)
+                        458 ppi (2778 x 1284)
                     </td>
                 </tr>
 
                 <tr>
                     <td class="property">Weight</td>
-                    <td class="value">about 490 grams</td>
+                    <td class="value">228 grams</td>
                 </tr>
 
                 <tr>
                     <td class="property">Operating System</td>
-                    <td class="value">iPadOS 14</td>
+                    <td class="value">iOS 14</td>
                 </tr>
 
                 <tr>
                     <td class="property">Processor</td>
-                    <td class="value">Apple A12 Bionic</td>
+                    <td class="value">Apple A14 Bionic</td>
                 </tr>
 
                 <tr>
                     <td class="property">Memory</td>
-                    <td class="value">3GB RAM</td>
+                    <td class="value">6GB RAM</td>
                 </tr>
 
                 <tr>
                     <td class="property">Storage</td>
-                    <td class="value">32GB, 128GB</td>
+                    <td class="value">128GB, 256GB, 512GB</td>
                 </tr>
 
                 <tr>
                     <td class="property">Network</td>
-                    <td class="value">
-                        Wi-Fi Hotspot
-                        <br>
-                        4G Technology
-                    </td>
+                    <td class="value">5G Technology</td>
                 </tr>
 
                 <tr>
                     <td class="property">Rear Camera</td>
-                    <td class="value">8MP, F/2.4</td>
+                    <td class="value">
+                        Wide: 12MP, F/1.6
+                        <br>
+                        Ultrawide: 12MP, F/2.4
+                        <br>
+                        Telephoto: 12MP, F/2.2
+                    </td>
                 </tr>
 
                 <tr>
                     <td class="property">Front Camera</td>
-                    <td class="value">1.2MP, F/2.4</td>
+                    <td class="value">Selfie: 12MP, F/2.2</td>
                 </tr>
 
                 <tr>
                     <td class="property">Battery</td>
-                    <td class="value">about 8200mAh</td>
+                    <td class="value">3,687 mAh Li-Ion</td>
                 </tr>
 
                 <tr>
                     <td class="property">Other Features</td>
                     <td class="value">
-                        Touch ID
+                        IP68 Water resistance
                         <br>
-                        Lightning port
+                        Face ID
                         <br>
-                        3.5mm Headphone jack
+                        15W Fast Charging
+                        <br>
+                        LiDAR Sensor
+                        <br>
+                        MagSafe Wirreless Charger
                     </td>
                 </tr>
 
                 <tr>
                     <td class="property">Colors</td>
-                    <td class="value">Space Gray, Silver, Gold</td>
+                    <td class="value">Pacific Blue, Gold, Silver, Graphite</td>
                 </tr>
 
             </table>
+
+        </section>
+
+        <hr>
+
+        <!--Description area-->
+        <section id="description">
+            <h2>Description</h2>
+
+            <h3>Introduction</h3>
+            <p>
+                Each year, until late in August and early in September, there are a myriad of hot news about a new
+                iPhone.
+                This year, Apple has
+                launched iPhone 12 Pro Max, the newest and the most powerful smartphone. Now, we will show you further
+                description below and then
+                you will make a decision to buy this product.
+            </p>
+
+            <h3>A larger display</h3>
+            <p>
+                This year, the iPhone 12 Pro Max is better innovated with a 6.7-inch Super Retina XDR display, larger
+                than the regular iPhone 12. With
+                OLED display technology, it can show images with size up to 2778 x 1284 pixels. Besides, it also enables
+                users to use it
+                in the sun with the brightness up to 800 nits.
+            </p>
+            <div class="gallery">
+                <img src="images/display.jpg" alt="two different iPhones compared in display size">
+            </div>
+            <p>
+                A new feature of the iPhone this year is its design. The sharp edges and the stainless-steel body make
+                the phone look luxurious
+                and premium. There are many special color variations that allows users to choose.
+            </p>
+
+            <h3>More space to store, multitasking improved</h3>
+            <p>
+                Talking about hardware, the iPhone 12 Pro Max consists of up to 6GB of RAM. It does mean that Apple are
+                more
+                aware of their users,
+                so they have the smartphone equipped with such memory in order to improve the process of multitasking.
+                Also,
+                having larger RAM memory makes gaming experience
+                more smoother.
+            </p>
+            <div class="gallery">
+                <img src="images/colors.jpg" alt="4 iPhones with different colors">
+            </div>
+            <p>
+                Furthermore, the iPhone 12 Pro Max will have 3 different storage variations: 128GB, 256GB and the other
+                is
+                512GB. A phone with laptop
+                computer storage is a thing that Apple wants to bring to users with a view to allowinf them to share
+                their
+                memory with other devices.
+            </p>
+
+            <h3>Powerful performance</h3>
+            <p>
+                Apart from those improvements, there's a thing known as the heart and the core of the 2020 flagship, a
+                5-nanometer A14 Bionic chip.
+                It makes the phone have a great performance and even greater than its opponents.
+            </p>
+            <div class="gallery">
+                <img src="images/apple-a14-soc-chip.png" alt="an electronic chip">
+            </div>
+            <p>
+                The device is also equipped with Wi-Fi and and mobile network connectivity that does not just help you
+                improve network efficiency
+                but also ensure the stable connection and increase the quality of online images.
+            </p>
+
+            <h3>Superior camera</h3>
+            <p>
+                It can be told that camera is a huge enhancement of iPhone 12 Pro Max as it has a triple camera with a
+                12-megapixel resolution.
+                However, it has a large aperture and the pixel density for each panel is also larger. Therefore, it
+                gives
+                users more detailed photos
+                and better light captures. Additionally, with OIS optical image stabilization, the phone can even record
+                4K
+                videos better.
+            </p>
+            <div class="gallery">
+                <img src="images/camera.jpg" alt="an iPhone with triple camera">
+            </div>
+            <p>
+                The camera also has depth scanning features and ensure that the photos have their definite depth.
+                Besides,
+                it also has an ability to
+                create a 3-D photos when scanning it into a certain room, which means, it is very useful for
+                construction
+                work as well as formatting the building
+                before constructing it.
+            </p>
+
+            <h3>Outstanding selfies, Face ID and water resistance</h3>
+            <p>
+                Like its rear camera, front-facing camera helps the smartphone have a better, vivid and real selfies.
+                Along
+                with it, a feature already available
+                since the launch of game-changing iPhone X has ability to scan many faces in 3-D form, and that is Face
+                ID.
+            </p>
+            <div class="gallery">
+                <img src="images/water-resistance.png" alt="an iPhone soaked with a splash of water">
+            </div>
+            <p>
+                The water resistance technology is very necessary, especially for iPhone 12 Pro Max. It has IP68
+                standard, a
+                technology that makes many smartphones
+                waterproof and dustproof and it has been considered as one of the best technologies so far. With this
+                technology, you can use them in
+                any extreme conditions without any worrries.
+            </p>
+
+            <h3>Fast charging makes the use last longer</h3>
+            <p>
+                A non removable batery with high capacity inside the iPhone 12 Pro Max helps you use the phone longer
+                than
+                ever. For example, this device allows
+                users to listen to music in 80 hours and watch live videos in 12 hours.
+            </p>
+            <div class="gallery">
+                <img src="images/fast-charging.jpg" alt="an iPhone soaked with a splash of water">
+            </div>
+            <p>
+                Thanks to fast-charging technology which is up to 15W, the iPhone 12 Pro Max can refill 50% of its
+                capacity
+                within 30 minutes only.
+            </p>
+
+            <h3>Conclusion</h3>
+            <p>
+                With those upgrades above, it is easy to understand why the iPhone 12 Pro Max is most sought-after
+                smartphone
+                at the moment. Owning this smartphone, you will experience all the quintessence that Apple has put into
+                its products.
+            </p>
+            <p>
+                Currently, Eworld has become an official Apple authorized distributor in the world, promising to
+                bring customers high-quality
+                products at the most reasonable prices. If you want to buy iPhone 12 Pro Max, click <a href="#title"
+                    id="highlight">"BUY NOW!"</a> for
+                free delivery. This product is guaranteed genuinely in 12 months.
+            </p>
 
         </section>
 
@@ -222,106 +389,9 @@
                 <div class="icon">
                     <img src="images/account.jpg" alt="a default avatar">
                 </div>
-                <h1>Please <a href="../login.html">Login</a> or <a href="../register.html">Register</a> to continue this
-                    process.</h1>
+                <h1>Please <a href="../login.html">Login</a> or <a href="../register.html">Register</a> to continue this process.</h1>
             </div>
         </div>
-
-        <!--Description area-->
-        <section id="description">
-            <h2>Description</h2>
-
-            <h3>Introduction</h3>
-            <p>
-                The Apple iPads have become the most popular tablet model on the market. Appart from iPhones, iPads have
-                had a significant contribution to make Apple maintaining its leading market position up till now.
-                Recently,
-                Apple has released a series of iPad Gen 8 10.2", a 2020 version of iPad series. So, let's find out the
-                highlights of this new generation of the iPad.
-            </p>
-
-            <h3>A familiar but delicate design</h3>
-            <p>
-                Many years ago, Apple hardly changed the "classic" design of its iPad. And the 2020 version is not an
-                exception. The iPad Gen 8 10.2" has a design not too different from its "predecessor" iPad Gen 7,
-                with its rounded corners make a delicate and firm feeling when holding in hands. Its top and bottom
-                bezels are still fairly thick and the familiar Home button with Touch ID feature is still available
-                in this Apple product.
-            </p>
-            <div class="gallery">
-                <img src="images/design.png" alt="a tablet">
-            </div>
-            <p>
-                Besides, the iPad Gen 8 owns a sharp Retina display instead of LCD display of its previous generations,
-                which makes a considerable change of the new iPad generation this year. With a 10.2-inch display And
-                2160 x 1620-pixel resolution, the new version of iPad brings the more comfortable and more convenient
-                experience to users. Furthermore, there aren't too many changes of the back of that iPad.
-            </p>
-
-            <h3>Extremely Powerful Processor</h3>
-            <p>
-                This is the remarkable change of the iPad Gen 8 10.2". If the previous iPad generations only use A10
-                Fusion chip, the this-year iPad model is equipped with A12 Bionic chip as Apple's favor. The stucture
-                of A12 Bionic chip consits of 6 cores combining with big litte technology, which allows the chip to
-                save energy much more effectively than any old-generation chips.
-            </p>
-            <div class="gallery">
-                <img src="images/apple-a12-bionic.jpg" alt="an electronic chip">
-            </div>
-            <p>
-                Not only saving energy, the A12 Bionic chip also allows the iPad Gen 8 to reach an amazingly powerful
-                performance. It increases the CPU performance by over 40%. With the 4G connection, you can access to
-                the Internet in anytime. The iPad Gen 8 is the first Apple tablet to have Neural Engine technology
-                that helps handling AI tasks and Face ID facial recognition. In addition, the new generation
-                of iPad series consists of a battery which allows users to use the device in 10 consecutive hours.
-                That is an impressive duration meeting all-day using need. Moreover, this device is "accompanied"
-                with a USB-C-to-Lightning cable and a 18W-USB-C charger.
-            </p>
-
-            <h3>Very sensitive connection to Smartkeyboard</h3>
-            <p>
-                For many years, Apple has been trying best to improve its iPads with a view to bring the best experience
-                to users. Appart from its configuration upgrades, the iPad Gen 8 is supplied with other useful features.
-                For example, make a tablet become a laptop, which means this device can conect with Smartkeyboard and
-                Apple Pencil accessory very fast and sensitively. And that feature allows you to work, entertain and
-                make limitless creativity with your own iPad.
-            </p>
-            <div class="gallery">
-                <img src="images/smart-keyboard-apple-pencil.jpg" alt="a tablet with a keyboard and an electric pen">
-            </div>
-            <p>
-                Besides, the tablet also has rear and front-facing camera. The 8MP rear camera with F/2.4 aperture
-                supports
-                autofocusing. Meanwhile, the 1.2MP front-facing camera provides professional selfies in any light
-                conditions
-                even superlow light. Furthermore, the camera system also support recording videos with quality 1080
-                pixel
-                at 30fps, HDR videos, etc.
-            </p>
-
-            <h3>Conclusion</h3>
-            <p>
-                With those upgrades above, it is easy to understand why the iPad Gen 8 10.2" is the masterpiece of all
-                iPad
-                generations at the moment. Owning this tablet, you will experience all the quintessence that Apple has
-                put into its products. And it has three color options that allows users to choose: Space Gray, Silver
-                and
-                Gold.
-            </p>
-            <div class="gallery">
-                <img src="images/ipad-colors.jpg" alt="3 ipads with different colors">
-            </div>
-            <p>
-                Currently, Eworld has become an official Apple authorized distributor in the world, promising to
-                bring customers high-quality
-                products at the most reasonable prices. If you want to buy iPad Gen 8 10.2", click <a href="#title"
-                    id="highlight">"BUY NOW!"</a> for
-                free delivery. This product is guaranteed genuinely in 12 months.
-            </p>
-
-        </section>
-
-        <hr>
 
         <!--Recommended Products Area-->
         <section id="recommended-products">
@@ -435,8 +505,7 @@
     <!--Cookie-->
     <div class="cookie-consent">
         <h3>I USE COOKIES</h3>
-        <p>My website uses cookies necessarily for its basic functioning. By continuing browsing, you consent to my use
-            of cookies and other technologies.</p>
+        <p>My website uses cookies necessarily for its basic functioning. By continuing browsing, you consent to my use of cookies and other technologies.</p>
         <button class="cookie-btn">I understand</button>
         <a href="#">Learn more</a>
     </div>

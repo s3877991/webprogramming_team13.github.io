@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="header-&-footer.css">
-    <link rel="stylesheet" href="browse-products-2.css">
-    <link rel="stylesheet" href="process-denied.css">
-    <link rel="stylesheet" href="cookie.css">
+    <link rel="stylesheet" href="css/header-&-footer.css">
+    <link rel="stylesheet" href="css/browse-products-1.css">
+    <link rel="stylesheet" href="css/process-denied.css">
+    <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -38,8 +38,8 @@
                     <a class="active" href="#">PRODUCTS <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
-                        <li><a href="browse-products-1.html">by CATEGORY</a></li>
-                        <li><a class="active" href="browse-products-2.html">by CREATED TIME</a></li>
+                        <li><a class="active" href="browse-products-1.html">by CATEGORY</a></li>
+                        <li><a href="browse-products-2.html">by CREATED TIME</a></li>
                     </ul>
                 </li>
                 <li><a href="contact-us.html">CONTACT</a></li>
@@ -54,10 +54,14 @@
         <div class="select">
 
             <div class="select-container">
-                <label for="created-date">Created time: </label>
-                <select id="created-date">
-                    <option id="newest">Newest first</option>
-                    <option id="oldest">Oldest first</option>
+                <label for="category">Category: </label>
+                <select id="category">
+                    <option id="all">All</option>
+                    <option id="smartphone">Smartphone</option>
+                    <option id="tablet">Tablet</option>
+                    <option id="laptop">Laptop</option>
+                    <option id="digital-camera">Digital camera</option>
+                    <option id="bluetooth-device">Bluetooth device</option>
                 </select>
             </div>
 
@@ -231,7 +235,7 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star_half</span>
                     </p>
-                    <p class="created-date">Apr 6 2021</p>
+                    <p class="created-date">Apr 7 2021</p>
                 </a>
             </div>
 
@@ -337,7 +341,7 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star</span>
                     </p>
-                    <p class="created-date">Apr 8 2021</p>
+                    <p class="created-date">Apr 9 2021</p>
                 </a>
             </div>
 
