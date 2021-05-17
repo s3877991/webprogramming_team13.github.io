@@ -2,26 +2,28 @@
 
 <!-- PHP code area -->
 <?php
-session_start();
+  session_start();
 
-if (isset($_POST['act'])) {
-  if (isset($_POST['pass']) && $_POST['pass'] == 'P@ssW0rd') {
-    // create a name/uniq value pair to prevent modification
-    $username = $_POST['username'];
-    $uniqid = uniqid();
+  if (isset($_POST['act'])) {
+    $pass = $_POST['pass'];
+    $hash = file_get_contents('../pass.txt');
+    if (password_verify($pass, $hash)) {
+      // create a name/uniq value pair to prevent modification
+      $username = $_POST['username'];
+      $uniqid = uniqid();
 
-    // store the pair on the server for later validation
-    // note: the location is outside of document root
-    file_put_contents("../$username", $uniqid);
+      // store the pair on the server for later validation
+      // note: the location is outside of document root
+      file_put_contents("../$username", $uniqid);
 
-    // create a cookie that expires after 7 days
-    setcookie('loggedin_name', $username, time() + 60 * 60 * 24 * 7);
-    setcookie('uniqid', $uniqid, time() + 60 * 60 * 24 * 7);
-    $_SESSION['username'] = $_POST['username'];
-    header('location: admin_dashboard.php');
+      // create a cookie that expires after 7 days
+      setcookie('loggedin_name', $username, time() + 60 * 60 * 24 * 7);
+      setcookie('uniqid', $uniqid, time() + 60 * 60 * 24 * 7);
+      $_SESSION['username'] = $_POST['username'];
+      header('location: dashboard.php');
+    }
+    $status = 'Your email or password is incorrect';
   }
-  $status = 'Invalid username/password';
-}
 ?>
 
 <!-- HTML Code Area -->
@@ -47,36 +49,42 @@ if (isset($_POST['act'])) {
 
   <!-- Main section -->
   <main>
-    <h1>Login</h1>
+    <div class="form">
+      <h1>Login to Dashboard</h1>
 
-    <form method="post" action="login3.php">
-      <div>
-        Username<br>
-        <input type="text" name="username">
-      </div>
-      <div>
-        Password<br>
-        <input type="password" name="pass">
-      </div>
+      <form method="get" action="dashboard.php">
 
-      <!--Error Message Area-->
-      <?php
-      // If users input incorrect username or password, an error message will appear
-      if (isset($status)) {
-        echo "<h3 class=\"error\">$status</h3>";
-      }
-      ?>
+        <div class="keyboard">
+          <label for="username">Your username</label>
+          <br>
+          <input type="text" name="username" placeholder="Enter your username">
+        </div>
 
-      <div>
-        <input type="submit" name="act" value="Login">
-      </div>
-    </form>
+        <div class="keyboard">
+          <label for="pass">Your password</label>
+          <br>
+          <input type="password" name="pass" placeholder="Enter your password">
+        </div>
+
+        <!--Error Message Area-->
+        <?php
+        // If users input incorrect username or password, an error message will appear
+        if (isset($status)) {
+          echo "<h3 class=\"error\">$status</h3>";
+        }
+        ?>
+
+        <div class="submit">
+          <input type="submit" name="act" value="Login">
+        </div>
+      </form>
+    </div>
 
   </main>
 
   <!-- Footer section -->
   <footer>
-    <h2>by THE GANG</h2>
+    <h2>by <span>THE GANG</span></h2>
     <h3>Developed in 2021</h3>
   </footer>
 

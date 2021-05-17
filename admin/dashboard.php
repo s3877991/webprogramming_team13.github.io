@@ -3,7 +3,7 @@
 <!-- PHP code area -->
 <?php
 // Prevent unknown users as well as hackers from logging in to dashboard
-session_start();
+/* session_start();
 
 if (!isset($_SESSION['username'])) {
     // check cookie
@@ -20,8 +20,8 @@ if (!isset($_SESSION['username'])) {
 }
 
 if (!isset($_SESSION['username'])) {
-    header('location: admin_login.php');
-}
+    header('location: login.php');
+} */
 ?>
 
 <!-- HTML code area -->
@@ -47,12 +47,12 @@ if (!isset($_SESSION['username'])) {
 
     <!-- Main section -->
     <main>
-        <h1>Dashboard</h1>
+        <h1>DASHBOARD</h1>
     </main>
 
     <!-- Footer section -->
     <footer>
-    <h2>by THE GANG</h2>
+    <h2>by <span>THE GANG<span></h2>
     <h3>Developed in 2021</h3>
     </footer>
 
