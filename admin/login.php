@@ -22,7 +22,7 @@
       $_SESSION['username'] = $_POST['username'];
       header('location: dashboard.php');
     }
-    $status = 'Your email or password is incorrect';
+    $status = 'Your email or password is INCORRECT';
   }
 ?>
 
