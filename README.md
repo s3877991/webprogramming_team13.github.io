@@ -68,7 +68,8 @@ NGUYEN QUANG DUY:
     + Check and Modify codes and to make it consistent, clean, efficient, run properly ==> COMPLETED.
     + Finalize and compress all files and folders into a ZIP file ==> COMPLETED.
 
-3. Fullstack Assignment (--%): 
+3. Fullstack Assignment (--%):
+    + Task #1: Create an install file for admin ==> .
     + Task #3: Create and develop an admin dashboard page ==> .
     + Task #9: Implement the behavior in Product Detail and Order Placement page ==> .
 
@@ -84,6 +85,7 @@ NGUYEN LINH CHI:
     + Task #6: Register form requirements ==> COMPLETED.
 
 3. Fullstack Assignment (--%):
+    + Task #1: Create an install file for admin ==> .
     + Task #2: Display stores and products based on data from CSV files ==> .
     + Task #6: Implement the behavior in browse stores pages ==> .
 
