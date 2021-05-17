@@ -31,8 +31,8 @@ if (!isset($_SESSION['username'])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width intitial-scale=1">
-    <link rel="stylesheet" href="css/admin_header&footer.css">
-    <link rel="stylesheet" href="css/admin_dashboard.css">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="css/dashboard.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
     <title>Dashboard - Shoppiverse Admin</title>

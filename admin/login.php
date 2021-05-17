@@ -31,10 +31,11 @@ if (isset($_POST['act'])) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width intitial-scale=1">
-  <title>Login - Shoppiverse Admin</title>
+  <link rel="stylesheet" href="css/header&footer.css">
+  <link rel="stylesheet" href="css/login.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/admin_login.css">
+  <title>Login - Shoppiverse Admin</title>
 </head>
 
 <body>
