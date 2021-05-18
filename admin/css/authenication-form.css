@@ -25,7 +25,7 @@ form input {
     margin-top: 2px;
 }
 .keyboard input:focus {
-    border-bottom: 2px solid;
+    background-color: #eee;
     transition: 0.5s;
 }
 

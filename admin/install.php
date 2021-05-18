@@ -1,29 +1,8 @@
-<!-- Assignment 3: FULLSTACK ASSIGNMENT - Task #3: Create and develop an admin dashboard page -->
+<!-- Assignment 3: FULLSTACK ASSIGNMENT - Task #1: Create and develop an install file for admin -->
 
 <!-- PHP code area -->
 <?php
-  session_start();
 
-  if (isset($_POST['act'])) {
-    $pass = $_POST['pass'];
-    $hash = file_get_contents('../pass.txt');
-    if (password_verify($pass, $hash)) {
-      // create a name/uniq value pair to prevent modification
-      $username = $_POST['username'];
-      $uniqid = uniqid();
-
-      // store the pair on the server for later validation
-      // note: the location is outside of document root
-      file_put_contents("../$username", $uniqid);
-
-      // create a cookie that expires after 7 days
-      setcookie('loggedin_name', $username, time() + 60 * 60 * 24 * 7);
-      setcookie('uniqid', $uniqid, time() + 60 * 60 * 24 * 7);
-      $_SESSION['username'] = $_POST['username'];
-      header('location: dashboard.php');
-    }
-    $status = 'Your email or password is INCORRECT';
-  }
 ?>
 
 <!-- HTML Code Area -->
@@ -34,10 +13,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="stylesheet" href="css/header&footer.css">
-  <link rel="stylesheet" href="css/css/authenication-form.css">
+  <link rel="stylesheet" href="css/authenication-form.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
-  <title>Login - Shoppiverse Admin</title>
+  <title>Install</title>
 </head>
 
 <body>
@@ -50,9 +29,9 @@
   <!-- Main section -->
   <main>
     <div class="form">
-      <h1>Login to Dashboard</h1>
+      <h1>Install System</h1>
 
-      <form method="get" action="dashboard.php">
+      <form method="get" action="login.php">
 
         <div class="keyboard">
           <label for="username">Your username</label>
@@ -66,6 +45,12 @@
           <input type="password" name="pass" placeholder="Enter your password">
         </div>
 
+        <div class="keyboard">
+          <label for="pass">VERIFY your password</label>
+          <br>
+          <input type="password" name="pass" placeholder="Re-enter your password">
+        </div>
+
         <!--Error Message Area-->
         <?php
         // If users input incorrect username or password, an error message will appear
@@ -75,7 +60,7 @@
         ?>
 
         <div class="submit">
-          <input type="submit" name="act" value="Login">
+          <input type="submit" name="act" value="Install">
         </div>
       </form>
     </div>
