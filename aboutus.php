@@ -87,7 +87,7 @@
                 <div class="flex card">
                     <p class="mem-id">s3878609</p>
                     <div class="image">
-                        <img src="images/chi.jpg" alt="a girl with her face getting hyped">
+                        <img src="admin/images/default-avatar.png" alt="anonymous face inside a circle icon">
                     </div>
                     <h3 class="mem-name">Nguyen Linh Chi</h3>
                     <p class="mem-des">
@@ -99,7 +99,7 @@
                 <div class="flex card">
                     <p class="mem-id">s3877991</p>
                     <div class="image">
-                        <img src="images/duy.jpg" alt="a man thinking">
+                    <img src="admin/images/default-avatar.png" alt="anonymous face inside a circle icon">
                     </div>
                     <h3 class="mem-name">Nguyen Quang Duy</h3>
                     <p class="mem-des">
@@ -111,7 +111,7 @@
                 <div class="flex card">
                     <p class="mem-id">s3881557</p>
                     <div class="image">
-                        <img src="images/linh.jpg" alt="a girl taking a mirror selfie with her camera">
+                    <img src="admin/images/default-avatar.png" alt="anonymous face inside a circle icon">
                     </div>
                     <h3 class="mem-name">Phan Do Ngoc Linh</h3>
                     <p class="mem-des">
@@ -123,7 +123,7 @@
                 <div class="flex card">
                     <p class="mem-id">s3878058</p>
                     <div class="image">
-                        <img src="images/trang.jpg" alt="a girl looking outside with a smile">
+                    <img src="admin/images/default-avatar.png" alt="anonymous face inside a circle icon">
                     </div>
                     <h3 class="mem-name">Nguyen Hai Minh Trang</h3>
                     <p class="mem-des">
