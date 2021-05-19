@@ -13,7 +13,7 @@
     <title>Shoppiverse - About Us</title>
 </head>
 
-<body>  
+<body>
     <!--Header section with navigation bar-->
     <header>
         <nav>
@@ -33,8 +33,7 @@
                 <li><a href="fees.php">FEES</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">STORES <span
-                            class="material-icons">expand_more</span></label>
+                    <label for="dropdown-sub" class="toggle">STORES <span class="material-icons">expand_more</span></label>
                     <a href="">STORES <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
@@ -99,7 +98,7 @@
                 <div class="flex card">
                     <p class="mem-id">s3877991</p>
                     <div class="image">
-                    <img src="admin/images/default-avatar.png" alt="anonymous face inside a circle icon">
+                        <img src="admin/images/default-avatar.png" alt="anonymous face inside a circle icon">
                     </div>
                     <h3 class="mem-name">Nguyen Quang Duy</h3>
                     <p class="mem-des">
@@ -111,7 +110,7 @@
                 <div class="flex card">
                     <p class="mem-id">s3881557</p>
                     <div class="image">
-                    <img src="admin/images/default-avatar.png" alt="anonymous face inside a circle icon">
+                        <img src="admin/images/default-avatar.png" alt="anonymous face inside a circle icon">
                     </div>
                     <h3 class="mem-name">Phan Do Ngoc Linh</h3>
                     <p class="mem-des">
@@ -123,7 +122,7 @@
                 <div class="flex card">
                     <p class="mem-id">s3878058</p>
                     <div class="image">
-                    <img src="admin/images/default-avatar.png" alt="anonymous face inside a circle icon">
+                        <img src="admin/images/default-avatar.png" alt="anonymous face inside a circle icon">
                     </div>
                     <h3 class="mem-name">Nguyen Hai Minh Trang</h3>
                     <p class="mem-des">
@@ -147,7 +146,7 @@
                     </div>
 
                     <div class="modal-image">
-                        <img src="images/chi.jpg" alt="a girl with her face getting hyped">
+                        <img src="admin/images/default-avatar.png" alt="anonymous face inside a circle icon">
                     </div>
 
                     <div class="info">
@@ -181,7 +180,7 @@
 
                         <h3>HOBBIES</h3>
                         <p>
-                            My favorite hobbies are drawing, gaming, reading fictions and listening to academic podcasts. 
+                            My favorite hobbies are drawing, gaming, reading fictions and listening to academic podcasts.
                             And I spend 90% of my time doing those activities.
                         </p>
                     </div>
@@ -199,7 +198,7 @@
                     </div>
 
                     <div class="modal-image">
-                        <img src="images/duy.jpg" alt="a man thinking">
+                        <img src="admin/images/default-avatar.png" alt="anonymous face inside a circle icon">
                     </div>
 
                     <div class="info">
@@ -217,7 +216,7 @@
                         <p>
                             I was born in Russia, but my hometown is Hue City in Vietnam. I am an introverted person,
                             and I
-                            may have some problem to express my feelings to my schoolmates and even the public. Talking 
+                            may have some problem to express my feelings to my schoolmates and even the public. Talking
                             about IT, at first, it had been a
                             nightmare in highschool because programming had been extremely difficult at that time.
                             However,
@@ -268,7 +267,7 @@
                     </div>
 
                     <div class="modal-image">
-                        <img src="images/linh.jpg" alt="a girl taking a mirror selfie with her camera">
+                        <img src="admin/images/default-avatar.png" alt="anonymous face inside a circle icon">
                     </div>
 
                     <div class="identity">
@@ -322,7 +321,7 @@
                     </div>
 
                     <div class="modal-image">
-                        <img src="images/trang.jpg" alt="a girl looking outside with a smile">
+                        <img src="admin/images/default-avatar.png" alt="anonymous face inside a circle icon">
                     </div>
 
                     <div class="identity">

@@ -142,8 +142,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 .modal-image img {
   width: 300px;
   height: 300px;
-  border-radius: 25%;
-  box-shadow: 0px 20px 10px rgba(0,0,0,0.4);
+  border-radius: 50%;
 }
 /* The Close Button */
 .close-modal {
