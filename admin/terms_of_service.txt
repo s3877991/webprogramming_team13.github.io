@@ -1,5 +1,4 @@
-
-                    <h2>1/ Copyright and ownership</h2>
+<h2>1/ Copyright and ownership</h2>
 <p>
 All of the content displayed and featured on our website is owned by SHOPPIVERSE. All of the elements in this website are protected by the law relating to intellectual property rights. You may not modify, copy, distribute, transmit, reproduce or sell any information or work contained in this website. You are authorized to view, play, print, download documents, audio, images on this website for informational, personal, and noncommercial purposes only.
 </p>
@@ -45,4 +44,6 @@ You are entirely responsible for the security and confidentiality of your passwo
 <p>
 Your use of the Web Site is at your own risk. You agree that our sole obligation to you is to provide the Web Site “as is.
 </p>                      
+                    
+                    
                     

@@ -64,7 +64,7 @@ if (!isset($_SESSION['username'])) {
                 $pages = array('copyright', 'terms_of_service', 'privacy_policy');
                 foreach ($pages as $page) {
                     if ($_POST[$page]) {
-                        $page_file = $page . '.txt';
+                        $page_file = '../admin/'. $page . '.txt';
                         $open_file = fopen($page_file, "w+");
                         fwrite($open_file, $_POST[$page]);
                         fclose($open_file);
@@ -80,7 +80,7 @@ if (!isset($_SESSION['username'])) {
 
                     <?php
                     // Save the content data in an external file when clicking "Save" button
-                    $content_data = file("copyright.txt");
+                    $content_data = file("../admin/copyright.txt");
                     // Avoid overwriting the previous content when updating content in text area input
                     foreach ($content_data as $update) {
                         echo $update;
@@ -98,7 +98,7 @@ if (!isset($_SESSION['username'])) {
 
                     <?php
                     // Save the content data in an external file when clicking "Save" button
-                    $content_data = file("terms_of_service.txt");
+                    $content_data = file("../admin/terms_of_service.txt");
                     // Avoid overwriting the previous content when updating content in text area input
                     foreach ($content_data as $update) {
                         echo $update;
@@ -117,7 +117,7 @@ if (!isset($_SESSION['username'])) {
 
                     <?php
                     // Save the content data in an external file when clicking "Save" button
-                    $content_data = file("privacy_policy.txt");
+                    $content_data = file("../admin/privacy_policy.txt");
                     // Avoid overwriting the previous content when updating content in text area input
                     foreach ($content_data as $update) {
                         echo $update;
