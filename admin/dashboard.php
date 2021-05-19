@@ -2,7 +2,7 @@
 
 <!-- PHP code area -->
 <?php
-// Prevent unknown users as well as hackers from logging in to dashboard
+// Prevent unauthenicated users as well as hackers from logging in to dashboard
 /* session_start();
 
 if (!isset($_SESSION['username'])) {
@@ -22,6 +22,7 @@ if (!isset($_SESSION['username'])) {
 if (!isset($_SESSION['username'])) {
     header('location: login.php');
 } */
+
 ?>
 
 <!-- HTML code area -->
@@ -53,7 +54,7 @@ if (!isset($_SESSION['username'])) {
         <hr>
 
         <div class="content-form">
-            <form method="post" action="dashboard.php">
+            <form enctype="multipart/form-data" method="post" action="dashboard.php">
 
                 <!-- PAGE CONTENT EDITOR SECTION -->
                 <h2 class="section-name">PAGE CONTENT</h2>
@@ -85,10 +86,10 @@ if (!isset($_SESSION['username'])) {
 
                     <div class="item">
                         <div class="avatar-preview">
-                            <img src="images/default-avatar.png" alt="anonymous face inside a circle icon">
+                            <img src="images/chi-avatar.png" alt="anonymous face inside a circle icon" name>
                         </div>
                         <div class="avatar-change">
-                            <input type="file" name="avatar">
+                            <input type="file" name="chi_avatar" accept=".png, .jpg">
                         </div>
                         <p class="member-name">Nguyen Linh Chi</p>
                         <p class="member-id">s3878609</p>
@@ -96,10 +97,10 @@ if (!isset($_SESSION['username'])) {
 
                     <div class="item">
                         <div class="avatar-preview">
-                            <img src="images/default-avatar.png" alt="anonymous face inside a circle icon">
+                            <img src="images/duy-avatar.png" alt="anonymous face inside a circle icon">
                         </div>
                         <div class="avatar-change">
-                            <input type="file" name="avatar">
+                            <input type="file" name="duy_avatar" accept=".png, .jpg">
                         </div>
                         <p class="member-name">Nguyen Quang Duy</p>
                         <p class="member-id">s3877991</p>
@@ -107,10 +108,10 @@ if (!isset($_SESSION['username'])) {
 
                     <div class="item">
                         <div class="avatar-preview">
-                            <img src="images/default-avatar.png" alt="anonymous face inside a circle icon">
+                            <img src="images/linh-avatar.png" alt="anonymous face inside a circle icon">
                         </div>
                         <div class="avatar-change">
-                            <input type="file" name="avatar">
+                            <input type="file" name="linh_avatar" accept=".png, .jpg">
                         </div>
                         <p class="member-name">Phan Do Ngoc Linh</p>
                         <p class="member-id">s3881557</p>
@@ -118,21 +119,36 @@ if (!isset($_SESSION['username'])) {
 
                     <div class="item">
                         <div class="avatar-preview">
-                            <img src="images/default-avatar.png" alt="anonymous face inside a circle icon">
+                            <img src="images/trang-avatar.png" alt="anonymous face inside a circle icon">
                         </div>
                         <div class="avatar-change">
-                            <input type="file" name="avatar">
+                            <input type="file" name="trang_avatar" accept=".png, .jpg">
                         </div>
                         <p class="member-name">Nguyen Hai Minh Trang</p>
-                        <p class="member-id">s38786058</p>
+                        <p class="member-id">s3878058</p>
                     </div>
 
                 </div>
 
+                <?php
+                // Change avatar
+                if (isset($_POST['do'])) {
+                    $member = array('chi', 'duy', 'linh', 'trang');
+                    foreach ($member as $name) {
+                        $mem_ava = $name. "_avatar";
+                        if ($_FILES[$mem_ava]["error"] == UPLOAD_ERR_OK) {
+                            // store new image as name_avatar.png (overwrite the current file)
+                            $new_location = './images/' . $name .'-avatar.png';
+                            move_uploaded_file($_FILES[$mem_ava]['tmp_name'], $new_location);
+                        }
+                    }
+                }
+                ?>
+
                 <!-- BUTTONS -->
                 <div class="actions">
-                    <input type="button" name="act" value="Discard">
-                    <input type="submit" name="act" value="Save">
+                    <input type="button" name="undo" value="Discard">
+                    <input type="submit" name="do" value="Save">
                 </div>
 
             </form>
