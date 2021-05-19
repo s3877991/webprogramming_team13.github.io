@@ -58,6 +58,7 @@
             </div>
 
             <div class="text">
+
                 <h1>PRIVACY POLICY</h1>
                 <p>We are the data control team from SHOPPIVERSE. You can contact us <a href="contactus.html">HERE</a>
                     if
@@ -68,37 +69,17 @@
 
                 <hr>
 
-                <h2>1/ When do we collect your data?</h2>
-                <p>When you sign up and/or use our services, or when you become our partner.</p>
-                <p>When you send any type of form, including login form or other forms related to our products or
-                    services
-                    via online or offline.</p>
-                <p>When you interact with us through our social media platforms, or calls (which are also recorded).</p>
-                <p>When you provide us with your feedback or complaints.</p>
-                <p>When you send us your personal information for whatever reason.</p>
+                <?php
+                /* In admin "Dashboard" page, after clicking save button, the content in textarea input
+                will be saved in an external file. From that file, the content will be displayed in this
+                page */
+                $content_file = "admin/privacy_policy.txt";
+                $open = fopen($content_file, 'r');
+                $content = fread($open, filesize($content_file));
+                fclose($open);
+                echo $content;
+                ?>
 
-                <hr>
-
-                <h2>2/ What type of data do we collect from you?</h2>
-                <p>Your name.</p>
-                <p>Your email address.</p>
-                <p>Your date of birth.</p>
-                <p>Your payment information.</p>
-                <p>Your credit card information.</p>
-                <p>Your phone number.</p>
-                <p>Your gender.</p>
-
-                <hr>
-
-                <h2>3/ What do we use your personal data for?</h2>
-                <p>To process your transaction with us.</p>
-                <p>To manage, control and provide how you use and interact with our services as well as our social media
-                    platforms.</p>
-                <p>To enforce our ToS or any applicable end users license agreements.</p>
-                <p>To identify or verify you.</p>
-                <p>To protect other users’ privacy and safety.</p>
-                <p>To allow other users to get in contact with you.</p>
-                <p>To do researches, analysis, and development.</p>
             </div>
             
         </section>

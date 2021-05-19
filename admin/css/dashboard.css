@@ -24,6 +24,10 @@ main {
     font-size: 17px;
 }
 
+.page-content-form hr {
+    margin: 60px 0 35px;
+}
+
 /* PAGE CONTENT EDITOR */
 .long-text {
     margin: 30px 0;
@@ -32,10 +36,10 @@ main {
 textarea {
     min-width: 99%;
     max-width: 99%;
-    min-height: 150px;
-    border: none;
-    border-bottom: 1px solid;
+    min-height: 300px;
+    border-radius: 10px;
     font-size: 17px;
+    font-family: 'Nunito', sans-serif;
 }
 textarea:focus {
     background-color: #eee;
@@ -43,8 +47,10 @@ textarea:focus {
 }
 
 .long-text label {
+    display: block;
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: -10px;
 }
 
 /* AVATAR SECTION */
@@ -53,7 +59,7 @@ textarea:focus {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 10px 30px;
+    margin: 10px 30px -20px;
 }
 .item {
     box-sizing: border-box;
@@ -77,8 +83,7 @@ textarea:focus {
 }
 .item input {
     font-family: 'Nunito', sans-serif;
-    background-color: #eee;
-    margin: 30px 0 0;
+    margin: 20px 0 0;
     border: none;
     cursor: pointer;
 }
@@ -86,7 +91,7 @@ textarea:focus {
 /* BUTTONS */
 .actions {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .actions input {
     width: 30%;
@@ -98,20 +103,12 @@ textarea:focus {
     font-family: 'Nunito', sans-serif;
     cursor: pointer;
 }
-.actions input:nth-child(2) {
+.actions input {
     background-color: #f93;
 }
-.actions input:nth-child(2):hover {
+.actions input:hover {
     background-color: #c60;
     color: #fff;
-    font-weight: bold;
-    transition: 0.5s;
-}
-.actions input:nth-child(1) {
-    background-color: #ddd;
-}
-.actions input:nth-child(1):hover {
-    background-color: #ccc;
     font-weight: bold;
     transition: 0.5s;
 }

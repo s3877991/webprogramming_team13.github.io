@@ -22,7 +22,6 @@ if (!isset($_SESSION['username'])) {
 if (!isset($_SESSION['username'])) {
     header('location: login.php');
 } */
-
 ?>
 
 <!-- HTML code area -->
@@ -53,35 +52,88 @@ if (!isset($_SESSION['username'])) {
 
         <hr>
 
-        <div class="content-form">
+        <div class="page-content-form">
             <form enctype="multipart/form-data" method="post" action="dashboard.php">
 
-                <!-- PAGE CONTENT EDITOR SECTION -->
+                <!-- PAGE CONTENT SECTION -->
                 <h2 class="section-name">PAGE CONTENT</h2>
-                <p class="description">You can edit content of a webpage.</p>
+                <p class="description">You can edit content of a web page.</p>
 
+                <?php
+                // DISPLAY CURRENT CONTENT IN TEXT AREA INPUT 
+                $pages = array('copyright', 'terms_of_service', 'privacy_policy');
+                foreach ($pages as $page) {
+                    if ($_POST[$page]) {
+                        $page_file = $page . '.txt';
+                        $open_file = fopen($page_file, "w+");
+                        fwrite($open_file, $_POST[$page]);
+                        fclose($open_file);
+                    }
+                }
+                ?>
+
+                <!-- COPYRIGHT SECTION -->
                 <div class="long-text">
                     <label for="cpr">Copyright</label>
                     <br>
-                    <textarea name="cpr"></textarea>
+                    <textarea name="copyright">
+
+                    <?php
+                    // Save the content data in an external file when clicking "Save" button
+                    $content_data = file("copyright.txt");
+                    // Avoid overwriting the previous content when updating content in text area input
+                    foreach ($content_data as $update) {
+                        echo $update;
+                    }
+                    ?>
+
+                    </textarea>
                 </div>
 
+                <!-- TERMS OF SERVICE SECTION -->
                 <div class="long-text">
                     <label for="tos">Terms of Service</label>
                     <br>
-                    <textarea name="tos"></textarea>
+                    <textarea name="terms_of_service">
+
+                    <?php
+                    // Save the content data in an external file when clicking "Save" button
+                    $content_data = file("terms_of_service.txt");
+                    // Avoid overwriting the previous content when updating content in text area input
+                    foreach ($content_data as $update) {
+                        echo $update;
+                    }
+                    ?>
+
+                    </textarea>
                 </div>
 
+
+                <!-- PRIVACY POLICY SECTION -->
                 <div class="long-text">
                     <label for="pp">Privacy Policy</label>
                     <br>
-                    <textarea name="pp"></textarea>
+                    <textarea name="privacy_policy">
+
+                    <?php
+                    // Save the content data in an external file when clicking "Save" button
+                    $content_data = file("privacy_policy.txt");
+                    // Avoid overwriting the previous content when updating content in text area input
+                    foreach ($content_data as $update) {
+                        echo $update;
+                    }
+                    ?>
+
+                    </textarea>
                 </div>
+
+                <hr>
 
                 <!-- AVATAR SECTION -->
                 <h2 class="section-name">AVATARS</h2>
-                <p class="description">You can see your group members' avatars in "About Us" page.</p>
+                <p class="description">You can see your group members' avatars in <strong><em>About Us</em></strong> web page.</p>
 
+                <!--Preview-->
                 <div class="flexbox">
 
                     <div class="item">
@@ -131,27 +183,30 @@ if (!isset($_SESSION['username'])) {
                 </div>
 
                 <?php
-                // Change avatar
-                if (isset($_POST['do'])) {
+                // Upload and Update Avatar Script
+                if (isset($_POST['save'])) {
+                    // Set an array of member name
                     $member = array('chi', 'duy', 'linh', 'trang');
+                    // Create a loop based on the array above
                     foreach ($member as $name) {
-                        $mem_ava = $name. "_avatar";
+                        // Set the name of HTML image input element
+                        $mem_ava = $name . "_avatar";
                         if ($_FILES[$mem_ava]["error"] == UPLOAD_ERR_OK) {
-                            // store new image as name_avatar.png (overwrite the current file)
-                            $new_location = './images/' . $name .'-avatar.png';
+                            // Store new image as name-avatar.png (overwrite the current file) by using string concatenation operator
+                            $new_location = './images/' . $name . '-avatar.png';
                             move_uploaded_file($_FILES[$mem_ava]['tmp_name'], $new_location);
                         }
                     }
                 }
                 ?>
 
-                <!-- BUTTONS -->
+                <!-- Save button -->
                 <div class="actions">
-                    <input type="button" name="undo" value="Discard">
-                    <input type="submit" name="do" value="Save">
+                    <input type="submit" name="save" value="Save">
                 </div>
 
             </form>
+
         </div>
     </main>
 
