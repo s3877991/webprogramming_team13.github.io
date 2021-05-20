@@ -3,8 +3,9 @@
 <!-- PHP code area -->
 <?php
 // Prevent unauthenicated users as well as hackers from logging in to dashboard
-/* session_start();
+session_start();
 
+/*
 if (!isset($_SESSION['username'])) {
     // check cookie
     if (isset($_COOKIE['loggedin_name'])) {
@@ -60,10 +61,10 @@ if (!isset($_SESSION['username'])) {
                 <p class="description">You can edit content of a web page.</p>
 
                 <?php
-                // DISPLAY CURRENT CONTENT IN TEXT AREA INPUT 
+                // DISPLAY CURRENT CONTENT IN TEXT AREA INPUT
                 $pages = array('copyright', 'terms_of_service', 'privacy_policy');
                 foreach ($pages as $page) {
-                    if ($_POST[$page]) {
+                    if (isset($_POST['save'])) {
                         $page_file = '../admin/'. $page . '.txt';
                         $open_file = fopen($page_file, "w+");
                         fwrite($open_file, $_POST[$page]);
