@@ -2,27 +2,16 @@
 
 <!-- PHP code area -->
 <?php
-// Prevent unauthenicated users as well as hackers from logging in to dashboard
+// Start the session
 session_start();
 
-/*
-if (!isset($_SESSION['username'])) {
-    // check cookie
-    if (isset($_COOKIE['loggedin_name'])) {
-        $name = $_COOKIE['loggedin_name'];
-        // check if the cookie is valid one
-        if (file_exists("../$name")) {
-            $val = file_get_contents("../$name");
-            if ($_COOKIE['uniqid'] == $val) {
-                $_SESSION['username'] = $_COOKIE['loggedin_name'];
-            }
-        }
-    }
-}
-
-if (!isset($_SESSION['username'])) {
-    header('location: login.php');
+// If file 'install.php' still exists, the current PHP script in this file will be terminated
+/* if (file_exists('install.php')) {
+    die("You have to delete 'install.php' file manually to activate the System");
 } */
+
+// Check if admin has logged in or not
+
 ?>
 
 <!-- HTML code area -->
@@ -65,7 +54,7 @@ if (!isset($_SESSION['username'])) {
                 $pages = array('copyright', 'terms_of_service', 'privacy_policy');
                 foreach ($pages as $page) {
                     if (isset($_POST['save'])) {
-                        $page_file = '../admin/'. $page . '.txt';
+                        $page_file = '../admin/' . $page . '.txt';
                         $open_file = fopen($page_file, "w+");
                         fwrite($open_file, $_POST[$page]);
                         fclose($open_file);
