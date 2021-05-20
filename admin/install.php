@@ -19,7 +19,7 @@ if (isset($_POST['install'])) {
     $username_error = "Your username must have at least 6 characters and include only letters and numbers!";
   }
 
-  // Validate password inputs
+  // Validate password input
   if (empty($_POST['password'])) {
     $password_error = "Please enter your password!";
   } else if (!preg_match($password_pattern, $_POST['password'])) {
@@ -33,9 +33,29 @@ if (isset($_POST['install'])) {
     $verify_password_error = "Please re-enter THE SAME password!";
   }
 
+  // If all inputs are valid, the success message will be displayed and the input data will be saved in an external file outside the root
   else {
+
+    // Display success message
     $success = "Installation Successful! Please close the tab and delete '<code>install.php</code>' file to activate the System.";
-    
+
+    // Password musn't be saved in plain text. Instead, it must be saved in hashed text.
+    $hashed_password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+    // Add a new file outside the root to store admin account data. I will use CSV file instead of .txt file
+    $file_open = fopen("../admin_account.csv", "a");
+
+    // Update data
+    $admin_account_data = array(
+      'username' => $_POST['username'],
+      'password' => $hashed_password
+    );
+    fputcsv($file_open, $admin_account_data);
+
+    $_POST['username'] = '';
+    $hashed_password = '';
+
+    fclose($file_open);
   }
 
 }
