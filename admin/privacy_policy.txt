@@ -26,6 +26,3 @@
 <p>To protect other users’ privacy and safety.</p>
 <p>To allow other users to get in contact with you.</p>
 <p>To do researches, analysis, and development.</p>
-                    
-                    
-                    

@@ -43,7 +43,4 @@ You are entirely responsible for the security and confidentiality of your passwo
 <h2>7/ Limitation of liability</h2>
 <p>
 Your use of the Web Site is at your own risk. You agree that our sole obligation to you is to provide the Web Site “as is.
-</p>                      
-                    
-                    
-                    
+</p>         
