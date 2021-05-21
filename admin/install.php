@@ -2,9 +2,6 @@
 
 <!-- PHP code area -->
 <?php
-// Start the sesion
-session_start();
-
 // VALIDATE INPUTS
 if (isset($_POST['install'])) {
 
@@ -37,7 +34,7 @@ if (isset($_POST['install'])) {
   else {
 
     // Display success message
-    $success = "Installation Successful! Please close the tab and delete '<code>install.php</code>' file to activate the System.";
+    $success = "Installation Successful! Please close the tab and delete <code>install.php</code> file to activate the System.";
 
     // Password musn't be saved in plain text. Instead, it must be saved in hashed text.
     $hashed_password = password_hash($_POST['password'], PASSWORD_DEFAULT);
