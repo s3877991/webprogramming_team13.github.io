@@ -4,7 +4,7 @@
 .form h1 {
     text-align: center;
 }
-.keyboard, .submit {
+.keyboard {
     margin: 25px 0;
 }
 
@@ -29,7 +29,7 @@ form input {
     transition: 0.5s;
 }
 
-.keyboard .error {
+.error {
     font-size: 20px;
     font-weight: bold;
     color: #f00;
