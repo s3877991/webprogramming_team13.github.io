@@ -69,7 +69,7 @@ NGUYEN QUANG DUY:
     + Finalize and compress all files and folders into a ZIP file ==> COMPLETED.
 
 3. Fullstack Assignment (--%):
-    + Task #1: Create and develop an install file for admin ==> .
+    + Task #1: Create and develop an install file for admin ==> COMPLETED.
     + Task #3: Create and develop an admin dashboard page ==> .
     + Task #9: Implement the behavior in Product Details and Order Placement page ==> .
 
