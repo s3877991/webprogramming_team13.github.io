@@ -2,28 +2,16 @@
 
 <!-- PHP code area -->
 <?php
-  session_start();
+// Start the session
+session_start();
 
-  if (isset($_POST['act'])) {
-    $pass = $_POST['pass'];
-    $hash = file_get_contents('../pass.txt');
-    if (password_verify($pass, $hash)) {
-      // create a name/uniq value pair to prevent modification
-      $username = $_POST['username'];
-      $uniqid = uniqid();
+// If file 'install.php' still exists, the current PHP script in this file will be terminated
+/* if (file_exists('install.php')) {
+  die("You have to delete 'install.php' file manually to activate the System!");
+} */
 
-      // store the pair on the server for later validation
-      // note: the location is outside of document root
-      file_put_contents("../$username", $uniqid);
+// VALIDATE INPUTS BASED ON data from admin account data file
 
-      // create a cookie that expires after 7 days
-      setcookie('loggedin_name', $username, time() + 60 * 60 * 24 * 7);
-      setcookie('uniqid', $uniqid, time() + 60 * 60 * 24 * 7);
-      $_SESSION['username'] = $_POST['username'];
-      header('location: dashboard.php');
-    }
-    $status = 'Your email or password is INCORRECT';
-  }
 ?>
 
 <!-- HTML Code Area -->
@@ -32,9 +20,9 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width intitial-scale=1">
+  <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="stylesheet" href="css/header&footer.css">
-  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/authenication-form.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
   <title>Login - Shoppiverse Admin</title>
@@ -57,13 +45,13 @@
         <div class="keyboard">
           <label for="username">Your username</label>
           <br>
-          <input type="text" name="username" placeholder="Enter your username">
+          <input type="text" name="username" placeholder="Enter your username" required>
         </div>
 
         <div class="keyboard">
           <label for="pass">Your password</label>
           <br>
-          <input type="password" name="pass" placeholder="Enter your password">
+          <input type="password" name="pass" placeholder="Enter your password" required>
         </div>
 
         <!--Error Message Area-->
