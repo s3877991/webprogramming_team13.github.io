@@ -42,11 +42,6 @@ if (isset($_POST['install'])) {
     // Add a new file outside the root to store admin account data. I will use CSV file instead of .txt file
     $file_open = fopen("../admin_account.csv", "a");
 
-    // Set header row
-    $header_row = array("Username", "Password");
-    fputcsv($file_open, $header_row);
-
-
     // Update data
     $admin_account_data = array(
       'username' => $_POST['username'],
