@@ -29,6 +29,10 @@ form input {
     transition: 0.5s;
 }
 
+.login {
+    text-align: center;
+}
+
 .error {
     font-size: 20px;
     font-weight: bold;
