@@ -98,9 +98,6 @@ main {
     font-size: 20px;
     color: #f93;
 }
-.flex-container .rank {
-    color: #fc0;
-}
 .flex-container .item img {
     width: 70%;
     margin: 10px 10px 0 10px;
