@@ -1,3 +1,199 @@
+<?php
+    // define variables and set to empty values
+    $fname = $lname = $email = $phone = $password = $retypepassword = $address = $zip = $country = $actype = $businessname = $storename = $storecategory = "";
+    $errors = 0;
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (empty($_POST["first-name"])) {
+            $errors++;
+        } else {
+            $fname = validate_input($_POST["first-name"]);
+            // check if name only contains letters and whitespace
+            if (!preg_match("/^[A-Za-z]{3,}$/",$fname)) {
+                $errors++;
+            }
+        }
+
+        if (empty($_POST["last-name"])) {
+            $errors++;
+        } else {
+            $lname = validate_input($_POST["last-name"]);
+            // check if name only contains letters and whitespace
+            if (!preg_match("/^[A-Za-z]{3,}$/",$lname)) {
+            $errors++;
+            }
+        }
+        
+        if (empty($_POST["email"])) {
+            $errors++;
+        } else {
+            $email = validate_input($_POST["email"]);
+            // check if e-mail address is well-formed
+            if (!preg_match('/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/',$email)) {
+            $errors++;
+            } else {
+                if (file_exists("../users.csv")) {
+                    $file = file("../users.csv");
+                    foreach ($file as $row) {
+                        $email_data = explode(',', $row)[0];
+                        if ($email == $email_data) {
+                            $errors++;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+            
+        if (empty($_POST["phone"])) {
+            $errors++;
+        } else {
+            $phone = validate_input($_POST["phone"]);
+            // check if name only contains letters and whitespace
+            if (!preg_match("/^([0-9]([-. ]?)){9,11}[^-. ]$/",$phone)) {
+            $errors++;
+            } else {
+                if (file_exists("../users.csv")) {
+                    $file = file("../users.csv");
+                    foreach ($file as $row) {
+                        $phone_data = explode(',', $row)[1];
+                        if ($phone == $phone_data) {
+                            $errors++;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        if (empty($_POST["password"])) {
+            $errors++;
+        } else {
+            $password = validate_input($_POST["password"]);
+            // check if name only contains letters and whitespace
+            if (!preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,20}$/",$password)) {
+            $errors++;
+            }
+        }
+
+        if (empty($_POST["retype-password"])) {
+            $errors++;
+        } else {
+            $retypepassword = validate_input($_POST["retype-password"]);
+            // check if name only contains letters and whitespace
+            $password = "/".$password."/";
+            if (!preg_match($password,$retypepassword)) {
+            $errors++;
+            }
+        }
+
+        if (empty($_POST["address"])) {
+            $errors++;
+        } else {
+            $address = validate_input($_POST["address"]);
+            // check if name only contains letters and whitespace
+            if (!preg_match("/^([a-zA-Z0-9]{2,}[ ]?[a-zA-Z0-9 ]+[, ]*[a-zA-Z0-9 ]*)+$/",$address)) {
+            $errors++;
+            }
+        }
+
+        if (empty($_POST["city"])) {
+            $errors++;
+        } else {
+            $city = validate_input($_POST["city"]);
+            // check if name only contains letters and whitespace
+            if (!preg_match("/^([a-zA-Z]{2,}[ ]*[a-zA-Z]+)+$/",$city)) {
+            $errors++;
+            }
+        }
+        
+        if (empty($_POST["zip"])) {
+            $errors++;
+        } else {
+            $zip = validate_input($_POST["zip"]);
+            // check if name only contains letters and whitespace
+            if (!preg_match("/^[0-9]{4,6}$/",$zip)) {
+            $errors++;
+            }
+        }
+
+        if (empty($_POST["country"])) {
+            $errors++;
+        } else {
+            $country = validate_input($_POST["country"]);
+            $country_list = ["AR", "AU", "AT", "BY", "BR", "KH", "CA", "CL", "CN", "CO", "CR", "EG", "EE", "FI", "FR", "DE", "VA", "HK", "ID", "IE", "IL", "JM", "JP", "JE", "KZ", "KW", "LV", "LR", "LU", "MO", "MK", "MY", "MX", "FM", "MD", "MC", "MN", "MZ", "MM", "NP", "NL", "NZ", "NI", "NG", "NO", "PK", "PA", "PY", "PE", "PH", "PT", "QA", "RU", "RW", "SA", "SN", "RS", "SG", "ZA", "KR", "ES", "LK", "SW", "CH", "TW", "TH", "TR", "UA", "AE", "GB", "US", "UY", "VE", "VN", "ZW"];
+            if (!in_array($country, $country_list)) {
+                $errors++;
+            }
+        }
+
+        if (empty($_POST["acc-type"])) {
+            $errors++;
+        } else {
+            $acctype = validate_input($_POST["acc-type"]);
+            if ($acctype != 'shopper' && $acctype != 'store-owner') {
+            $errors++;
+            }
+        }
+        
+        if ($acctype == 'store-owner') {
+        if (empty($_POST["business-name"])) {
+            $errors++;
+        } else {
+            $businessname = validate_input($_POST["business-name"]);
+            // check if name only contains letters and whitespace
+            if (!preg_match("/^[a-zA-Z-' ]*$/",$businessname)) {
+            $errors++;
+            }
+        }
+        
+
+        if (empty($_POST["store-name"])) {
+            $errors++;
+        } else {
+            $storename = validate_input($_POST["store-name"]);
+            // check if name only contains letters and whitespace
+            if (!preg_match("/^[a-zA-Z-' ]*$/",$storename)) {
+            $errors++;
+            }
+        }
+
+        if (empty($_POST["store-category"])) {
+            $errors++;
+        } else {
+            $storecategory = validate_input($_POST["store-category"]);
+            // check if name only contains letters and whitespace
+            if (!preg_match("/^[a-zA-Z-' ]*$/",$storecategory)) {
+            $errors++;
+            }
+        }
+    }
+
+        $userInfo = $email . ',' . $phone . ',' . $fname . ',' . $lname . ',' . $address . ',' . $city . ',' . $zip . ',' . $country . ',' . $acctype . ',' . $businessname . ',' . $storename . ',' . $storecategory . ',' . password_hash($password, PASSWORD_DEFAULT);
+        $filename = '../users.csv';
+        if ($errors == 0) {
+            if (file_exists($filename)) {
+                $fp = fopen($filename, "a");
+                fwrite($fp, $userInfo . "\n");
+                fclose($fp);
+            }
+            else {
+                $fp = fopen($filename, "w");
+                fwrite($fp, $userInfo . "\n");
+                fclose($fp);
+            }
+            header('location: http://localhost:8000/login.php');
+        }
+    }
+
+    function validate_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,7 +250,7 @@
 
         <!--Registration Form-->
         <section>
-            <form name="regform" method="get" action="user-info.html">
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <div class="container">
 
                     <!--Title-->
@@ -73,7 +269,7 @@
                             <div class="flex">
                                 <label class="label" for="email">Your email</label>
                                 <div>
-                                    <input type="email" id="email" placeholder="Enter your email adress" required>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email adress" required>
                                     <p class="error" id="email-error">Please enter a valid email</p>
                                 </div>
                             </div>
@@ -81,7 +277,7 @@
                             <div class="flex">
                                 <label class="label" for="phone">Your phone</label>
                                 <div>
-                                    <input type="tel" id="phone" minlength=9 maxlength=13
+                                    <input type="tel" id="phone" name="phone" minlength=9 maxlength=13
                                         placeholder="Enter your phone number" required>
                                     <p class="error" id="phone-error">Please enter a valid phone number</p>
                                 </div>
@@ -95,7 +291,7 @@
                             <div class="flex">
                                 <label class="label" for="password">Your password</label>
                                 <div>
-                                    <input type="password" id="password" placeholder="Enter your password" required>
+                                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
                                     <p>
                                         <ul>
                                           <li>Contains 8-20 characters</li>
@@ -112,7 +308,7 @@
                             <div class="flex">
                                 <label class="label" for="retype-password">Verify your password</label>
                                 <div>
-                                    <input type="password" id="retype-password" placeholder="Renter your password" required>
+                                    <input type="password" id="retype-password" name="retype-password" placeholder="Renter your password" required>
                                     <p class="error" id="retype-error">Please enter the same password</p>
                                 </div>
                             </div>
@@ -130,7 +326,7 @@
                             <div class="item">
                                 <label for="profile-picture" class="label">Your Avatar</label>
                                 <div>
-                                    <input type="file" id="profile-picture" accept=".png, .jpg" name="profile-picture"
+                                    <input type="file" id="profile-picture" name="profile-picture" accept=".png, .jpg" name="profile-picture"
                                         required>
                                 </div>
                             </div>
@@ -142,7 +338,7 @@
                             <div class="flex">
                                 <label class="label" for="first-name">First name</label>
                                 <div>
-                                    <input type="text" id="first-name" placeholder="Enter your first name"
+                                    <input type="text" id="first-name" name="first-name" placeholder="Enter your first name"
                                         maxlength="50" minlength="3" required>
                                     <p>
                                         <ul>
@@ -156,7 +352,7 @@
                             <div class="flex">
                                 <label class="label" for="last-name">Last name</label>
                                 <div>
-                                    <input type="text" id="last-name" placeholder="Enter your last name" maxlength="50"
+                                    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" maxlength="50"
                                         minlength="3" required>
                                     <p>
                                         <ul>
@@ -180,7 +376,7 @@
                             <div class="flex">
                                 <label class="label" for="address">Address</label>
                                 <div>
-                                    <input type="text" id="address" placeholder="Enter your current address"
+                                    <input type="text" id="address" name="address" placeholder="Enter your current address"
                                         maxlength="50" minlength="3" required>
                                     <p class="error" id="address-error">Please enter a valid address</p>
                                 </div>
@@ -189,7 +385,7 @@
                             <div class="flex">
                                 <label class="label" for="city">City</label>
                                 <div>
-                                    <input type="text" id="city" placeholder="Enter your current city" maxlength=30
+                                    <input type="text" id="city" name="city" placeholder="Enter your current city" maxlength=30
                                         minlength="3" required>
                                     <p class="error" id="city-error">Please enter a valid name</p>
                                 </div>
@@ -203,7 +399,7 @@
                             <div class="flex">
                                 <label class="label" for="zip">Zipcode</label>
                                 <div>
-                                    <input type="text" id="zip" placeholder="Enter your zipcode" minlength="4"
+                                    <input type="text" id="zip" name="zip" placeholder="Enter your zipcode" minlength="4"
                                         maxlength="6" required>
                                     <p class="error" id="zip-error">Contains from 4 - 6 digits</p>
                                     <p class="error">Invalid zipcode</p>
@@ -213,7 +409,7 @@
                             <div class="flex">
                                 <label class="label" for="country">Country</label>
                                 <div>
-                                    <select id="country" required>
+                                    <select id="country" name="country" required>
                                         <option value="" selected>Choose your country</option>
                                         <option value="AR">Argentina</option>
                                         <option value="AU">Australia</option>
@@ -344,7 +540,7 @@
                         <div class="single-container">
                             <label class="label" for="store-category">Store category</label>
                             <div>
-                                <select id="store-category">
+                                <select id="store-category" name="store-category">
                                     <option value="" selected>Choose your category</option>
                                     <option value="department">Department stores</option>
                                     <option value="grocery">Grocery stores</option>
@@ -369,11 +565,11 @@
                     <div class="button-container">
 
                         <div class="button">
-                            <input type="reset" id="clear" value="Clear">
+                            <input type="reset" id="clear" name="clear" value="Clear">
                         </div>
 
                         <div class="button">
-                            <input type="submit" id="send" value="Sign up">
+                            <input type="submit" id="send" name="send" value="Sign up">
                         </div>
 
                     </div>

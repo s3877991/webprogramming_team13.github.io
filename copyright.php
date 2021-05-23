@@ -33,8 +33,7 @@
                 <li><a href="fees.php">FEES</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">STORES <span
-                            class="material-icons">expand_more</span></label>
+                    <label for="dropdown-sub" class="toggle">STORES <span class="material-icons">expand_more</span></label>
                     <a href="">STORES <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
@@ -64,8 +63,16 @@
 
                 <hr>
 
-                <p>Copyright © 2021, Shoppiverse Corporation.</p>
-                <p>All rights reserved.</p>
+                <?php
+                /* In admin "Dashboard" page, after clicking save button, the content in textarea input
+                will be saved in an external file. From that file, the content will be displayed in this
+                page */
+                $content_file = "admin/copyright.txt";
+                $open = fopen($content_file, 'r');
+                $content = fread($open, filesize($content_file));
+                fclose($open);
+                echo $content;
+                ?>
 
             </div>
 

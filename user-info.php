@@ -62,7 +62,7 @@
 
             <!--Avatar Area-->
             <div class="avatar">
-                <img src="images/duy.jpg" alt="a man thinking">
+                <img src="images/default-avatar.png" alt="an anonymous face">
             </div>
 
             <hr>

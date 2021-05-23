@@ -77,13 +77,6 @@
                         </div>
                         <h3 class="name">Eworld</h3>
                         <p class="des">Media Technology Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
                     </a>
                 </div>
 
@@ -94,13 +87,6 @@
                         </div>
                         <h3 class="name">Millennium</h3>
                         <p class="des">Novel Bookstore</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_border</span>
-                        </p>
                     </a>
                 </div>
 
@@ -111,13 +97,6 @@
                         </div>
                         <h3 class="name">Make-up Art Cosmetics</h3>
                         <p class="des">Cosmetics Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
                     </a>
                 </div>
 
@@ -128,13 +107,6 @@
                         </div>
                         <h3 class="name">Mojito</h3>
                         <p class="des">Art Stationery Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_border</span>
-                        </p>
                     </a>
                 </div>
 
@@ -145,13 +117,6 @@
                         </div>
                         <h3 class="name">NIKE</h3>
                         <p class="des">Sports Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
                     </a>
                 </div>
 
@@ -162,13 +127,6 @@
                         </div>
                         <h3 class="name">Gucci</h3>
                         <p class="des">Premium Fashion Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
                     </a>
                 </div>
 
@@ -179,13 +137,6 @@
                         </div>
                         <h3 class="name">ToCoToCo</h3>
                         <p class="des">Milk Tea Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
                     </a>
                 </div>
 
@@ -196,13 +147,6 @@
                         </div>
                         <h3 class="name">Don Chicken</h3>
                         <p class="des">Korean Chicken Restaurant</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
                     </a>
                 </div>
 
@@ -224,13 +168,6 @@
                         <img src="eworld-website/images/galaxy-s21-ultra.jpeg" alt="a phone with quad camera">
                         <h3 class="name">Samsung Galaxy S21 Ultra</h3>
                         <p class="price">$1058.69</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
                     </a>
                 </div>
 
@@ -239,13 +176,6 @@
                         <img src="images/book-2-responsive.png" alt="a cover page with some letters and a fingerprint">
                         <h3 class="name">Sapiens: A Brief History of Humankind - Yuval Noah Harari</h3>
                         <p class="price">$10.99</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
                     </a>
                 </div>
 
@@ -254,13 +184,6 @@
                         <img src="images/matte-lipstick.png" alt="a lipstick">
                         <h3 class="name">Mattle Lipstick</h3>
                         <p class="price">$19.99</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
                     </a>
                 </div>
 
@@ -269,13 +192,6 @@
                         <img src="images/faber-watercolor-pencil.jpg" alt="a box of colored pencils">
                         <h3 class="name">72 Faber Castell watercolor pencils set</h3>
                         <p class="price">$24.99</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
                     </a>
                 </div>
 
@@ -284,13 +200,6 @@
                         <img src="images/nike-sneaker.jpg" alt="a sneaker">
                         <h3 class="name">Air Jordan 1 Mid</h3>
                         <p class="price">$140.83</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
                     </a>
                 </div>
 
@@ -299,13 +208,6 @@
                         <img src="images/gucci-bag.jpg" alt="a handbag">
                         <h3 class="name">Marmont mini top handle bag</h3>
                         <p class="price">$2190</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
                     </a>
                 </div>
 
@@ -314,13 +216,6 @@
                         <img src="images/matcha-milk-tea.jpg" alt="a cup of green milk tea">
                         <h3 class="name">Matcha milk tea</h3>
                         <p class="price">$1.07</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
                     </a>
                 </div>
 
@@ -329,13 +224,6 @@
                         <img src="images/spicy-cheese-chicken.jpg" alt="a chicken dish">
                         <h3 class="name">Spicy cheese chicken</h3>
                         <p class="price">$13.04</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
                     </a>
                 </div>
 
@@ -357,13 +245,6 @@
                         </div>
                         <h3 class="name">NIKE</h3>
                         <p class="des">Sports Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
                     </a>
                 </div>
 
@@ -372,13 +253,6 @@
                         <img src="images/eworld.png" alt="a letter e logo">
                         <h3 class="name">Eworld</h3>
                         <p class="des">Media Technology Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
                     </a>
                 </div>
 
@@ -389,13 +263,6 @@
                         </div>
                         <h3 class="name">Don Chicken</h3>
                         <p class="des">Korean Chicken Restaurant</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
                     </a>
                 </div>
 
@@ -406,13 +273,6 @@
                         </div>
                         <h3 class="name">ToCoToCo</h3>
                         <p class="des">Milk Tea Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
                     </a>
                 </div>
 
@@ -432,13 +292,6 @@
                         <img src="eworld-website/images/iphone-12-pro-max.jpg" alt="a phone with a notch display">
                         <h3 class="name">Apple iPhone 12 Pro Max</h3>
                         <p class="price">$1264.78</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
                     </a>
                 </div>
 
@@ -447,13 +300,6 @@
                         <img src="images/nike-sneaker-2.jpg" alt="another sneaker">
                         <h3 class="name">Air Force 1 </h3>
                         <p class="price">$166.48</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
                     </a>
                 </div>
 
@@ -462,13 +308,6 @@
                         <img src="images/black-diamond-milk-tea.jpg" alt="a cup of brown milk tea with topping">
                         <h3 class="name">Okinawan Black Diamond milk tea</h3>
                         <p class="price">$1.07</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
                     </a>
                 </div>
 
@@ -477,13 +316,6 @@
                         <img src="images/brush.png" alt="10 make-up brushes varied in sizes">
                         <h3 class="name">M.A.C Student Pro Brush</h3>
                         <p class="price">$20</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
                     </a>
                 </div>
 

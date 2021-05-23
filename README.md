@@ -30,7 +30,7 @@ PHAN DO NGOC LINH:
     + Task #4: Contact Us form requirements ==> COMPLETED.
 
 3. Fullstack Assignment (--%):
-    + Task #4: Implement the behavior in My Account and Login page ==> .
+    + Task #7: Implement the behavior in Store Home page ==> .
     + Task #8: Implement the behavior in Browse Products page ==> .
 
 
@@ -46,8 +46,8 @@ NGUYEN HAI MINH TRANG:
     + Task #9: Sample data ==> COMPLETED.
 
 3. Fullstack Assignment (--%):
+    + Task #4: Implement the behavior in My Account and Login page ==> .
     + Task #5: Register ==> .
-    + Task #7: Implement the behavior in Store Home page ==> . 
 
 
 NGUYEN QUANG DUY:
@@ -69,9 +69,9 @@ NGUYEN QUANG DUY:
     + Finalize and compress all files and folders into a ZIP file ==> COMPLETED.
 
 3. Fullstack Assignment (--%):
-    + Task #1: Create and develop an install file for admin ==> .
-    + Task #3: Create and develop an admin dashboard page ==> .
-    + Task #9: Implement the behavior in Product Detail and Order Placement page ==> .
+    + Task #1: Create and develop an install file for admin ==> COMPLETED.
+    + Task #3: Create and develop an admin dashboard page ==> COMPLETED.
+    + Task #9: Implement the behavior in Product Details and Order Placement page ==> .
 
 
 NGUYEN LINH CHI:
@@ -85,7 +85,6 @@ NGUYEN LINH CHI:
     + Task #6: Register form requirements ==> COMPLETED.
 
 3. Fullstack Assignment (--%):
-    + Task #1: Create and develop an install file for admin ==> .
     + Task #2: Display stores and products based on data from CSV files ==> .
     + Task #6: Implement the behavior in browse stores pages ==> .
 
@@ -101,3 +100,4 @@ NGUYEN LINH CHI:
 
 5. Making responsive modal box with CSS and JavaScript: W3schools, n.d., viewed Apr 28 2021, <https://www.w3schools.com/howto/howto_css_modals.asp>
 
+6. Saving form input data in CSV file with PHP: YouTube, Webslesson, viewed May 21 2021, <https://www.youtube.com/watch?v=4ytPkwCV05A>
