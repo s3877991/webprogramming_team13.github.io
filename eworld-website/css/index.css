@@ -119,6 +119,22 @@ html {
     transition: 0.5s;
 }
 
+.product-detail-cart ul, a{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.product-details {
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    padding-left: 80px;
+}
+
+.material-icons {
+    margin-top: 0;
+}
+
 /* Make the page responsive */
 @media screen and (max-width: 470px) {
     .item {

