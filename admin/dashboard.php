@@ -6,11 +6,29 @@
 session_start();
 
 // If file 'install.php' still exists, the current PHP script in this file will be terminated
-/* if (file_exists('install.php')) {
+if (file_exists('install.php')) {
     die("You have to delete 'install.php' file manually to activate the System");
-} */
+} 
+
+// Check if user cookie is still active or not
+if (!isset($_SESSION['username'])) {
+    // Check user cookie
+    if (isset($_COOKIE['logged_username'])) {
+        $logged_username = $_COOKIE['logged_username'];
+        // Check if the user cookie is valid one
+        if (file_exists("../$logged_username")) {
+            $uniqid_value = file_get_contents("../$logged_username");
+            if ($_COOKIE['uniqid'] == $uniqid_value) {
+                $_SESSION['username'] = $_COOKIE['logged_username'];
+            }
+        }
+    }
+}
 
 // Check if admin has logged in or not
+if (!isset($_SESSION['username'])) {
+    header('location: login.php');
+}
 
 ?>
 
@@ -38,7 +56,7 @@ session_start();
     <!-- Main section -->
     <main>
         <h1 id="title">DASHBOARD</h1>
-        <h3 id="subtitle">Welcome to the Content Management System, admin!</h3>
+        <h3 id="subtitle">Welcome to the Content Management System, <span id="username"><?= isset($_SESSION['username']) ?></span>!</h3>
 
         <hr>
 

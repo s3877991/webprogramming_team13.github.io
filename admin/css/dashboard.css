@@ -12,6 +12,10 @@ main {
     margin-bottom: -10px;
 }
 
+#subtitle #username {
+    color: #099;
+}
+
 .section-name, .description {
     text-align: center;
 }
