@@ -181,7 +181,7 @@
                 fwrite($fp, $userInfo . "\n");
                 fclose($fp);
             }
-            header('location: http://localhost:8000/login.php');
+            header('location: login.php');
         }
     }
 
@@ -510,7 +510,7 @@
                             <div>
                                 <input type="radio" name="acc-type" id="store-owner" value="store-owner" required>
                                 <label class="options" for="store-owner">Store owner</label>
-                            </div >
+                            </div>
 
                         </div>
 
