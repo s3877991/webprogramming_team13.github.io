@@ -7,7 +7,7 @@ session_start();
 
 // If file 'install.php' still exists, the current PHP script in this file will be terminated
 if (file_exists('install.php')) {
-    die("You have to delete 'install.php' file manually to activate the System");
+    die("You have to delete <code>'install.php'</code> file manually to activate the System");
 } 
 
 // Check if user cookie is still active or not
