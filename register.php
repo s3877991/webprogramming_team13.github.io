@@ -81,8 +81,7 @@
         } else {
             $retypepassword = validate_input($_POST["retype-password"]);
             // check if name only contains letters and whitespace
-            $password = "/".$password."/";
-            if (!preg_match($password,$retypepassword)) {
+            if ($password != $retypepassword) {
             $errors++;
             }
         }
@@ -511,7 +510,7 @@
                             <div>
                                 <input type="radio" name="acc-type" id="store-owner" value="store-owner" required>
                                 <label class="options" for="store-owner">Store owner</label>
-                            </div>
+                            </div >
 
                         </div>
 
