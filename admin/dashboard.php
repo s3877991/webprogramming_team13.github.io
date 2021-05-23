@@ -56,7 +56,7 @@ if (!isset($_SESSION['username'])) {
     <!-- Main section -->
     <main>
         <h1 id="title">DASHBOARD</h1>
-        <h3 id="subtitle">Welcome to the Content Management System, <span id="username"><?= isset($_SESSION['username']) ?></span>!</h3>
+        <h3 id="subtitle">Welcome to the Content Management System, <span id="username"><?= ($_SESSION['username']) ?></span>!</h3>
 
         <hr>
 
