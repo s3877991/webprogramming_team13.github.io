@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/header-&-footer.css">
-    <link rel="stylesheet" href="css/browse-store-1.css">
+    <link rel="stylesheet" href="css/browse-filter.css">
+    <link rel="stylesheet" href="css/flexbox.css">
     <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -99,14 +100,6 @@
                             <img src="images/eworld.png" alt="a letter e logo">
                         </div>
                         <h3 class="name">Eworld</h3>
-                        <p class="des">Media Technology Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
                     </a>
                 </div>
 
@@ -116,14 +109,6 @@
                             <img src="images/millennium.png" alt="a letter M logo">
                         </div>
                         <h3 class="name">Millennium</h3>
-                        <p class="des">Novel Bookstore</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_border</span>
-                        </p>
                     </a>
                 </div>
 
@@ -133,14 +118,6 @@
                             <img src="images/mac.png" alt="M . A . C">
                         </div>
                         <h3 class="name">Make-up Art Cosmetics</h3>
-                        <p class="des">Cosmetics Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
                     </a>
                 </div>
 
@@ -150,14 +127,6 @@
                             <img src="images/mojito.png" alt="a glass of drink with stars an dots">
                         </div>
                         <h3 class="name">Mojito</h3>
-                        <p class="des">Art Stationery Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_border</span>
-                        </p>
                     </a>
                 </div>
 
@@ -167,14 +136,6 @@
                             <img src="images/nike.png" alt="a word 'NIKE' and a slash below it">
                         </div>
                         <h3 class="name">NIKE</h3>
-                        <p class="des">Sports Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
                     </a>
                 </div>
 
@@ -184,14 +145,6 @@
                             <img src="images/gucci.png" alt="a symbol and a name above">
                         </div>
                         <h3 class="name">Gucci</h3>
-                        <p class="des">Premium Fashion Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
                     </a>
                 </div>
 
@@ -201,14 +154,6 @@
                             <img src="images/tocotoco.jpg" alt="a black circle with many stars">
                         </div>
                         <h3 class="name">ToCoToCo</h3>
-                        <p class="des">Milk Tea Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
                     </a>
                 </div>
 
@@ -218,14 +163,6 @@
                             <img src="images/don-chicken.png" alt="a man sit on a big chicken">
                         </div>
                         <h3 class="name">Don Chicken</h3>
-                        <p class="des">Korean Chicken Restaurant</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
                     </a>
                 </div>
             </div>

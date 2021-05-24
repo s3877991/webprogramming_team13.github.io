@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/header-&-footer.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/flexbox.css">
     <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -34,8 +34,7 @@
                 <li><a href="fees.php">FEES</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">STORES <span
-                            class="material-icons">expand_more</span></label>
+                    <label for="dropdown-sub" class="toggle">STORES <span class="material-icons">expand_more</span></label>
                     <a href="#">STORES <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
@@ -67,90 +66,81 @@
         <!--New Stores Area-->
         <section id="sub-sect-1">
             <h2 class="label">New Stores</h2>
-            <div class="slider">
-            <div class="slide-track">
 
-                <div class="slide">
+            <div class="flex-container">
+
+                <div class="item">
                     <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/eworld.png" alt="a letter e logo">
                         </div>
                         <h3 class="name">Eworld</h3>
-                        <p class="des">Media Technology Store</p>
                     </a>
                 </div>
 
-                <div class="slide">
+                <div class="item">
                     <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/millennium.png" alt="a letter M logo">
                         </div>
                         <h3 class="name">Millennium</h3>
-                        <p class="des">Novel Bookstore</p>
                     </a>
                 </div>
 
-                <div class="slide">
+                <div class="item">
                     <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/mac.png" alt="M . A . C">
                         </div>
                         <h3 class="name">Make-up Art Cosmetics</h3>
-                        <p class="des">Cosmetics Store</p>
                     </a>
                 </div>
 
-                <div class="slide">
+                <div class="item">
                     <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/mojito.png" alt="a glass of drink with stars an dots">
                         </div>
                         <h3 class="name">Mojito</h3>
-                        <p class="des">Art Stationery Store</p>
                     </a>
                 </div>
 
-                <div class="slide">
+                <div class="item">
                     <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/nike.png" alt="a word 'NIKE' and a slash below it">
                         </div>
                         <h3 class="name">NIKE</h3>
-                        <p class="des">Sports Store</p>
                     </a>
                 </div>
 
-                <div class="slide">
+                <div class="item">
                     <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/gucci.png" alt="a symbol and a name above">
                         </div>
                         <h3 class="name">Gucci</h3>
-                        <p class="des">Premium Fashion Store</p>
                     </a>
                 </div>
 
-                <div class="slide">
+                <div class="item">
                     <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/tocotoco.jpg" alt="a black circle with many stars">
                         </div>
                         <h3 class="name">ToCoToCo</h3>
-                        <p class="des">Milk Tea Store</p>
                     </a>
                 </div>
 
-                <div class="slide">
+                <div class="item">
                     <a href="eworld-website/index.php">
                         <div class="image">
                             <img src="images/don-chicken.png" alt="a man sit on a big chicken">
                         </div>
                         <h3 class="name">Don Chicken</h3>
-                        <p class="des">Korean Chicken Restaurant</p>
                     </a>
                 </div>
 
-            </div>
             </div>
         </section>
 
@@ -160,26 +150,29 @@
         <section id="sub-sect-3">
             <h2 class="label">New Products</h2>
 
-            <div class="slider">
-                <div class="slide-track">
+            <div class="flex-container">
 
-                <div class="slide">
+                <div class="item">
                     <a href="eworld-website/product-details.php">
-                        <img src="eworld-website/images/galaxy-s21-ultra.jpeg" alt="a phone with quad camera">
+                        <div class="image">
+                            <img src="eworld-website/images/galaxy-s21-ultra.jpeg" alt="a phone with quad camera">
+                        </div>
                         <h3 class="name">Samsung Galaxy S21 Ultra</h3>
                         <p class="price">$1058.69</p>
                     </a>
                 </div>
 
-                <div class="slide">
+                <div class="item">
                     <a href="eworld-website/product-details-2.php">
-                        <img src="images/book-2-responsive.png" alt="a cover page with some letters and a fingerprint">
+                        <div class="image">
+                            <img src="images/book-2-responsive.png" alt="a cover page with some letters and a fingerprint">
+                        </div>
                         <h3 class="name">Sapiens: A Brief History of Humankind - Yuval Noah Harari</h3>
                         <p class="price">$10.99</p>
                     </a>
                 </div>
 
-                <div class="slide">
+                <div class="item">
                     <a href="eworld-website/product-details.php">
                         <img src="images/matte-lipstick.png" alt="a lipstick">
                         <h3 class="name">Mattle Lipstick</h3>
@@ -187,41 +180,51 @@
                     </a>
                 </div>
 
-                <div class="slide">
+                <div class="item">
                     <a href="eworld-website/product-details-2.php">
-                        <img src="images/faber-watercolor-pencil.jpg" alt="a box of colored pencils">
+                        <div class="image">
+                            <img src="images/faber-watercolor-pencil.jpg" alt="a box of colored pencils">
+                        </div>
                         <h3 class="name">72 Faber Castell watercolor pencils set</h3>
                         <p class="price">$24.99</p>
                     </a>
                 </div>
 
-                <div class="slide">
+                <div class="item">
                     <a href="eworld-website/product-details.php">
-                        <img src="images/nike-sneaker.jpg" alt="a sneaker">
+                        <div class="image">
+                            <img src="images/nike-sneaker.jpg" alt="a sneaker">
+                        </div>
                         <h3 class="name">Air Jordan 1 Mid</h3>
                         <p class="price">$140.83</p>
                     </a>
                 </div>
 
-                <div class="slide">
+                <div class="item">
                     <a href="eworld-website/product-details-2.php">
-                        <img src="images/gucci-bag.jpg" alt="a handbag">
+                        <div class="image">
+                            <img src="images/gucci-bag.jpg" alt="a handbag">
+                        </div>
                         <h3 class="name">Marmont mini top handle bag</h3>
                         <p class="price">$2190</p>
                     </a>
                 </div>
 
-                <div class="slide">
+                <div class="item">
                     <a href="eworld-website/product-details.php">
-                        <img src="images/matcha-milk-tea.jpg" alt="a cup of green milk tea">
+                        <div class="image">
+                            <img src="images/matcha-milk-tea.jpg" alt="a cup of green milk tea">
+                        </div>
                         <h3 class="name">Matcha milk tea</h3>
                         <p class="price">$1.07</p>
                     </a>
                 </div>
 
-                <div class="slide">
+                <div class="item">
                     <a href="eworld-website/product-details-2.php">
-                        <img src="images/spicy-cheese-chicken.jpg" alt="a chicken dish">
+                        <div class="image">
+                            <img src="images/spicy-cheese-chicken.jpg" alt="a chicken dish">
+                        </div>
                         <h3 class="name">Spicy cheese chicken</h3>
                         <p class="price">$13.04</p>
                     </a>
@@ -244,7 +247,6 @@
                             <img src="images/nike.png" alt="a word 'NIKE' and a slash below it">
                         </div>
                         <h3 class="name">NIKE</h3>
-                        <p class="des">Sports Store</p>
                     </a>
                 </div>
 
@@ -252,7 +254,6 @@
                     <a href="eworld-website/index.php">
                         <img src="images/eworld.png" alt="a letter e logo">
                         <h3 class="name">Eworld</h3>
-                        <p class="des">Media Technology Store</p>
                     </a>
                 </div>
 
@@ -262,7 +263,6 @@
                             <img src="images/don-chicken.png" alt="a man sit on a big chicken">
                         </div>
                         <h3 class="name">Don Chicken</h3>
-                        <p class="des">Korean Chicken Restaurant</p>
                     </a>
                 </div>
 
@@ -272,7 +272,6 @@
                             <img src="images/tocotoco.jpg" alt="a black circle with many stars">
                         </div>
                         <h3 class="name">ToCoToCo</h3>
-                        <p class="des">Milk Tea Store</p>
                     </a>
                 </div>
 
