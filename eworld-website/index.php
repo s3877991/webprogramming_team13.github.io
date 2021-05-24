@@ -63,195 +63,36 @@
             </div>
         </section>
 
-        <!--New Products Area-->
-        <section id="sub-sect-1">
-            <h2 class="label">New Products</h2>
+        <?php
+            session_start();
+            require 'product_functions.php';
+            $products = read_all_products();
 
-            <div class="flex-container">
-
-                <div class="item">
-                    <a href="product-details-2.php">
-                        <div class="image">
-                            <img src="images/galaxy-s21-ultra.jpeg" alt="a phone with quad camera">
-                        </div>
-                        <h3 class="name">Samsung Galaxy S21 Ultra</h3>
-                        <p class="price">$1058.69</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/galaxy-tab-s7.jpg" alt="a tablet with its pen">
-                        </div>
-                        <h3 class="name">Samsung Galaxy Tab S7</h3>
-                        <p class="price">$738.69</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details-2.php">
-                        <div class="image">
-                            <img src="images/dell-laptop.jpg" alt="a laptop">
-                        </div>
-                        <h3 class="name">Dell Inspiron 5593</h3>
-                        <p class="price">$730.00</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/fujifilm-camera.jpg" alt="a camera">
-                        </div>
-                        <h3 class="name">Fujifilm X-T4</h3>
-                        <p class="price">$2619.13</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details-2.php">
-                        <div class="image">
-                            <img src="images/galaxy-buds-pro.png" alt="bluetooth ear phones">
-                        </div>
-                        <h3 class="name">Samsung Galaxy Buds Pro</h3>
-                        <p class="price">$164.78</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_border</span>
-                        </p>
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-        <!--Featured Products Area-->
-        <section id="sub-sect-2">
-            <h2 class="label">Featured Products</h2>
-
-            <div class="flex-container">
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <img src="images/iphone-12-pro-max.jpg" alt="a phone with a notch display">
-                        <h3 class="name">Apple iPhone 12 Pro Max</h3>
-                        <p class="price">$1264.78</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details-2.php">
-                        <img src="images/ipad-air-4.jpg" alt="a tablet with full screen display">
-                        <h3 class="name">Apple iPad Air 2020</h3>
-                        <p class="price">$651.74</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <img src="images/macbook-pro-13.jpg" alt="a laptop made by Apple">
-                        <h3 class="name">Apple MacBook Pro 13" 2019</h3>
-                        <p class="price">$1304.35</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details-2.php">
-                        <img src="images/canon-camera.jpg" alt="a camera made by Canon">
-                        <h3 class="name">Canon EOS 6D Mark II</h3>
-                        <p class="price">$1195.22</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <img src="images/airpods-2.jpg" alt="bluetooth ear phones made by Apple">
-                        <h3 class="name">Apple AirPods 2</h3>
-                        <p class="price">$143.04</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-        <!--Flashing message-->
-        <div class="flash-container" id="process-denied">
-            <div class="flashing-message">
-                <div class="icon">
-                    <img src="images/account.jpg" alt="a default avatar">
-                </div>
-                <h1>Please <a href="../login.php">Login</a> or <a href="../register.php">Register</a> to continue this
-                    process.</h1>
-            </div>
+            $count = 0;
+        ?>
+        <h2 class="label">New Products</h2>
+        <div class="product-detail-cart">
+        <?php
+            echo '</ul>';
+            foreach ($products as $p) {
+            $id = $p['store_id'];
+            $name = $p['name']; 
+            echo nl2br ("<div class='product-details'><img src='images/galaxy-s21-ultra.jpeg' alt='a phone with quad camera' width=100px> \n\n <a href=\"product_functions.php?id=$id\">Samsung Galaxy S21 Ultra</a> \n <p class='price'>$1058.69</p><p class='rank material-icons'> star star star star star</p></div>");
+            $count++;
+            if ($count == 5) {
+                break;
+            } 
+            }
+            if (isset($_SESSION['visited_products']) && is_array($_SESSION['visited_products'])) {
+            echo 'Visited products';
+            echo '<ul>';
+            foreach ($_SESSION['visited_products'] as $id) {
+                echo "<li>$id</li>";
+            }
+            echo '</ul>';
+            }
+        ?> 
         </div>
-
     </main>
 
     <!--Footer section with navigation bar-->
@@ -279,5 +120,4 @@
     <script src="javascript/navbar.js" async></script>
     <script src="../javascript/cookie.js"></script>
 </body>
-
 </html>

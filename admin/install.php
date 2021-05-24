@@ -2,36 +2,45 @@
 
 <!-- PHP code area -->
 <?php
+// Set error to avoid saving data with invalid input format
+$errors = 0;
+
+// Set RegEx pattern
+$username_pattern = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(.{6,})$/i";
+$password_pattern = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(.{8,})$/i";
+
 // VALIDATE INPUTS
 if (isset($_POST['install'])) {
-
-  // Set RegEx pattern
-  $username_pattern = "/^(?=.*[a-zA-Z0-9])(.{6,})$/i";
-  $password_pattern = "/^(?=.*[a-zA-Z0-9])(.{8,})$/i";
 
   // Validate username input
   if (empty($_POST['username'])) {
     $username_error = "Please enter your username!";
+    $errors++;
   } else if (!preg_match($username_pattern, $_POST['username'])) {
     $username_error = "Your username must have at least 6 characters and include only letters and numbers!";
+    $errors++;
   }
 
   // Validate password input
   if (empty($_POST['password'])) {
     $password_error = "Please enter your password!";
+    $errors++;
   } else if (!preg_match($password_pattern, $_POST['password'])) {
     $password_error = "Your username must have at least 8 characters and include only letters and numbers!";
+    $errors++;
   }
 
   // Verify the password
   if (empty($_POST['verify_password'])) {
     $verify_password_error = "Please re-enter your password!";
+    $errors++;
   } else if ($_POST['verify_password'] != $_POST['password']) {
     $verify_password_error = "Please re-enter THE SAME password!";
+    $errors++;
   }
 
   // If all inputs are valid, the success message will be displayed and the input data will be saved in an external file outside the root
-  else {
+  if ($errors == 0) {
 
     // Display success message
     $success = "Installation Successful! Please close the tab and delete <code>install.php</code> file to activate the System.";
@@ -54,7 +63,6 @@ if (isset($_POST['install'])) {
 
     fclose($file_open);
   }
-
 }
 ?>
 
@@ -84,7 +92,7 @@ if (isset($_POST['install'])) {
     <div class="form">
 
       <p class="success">
-        <?php 
+        <?php
         if (isset($success)) {
           echo $success;
         }

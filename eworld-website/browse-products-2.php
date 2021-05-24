@@ -81,7 +81,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star_half</span>
                     </p>
-                    <p class="created-date">Apr 3 2021</p>
                 </a>
             </div>
 
@@ -99,7 +98,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star_half</span>
                     </p>
-                    <p class="created-date">Apr 3 2021</p>
                 </a>
             </div>
 
@@ -117,7 +115,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star_half</span>
                     </p>
-                    <p class="created-date">Apr 4 2021</p>
                 </a>
             </div>
 
@@ -135,7 +132,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star</span>
                     </p>
-                    <p class="created-date">Apr 4 2021</p>
                 </a>
             </div>
 
@@ -153,7 +149,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star_border</span>
                     </p>
-                    <p class="created-date">Apr 4 2021</p>
                 </a>
             </div>
 
@@ -169,7 +164,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star</span>
                     </p>
-                    <p class="created-date">Apr 5 2021</p>
                 </a>
             </div>
 
@@ -185,7 +179,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star_half</span>
                     </p>
-                    <p class="created-date">Apr 5 2021</p>
                 </a>
             </div>
 
@@ -201,7 +194,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star</span>
                     </p>
-                    <p class="created-date">Apr 5 2021</p>
                 </a>
             </div>
 
@@ -217,7 +209,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star</span>
                     </p>
-                    <p class="created-date">Apr 6 2021</p>
                 </a>
             </div>
 
@@ -233,7 +224,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star_half</span>
                     </p>
-                    <p class="created-date">Apr 6 2021</p>
                 </a>
             </div>
 
@@ -251,7 +241,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star_half</span>
                     </p>
-                    <p class="created-date">Apr 7 2021</p>
                 </a>
             </div>
 
@@ -269,7 +258,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star_border</span>
                     </p>
-                    <p class="created-date">Apr 7 2021</p>
                 </a>
             </div>
 
@@ -287,7 +275,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star_half</span>
                     </p>
-                    <p class="created-date">Apr 7 2021</p>
                 </a>
             </div>
 
@@ -305,7 +292,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star_half</span>
                     </p>
-                    <p class="created-date">Apr 8 2021</p>
                 </a>
             </div>
 
@@ -323,7 +309,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star_border</span>
                     </p>
-                    <p class="created-date">Apr 8 2021</p>
                 </a>
             </div>
 
@@ -339,7 +324,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star</span>
                     </p>
-                    <p class="created-date">Apr 8 2021</p>
                 </a>
             </div>
 
@@ -355,7 +339,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star_border</span>
                     </p>
-                    <p class="created-date">Apr 9 2021</p>
                 </a>
             </div>
 
@@ -371,7 +354,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star</span>
                     </p>
-                    <p class="created-date">Apr 9 2021</p>
                 </a>
             </div>
 
@@ -387,7 +369,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star_half</span>
                     </p>
-                    <p class="created-date">Apr 9 2021</p>
                 </a>
             </div>
 
@@ -403,7 +384,6 @@
                         <span class="material-icons">star</span>
                         <span class="material-icons">star</span>
                     </p>
-                    <p class="created-date">Apr 9 2021</p>
                 </a>
             </div>
 
