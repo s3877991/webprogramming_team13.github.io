@@ -1,3 +1,42 @@
+<?php
+session_start();
+if (isset($_SESSION["email"])) { header('location: http://localhost:8000/user-info.php'); }
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $password = $email_temp = $password_temp = "";
+    $errors = 0;
+    if (empty($_POST["email"]) || empty($_POST["password"])) {
+        $errors++;
+    } else {
+        $email_temp = validate_input($_POST["email"]);
+        $password_temp = validate_input($_POST["password"]);
+        if (file_exists("../users.csv")) {
+            $file = fopen("../users.csv", "r");
+            while (($data = fgetcsv($file)) !== FALSE) {
+                $email_data = $data[0];
+                $password_data = $data[12];
+                if ($email_temp == $email_data && password_verify($password_temp, $password_data)) {
+                    $email = $email_temp;
+                    $password = $password_temp;
+                    break;
+                } 
+            }
+        }
+    }
+    if ($email != "" && $password != "") {
+        $_SESSION["email"] = $email;
+        header('location: http://localhost:8000/user-info.php');
+    }
+        
+}
+
+function validate_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,7 +98,7 @@
                 </div>
 
                 <div class="form">
-                    <form method="get" action="user-info.php" id="login-form">
+                    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
                         <div class="input">
                             <label for="email" class="label">Your Email</label>
@@ -71,7 +110,7 @@
                         <div class="input">
                             <label for="password" class="label">Your Password</label>
                             <br>
-                            <input type="password" class="text-field" name="pasword" id="password"
+                            <input type="password" class="text-field" name="password" id="password"
                                 placeholder="Enter your password" required>
                         </div>
 

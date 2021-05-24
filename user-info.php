@@ -1,3 +1,33 @@
+<?php
+session_start();
+
+$fname = $lname = $email = $phone = $address = $city = $zip = $country = $acctype = "";
+if (isset($_SESSION["email"])) {
+    if (file_exists("../users.csv")) {
+        $file = file("../users.csv");
+        foreach ($file as $row) {
+            $email = explode(',', $row)[0];
+            if ($email == $_SESSION['email']) {
+                $userInfo = explode(',', $row);
+                $phone = $userInfo[1];
+                $fname = $userInfo[2];
+                $lname = $userInfo[3];
+                $address = $userInfo[4];
+                $city = $userInfo[5];
+                $zip = $userInfo[6];
+                $country = $userInfo[7];
+                $acctype = $userInfo[8];
+                break;
+            } 
+            
+        }
+    }
+}
+else {
+    echo "You have to login";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,48 +103,48 @@
 
                     <tr>
                         <td class="property">First Name</td>
-                        <td class="value">Nguyen Quang</a></td>
+                        <td class="value"><?php echo $fname; ?></td>
                     </tr>
 
                     <tr>
                         <td class="property">Last Name</td>
-                        <td class="value">Duy</td>
+                        <td class="value"><?php echo $lname; ?></td>
                     </tr>
 
                     <tr>
                         <td class="property">Email Address</td>
-                        <td class="value"><a href="mailto:nguyenquangduy567@gmail.com" class="user-email">nguyenquangduy567@gmail.com</a>
+                        <td class="value"><a href="mailto:<?php echo $email; ?>" class="user-email"><?php echo $email; ?></a>
                         </td>
                     </tr>
 
                     <tr>
                         <td class="property">Phone Number</td>
-                        <td class="value"><a href="tel:+84972960321">+8497 296 0321</a></td>
+                        <td class="value"><a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a></td>
                     </tr>
 
                     <tr>
                         <td class="property">Permanent Address</td>
-                        <td class="value">19/16 Doan Thi Diem, Ward 1, Phu Nhuan District</td>
+                        <td class="value"><?php echo $address; ?></td>
                     </tr>
 
                     <tr>
                         <td class="property">City</td>
-                        <td class="value">Ho Chi Minh City</td>
+                        <td class="value"><?php echo $city; ?></td>
                     </tr>
 
                     <tr>
                         <td class="property">Zipcode</td>
-                        <td class="value">700000</td>
+                        <td class="value"><?php echo $zip; ?></td>
                     </tr>
 
                     <tr>
                         <td class="property">Country</td>
-                        <td class="value">Vietnam</td>
+                        <td class="value"><?php echo $country; ?></td>
                     </tr>
 
                     <tr>
                         <td class="property">Account Type</td>
-                        <td class="value">Shopper</td>
+                        <td class="value"><?php echo $acctype; ?></td>
                     </tr>
 
                 </table>

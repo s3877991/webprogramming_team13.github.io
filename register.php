@@ -1,4 +1,6 @@
 <?php
+    // session_start();
+    // unset($_SESSION);
     // define variables and set to empty values
     $fname = $lname = $email = $phone = $password = $retypepassword = $address = $zip = $country = $actype = $businessname = $storename = $storecategory = "";
     $errors = 0;
@@ -169,16 +171,19 @@
     }
 
         $userInfo = $email . ',' . $phone . ',' . $fname . ',' . $lname . ',' . $address . ',' . $city . ',' . $zip . ',' . $country . ',' . $acctype . ',' . $businessname . ',' . $storename . ',' . $storecategory . ',' . password_hash($password, PASSWORD_DEFAULT);
+        $list = array($email, $phone, $fname, $lname, $address, $city, $zip, $country, $acctype, $businessname, $storename, $storecategory, password_hash($password, PASSWORD_DEFAULT));
         $filename = '../users.csv';
         if ($errors == 0) {
             if (file_exists($filename)) {
                 $fp = fopen($filename, "a");
-                fwrite($fp, $userInfo . "\n");
+                fputcsv($fp, $list);
+                // fwrite($fp, $userInfo . "\n");
                 fclose($fp);
             }
             else {
                 $fp = fopen($filename, "w");
-                fwrite($fp, $userInfo . "\n");
+                fputcsv($fp, $list);
+                // fwrite($fp, $userInfo . "\n");
                 fclose($fp);
             }
             header('location: http://localhost:8000/login.php');
