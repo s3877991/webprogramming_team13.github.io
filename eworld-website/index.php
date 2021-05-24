@@ -77,7 +77,7 @@
             foreach ($products as $p) {
             $id = $p['store_id'];
             $name = $p['name']; 
-            echo nl2br ("<div class='product-details'><img src='images/galaxy-s21-ultra.jpeg' alt='a phone with quad camera' width=100px> \n\n <a href=\"product-details.php?id=$id\">Samsung Galaxy S21 Ultra</a> \n <p class='price'>$1058.69</p><p class='rank material-icons'> star star star star star</p></div>");
+            echo nl2br ("<div class='product-details'><img src='images/galaxy-s21-ultra.jpeg' alt='a phone with quad camera' width=100px> \n\n <a href=\"product_functions.php?id=$id\">Samsung Galaxy S21 Ultra</a> \n <p class='price'>$1058.69</p><p class='rank material-icons'> star star star star star</p></div>");
             $count++;
             if ($count == 5) {
                 break;

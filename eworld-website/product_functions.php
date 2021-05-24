@@ -1,5 +1,4 @@
 <?php
-
 function read_all_products() {
   $file_name = 'products.csv';
   $fp = fopen($file_name, 'r');
@@ -20,7 +19,7 @@ function read_all_products() {
 function get_product($product_id) {
   $products = read_all_products();
   foreach ($products as $p) {
-    if ($p['store_id'] == $product_id) {
+    if ($p['id'] == $product_id) {
       return $p;
     }
   }
