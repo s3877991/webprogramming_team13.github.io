@@ -6,6 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $errors = 0;
     if (empty($_POST["email"]) || empty($_POST["password"])) {
         $errors++;
+        $status = "Please do not leave any fields empty!";
     } else {
         $email_temp = validate_input($_POST["email"]);
         $password_temp = validate_input($_POST["password"]);
@@ -18,6 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $email = $email_temp;
                     $password = $password_temp;
                     break;
+                }
+                else {
+                    $status = "Your email or password is INCORRECT!";
                 } 
             }
         }
@@ -26,7 +30,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["email"] = $email;
         header('location: user-info.php');
     }
-        
 }
 
 function validate_input($data) {
@@ -115,7 +118,13 @@ function validate_input($data) {
                         </div>
 
                         <div class="error">
-                            <p id="error-message">Your email or password is INCORRECT</p>
+                            <p id="error-message">
+                            <?php
+                            if (isset($status)) {
+                                echo $status;
+                            }
+                            ?>
+                            </p>
                         </div>
 
                         <div class="action-1">
@@ -162,7 +171,6 @@ function validate_input($data) {
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="javascript/login-validation.js"></script>
     <script src="javascript/cookie.js"></script>
 </body>
 </html>

@@ -93,7 +93,7 @@
         } else {
             $address = validate_input($_POST["address"]);
             // check if name only contains letters and whitespace
-            if (!preg_match("/^([a-zA-Z0-9\/]{2,}[ ]?[a-zA-Z0-9 ]+[, ]*[a-zA-Z0-9 ]*)+$/",$address)) {
+            if (!preg_match("/^([a-zA-Z0-9]{2,}[\/]*[a-zA-Z0-9]*[ ]?[a-zA-Z0-9 ]+[- ]*[a-zA-Z0-9 ]*)+$/",$address)) {
             $errors++;
             }
         }
@@ -583,7 +583,7 @@
                     <!--Another Action-->
                     <div class="another-action">
                         <p>Do you already have your account?</p>
-                        <a href="login.html">Log In</a>
+                        <a href="login.php">Log In</a>
                     </div>
 
                 </div>

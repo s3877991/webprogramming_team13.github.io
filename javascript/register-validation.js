@@ -105,7 +105,7 @@ var address = document.getElementById("address");
 var addressErr = document.getElementById("address-error");
 
 address.addEventListener('input', function(e) {
-  var addressregex = /^([a-zA-Z0-9\/]{2,}[ ]?[a-zA-Z0-9 ]+[, ]*[a-zA-Z0-9 ]*)+$/;
+  var addressregex = /^([a-zA-Z0-9]{2,}[\/]*[a-zA-Z0-9]*[ ]?[a-zA-Z0-9 ]+[- ]*[a-zA-Z0-9 ]*)+$/;
   var current_address = e.target.value;
   var addressvalid = addressregex.test(current_address);
 

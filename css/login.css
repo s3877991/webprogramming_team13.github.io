@@ -61,7 +61,6 @@ form {
 #error-message {             /* When users first access to the my account page, the error message will dissapear */
     color: #f00;           /* Not until user enter wrong login information, that message will appear with the use of JavaScript*/
     text-align: center;
-    display: none;
 }
 
 /* Actions Area */
