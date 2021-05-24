@@ -37,6 +37,7 @@ main {
     margin: 50px 0;
 }
 .avatar img {
+    width: 300px;
     border-radius: 50%;
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
@@ -96,9 +97,6 @@ table tr .value {
     #mobile {
         display: block;
     }
-    .avatar img {
-        width: 70%;
-    }
 }
 @media screen and (min-width: 650px) {
     #desktop {
@@ -111,5 +109,10 @@ table tr .value {
 @media screen and (min-width: 480px) {
     #mobile {
         text-align: center;
+    }
+}
+@media all and (max-width: 420px) {
+    .avatar img {
+        width: 200px;
     }
 }

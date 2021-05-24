@@ -391,7 +391,6 @@
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="javascript/login-status.js"></script>
     <script src="javascript/modal-box.js"></script>
     <script src="javascript/cookie.js"></script>
 </body>
