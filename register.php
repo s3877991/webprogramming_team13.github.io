@@ -81,8 +81,7 @@
         } else {
             $retypepassword = validate_input($_POST["retype-password"]);
             // check if name only contains letters and whitespace
-            $password = "/".$password."/";
-            if (!preg_match($password,$retypepassword)) {
+            if ($password != $retypepassword) {
             $errors++;
             }
         }
@@ -182,7 +181,7 @@
                 fwrite($fp, $userInfo . "\n");
                 fclose($fp);
             }
-            header('location: http://localhost:8000/login.php');
+            header('location: login.php');
         }
     }
 
