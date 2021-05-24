@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (isset($_SESSION["email"])) { header('location: http://localhost:8000/user-info.php'); }
+if (isset($_SESSION["email"])) { header('location: user-info.php'); }
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $password = $email_temp = $password_temp = "";
     $errors = 0;
@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     if ($email != "" && $password != "") {
         $_SESSION["email"] = $email;
-        header('location: http://localhost:8000/user-info.php');
+        header('location: user-info.php');
     }
         
 }
