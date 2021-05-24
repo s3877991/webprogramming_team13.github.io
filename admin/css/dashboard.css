@@ -106,8 +106,6 @@ textarea:focus {
     font-size: 20px;
     font-family: 'Nunito', sans-serif;
     cursor: pointer;
-}
-.actions input {
     background-color: #f93;
 }
 .actions input:hover {
@@ -157,5 +155,20 @@ textarea:focus {
 @media screen and (max-width: 360px) {
     #title {
         font-size: 40px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .actions input {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .actions input {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .actions input {
+        width: 40%;
     }
 }

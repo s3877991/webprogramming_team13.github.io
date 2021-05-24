@@ -11,7 +11,7 @@
         } else {
             $fname = validate_input($_POST["first-name"]);
             // check if name only contains letters and whitespace
-            if (!preg_match("/^[A-Za-z]{3,}$/",$fname)) {
+            if (!preg_match("/^[A-Za-z]{2,}$/",$fname)) {
                 $errors++;
             }
         }
@@ -21,7 +21,7 @@
         } else {
             $lname = validate_input($_POST["last-name"]);
             // check if name only contains letters and whitespace
-            if (!preg_match("/^[A-Za-z]{3,}$/",$lname)) {
+            if (!preg_match("/^[A-Za-z]{2,}$/",$lname)) {
             $errors++;
             }
         }
@@ -93,7 +93,7 @@
         } else {
             $address = validate_input($_POST["address"]);
             // check if name only contains letters and whitespace
-            if (!preg_match("/^([a-zA-Z0-9]{2,}[ ]?[a-zA-Z0-9 ]+[, ]*[a-zA-Z0-9 ]*)+$/",$address)) {
+            if (!preg_match("/^([a-zA-Z0-9\/]{2,}[ ]?[a-zA-Z0-9 ]+[, ]*[a-zA-Z0-9 ]*)+$/",$address)) {
             $errors++;
             }
         }
@@ -508,7 +508,7 @@
                         <div class="radio">
 
                             <div>
-                                <input type="radio" name="acc-type" id="shopper" value="shopper" required>
+                                <input type="radio" name="acc-type" id="shopper" value="shopper" required checked>
                                 <label class="options" for="shopper">Shopper</label>
                             </div>
 
