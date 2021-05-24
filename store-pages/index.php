@@ -33,8 +33,7 @@
                 <li><a href="about-us.php">ABOUT US</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">PRODUCTS <span
-                            class="material-icons">expand_more</span></label>
+                    <label for="dropdown-sub" class="toggle">PRODUCTS <span class="material-icons">expand_more</span></label>
                     <a href="#">PRODUCTS <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
@@ -64,34 +63,34 @@
         </section>
 
         <?php
-            session_start();
-            require 'product_functions.php';
-            $products = read_all_products();
+        session_start();
+        require 'product_functions.php';
+        $products = read_all_products();
 
-            $count = 0;
+        $count = 0;
         ?>
         <h2 class="label">New Products</h2>
         <div class="product-detail-cart">
-        <?php
+            <?php
             echo '</ul>';
             foreach ($products as $p) {
-            $id = $p['store_id'];
-            $name = $p['name']; 
-            echo nl2br ("<div class='product-details'><img src='images/galaxy-s21-ultra.jpeg' alt='a phone with quad camera' width=100px> \n\n <a href=\"product_functions.php?id=$id\">Samsung Galaxy S21 Ultra</a> \n <p class='price'>$1058.69</p><p class='rank material-icons'> star star star star star</p></div>");
-            $count++;
-            if ($count == 5) {
-                break;
-            } 
+                $id = $p['store_id'];
+                $name = $p['name'];
+                echo nl2br("<div class='product-details'><img src='images/galaxy-s21-ultra.jpeg' alt='a phone with quad camera' width=100px> \n\n <a href=\"product_functions.php?id=$id\">Samsung Galaxy S21 Ultra</a> \n <p class='price'>$1058.69</p><p class='rank material-icons'> star star star star star</p></div>");
+                $count++;
+                if ($count == 5) {
+                    break;
+                }
             }
             if (isset($_SESSION['visited_products']) && is_array($_SESSION['visited_products'])) {
-            echo 'Visited products';
-            echo '<ul>';
-            foreach ($_SESSION['visited_products'] as $id) {
-                echo "<li>$id</li>";
+                echo 'Visited products';
+                echo '<ul>';
+                foreach ($_SESSION['visited_products'] as $id) {
+                    echo "<li>$id</li>";
+                }
+                echo '</ul>';
             }
-            echo '</ul>';
-            }
-        ?> 
+            ?>
         </div>
     </main>
 
@@ -120,4 +119,5 @@
     <script src="javascript/navbar.js" async></script>
     <script src="../javascript/cookie.js"></script>
 </body>
+
 </html>

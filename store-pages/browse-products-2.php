@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/header-&-footer.css">
-    <link rel="stylesheet" href="css/browse-products-1.css">
+    <link rel="stylesheet" href="css/browse-products-2.css">
     <link rel="stylesheet" href="css/process-denied.css">
     <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -38,8 +38,8 @@
                     <a class="active" href="#">PRODUCTS <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
-                        <li><a class="active" href="browse-products-1.php">by CATEGORY</a></li>
-                        <li><a href="browse-products-2.php">by CREATED TIME</a></li>
+                        <li><a href="browse-products-1.php">by CATEGORY</a></li>
+                        <li><a class="active" href="browse-products-2.php">by CREATED TIME</a></li>
                     </ul>
                 </li>
                 <li><a href="contact-us.php">CONTACT</a></li>
@@ -50,19 +50,15 @@
 
     <!--Main Content-->
     <main>
-        
+
         <!--Select Area-->
         <div class="select">
 
             <div class="select-container">
-                <label for="category">Category: </label>
-                <select id="category">
-                    <option id="all">All</option>
-                    <option id="smartphone">Smartphone</option>
-                    <option id="tablet">Tablet</option>
-                    <option id="laptop">Laptop</option>
-                    <option id="digital-camera">Digital camera</option>
-                    <option id="bluetooth-device">Bluetooth device</option>
+                <label for="created-date">Created time: </label>
+                <select id="created-date">
+                    <option id="newest">Newest first</option>
+                    <option id="oldest">Oldest first</option>
                 </select>
             </div>
 
@@ -78,13 +74,6 @@
                     </div>
                     <h3 class="name">Samsung Galaxy S21 Ultra</h3>
                     <p class="price">$1058.69</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star_half</span>
-                    </p>
                 </a>
             </div>
 
@@ -95,13 +84,6 @@
                     </div>
                     <h3 class="name">Samsung Galaxy Tab S7</h3>
                     <p class="price">$738.69</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star_half</span>
-                    </p>
                 </a>
             </div>
 
@@ -112,13 +94,6 @@
                     </div>
                     <h3 class="name">Dell Inspiron 5593</h3>
                     <p class="price">$730.00</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star_half</span>
-                    </p>
                 </a>
             </div>
 
@@ -129,13 +104,6 @@
                     </div>
                     <h3 class="name">Fujifilm X-T4</h3>
                     <p class="price">$2619.13</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                    </p>
                 </a>
             </div>
 
@@ -146,13 +114,6 @@
                     </div>
                     <h3 class="name">Samsung Galaxy Buds Pro</h3>
                     <p class="price">$164.78</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star_border</span>
-                    </p>
                 </a>
             </div>
 
@@ -161,13 +122,6 @@
                     <img src="images/iphone-12-pro-max.jpg" alt="a phone with a notch display">
                     <h3 class="name">Apple iPhone 12 Pro Max</h3>
                     <p class="price">$1264.78</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                    </p>
                 </a>
             </div>
 
@@ -176,13 +130,6 @@
                     <img src="images/ipad-air-4.jpg" alt="a tablet with full screen display">
                     <h3 class="name">Apple iPad Air 2020</h3>
                     <p class="price">$651.74</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star_half</span>
-                    </p>
                 </a>
             </div>
 
@@ -191,13 +138,6 @@
                     <img src="images/macbook-pro-13.jpg" alt="a laptop made by Apple">
                     <h3 class="name">Apple MacBook Pro 13" 2019</h3>
                     <p class="price">$1304.35</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                    </p>
                 </a>
             </div>
 
@@ -206,13 +146,6 @@
                     <img src="images/canon-camera.jpg" alt="a camera made by Canon">
                     <h3 class="name">Canon EOS 6D Mark II</h3>
                     <p class="price">$1195.22</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                    </p>
                 </a>
             </div>
 
@@ -221,13 +154,6 @@
                     <img src="images/airpods-2.jpg" alt="bluetooth ear phones made by Apple">
                     <h3 class="name">Apple AirPods 2</h3>
                     <p class="price">$143.04</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star_half</span>
-                    </p>
                 </a>
             </div>
 
@@ -238,13 +164,6 @@
                     </div>
                     <h3 class="name">Oppo Find X3 Pro</h3>
                     <p class="price">$1249.97</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star_half</span>
-                    </p>
                 </a>
             </div>
 
@@ -255,13 +174,6 @@
                     </div>
                     <h3 class="name">Samsung Galaxy Tab S6 Lite</h3>
                     <p class="price">$395.22</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star_border</span>
-                    </p>
                 </a>
             </div>
 
@@ -272,13 +184,6 @@
                     </div>
                     <h3 class="name">Asus Vivobook 15</h3>
                     <p class="price">$664.78</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star_half</span>
-                    </p>
                 </a>
             </div>
 
@@ -289,13 +194,6 @@
                     </div>
                     <h3 class="name">Sony Alpha SLT-A58</h3>
                     <p class="price">$463.04</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star_half</span>
-                    </p>
                 </a>
             </div>
 
@@ -306,13 +204,6 @@
                     </div>
                     <h3 class="name">Baseus Encok W04</h3>
                     <p class="price">$26.04</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star_border</span>
-                    </p>
                 </a>
             </div>
 
@@ -321,13 +212,6 @@
                     <img src="images/asus-rog-phone-3.jpg" alt="a gaming phone">
                     <h3 class="name">Asus ROG Phone 3</h3>
                     <p class="price">$847.39</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                    </p>
                 </a>
             </div>
 
@@ -336,13 +220,6 @@
                     <img src="images/ipad-gen-8.png" alt="an old-fashioned iPad">
                     <h3 class="name">Apple iPad Gen 8 10.2"</h3>
                     <p class="price">$369.56</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star_border</span>
-                    </p>
                 </a>
             </div>
 
@@ -351,13 +228,6 @@
                     <img src="images/lenovo-laptop.jpg" alt="a laptop made by Lenovo">
                     <h3 class="name">Lenovo ThinkPad X1 Carbon Gen 8</h3>
                     <p class="price">$1304.35</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                    </p>
                 </a>
             </div>
 
@@ -366,13 +236,6 @@
                     <img src="images/canon-camera-2.jpg" alt="another camera made by Canon">
                     <h3 class="name">Canon EOS M10</h3>
                     <p class="price">$486.52</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star_half</span>
-                    </p>
                 </a>
             </div>
 
@@ -381,13 +244,6 @@
                     <img src="images/beats-solo-3.jpg" alt="a bluetooth headphone">
                     <h3 class="name">Apple Beats Solo 3</h3>
                     <p class="price">$199.57</p>
-                    <p class="rank">
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>
-                    </p>
                 </a>
             </div>
 

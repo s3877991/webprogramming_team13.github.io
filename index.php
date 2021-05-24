@@ -79,7 +79,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/millennium.png" alt="a letter M logo">
                         </div>
@@ -88,7 +88,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/mac.png" alt="M . A . C">
                         </div>
@@ -97,7 +97,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/mojito.png" alt="a glass of drink with stars an dots">
                         </div>
@@ -106,7 +106,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/nike.png" alt="a word 'NIKE' and a slash below it">
                         </div>
@@ -115,7 +115,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/gucci.png" alt="a symbol and a name above">
                         </div>
@@ -124,7 +124,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/tocotoco.jpg" alt="a black circle with many stars">
                         </div>
@@ -133,7 +133,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/don-chicken.png" alt="a man sit on a big chicken">
                         </div>
@@ -153,9 +153,9 @@
             <div class="flex-container">
 
                 <div class="item">
-                    <a href="eworld-website/product-details.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="eworld-website/images/galaxy-s21-ultra.jpeg" alt="a phone with quad camera">
+                            <img src="store-pages/images/galaxy-s21-ultra.jpeg" alt="a phone with quad camera">
                         </div>
                         <h3 class="name">Samsung Galaxy S21 Ultra</h3>
                         <p class="price">$1058.69</p>
@@ -163,7 +163,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/product-details-2.php">
+                    <a href="store-pages/product-details-2.php">
                         <div class="image">
                             <img src="images/book-2-responsive.png" alt="a cover page with some letters and a fingerprint">
                         </div>
@@ -173,7 +173,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/product-details.php">
+                    <a href="store-pages/product-details.php">
                         <img src="images/matte-lipstick.png" alt="a lipstick">
                         <h3 class="name">Mattle Lipstick</h3>
                         <p class="price">$19.99</p>
@@ -181,7 +181,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/product-details-2.php">
+                    <a href="store-pages/product-details-2.php">
                         <div class="image">
                             <img src="images/faber-watercolor-pencil.jpg" alt="a box of colored pencils">
                         </div>
@@ -191,7 +191,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/product-details.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
                             <img src="images/nike-sneaker.jpg" alt="a sneaker">
                         </div>
@@ -201,7 +201,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/product-details-2.php">
+                    <a href="store-pages/product-details-2.php">
                         <div class="image">
                             <img src="images/gucci-bag.jpg" alt="a handbag">
                         </div>
@@ -211,7 +211,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/product-details.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
                             <img src="images/matcha-milk-tea.jpg" alt="a cup of green milk tea">
                         </div>
@@ -221,7 +221,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/product-details-2.php">
+                    <a href="store-pages/product-details-2.php">
                         <div class="image">
                             <img src="images/spicy-cheese-chicken.jpg" alt="a chicken dish">
                         </div>
@@ -242,7 +242,7 @@
             <div class="flex-container">
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/nike.png" alt="a word 'NIKE' and a slash below it">
                         </div>
@@ -251,14 +251,14 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <img src="images/eworld.png" alt="a letter e logo">
                         <h3 class="name">Eworld</h3>
                     </a>
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/don-chicken.png" alt="a man sit on a big chicken">
                         </div>
@@ -267,7 +267,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/tocotoco.jpg" alt="a black circle with many stars">
                         </div>
@@ -287,15 +287,15 @@
             <div class="flex-container">
 
                 <div class="item">
-                    <a href="eworld-website/product-details.php">
-                        <img src="eworld-website/images/iphone-12-pro-max.jpg" alt="a phone with a notch display">
+                    <a href="store-pages/product-details.php">
+                        <img src="store-pages/images/iphone-12-pro-max.jpg" alt="a phone with a notch display">
                         <h3 class="name">Apple iPhone 12 Pro Max</h3>
                         <p class="price">$1264.78</p>
                     </a>
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/product-details-2.php">
+                    <a href="store-pages/product-details-2.php">
                         <img src="images/nike-sneaker-2.jpg" alt="another sneaker">
                         <h3 class="name">Air Force 1 </h3>
                         <p class="price">$166.48</p>
@@ -303,7 +303,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/product-details.php">
+                    <a href="store-pages/product-details.php">
                         <img src="images/black-diamond-milk-tea.jpg" alt="a cup of brown milk tea with topping">
                         <h3 class="name">Okinawan Black Diamond milk tea</h3>
                         <p class="price">$1.07</p>
@@ -311,7 +311,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/product-details-2.php">
+                    <a href="store-pages/product-details-2.php">
                         <img src="images/brush.png" alt="10 make-up brushes varied in sizes">
                         <h3 class="name">M.A.C Student Pro Brush</h3>
                         <p class="price">$20</p>

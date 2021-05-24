@@ -81,7 +81,7 @@
             <div class="flex-container">
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/eworld.png" alt="a letter e logo">
                         </div>
@@ -90,7 +90,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/millennium.png" alt="a letter M logo">
                         </div>
@@ -99,7 +99,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/mac.png" alt="M . A . C">
                         </div>
@@ -108,7 +108,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/mojito.png" alt="a glass of drink with stars an dots">
                         </div>
@@ -117,7 +117,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/nike.png" alt="a word 'NIKE' and a slash below it">
                         </div>
@@ -126,7 +126,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/gucci.png" alt="a symbol and a name above">
                         </div>
@@ -135,7 +135,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/tocotoco.jpg" alt="a black circle with many stars">
                         </div>
@@ -144,7 +144,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/don-chicken.png" alt="a man sit on a big chicken">
                         </div>
