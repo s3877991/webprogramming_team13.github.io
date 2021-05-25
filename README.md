@@ -46,8 +46,8 @@ NGUYEN HAI MINH TRANG:
     + Task #9: Sample data ==> COMPLETED.
 
 3. Fullstack Assignment (--%):
-    + Task #4: Implement the behavior in My Account and Login page ==> .
-    + Task #5: Register ==> .
+    + Task #4: Implement the behavior in My Account and Login page ==> COMPLETED.
+    + Task #5: Register ==> COMPLETED.
 
 
 NGUYEN QUANG DUY:

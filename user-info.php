@@ -24,7 +24,7 @@ if (isset($_SESSION["email"])) {
     }
 }
 else {
-    echo "You have to login";
+    header('location: login.php');
 }
 ?>
 
@@ -86,7 +86,7 @@ else {
             <!--Title-->
             <div class="title">
                 <h1>MY ACCOUNT</h1>
-                <button> <a href="logout.php">Log out</a></button>
+                <button><a href="logout.php">Log Out</a></button>
             </div>
 
             <hr>

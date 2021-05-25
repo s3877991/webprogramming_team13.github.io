@@ -5,8 +5,8 @@
     if (isset($_SESSION['email'])) {
         unset($_SESSION['email']);
 
-        // redirects to index.php
-        header("Location: http://localhost:8000/login.php");
+        // redirects to login.php
+        header("location: login.php");
         exit();
     }
 ?>

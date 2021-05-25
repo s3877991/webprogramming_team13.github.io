@@ -30,6 +30,28 @@ main {
 .title {
     text-align: center;
 }
+/* Log out button */
+.title button {
+    background-color: #f93;
+    height: 40px;
+    width: 125px;
+    border: none;
+    border-radius: 20px;
+}
+.title button:hover {
+    background-color: #c60;
+    transition: 0.5s;
+}
+.title button a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.title button a:hover {
+    font-weight: bold;
+    transition: 0.5s;
+}
 
 /* Avatar area */
 .avatar {
