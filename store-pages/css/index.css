@@ -18,7 +18,7 @@ html {
 /* Banner area */
 .banner {
     position: relative;
-    height: 780px;
+    height: 700px;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/store-banner.jpg) no-repeat fixed;
     background-position: 50% 90%;
     background-size: cover;
