@@ -19,7 +19,7 @@
 .item h3 {
     font-size: 25px;
 }
-.item .price, .item .des {
+.item .price {
     font-size: 20px;
     color: #f93;
 }
