@@ -86,6 +86,7 @@ else {
             <!--Title-->
             <div class="title">
                 <h1>MY ACCOUNT</h1>
+                <button> <a href="logout.php">Log out</a></button>
             </div>
 
             <hr>
