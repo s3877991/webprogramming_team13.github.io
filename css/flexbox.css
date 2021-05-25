@@ -34,10 +34,9 @@
     background-color: #eee;
     transition: 0.5s;
 }
-
 @media screen and (max-width: 470px) {
     .item {
-        width: 100%;
+      width: 100%;
     }
     .item img {
         margin: 20px 0;
@@ -45,17 +44,21 @@
 }
 @media screen and (min-width: 470px) and (max-width: 690px) {
     .item {
-      width: 50%;
+        width: 50%;
     }
 }
 @media screen and (min-width: 690px) and (max-width: 860px) {
     .item {
-      width: calc(100% / 3);
+        width: calc(100% / 3);
     }
 }
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 860px) and (max-width: 1100px) {
     .item {
-      width: 25%;
+        width: 25%;
     }
 }
-
+@media screen and (min-width: 1100px) {
+    .item {
+        width: 20%;
+    }
+}

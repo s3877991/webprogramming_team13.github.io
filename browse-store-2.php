@@ -34,8 +34,7 @@
                 <li><a href="fees.php">FEES</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">STORES <span
-                            class="material-icons">expand_more</span></label>
+                    <label for="dropdown-sub" class="toggle">STORES <span class="material-icons">expand_more</span></label>
                     <a href="">STORES <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
@@ -54,25 +53,25 @@
     <main>
 
         <section id="select">
-                <div class="select">
-                    <label for="category">Your favourite category is</label>
-                    <select id="category">
-                        <option id="all">All</option>
-                        <option id="1">Department stores</option>
-                        <option id="2">Grocery stores</option>
-                        <option id="3">Restaurant</option>
-                        <option id="4">Clothing stores</option>
-                        <option id="5">Accessory stores</option>
-                        <option id="6">Pharmacies</option>
-                        <option id="7">Technology stores</option>
-                        <option id="8">Pet stores</option>
-                        <option id="9">Toy stores</option>
-                        <option id="10">Specialty stores</option>
-                        <option id="11">Thrift stores</option>
-                        <option id="12">Services</option>
-                        <option id="13">Kiosks</option>
-                    </select>
-                </div>
+            <div class="select">
+                <label for="category">Your favourite category is</label>
+                <select id="category">
+                    <option id="all">All</option>
+                    <option id="1">Department stores</option>
+                    <option id="2">Grocery stores</option>
+                    <option id="3">Restaurant</option>
+                    <option id="4">Clothing stores</option>
+                    <option id="5">Accessory stores</option>
+                    <option id="6">Pharmacies</option>
+                    <option id="7">Technology stores</option>
+                    <option id="8">Pet stores</option>
+                    <option id="9">Toy stores</option>
+                    <option id="10">Specialty stores</option>
+                    <option id="11">Thrift stores</option>
+                    <option id="12">Services</option>
+                    <option id="13">Kiosks</option>
+                </select>
+            </div>
         </section>
 
         <hr>
@@ -83,72 +82,90 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/eworld.png" alt="a letter e logo">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">Eworld</h3>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/millennium.png" alt="a letter M logo">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">Millennium</h3>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/mac.png" alt="M . A . C">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">Make-up Art Cosmetics</h3>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/mojito.png" alt="a glass of drink with stars an dots">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">Mojito</h3>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/nike.png" alt="a word 'NIKE' and a slash below it">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">NIKE</h3>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/gucci.png" alt="a symbol and a name above">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">Gucci</h3>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/tocotoco.jpg" alt="a black circle with many stars">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">ToCoToCo</h3>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/don-chicken.png" alt="a man sit on a big chicken">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">Don Chicken</h3>
+                        <h3 class="name">Store Name</h3>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/store.jpg" alt="a store">
+                        </div>
+                        <h3 class="name">Store Name</h3>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/store.jpg" alt="a store">
+                        </div>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 

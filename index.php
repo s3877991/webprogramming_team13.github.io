@@ -72,72 +72,90 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/eworld.png" alt="a letter e logo">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">Eworld</h3>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/millennium.png" alt="a letter M logo">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">Millennium</h3>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/mac.png" alt="M . A . C">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">Make-up Art Cosmetics</h3>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/mojito.png" alt="a glass of drink with stars an dots">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">Mojito</h3>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/nike.png" alt="a word 'NIKE' and a slash below it">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">NIKE</h3>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/gucci.png" alt="a symbol and a name above">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">Gucci</h3>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/tocotoco.jpg" alt="a black circle with many stars">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">ToCoToCo</h3>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/don-chicken.png" alt="a man sit on a big chicken">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">Don Chicken</h3>
+                        <h3 class="name">Store Name</h3>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/store.jpg" alt="a store">
+                        </div>
+                        <h3 class="name">Store Name</h3>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/store.jpg" alt="a store">
+                        </div>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
@@ -153,80 +171,102 @@
             <div class="flex-container">
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="store-pages/images/galaxy-s21-ultra.jpeg" alt="a phone with quad camera">
+                            <img src="images/product.png" alt="a box">
                         </div>
-                        <h3 class="name">Samsung Galaxy S21 Ultra</h3>
-                        <p class="price">$1058.69</p>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/book-2-responsive.png" alt="a cover page with some letters and a fingerprint">
+                            <img src="images/product.png" alt="a box">
                         </div>
-                        <h3 class="name">Sapiens: A Brief History of Humankind - Yuval Noah Harari</h3>
-                        <p class="price">$10.99</p>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
-                        <img src="images/matte-lipstick.png" alt="a lipstick">
-                        <h3 class="name">Mattle Lipstick</h3>
-                        <p class="price">$19.99</p>
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/faber-watercolor-pencil.jpg" alt="a box of colored pencils">
+                            <img src="images/product.png" alt="a box">
                         </div>
-                        <h3 class="name">72 Faber Castell watercolor pencils set</h3>
-                        <p class="price">$24.99</p>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/nike-sneaker.jpg" alt="a sneaker">
+                            <img src="images/product.png" alt="a box">
                         </div>
-                        <h3 class="name">Air Jordan 1 Mid</h3>
-                        <p class="price">$140.83</p>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/gucci-bag.jpg" alt="a handbag">
+                            <img src="images/product.png" alt="a box">
                         </div>
-                        <h3 class="name">Marmont mini top handle bag</h3>
-                        <p class="price">$2190</p>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/matcha-milk-tea.jpg" alt="a cup of green milk tea">
+                            <img src="images/product.png" alt="a box">
                         </div>
-                        <h3 class="name">Matcha milk tea</h3>
-                        <p class="price">$1.07</p>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/spicy-cheese-chicken.jpg" alt="a chicken dish">
+                            <img src="images/product.png" alt="a box">
                         </div>
-                        <h3 class="name">Spicy cheese chicken</h3>
-                        <p class="price">$13.04</p>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
 
@@ -241,37 +281,93 @@
 
             <div class="flex-container">
 
-                <div class="item">
+            <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/nike.png" alt="a word 'NIKE' and a slash below it">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">NIKE</h3>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="store-pages/index.php">
-                        <img src="images/eworld.png" alt="a letter e logo">
-                        <h3 class="name">Eworld</h3>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/don-chicken.png" alt="a man sit on a big chicken">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">Don Chicken</h3>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/tocotoco.jpg" alt="a black circle with many stars">
+                            <img src="images/store.jpg" alt="a store">
                         </div>
-                        <h3 class="name">ToCoToCo</h3>
+                        <h3 class="name">Store Name</h3>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/store.jpg" alt="a store">
+                        </div>
+                        <h3 class="name">Store Name</h3>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/store.jpg" alt="a store">
+                        </div>
+                        <h3 class="name">Store Name</h3>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/store.jpg" alt="a store">
+                        </div>
+                        <h3 class="name">Store Name</h3>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/store.jpg" alt="a store">
+                        </div>
+                        <h3 class="name">Store Name</h3>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/store.jpg" alt="a store">
+                        </div>
+                        <h3 class="name">Store Name</h3>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/store.jpg" alt="a store">
+                        </div>
+                        <h3 class="name">Store Name</h3>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/store.jpg" alt="a store">
+                        </div>
+                        <h3 class="name">Store Name</h3>
                     </a>
                 </div>
 
@@ -287,34 +383,102 @@
             <div class="flex-container">
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
-                        <img src="store-pages/images/iphone-12-pro-max.jpg" alt="a phone with a notch display">
-                        <h3 class="name">Apple iPhone 12 Pro Max</h3>
-                        <p class="price">$1264.78</p>
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
-                        <img src="images/nike-sneaker-2.jpg" alt="another sneaker">
-                        <h3 class="name">Air Force 1 </h3>
-                        <p class="price">$166.48</p>
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
-                        <img src="images/black-diamond-milk-tea.jpg" alt="a cup of brown milk tea with topping">
-                        <h3 class="name">Okinawan Black Diamond milk tea</h3>
-                        <p class="price">$1.07</p>
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
-                        <img src="images/brush.png" alt="10 make-up brushes varied in sizes">
-                        <h3 class="name">M.A.C Student Pro Brush</h3>
-                        <p class="price">$20</p>
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="store-pages/index.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product Name</h3>
+                        <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
 
