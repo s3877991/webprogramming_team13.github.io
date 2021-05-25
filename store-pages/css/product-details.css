@@ -26,17 +26,7 @@ h2 {
     border-bottom: 5px solid #f00;
     text-align: center;
 }
-#highlight, #description h3 {
-    font-weight: bold;
-    color: #f00;
-}
-#highlight {
-    text-decoration: none;
-}
-#highlight:hover {
-    color: #600;
-    transition: 0.5s;
-}
+
 #description h3 {
     font-style: italic;
 }
@@ -44,11 +34,9 @@ h2 {
 /* Customers' choice area */
 .flex-container-1 {
     display: flex;
-    margin-bottom: 20px;
+    margin: 40px 0 20px;
 }
-.flex-container-1 h3 {
-    margin: 15px 0;
-}
+
 .image {
     text-align: center;
 }
@@ -56,44 +44,45 @@ h2 {
     margin: 0 auto;
     width: 100%;
 }
-.choice-1, .choice-2, .button-container {
-    display: flex;
-    flex-wrap: wrap;
-}
 .button-container {
+    display: flex;
     justify-content: center;
+}
+.button-container .buttons {
+    text-align: center;
+    margin: auto;
+    width: 50%;
 }
 .price {
     color: #f00;
     font-size: 25px;
 }
 /* Button Area */
-.button-container input {
+.button-container button {
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
-    margin: 30px 10px;
+    width: 100%;
+    margin: 10px;
     padding: 10px;
     border-radius: 8px;
-    text-align: center;
-    width: fit-content;
     border: none;
     cursor: pointer;
 }
-.button-container input:last-child {
+.button-container #buy-now {
     background-color: #f00;
     font-weight: bold;
     color: #fff;
 }
-.button-container input:last-child:hover {
+.button-container #buy-now:hover {
     background-color: #600;
     transition: 0.5s;
 }
-.button-container input:first-child {
+.button-container #add-to-cart {
     background-color: #ddd;
     color: #000;
     text-decoration: none;
 }
-.button-container input:first-child:hover {
+.button-container #add-to-cart:hover {
     background-color: #eee;
     transition: 0.5s;
 }
@@ -102,126 +91,11 @@ h2 {
     width: 50%;
 }
 
-/* Specifications area */
-table {
-    margin: 0 auto 30px;
-    border-collapse: collapse;
-}
-table tr td {
-    padding: 5px;
-    border: 1px solid #ccc;
-}
-table tr .property {
-    font-weight: bold;
-    width: 30%;
-}
-table tr .value {
-    width: 50%;
-}
 
 /* Description */
 #description p {
     text-align: justify;
 }
-.gallery {
-    text-align: center;
-}
-.gallery img {
-    width: 50%;
-}
-
-/* Reccomeded products area */
-#recommended-products {
-    padding: 30px 0 0 0;
-}
-.item a {
-    color: #000;
-    text-decoration: none;
-}
-.label-2 {
-    font-size: 36px;
-    text-align: center;
-    font-weight: bold;
-    border-bottom: 5px solid #f00;
-}
-.flex-container-2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px 30px;
-}
-.item {
-    box-sizing: border-box;
-    margin: 5px auto;
-    text-align: center;
-    width: 100%;
-    float: left;
-}
-.item h3 {
-    height: 75px;
-    font-size: 25px;
-    padding: 5px 10px;
-}
-.item .price {
-    font-size: 20px;
-    color: #f00;
-}
-.rank {
-    color: #fc0;
-}
-.item img {
-    width: 60%;
-    margin: 10px 10px 0 10px;
-}
-.item image:after {
-    clear: both;
-}
-.item:hover {
-    background-color: #eee;
-    font-weight: bold;
-    transition: 0.5s;
-}
-.flash-container {
-    display: none;                           /*Hidden by default*/
-    position: fixed;                         /* Stay in place */
-    z-index: 100;                             /* Sit on top*/
-    left: 0;
-    top: 0;
-    width: 100%;                              /* Full width */
-    height: 100%;                             /* Full height */
-    overflow: auto;                           /* Enable scroll if needed */
-    background-color: #000;                 /* Fallback color */
-    background-color: rgba(0,0,0,0.5);      /* Black w/ opacity */
-}
-
-.flashing-message {
-    background-color: #fff;
-    margin: 22.5vh auto;
-    padding: 40px;
-    border-radius: 10px;
-    width: 30%;
-    text-align: center;
-    font-size: 15px;
-}
-.flashing-message h1 {
-    margin: 30px auto 0;
-}
-.flashing-message .icon {
-    text-align: center;
-}
-.flashing-message .icon img {
-    width: 30%;
-}
-#process-denied a {
-    color: #f00;
-    text-decoration: none;
-}
-#process-denied a:hover {
-    color: #600;
-    transition: 0.5s;
-}
-
 
 /* MAKE THE WHOLE PAGE RESPONSIVE */
 @media screen and (max-width: 540px) {
@@ -265,7 +139,7 @@ table tr .value {
         display: block;
         margin-bottom: 30px;
     }
-    .button-container input {
+    .button-container button {
         width: 100%;
         margin: 10px 0;
     }
@@ -293,22 +167,6 @@ table tr .value {
     }
     p {
         font-size: 15px;
-    }
-}
-/* Gallery */
-@media screen and (max-width: 830px) {
-    .gallery img {
-        width: 80%;
-    }
-}
-@media screen and (max-width: 600px) {
-    .gallery img {
-        width: 100%;
-    }
-}
-@media screen and (max-width: 370px) {
-    h2 {
-        font-size: 25px;
     }
 }
 
@@ -344,34 +202,5 @@ table tr .value {
 @media screen and (min-width: 1100px) {
     .item {
         width: 20%;
-    }
-}
-/* Flashbox area */
-@media screen and (max-width: 1325px) {
-    .flashing-message {
-        width: 40%;
-    }
-}
-@media screen and (max-width: 995px) {
-    .flashing-message {
-        width: 50%;
-    }
-}
-@media screen and (max-width: 800px) {
-    .flashing-message {
-        width: 60%;
-    }
-}
-@media screen and (max-width: 665px) {
-    .flashing-message {
-        width: 70%;
-    }
-}
-@media screen and (max-width: 665px) {
-    .flashing-message {
-        width: 70%;
-    }
-    .flashing-message .icon img {
-        width: 40%;
     }
 }

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/header-&-footer.css">
     <link rel="stylesheet" href="css/generic-text.css">
-    <link rel="stylesheet" href="css/process-denied.css">
     <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -59,17 +58,6 @@
             <h1>COPYRIGHT</h1>
             <h3>Copyright <span class="material-icons">copyright</span> 2021, Eworld Technology Corporation.</h3>
             <h3>All rights reserved.</h3>
-        </div>
-
-        <!--Flashing message-->
-        <div class="flash-container" id="process-denied">
-            <div class="flashing-message">
-                <div class="icon">
-                    <img src="images/account.jpg" alt="a default avatar">
-                </div>
-                <h1>Please <a href="../login.php">Login</a> or <a href="../register.php">Register</a> to continue this
-                    process.</h1>
-            </div>
         </div>
 
     </main>

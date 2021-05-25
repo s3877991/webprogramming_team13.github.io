@@ -1,0 +1,40 @@
+/* To define new fonts which is not available in IDE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* STYLE OF THE WHOLE PAGE */
+body {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word !important;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;     /* When this font is already defined, it is able to be use to trigger the style of any selectors */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* STYLE OF MAIN SECTION */
+/* Label and filter select area */
+.select {                                   
+    margin: 10px 30px;
+    border-bottom: 5px solid #f00;
+    text-align: center;
+}
+.select-container {                         /* Create a container div inside a section div in order to align that container div center */
+    font-size: 22.5px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.select-container select {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22.5px;
+    border: none;
+    border-bottom: 2.5px solid #000;
+}
+.select-container #category {
+    width: 200px;
+}
+.select-container #created-date {
+    width: 175px;
+}

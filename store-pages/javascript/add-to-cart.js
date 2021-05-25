@@ -7,32 +7,6 @@ var picture = document.getElementById('item-image').src;
 var price = document.querySelector('.add-to-cart-item label').innerText;
 var color = document.querySelector('.choice-2 div.options-2 label').innerText;
 
-// Check login status
-var flashingMessageConfirm = document.querySelector('#process-confirmed');
-var flashingMessageDenied = document.querySelector('#process-denied');
-
-for (let i = 0; i < addToCartButtons.length; i++) {
-    button = addToCartButtons[i]
-    button.addEventListener('click', () => {
-        if (!sessionStorage.getItem('Login Successful')) {
-            flashingMessageDenied.style.display = "block";
-        }
-        else {
-            flashingMessageConfirm.style.display = "block";
-            add_items_to_cart();
-        }
-    }
-    )
-}
-
-// Close the flashing message
-flashingMessageConfirm.addEventListener('click', function(ev) {
-    flashingMessageConfirm.style.display = "none";
-})
-flashingMessageDenied.addEventListener('click', function(ev) {
-    flashingMessageDenied.style.display = "none";
-})
-
 // Original CSS code sourced and adapted for educational purposes: https://www.youtube.com/watch?v=PoTGs38DR9E&t=647s
 function add_items_to_cart() {
     // Put product info into an object called "product"

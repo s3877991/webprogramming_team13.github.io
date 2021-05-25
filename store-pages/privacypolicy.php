@@ -104,17 +104,6 @@
 
         </div>
 
-        <!--Flashing message-->
-        <div class="flash-container" id="process-denied">
-            <div class="flashing-message">
-                <div class="icon">
-                    <img src="images/account.jpg" alt="a default avatar">
-                </div>
-                <h1>Please <a href="../login.php">Login</a> or <a href="../register.php">Register</a> to continue this
-                    process.</h1>
-            </div>
-        </div>
-
     </main>
 
     <!--Footer section with navigation bar-->

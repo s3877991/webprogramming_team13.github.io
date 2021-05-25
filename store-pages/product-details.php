@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/header-&-footer.css">
     <link rel="stylesheet" href="css/product-details.css">
+    <link rel="stylesheet" href="css/flexbox.css">
     <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -48,179 +49,33 @@
 
     <!--Main Content-->
     <main class="product-info">
-        <h1 id="title">Apple iPhone 12 Pro Max</h1>
-
-        <hr>
 
         <!--Customer choice area-->
         <section id="customers-choice">
             <div class="flex-container-1">
 
                 <div class="avatar">
-                    <img id="item-image" src="images/iphone-12-pro-max.jpg" alt="an iPhone with a notch display and triple camera">
+                    <img id="item-image" src="images/product.png" alt="an iPhone with a notch display and triple camera">
                 </div>
 
-                <div class="variations">
-                    <form method="GET" action="your-cart.php">
-                        <h3 class="label">Choose your favorite version</h3>
-                        <div class="choice-1">
+                <div class="options">
 
-                            <div class="options-1 add-to-cart-item">
-                                <input type="radio" name="version" value="128gb" checked required>
-                                <label for="version">
-                                    <span class="storage">128GB</span>
-                                    <br>
-                                    <span class="price">$1264.78</span>
-                                </label>
-                            </div>
+                    <h1 class="title">Product name</h1>
+                    <h3 class="price">$xxxx.xx</h3>
 
-                            <div class="options-1">
-                                <input type="radio" name="version" value="256gb" required>
-                                <label for="version">
-                                    <span class="storage">256GB</span>
-                                    <br>
-                                    <span class="price">$1386.52</span>
-                                </label>
-                            </div>
-
-                            <div class="options-1">
-                                <input type="radio" name="version" value="512gb" required>
-                                <label for="version">
-                                    <span class="storage">512GB</span>
-                                    <br>
-                                    <span class="price">$1638.70</span>
-                                </label>
-                            </div>
-
+                    <div class="button-container">
+                        <div class="buttons">
+                            <button type="button" id="add-to-cart">Add to cart</button>
                         </div>
-
-                        <h3 class="label">Choose your favorite color</h3>
-                        <div class="choice-2">
-
-                            <div class="options-2">
-                                <input type="radio" name="color" value="blue" required checked>
-                                <label for="color">Pacific Blue</label>
-                            </div>
-
-                            <div class="options-2">
-                                <input type="radio" name="color" value="gold" required>
-                                <label for="color">Gold</label>
-                            </div>
-
-                            <div class="options-2">
-                                <input type="radio" name="color" value="silver" required>
-                                <label for="color">Silver</label>
-                            </div>
-
-                            <div class="options-2">
-                                <input type="radio" name="color" value="black" required>
-                                <label for="color">Graphite</label>
-                            </div>
-
+                        <div class="buttons">
+                            <button type="button" id="buy-now">BUY NOW!</button>
                         </div>
+                    </div>
 
-                        <div class="button-container">
-
-                            <input type="button" class="add-to-cart" value="Add to cart">
-                            <input type="submit" class="buy-now" value="BUY NOW!">
-
-                        </div>
-                    </form>
                 </div>
+            </div>
 
             </div>
-        </section>
-
-        <hr>
-
-        <!--Specifications area-->
-        <section id="specifications">
-            <h2>Specifications</h2>
-
-            <table>
-
-                <tr>
-                    <td class="property">Display</td>
-                    <td class="value">
-                        6.7 inches Super Retina XDR
-                        <br>
-                        458 ppi (2778 x 1284)
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="property">Weight</td>
-                    <td class="value">228 grams</td>
-                </tr>
-
-                <tr>
-                    <td class="property">Operating System</td>
-                    <td class="value">iOS 14</td>
-                </tr>
-
-                <tr>
-                    <td class="property">Processor</td>
-                    <td class="value">Apple A14 Bionic</td>
-                </tr>
-
-                <tr>
-                    <td class="property">Memory</td>
-                    <td class="value">6GB RAM</td>
-                </tr>
-
-                <tr>
-                    <td class="property">Storage</td>
-                    <td class="value">128GB, 256GB, 512GB</td>
-                </tr>
-
-                <tr>
-                    <td class="property">Network</td>
-                    <td class="value">5G Technology</td>
-                </tr>
-
-                <tr>
-                    <td class="property">Rear Camera</td>
-                    <td class="value">
-                        Wide: 12MP, F/1.6
-                        <br>
-                        Ultrawide: 12MP, F/2.4
-                        <br>
-                        Telephoto: 12MP, F/2.2
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="property">Front Camera</td>
-                    <td class="value">Selfie: 12MP, F/2.2</td>
-                </tr>
-
-                <tr>
-                    <td class="property">Battery</td>
-                    <td class="value">3,687 mAh Li-Ion</td>
-                </tr>
-
-                <tr>
-                    <td class="property">Other Features</td>
-                    <td class="value">
-                        IP68 Water resistance
-                        <br>
-                        Face ID
-                        <br>
-                        15W Fast Charging
-                        <br>
-                        LiDAR Sensor
-                        <br>
-                        MagSafe Wirreless Charger
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="property">Colors</td>
-                    <td class="value">Pacific Blue, Gold, Silver, Graphite</td>
-                </tr>
-
-            </table>
-
         </section>
 
         <hr>
@@ -229,257 +84,68 @@
         <section id="description">
             <h2>Description</h2>
 
-            <h3>Introduction</h3>
             <p>
-                Each year, until late in August and early in September, there are a myriad of hot news about a new
-                iPhone.
-                This year, Apple has
-                launched iPhone 12 Pro Max, the newest and the most powerful smartphone. Now, we will show you further
-                description below and then
-                you will make a decision to buy this product.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates magnam deleniti dolores sint molestiae aperiam est aliquid numquam quia dolorum quaerat, at labore. Libero fuga assumenda dolorum similique, possimus in!
             </p>
-
-            <h3>A larger display</h3>
-            <p>
-                This year, the iPhone 12 Pro Max is better innovated with a 6.7-inch Super Retina XDR display, larger
-                than the regular iPhone 12. With
-                OLED display technology, it can show images with size up to 2778 x 1284 pixels. Besides, it also enables
-                users to use it
-                in the sun with the brightness up to 800 nits.
-            </p>
-            <div class="gallery">
-                <img src="images/display.jpg" alt="two different iPhones compared in display size">
-            </div>
-            <p>
-                A new feature of the iPhone this year is its design. The sharp edges and the stainless-steel body make
-                the phone look luxurious
-                and premium. There are many special color variations that allows users to choose.
-            </p>
-
-            <h3>More space to store, multitasking improved</h3>
-            <p>
-                Talking about hardware, the iPhone 12 Pro Max consists of up to 6GB of RAM. It does mean that Apple are
-                more
-                aware of their users,
-                so they have the smartphone equipped with such memory in order to improve the process of multitasking.
-                Also,
-                having larger RAM memory makes gaming experience
-                more smoother.
-            </p>
-            <div class="gallery">
-                <img src="images/colors.jpg" alt="4 iPhones with different colors">
-            </div>
-            <p>
-                Furthermore, the iPhone 12 Pro Max will have 3 different storage variations: 128GB, 256GB and the other
-                is
-                512GB. A phone with laptop
-                computer storage is a thing that Apple wants to bring to users with a view to allowinf them to share
-                their
-                memory with other devices.
-            </p>
-
-            <h3>Powerful performance</h3>
-            <p>
-                Apart from those improvements, there's a thing known as the heart and the core of the 2020 flagship, a
-                5-nanometer A14 Bionic chip.
-                It makes the phone have a great performance and even greater than its opponents.
-            </p>
-            <div class="gallery">
-                <img src="images/apple-a14-soc-chip.png" alt="an electronic chip">
-            </div>
-            <p>
-                The device is also equipped with Wi-Fi and and mobile network connectivity that does not just help you
-                improve network efficiency
-                but also ensure the stable connection and increase the quality of online images.
-            </p>
-
-            <h3>Superior camera</h3>
-            <p>
-                It can be told that camera is a huge enhancement of iPhone 12 Pro Max as it has a triple camera with a
-                12-megapixel resolution.
-                However, it has a large aperture and the pixel density for each panel is also larger. Therefore, it
-                gives
-                users more detailed photos
-                and better light captures. Additionally, with OIS optical image stabilization, the phone can even record
-                4K
-                videos better.
-            </p>
-            <div class="gallery">
-                <img src="images/camera.jpg" alt="an iPhone with triple camera">
-            </div>
-            <p>
-                The camera also has depth scanning features and ensure that the photos have their definite depth.
-                Besides,
-                it also has an ability to
-                create a 3-D photos when scanning it into a certain room, which means, it is very useful for
-                construction
-                work as well as formatting the building
-                before constructing it.
-            </p>
-
-            <h3>Outstanding selfies, Face ID and water resistance</h3>
-            <p>
-                Like its rear camera, front-facing camera helps the smartphone have a better, vivid and real selfies.
-                Along
-                with it, a feature already available
-                since the launch of game-changing iPhone X has ability to scan many faces in 3-D form, and that is Face
-                ID.
-            </p>
-            <div class="gallery">
-                <img src="images/water-resistance.png" alt="an iPhone soaked with a splash of water">
-            </div>
-            <p>
-                The water resistance technology is very necessary, especially for iPhone 12 Pro Max. It has IP68
-                standard, a
-                technology that makes many smartphones
-                waterproof and dustproof and it has been considered as one of the best technologies so far. With this
-                technology, you can use them in
-                any extreme conditions without any worrries.
-            </p>
-
-            <h3>Fast charging makes the use last longer</h3>
-            <p>
-                A non removable batery with high capacity inside the iPhone 12 Pro Max helps you use the phone longer
-                than
-                ever. For example, this device allows
-                users to listen to music in 80 hours and watch live videos in 12 hours.
-            </p>
-            <div class="gallery">
-                <img src="images/fast-charging.jpg" alt="an iPhone soaked with a splash of water">
-            </div>
-            <p>
-                Thanks to fast-charging technology which is up to 15W, the iPhone 12 Pro Max can refill 50% of its
-                capacity
-                within 30 minutes only.
-            </p>
-
-            <h3>Conclusion</h3>
-            <p>
-                With those upgrades above, it is easy to understand why the iPhone 12 Pro Max is most sought-after
-                smartphone
-                at the moment. Owning this smartphone, you will experience all the quintessence that Apple has put into
-                its products.
-            </p>
-            <p>
-                Currently, Eworld has become an official Apple authorized distributor in the world, promising to
-                bring customers high-quality
-                products at the most reasonable prices. If you want to buy iPhone 12 Pro Max, click <a href="#title" id="highlight">"BUY NOW!"</a> for
-                free delivery. This product is guaranteed genuinely in 12 months.
-            </p>
-
         </section>
 
         <hr>
 
-        <!--Flashing message-->
-        <div class="flash-container" id="process-confirmed">
-            <div class="flashing-message">
-                <div class="icon">
-                    <img src="images/checked-icon.png" alt="a green circle with a tick on it">
-                </div>
-                <h1>Your item is added to cart!</h1>
-            </div>
-        </div>
-
-        <div class="flash-container" id="process-denied">
-            <div class="flashing-message">
-                <div class="icon">
-                    <img src="images/account.jpg" alt="a default avatar">
-                </div>
-                <h1>Please <a href="../login.php">Login</a> or <a href="../register.php">Register</a> to continue this process.</h1>
-            </div>
-        </div>
-
         <!--Recommended Products Area-->
         <section id="recommended-products">
-            <h2 class="label-2">Recommened Products</h2>
+            <h2 class="label-2">Recommended Products</h2>
 
-            <div class="flex-container-2">
-
-                <div class="item recommended">
+            <div class="flex-container">
+                <div class="item">
                     <a href="product-details.php">
                         <div class="image">
-                            <img src="images/asus-rog-phone-3.jpg" alt="a gaming phone">
+                            <img src="images/product.png" alt="a box">
                         </div>
-                        <h3 class="name">Asus ROG Phone 3</h3>
-                        <p class="price">$847.39</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
+                        <h3 class="name">Product name</h3>
+                        <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
 
-                <div class="item recommended">
+                <div class="item">
                     <a href="product-details.php">
                         <div class="image">
-                            <img src="images/galaxy-tab-s7.jpg" alt="a tablet with its pen">
+                            <img src="images/product.png" alt="a box">
                         </div>
-                        <h3 class="name">Samsung Galaxy Tab S7</h3>
-                        <p class="price">$738.69</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
+                        <h3 class="name">Product name</h3>
+                        <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
 
-                <div class="item recommended">
-                    <a href="product-details-2.php">
-                        <div class="image">
-                            <img src="images/dell-laptop.jpg" alt="a laptop">
-                        </div>
-                        <h3 class="name">Dell Inspiron 5593</h3>
-                        <p class="price">$730.00</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="item recommended">
-                    <a href="product-details-2.php">
-                        <div class="image">
-                            <img src="images/canon-camera-2.jpg" alt="another camera made by Canon">
-                        </div>
-                        <h3 class="name">Canon EOS M10</h3>
-                        <p class="price">$486.52</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="item recommended">
+                <div class="item">
                     <a href="product-details.php">
                         <div class="image">
-                            <img src="images/airpods-2.jpg" alt="bluetooth ear phones made by Apple">
+                            <img src="images/product.png" alt="a box">
                         </div>
-                        <h3 class="name">Apple AirPods 2</h3>
-                        <p class="price">$143.04</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
+                        <h3 class="name">Product name</h3>
+                        <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
+
+                <div class="item">
+                    <a href="product-details.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="product-details.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
 
             </div>
         </section>

@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/header-&-footer.css">
+    <link rel="stylesheet" href="css/flexbox.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/process-denied.css">
     <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -63,37 +63,95 @@
         </section>
 
         <section id="sub-sect-1">
-        <?php
-        session_start();
-        require 'product_functions.php';
-        $products = read_all_products();
-
-        $count = 0;
-        ?>
-        <h2 class="label">New Products</h2>
-        <div class="product-detail-cart">
             <?php
-            echo '</ul>';
-            foreach ($products as $p) {
-                $id = $p['store_id'];
-                $name = $p['name'];
-                echo nl2br("<div class=\"item\"> \n <a href=\"product_functions.php?id=$id\"> \n <div class='image'> \n <img src='images/galaxy-s21-ultra.jpeg' alt='a phone with quad camera' width=100px> \n</div>\n <p>Samsung Galaxy S21 Ultra</p> \n <p class='price'>$1058.69</p> \n </a> \n </div>");
-                $count++;
-                if ($count == 5) {
-                    break;
-                }
-            }
-            if (isset($_SESSION['visited_products']) && is_array($_SESSION['visited_products'])) {
-                echo 'Visited products';
-                echo '<ul>';
-                foreach ($_SESSION['visited_products'] as $id) {
-                    echo "<li>$id</li>";
-                }
-                echo '</ul>';
-            }
+            session_start();
+            require 'product_functions.php';
+            $products = read_all_products();
+
+            $count = 0;
             ?>
-        </div>
+            <h2 class="label">New Products</h2>
+            <div class="flex-container">
+                <?php
+                echo '</ul>';
+                foreach ($products as $p) {
+                    $id = $p['store_id'];
+                    $name = $p['name'];
+                    echo nl2br("<div class=\"item\"><a href=\"product_functions.php?id=$id\"><div class='image'><img src='images/product.png' alt='a box'></div><h3>Product Name</h3><p class='price'>\$xxxx.xx</p></a></div>");
+                    $count++;
+                    if ($count == 5) {
+                        break;
+                    }
+                }
+                if (isset($_SESSION['visited_products']) && is_array($_SESSION['visited_products'])) {
+                    echo 'Visited products';
+                    echo '<ul>';
+                    foreach ($_SESSION['visited_products'] as $id) {
+                        echo "<li>$id</li>";
+                    }
+                    echo '</ul>';
+                }
+                ?>
+            </div>
         </section>
+
+        <section id="sub-sect-2">
+
+            <h2 class="label">Featured Products</h2>
+            <div class="flex-container">
+                <div class="item">
+                    <a href="product-details.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="product-details.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="product-details.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="product-details.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="product-details.php">
+                        <div class="image">
+                            <img src="images/product.png" alt="a box">
+                        </div>
+                        <h3 class="name">Product name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <!--Footer section with navigation bar-->
