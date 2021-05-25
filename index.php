@@ -163,7 +163,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details-2.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
                             <img src="images/book-2-responsive.png" alt="a cover page with some letters and a fingerprint">
                         </div>
@@ -181,7 +181,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details-2.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
                             <img src="images/faber-watercolor-pencil.jpg" alt="a box of colored pencils">
                         </div>
@@ -201,7 +201,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details-2.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
                             <img src="images/gucci-bag.jpg" alt="a handbag">
                         </div>
@@ -221,7 +221,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details-2.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
                             <img src="images/spicy-cheese-chicken.jpg" alt="a chicken dish">
                         </div>
@@ -295,7 +295,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details-2.php">
+                    <a href="store-pages/product-details.php">
                         <img src="images/nike-sneaker-2.jpg" alt="another sneaker">
                         <h3 class="name">Air Force 1 </h3>
                         <p class="price">$166.48</p>
@@ -311,7 +311,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details-2.php">
+                    <a href="store-pages/product-details.php">
                         <img src="images/brush.png" alt="10 make-up brushes varied in sizes">
                         <h3 class="name">M.A.C Student Pro Brush</h3>
                         <p class="price">$20</p>

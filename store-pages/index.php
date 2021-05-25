@@ -19,7 +19,7 @@
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="index.php"><img src="images/logo.png" alt="logo">Eworld</a></div>
+            <div id="logo"><a href="index.php">The Store</a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -54,10 +54,9 @@
         <section id="intro">
             <div class="banner">
                 <div class="container">
-                    <img src="images/logo.png" alt="logo">
-                    <h1>The store</h1>
-                    <p>Welcome to one of the best stores in Shoppiverse</p>
-                    <a class="btn" href="#sub-sect-1">SHOP NOW!</a>
+                    <h1>The Store</h1>
+                    <p>Welcome to one of the best stores in Shoppiverse Mall.</p>
+                    <button class="btn"><a href="#sub-sect-1">SHOP NOW!</a></button>
                 </div>
             </div>
         </section>
@@ -94,6 +93,8 @@
                 ?>
             </div>
         </section>
+
+        <hr>
 
         <section id="sub-sect-2">
 

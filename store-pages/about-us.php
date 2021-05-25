@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/header-&-footer.css">
-    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/generic-text.css">
     <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,7 +18,7 @@
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="index.php"><img src="images/logo.png" alt="logo">Eworld</a></div>
+            <div id="logo"><a href="index.php">The Store</a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -49,12 +49,16 @@
     <!--Main Content-->
     <main>
 
+        <div class="image">
+            <img src="images/store.png" alt="a store">
+        </div>
+
         <div class="text">
             <h1>ABOUT US</h1>
 
             <hr>
 
-            <h2>What is Eworld?</h2>
+            <h2>What is The Store?</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aut illum, vitae distinctio id quo, possimus eveniet ea quia, ratione repellat? Voluptatem, quia. Iste illo, libero maiores velit corrupti repellendus!
             </p>

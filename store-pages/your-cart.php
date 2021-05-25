@@ -18,7 +18,7 @@
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="index.php"><img src="images/logo.png" alt="logo">Eworld</a></div>
+            <div id="logo"><a href="index.php">The Store</a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">

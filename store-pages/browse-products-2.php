@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/header-&-footer.css">
-    <link rel="stylesheet" href="css/filter.css">
     <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/filter.css">
     <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,7 +19,7 @@
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="index.php"><img src="images/logo.png" alt="logo">Eworld</a></div>
+            <div id="logo"><a href="index.php">The Store</a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">

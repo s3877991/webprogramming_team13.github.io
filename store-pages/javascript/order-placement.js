@@ -11,9 +11,7 @@ if (document.readyState == 'loading') {
             // Allocate different product info into their cateogories
             var title = productlist[item]['name'];
             var image = productlist[item]['image'];
-            var price = productlist[item]['price'].split("\n")[1];
-            var version = productlist[item]['price'].split("\n")[0];
-            var color = productlist[item]['color'];
+            var price = productlist[item]['price'];
             var inCart = productlist[item]['inCart'];
 
             var subTotal = updateSubTotal(price, inCart);
@@ -30,8 +28,6 @@ if (document.readyState == 'loading') {
                             <div>
                                 <p class="name">${title}</p>
                                 <p class="price">${price}</p>
-                                <p class="version">${version}</p>
-                                <p class="color">${color}</p>
                                 <a href="">Remove</a>
                             </div>
                         </div>

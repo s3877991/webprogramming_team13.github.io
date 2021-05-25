@@ -18,7 +18,7 @@
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="index.php"><img src="images/logo.png" alt="logo">Eworld</a></div>
+            <div id="logo"><a href="index.php">The Store</a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -55,7 +55,7 @@
         </div>
 
         <div class="text-2">
-            <h1>Thank you for your shopping at Eworld store</h1>
+            <h1>Thank you for your shopping at The Store</h1>
             <h1>and</h1>
             <h1>hope to see you again.</h1>
             <h1>Have a nice day!</h1>

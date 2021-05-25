@@ -19,7 +19,7 @@
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="index.php"><img src="images/logo.png" alt="logo">Eworld</a></div>
+            <div id="logo"><a href="index.php">The Store</a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -42,7 +42,7 @@
                         <li><a href="browse-products-2.php">by CREATED TIME</a></li>
                     </ul>
                 </li>
-                <li><a href="contact-us.html">CONTACT</a></li>
+                <li><a href="contact-us.php">CONTACT</a></li>
                 <li class="your-cart"><a href="your-cart.php">YOUR CART</a></li>
             </ul>
         </nav>

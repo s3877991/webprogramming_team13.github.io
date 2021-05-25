@@ -2,10 +2,9 @@
 
 // Get product information
 var addToCartButtons = document.getElementsByClassName('add-to-cart');
-var title = document.querySelector('#title').innerText;
-var picture = document.getElementById('item-image').src;
-var price = document.querySelector('.add-to-cart-item label').innerText;
-var color = document.querySelector('.choice-2 div.options-2 label').innerText;
+var title = document.querySelector('.title').innerText;
+var picture = document.getElementById('product-image').src;
+var price = document.querySelector('.price').innerText;
 
 // Original CSS code sourced and adapted for educational purposes: https://www.youtube.com/watch?v=PoTGs38DR9E&t=647s
 function add_items_to_cart() {
@@ -14,7 +13,6 @@ function add_items_to_cart() {
         "name": title,
         "image": picture,
         "price": price,
-        "color": color,
         "inCart": 0,
     };
 

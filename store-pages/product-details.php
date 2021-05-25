@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/header-&-footer.css">
     <link rel="stylesheet" href="css/product-details.css">
-    <link rel="stylesheet" href="css/flexbox.css">
     <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,7 +18,7 @@
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="index.php"><img src="images/logo.png" alt="logo">Eworld</a></div>
+            <div id="logo"><a href="index.php">The Store</a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -55,12 +54,12 @@
             <div class="flex-container-1">
 
                 <div class="avatar">
-                    <img id="item-image" src="images/product.png" alt="an iPhone with a notch display and triple camera">
+                    <img id="product-image" src="images/product.png" alt="a box">
                 </div>
 
                 <div class="options">
 
-                    <h1 class="title">Product name</h1>
+                    <h1 class="title">Product Name</h1>
                     <h3 class="price">$xxxx.xx</h3>
 
                     <div class="button-container">
@@ -81,28 +80,33 @@
         <hr>
 
         <!--Description area-->
-        <section id="description">
-            <h2>Description</h2>
+        <section class="text">
+            <h2 class="label">Description</h2>
 
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates magnam deleniti dolores sint molestiae aperiam est aliquid numquam quia dolorum quaerat, at labore. Libero fuga assumenda dolorum similique, possimus in!
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti in veritatis cupiditate rerum et temporibus porro, delectus quasi atque dolore, dolorum sed nisi, iusto eveniet voluptate quod accusamus officia fugiat?
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt beatae temporibus eaque ipsa dignissimos, a, laborum minus praesentium ex odio at ullam cupiditate fugit commodi? Similique numquam eveniet ex dolores!
             </p>
         </section>
 
         <hr>
 
-        <!--Recommended Products Area-->
-        <section id="recommended-products">
-            <h2 class="label-2">Recommended Products</h2>
-
+        <!--Visited products area-->
+        <section id="visited-products">
+            <h2 class="label">Visited Products</h2>
             <div class="flex-container">
                 <div class="item">
                     <a href="product-details.php">
                         <div class="image">
                             <img src="images/product.png" alt="a box">
                         </div>
-                        <h3 class="name">Product name</h3>
-                        <p class="price">$xxxx.xx</p>
+                        <h3 id="name">Product name</h3>
+                        <p id="price">$xxxx.xx</p>
                     </a>
                 </div>
 
@@ -145,7 +149,6 @@
                         <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
-
 
             </div>
         </section>
@@ -175,7 +178,6 @@
 
     <!--Link to external JavaScript file-->
     <script src="javascript/add-to-cart.js"></script>
-    <script src="javascript/navbar.js" async></script>
     <script src="../javascript/cookie.js"></script>
 </body>
 

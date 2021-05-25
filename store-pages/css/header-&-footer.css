@@ -43,12 +43,6 @@ header #logo a {
     line-height: 60px;
     font-weight: bold;
 }
-header #logo img {
-    width: 35px;
-    height: 35px;
-    padding-right: 10px;
-    display: inline-block;
-}
 #main-toggle {                              /* Create a responsive navigation icon in header bar */
     cursor: pointer;                        /* When the mouse cursor touch this item, its icon will change into pointer icon, which means users can click this item */
     float: right;

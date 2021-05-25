@@ -18,7 +18,7 @@
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="index.php"><img src="images/logo.png" alt="logo">Eworld</a></div>
+            <div id="logo"><a href="index.php">The Store</a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -56,7 +56,7 @@
 
         <div class="text-3">
             <h1>COPYRIGHT</h1>
-            <h3>Copyright <span class="material-icons">copyright</span> 2021, Eworld Technology Corporation.</h3>
+            <h3>Copyright <span class="material-icons">copyright</span> 2021, Shoppiverse Corporation.</h3>
             <h3>All rights reserved.</h3>
         </div>
 
