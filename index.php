@@ -72,7 +72,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -81,7 +81,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -90,7 +90,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -99,7 +99,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -108,7 +108,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -117,7 +117,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -126,7 +126,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -135,7 +135,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -144,7 +144,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -153,7 +153,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -165,15 +165,15 @@
         <hr>
 
         <!--New Products Area-->
-        <section id="sub-sect-3">
+        <section id="sub-sect-2">
             <h2 class="label">New Products</h2>
 
             <div class="flex-container">
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -181,9 +181,9 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -191,9 +191,9 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -201,9 +201,9 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -211,9 +211,9 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -221,9 +221,9 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -231,9 +231,9 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -241,9 +241,9 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -251,9 +251,9 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -261,9 +261,9 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -276,15 +276,15 @@
         <hr>
 
         <!--Featured Stores Area-->
-        <section id="sub-sect-2">
+        <section id="sub-sect-3">
             <h2 class="label">Featured Stores</h2>
 
             <div class="flex-container">
 
-            <div class="item">
+                <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -293,7 +293,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -302,7 +302,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -311,7 +311,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -320,7 +320,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -329,7 +329,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -338,7 +338,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -347,7 +347,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -356,7 +356,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -365,7 +365,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -383,9 +383,9 @@
             <div class="flex-container">
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -393,9 +393,9 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -403,9 +403,9 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -413,9 +413,9 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -423,9 +423,9 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -433,9 +433,9 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -443,9 +443,9 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -453,9 +453,9 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -463,19 +463,19 @@
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
-                
+
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-pages/product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product Name</h3>
                         <p class="price">$xxxx.xx</p>

@@ -33,8 +33,7 @@
                 <li><a href="about-us.php">ABOUT US</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">PRODUCTS <span
-                            class="material-icons">expand_more</span></label>
+                    <label for="dropdown-sub" class="toggle">PRODUCTS <span class="material-icons">expand_more</span></label>
                     <a class="active" href="#">PRODUCTS <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
@@ -67,10 +66,10 @@
         <!--Products section-->
         <div class="flex-container">
 
-        <div class="item">
+            <div class="item">
                 <a href="product-details.php">
                     <div class="image">
-                        <img src="images/product.png" alt="a box">
+                        <img src="images/product.png" alt="a shopping bag">
                     </div>
                     <h3 class="name">Product name</h3>
                     <p class="price">$xxxx.xx</p>
@@ -80,7 +79,7 @@
             <div class="item">
                 <a href="product-details.php">
                     <div class="image">
-                        <img src="images/product.png" alt="a box">
+                        <img src="images/product.png" alt="a shopping bag">
                     </div>
                     <h3 class="name">Product name</h3>
                     <p class="price">$xxxx.xx</p>
@@ -90,7 +89,7 @@
             <div class="item">
                 <a href="product-details.php">
                     <div class="image">
-                        <img src="images/product.png" alt="a box">
+                        <img src="images/product.png" alt="a shopping bag">
                     </div>
                     <h3 class="name">Product name</h3>
                     <p class="price">$xxxx.xx</p>
@@ -100,7 +99,7 @@
             <div class="item">
                 <a href="product-details.php">
                     <div class="image">
-                        <img src="images/product.png" alt="a box">
+                        <img src="images/product.png" alt="a shopping bag">
                     </div>
                     <h3 class="name">Product name</h3>
                     <p class="price">$xxxx.xx</p>
@@ -110,7 +109,7 @@
             <div class="item">
                 <a href="product-details.php">
                     <div class="image">
-                        <img src="images/product.png" alt="a box">
+                        <img src="images/product.png" alt="a shopping bag">
                     </div>
                     <h3 class="name">Product name</h3>
                     <p class="price">$xxxx.xx</p>
@@ -120,7 +119,7 @@
             <div class="item">
                 <a href="product-details.php">
                     <div class="image">
-                        <img src="images/product.png" alt="a box">
+                        <img src="images/product.png" alt="a shopping bag">
                     </div>
                     <h3 class="name">Product name</h3>
                     <p class="price">$xxxx.xx</p>
@@ -130,7 +129,7 @@
             <div class="item">
                 <a href="product-details.php">
                     <div class="image">
-                        <img src="images/product.png" alt="a box">
+                        <img src="images/product.png" alt="a shopping bag">
                     </div>
                     <h3 class="name">Product name</h3>
                     <p class="price">$xxxx.xx</p>
@@ -140,7 +139,7 @@
             <div class="item">
                 <a href="product-details.php">
                     <div class="image">
-                        <img src="images/product.png" alt="a box">
+                        <img src="images/product.png" alt="a shopping bag">
                     </div>
                     <h3 class="name">Product name</h3>
                     <p class="price">$xxxx.xx</p>
@@ -150,7 +149,7 @@
             <div class="item">
                 <a href="product-details.php">
                     <div class="image">
-                        <img src="images/product.png" alt="a box">
+                        <img src="images/product.png" alt="a shopping bag">
                     </div>
                     <h3 class="name">Product name</h3>
                     <p class="price">$xxxx.xx</p>
@@ -160,7 +159,7 @@
             <div class="item">
                 <a href="product-details.php">
                     <div class="image">
-                        <img src="images/product.png" alt="a box">
+                        <img src="images/product.png" alt="a shopping bag">
                     </div>
                     <h3 class="name">Product name</h3>
                     <p class="price">$xxxx.xx</p>
@@ -193,7 +192,6 @@
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="javascript/navbar.js" async></script>
     <script src="../javascript/cookie.js"></script>
 </body>
 

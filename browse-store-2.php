@@ -82,7 +82,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -91,7 +91,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -100,7 +100,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -109,7 +109,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -118,7 +118,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -127,7 +127,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -136,7 +136,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -145,7 +145,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -154,7 +154,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>
@@ -163,7 +163,7 @@
                 <div class="item">
                     <a href="store-pages/index.php">
                         <div class="image">
-                            <img src="images/store.jpg" alt="a store">
+                            <img src="images/store.png" alt="a store">
                         </div>
                         <h3 class="name">Store Name</h3>
                     </a>

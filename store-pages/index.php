@@ -55,7 +55,7 @@
             <div class="banner">
                 <div class="container">
                     <h1>The Store</h1>
-                    <p>Welcome to one of the best stores in Shoppiverse Mall.</p>
+                    <p>Welcome to one of the best stores in Shoppiverse Mall</p>
                     <button class="btn"><a href="#sub-sect-1">SHOP NOW!</a></button>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                 foreach ($products as $p) {
                     $id = $p['store_id'];
                     $name = $p['name'];
-                    echo nl2br("<div class=\"item\"><a href=\"product_functions.php?id=$id\"><div class='image'><img src='images/product.png' alt='a box'></div><h3>Product Name</h3><p class='price'>\$xxxx.xx</p></a></div>");
+                    echo nl2br("<div class=\"item\"><a href=\"product_functions.php?id=$id\"><div class='image'><img src='images/product.png' alt='a shopping bag'></div><h3>Product Name</h3><p class='price'>\$xxxx.xx</p></a></div>");
                     $count++;
                     if ($count == 5) {
                         break;
@@ -103,7 +103,7 @@
                 <div class="item">
                     <a href="product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -113,7 +113,7 @@
                 <div class="item">
                     <a href="product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -123,7 +123,7 @@
                 <div class="item">
                     <a href="product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -133,7 +133,7 @@
                 <div class="item">
                     <a href="product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -143,7 +143,7 @@
                 <div class="item">
                     <a href="product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -177,7 +177,6 @@
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="javascript/navbar.js" async></script>
     <script src="../javascript/cookie.js"></script>
 </body>
 

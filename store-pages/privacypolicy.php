@@ -128,6 +128,5 @@
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="javascript/navbar.js" async></script>
     <script src="../javascript/cookie.js"></script>
 </body>

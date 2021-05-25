@@ -54,7 +54,7 @@
             <div class="flex-container-1">
 
                 <div class="avatar">
-                    <img id="product-image" src="images/product.png" alt="a box">
+                    <img id="product-image" src="images/product.png" alt="a shopping bag">
                 </div>
 
                 <div class="options">
@@ -103,7 +103,7 @@
                 <div class="item">
                     <a href="product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 id="name">Product name</h3>
                         <p id="price">$xxxx.xx</p>
@@ -113,7 +113,7 @@
                 <div class="item">
                     <a href="product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -123,7 +123,7 @@
                 <div class="item">
                     <a href="product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -133,7 +133,7 @@
                 <div class="item">
                     <a href="product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -143,7 +143,7 @@
                 <div class="item">
                     <a href="product-details.php">
                         <div class="image">
-                            <img src="images/product.png" alt="a box">
+                            <img src="images/product.png" alt="a shopping bag">
                         </div>
                         <h3 class="name">Product name</h3>
                         <p class="price">$xxxx.xx</p>
@@ -177,7 +177,6 @@
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="javascript/add-to-cart.js"></script>
     <script src="../javascript/cookie.js"></script>
 </body>
 

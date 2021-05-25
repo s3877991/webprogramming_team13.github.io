@@ -93,97 +93,99 @@
         <section id="list-of stores">
             <div class="flex-container">
 
-                <div class="item">
-                    <a href="store-pages/index.php">
-                        <div class="image">
-                            <img src="images/store.jpg" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
+                <div class="flex-container">
 
-                <div class="item">
-                    <a href="store-pages/index.php">
-                        <div class="image">
-                            <img src="images/store.jpg" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
+                    <div class="item">
+                        <a href="store-pages/index.php">
+                            <div class="image">
+                                <img src="images/store.png" alt="a store">
+                            </div>
+                            <h3 class="name">Store Name</h3>
+                        </a>
+                    </div>
 
-                <div class="item">
-                    <a href="store-pages/index.php">
-                        <div class="image">
-                            <img src="images/store.jpg" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
+                    <div class="item">
+                        <a href="store-pages/index.php">
+                            <div class="image">
+                                <img src="images/store.png" alt="a store">
+                            </div>
+                            <h3 class="name">Store Name</h3>
+                        </a>
+                    </div>
 
-                <div class="item">
-                    <a href="store-pages/index.php">
-                        <div class="image">
-                            <img src="images/store.jpg" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
+                    <div class="item">
+                        <a href="store-pages/index.php">
+                            <div class="image">
+                                <img src="images/store.png" alt="a store">
+                            </div>
+                            <h3 class="name">Store Name</h3>
+                        </a>
+                    </div>
 
-                <div class="item">
-                    <a href="store-pages/index.php">
-                        <div class="image">
-                            <img src="images/store.jpg" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
+                    <div class="item">
+                        <a href="store-pages/index.php">
+                            <div class="image">
+                                <img src="images/store.png" alt="a store">
+                            </div>
+                            <h3 class="name">Store Name</h3>
+                        </a>
+                    </div>
 
-                <div class="item">
-                    <a href="store-pages/index.php">
-                        <div class="image">
-                            <img src="images/store.jpg" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
+                    <div class="item">
+                        <a href="store-pages/index.php">
+                            <div class="image">
+                                <img src="images/store.png" alt="a store">
+                            </div>
+                            <h3 class="name">Store Name</h3>
+                        </a>
+                    </div>
 
-                <div class="item">
-                    <a href="store-pages/index.php">
-                        <div class="image">
-                            <img src="images/store.jpg" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
+                    <div class="item">
+                        <a href="store-pages/index.php">
+                            <div class="image">
+                                <img src="images/store.png" alt="a store">
+                            </div>
+                            <h3 class="name">Store Name</h3>
+                        </a>
+                    </div>
 
-                <div class="item">
-                    <a href="store-pages/index.php">
-                        <div class="image">
-                            <img src="images/store.jpg" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
+                    <div class="item">
+                        <a href="store-pages/index.php">
+                            <div class="image">
+                                <img src="images/store.png" alt="a store">
+                            </div>
+                            <h3 class="name">Store Name</h3>
+                        </a>
+                    </div>
 
-                <div class="item">
-                    <a href="store-pages/index.php">
-                        <div class="image">
-                            <img src="images/store.jpg" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
+                    <div class="item">
+                        <a href="store-pages/index.php">
+                            <div class="image">
+                                <img src="images/store.png" alt="a store">
+                            </div>
+                            <h3 class="name">Store Name</h3>
+                        </a>
+                    </div>
 
-                <div class="item">
-                    <a href="store-pages/index.php">
-                        <div class="image">
-                            <img src="images/store.jpg" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
+                    <div class="item">
+                        <a href="store-pages/index.php">
+                            <div class="image">
+                                <img src="images/store.png" alt="a store">
+                            </div>
+                            <h3 class="name">Store Name</h3>
+                        </a>
+                    </div>
 
-            </div>
+                    <div class="item">
+                        <a href="store-pages/index.php">
+                            <div class="image">
+                                <img src="images/store.png" alt="a store">
+                            </div>
+                            <h3 class="name">Store Name</h3>
+                        </a>
+                    </div>
+
+                </div>
         </section>
 
     </main>

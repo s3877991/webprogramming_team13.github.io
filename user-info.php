@@ -225,7 +225,6 @@ else {
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="javascript/user-info-update.js"></script>
     <script src="javascript/cookie.js"></script>
 </body>
 
