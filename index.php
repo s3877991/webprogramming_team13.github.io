@@ -70,7 +70,7 @@
             <div class="flex-container">
 
                 <div class="item">
-                    <a href="eworld-website/index.php">
+                    <a href="store-pages/index.php">
                         <div class="image">
                             <img src="images/eworld.png" alt="a letter e logo">
                         </div>

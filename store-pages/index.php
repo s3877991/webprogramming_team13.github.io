@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Eworld - Store of Media Technology</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -55,13 +55,14 @@
             <div class="banner">
                 <div class="container">
                     <img src="images/logo.png" alt="logo">
-                    <h1>Eworld</h1>
-                    <p>Welcome to one of the best Media Electronic Devices Stores in the World</p>
+                    <h1>The store</h1>
+                    <p>Welcome to one of the best stores in Shoppiverse</p>
                     <a class="btn" href="#sub-sect-1">SHOP NOW!</a>
                 </div>
             </div>
         </section>
 
+        <section id="sub-sect-1">
         <?php
         session_start();
         require 'product_functions.php';
@@ -76,7 +77,7 @@
             foreach ($products as $p) {
                 $id = $p['store_id'];
                 $name = $p['name'];
-                echo nl2br("<div class='product-details'><img src='images/galaxy-s21-ultra.jpeg' alt='a phone with quad camera' width=100px> \n\n <a href=\"product_functions.php?id=$id\">Samsung Galaxy S21 Ultra</a> \n <p class='price'>$1058.69</p><p class='rank material-icons'> star star star star star</p></div>");
+                echo nl2br("<div class=\"item\"> \n <a href=\"product_functions.php?id=$id\"> \n <div class='image'> \n <img src='images/galaxy-s21-ultra.jpeg' alt='a phone with quad camera' width=100px> \n</div>\n <p>Samsung Galaxy S21 Ultra</p> \n <p class='price'>$1058.69</p> \n </a> \n </div>");
                 $count++;
                 if ($count == 5) {
                     break;
@@ -92,6 +93,7 @@
             }
             ?>
         </div>
+        </section>
     </main>
 
     <!--Footer section with navigation bar-->

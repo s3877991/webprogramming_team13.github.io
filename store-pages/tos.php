@@ -58,7 +58,7 @@
 
             <h1>TERMS OF SERVICE</h1>
             <p>
-                Welcome to Eworld Media Technology Store website. Before using this website, please read Terms of
+                Welcome to The Store website. Before using this website, please read Terms of
                 Service below carefully to
                 understand your legal rights and duty to us. After that, by using it, you have accepted and agreed with
                 these terms of service, as well as our

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Eworld - About Us</title>
+    <title>About Us</title>
 </head>
 
 <body>
@@ -33,8 +33,7 @@
                 <li><a class="active" href="about-us.php">ABOUT US</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">PRODUCTS <span
-                            class="material-icons">expand_more</span></label>
+                    <label for="dropdown-sub" class="toggle">PRODUCTS <span class="material-icons">expand_more</span></label>
                     <a href="#">PRODUCTS <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
@@ -51,10 +50,6 @@
     <!--Main Content-->
     <main>
 
-        <div class="image">
-            <img src="images/eworld-banner-2.jpg" alt="a letter e logo with electronic devices below">
-        </div>
-
         <div class="text">
             <h1>ABOUT US</h1>
 
@@ -62,56 +57,17 @@
 
             <h2>What is Eworld?</h2>
             <p>
-                Eworld is one of the world first class retailer store, which is specialized in selling genuine
-                technological devices in global markets. It is established in 1990 in New York, USA.
-            </p>
-            <p>
-                For many years, we have gradually become one of the most dependable address to customers from all over
-                the world. We always make efforts
-                to provide a variety of genuine products with the most reasonable prices in order to meet your needs.
-            </p>
-            <p>
-                Going to Eworld store, you can be comfortable with our reputation and quality of products with their
-                prices lower than
-                commercial prices by 15%-20%. Besides, we always try our best to provide you with the best service
-                experiences.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aut illum, vitae distinctio id quo, possimus eveniet ea quia, ratione repellat? Voluptatem, quia. Iste illo, libero maiores velit corrupti repellendus!
             </p>
 
             <h2>Our activity principles</h2>
             <p>
-                Eworld always acts by setting customers as our central object. And our effort to reach the expectation
-                is to satisfy them with provided
-                products and customer service. We are gradually building up outstanding customer service, showing the
-                worth of being one of the best worldwide retail stores.
-                The trusts and enthusiastic supports from our customers from many branches have partly affirmed our
-                staff's performance.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempora, accusamus iusto aut expedita ex? Qui autem, nesciunt accusantium excepturi pariatur deserunt in quas quidem et maiores ipsum facere adipisci.
             </p>
-            <ul>
-                <li>To our customer, we always work with with a spirit of seriousness, honesty and responsibility to
-                    bring the best service experience.</li>
-                <li>To our colleagues, we always learn, unite and support each other to form a working space with
-                    respect and fairness between employees.</li>
-                <li>To our partners, Eworld works based on respecting principle, creating community value and growing
-                    together.</li>
-            </ul>
 
             <h2>Our visions</h2>
             <p>
-                Over the years, we have constantly improved our services at our branches and supported our customers
-                through online media. Eworld is committed
-                to providing high-quality products with reputable guarantee, getting ready to support them as soon as
-                possible.
-            </p>
-            <p>
-                In the future, we will go on expanding our store braches system, aiming to make appearances in all
-                countries. Also, we always enhance our service quality, limit
-                risks, listen and recieve customers' feedbacks with a view to provide them with the best experience
-                while they are shopping in Eworld.
-            </p>
-            <p>
-                To summarize, Eworld hopes to be a pioneer in delivering our newest products to customers as soon as
-                possible, forming a mordern life where technology
-                connects and serves people.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam eum doloribus, dolorum repudiandae nisi unde dolore numquam culpa beatae officia molestiae rem eius? Cum tenetur libero nihil voluptas consequatur reprehenderit!
             </p>
 
         </div>
