@@ -94,7 +94,7 @@
                 </p>
 
                 <h2>7/ How many stores do you have?</h2>
-                <p>We have 4 stores in total.</p>
+                <p>We have 100 stores in total.</p>
 
                 <h2>8/ Can I return the products and get a refund?</h2>
                 <p>
