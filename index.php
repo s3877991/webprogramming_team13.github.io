@@ -292,17 +292,15 @@ require 'mall_prod_functions.php';
                 $feature = get_featured_store(); 
                 // display all featured stores in the csv file using foreach loop
                 $count = 0;
-                echo '<ul>';
                 foreach ($feature as $f) {
                     $id = $f['id'];
                     $name = $f['name'];
-                    echo "<div class=\"item\"><a href=\"index.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                    echo "<div class=\"item\"><a href=\"store-pages/index.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
                     $count++;
                     if ($count == 10) {
                         break;
                     }
                 }
-                echo '</ul>';
                 ?>
             </div>
         </section>
@@ -318,17 +316,15 @@ require 'mall_prod_functions.php';
                 $products = read_all_products();
                 $feature_prod = get_featured_product();
                 $count = 0;
-                echo '<ul>';
                 foreach ($feature_prod as $fprod) {
                     $name = $fprod['name'];
                     $price = $fprod['price'];
                     echo "<div class=\"item\"><a href=\"store-pages/product-details.php\"><div class=\"image\"><img src=\"images/product.png\" alt=\"a shopping bag\"></div><h3 class=\"name\">$name</h3><p class=\"price\">$$price</p></a></div>";
                     $count++;
-                    if ($count == 30) {
+                    if ($count == 10) {
                         break;
                     }
                 }
-                echo '</ul>';
                 ?>
             </div>
         </section>
