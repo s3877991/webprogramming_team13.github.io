@@ -105,8 +105,8 @@
                         <div class="image">
                             <img src="images/product.png" alt="a shopping bag">
                         </div>
-                        <h3 id="name">Product name</h3>
-                        <p id="price">$xxxx.xx</p>
+                        <h3 class="name">Product name</h3>
+                        <p class="price">$xxxx.xx</p>
                     </a>
                 </div>
 
