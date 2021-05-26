@@ -89,7 +89,7 @@ if (!isset($_SESSION['username'])) {
                     <?php
                     // Save the content data in an external file when clicking "Save" button
                     $content_data = file("../admin/copyright.txt");
-                    // Avoid overwriting the previous content when updating content in text area input
+                    // Overwriting the previous content when updating content in text area input
                     foreach ($content_data as $update) {
                         echo $update;
                     }
