@@ -13,6 +13,7 @@ main {
 /* Customers' choice area */
 .flex-container-1 {
     display: flex;
+    flex-wrap: wrap;
     margin: 40px 0 20px;
 }
 .avatar {
@@ -28,10 +29,10 @@ main {
     text-align: center;
     width: 50%;
 }
-.title, .price {
+#title, #price {
     text-align: center;
 }
-.price {
+#price {
     color: #f00;
     font-size: 25px;
 }

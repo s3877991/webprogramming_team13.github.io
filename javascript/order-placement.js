@@ -24,7 +24,7 @@ if (document.readyState == 'loading') {
             var cartItemInfo = `
                     <td>
                         <div class="cart-info">
-                            <img src=${image} alt="a phone with a notch display">
+                            <img src=${image} alt="a shopping bag">
                             <div>
                                 <p class="name">${title}</p>
                                 <p class="price">${price}</p>

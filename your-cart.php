@@ -131,7 +131,8 @@
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="javascript/order-placement.js" async></script>
+    <script src="javascript/cookie.js"></script>
+    <!-- <script src="javascript/order-placement.js" async></script> -->
 </body>
 
 </html>

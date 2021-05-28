@@ -91,12 +91,12 @@ $product = get_product($product_id);
 
                 <div class="options">
 
-                    <h1 class="title">
+                    <h1 id="title">
                         <?php
                         echo $product['name'];
                         ?>
                     </h1>
-                    <h3 class="price">
+                    <h3 id="price">
                         <?php
                         echo "$" . $product['price'];
                         ?>
@@ -219,6 +219,7 @@ $product = get_product($product_id);
     </div>
 
     <!--Link to external JavaScript file-->
+    <!-- <script src="../javascript/add-to-cart.js"></script> -->
     <script src="../javascript/cookie.js"></script>
 </body>
 

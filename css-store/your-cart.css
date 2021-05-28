@@ -45,9 +45,6 @@ h1 {
 .cart-page .price {
     color: #f00;
 }
-.cart-page .version, .cart-page .color {
-    font-size: 13px;
-}
 table {
     width: 100%;
     border-collapse: collapse;
@@ -105,7 +102,7 @@ th:last-child {
     text-align: right;
 }
 /* Total Price */
-.total {
+.total-price tr:last-child {
     color: #f00;
     font-style: italic;
 }
@@ -176,8 +173,9 @@ th:last-child {
 
 /* Order Placement */
 @media screen and (max-width: 660px) {
-    .cart-info .name{
-        display: none;
+    .cart-info {
+        display: block;
+        align-items: center;
     }
 }
 

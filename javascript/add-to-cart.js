@@ -1,10 +1,11 @@
 // Assigment 2: JAVASCRIPT ASSIGNMENT - TASK #7: Add Items To Cart
 
 // Get product information
-var addToCartButtons = document.getElementsByClassName('add-to-cart');
-var title = document.querySelector('.title').innerText;
-var picture = document.getElementById('product-image').src;
-var price = document.querySelector('.price').innerText;
+const addToCartButton = document.getElementById('add-to-cart');
+const title = document.querySelector('#title').innerText;
+const picture = document.getElementById('product-image').src;
+const price = document.querySelector('#price').innerText;
+addToCartButton.addEventListener("click", add_items_to_cart);
 
 // Original CSS code sourced and adapted for educational purposes: https://www.youtube.com/watch?v=PoTGs38DR9E&t=647s
 function add_items_to_cart() {
