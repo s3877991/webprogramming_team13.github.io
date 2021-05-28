@@ -9,9 +9,11 @@ session_start();
 require 'mall_prod_functions.php';
 require 'mall_store_functions.php';
 
-$id = $_GET['id'];
+$product_id = $_GET['id']; 
 
-$product = get_product($id);
+$products = read_all_products();
+$stores = read_all_stores();
+$product = get_product($product_id);
 
 // echo '<pre>';
 // echo print_r($product);
@@ -41,7 +43,6 @@ $product = get_product($id);
             <!--Logo of the website name-->
             <div id="logo"><a href="store-home.php">
             <?php
-            $stores = read_all_stores();
             foreach ($stores as $store) {
                 if ($store['id'] == $product['store_id']) {
                     echo $store['name'];
@@ -138,59 +139,25 @@ $product = get_product($id);
 
         <!--Visited products area-->
         <section id="visited-products">
-            <h2 class="label">Related Products</h2>
             <div class="flex-container">
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/store-product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
+                <?php 
+                    echo "<div class=\"flex-container\">";
 
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/store-product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/store-product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/store-product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/store-product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-            </div>
+                    // display all featured stores in the csv file using foreach loop
+                    $count = 0;
+                    foreach ($products as $product) {
+                        if ($product['store_id'] == 'TRUE') {
+                            $id = $store['id'];
+                            $name = $store['name'];
+                            echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                            $count++;
+                            if ($count == 10) {
+                                break;
+                            }
+                        }
+                    }
+                    echo "</div>";
+                ?>
         </section>
 
     </main>

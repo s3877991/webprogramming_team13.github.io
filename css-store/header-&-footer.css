@@ -37,7 +37,7 @@ header a {                                  /* All anchor tags in header section
 header #logo a {
     display: block;
     text-decoration: none;
-    padding: 0 15px;
+    padding: 0 5px 0 20px;
     float: left;
     font-size: 36px;
     line-height: 60px;
