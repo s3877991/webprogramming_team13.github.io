@@ -1,3 +1,7 @@
+<?php
+session_start();
+require 'mall_store_functions.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -91,100 +95,18 @@
         <hr>
 
         <section id="list-of stores">
-
-                <div class="flex-container">
-
-                    <div class="item">
-                        <a href="store-home.php">
-                            <div class="image">
-                                <img src="images/store.png" alt="a store">
-                            </div>
-                            <h3 class="name">Store Name</h3>
-                        </a>
-                    </div>
-
-                    <div class="item">
-                        <a href="store-home.php">
-                            <div class="image">
-                                <img src="images/store.png" alt="a store">
-                            </div>
-                            <h3 class="name">Store Name</h3>
-                        </a>
-                    </div>
-
-                    <div class="item">
-                        <a href="store-home.php">
-                            <div class="image">
-                                <img src="images/store.png" alt="a store">
-                            </div>
-                            <h3 class="name">Store Name</h3>
-                        </a>
-                    </div>
-
-                    <div class="item">
-                        <a href="store-home.php">
-                            <div class="image">
-                                <img src="images/store.png" alt="a store">
-                            </div>
-                            <h3 class="name">Store Name</h3>
-                        </a>
-                    </div>
-
-                    <div class="item">
-                        <a href="store-home.php">
-                            <div class="image">
-                                <img src="images/store.png" alt="a store">
-                            </div>
-                            <h3 class="name">Store Name</h3>
-                        </a>
-                    </div>
-
-                    <div class="item">
-                        <a href="store-home.php">
-                            <div class="image">
-                                <img src="images/store.png" alt="a store">
-                            </div>
-                            <h3 class="name">Store Name</h3>
-                        </a>
-                    </div>
-
-                    <div class="item">
-                        <a href="store-home.php">
-                            <div class="image">
-                                <img src="images/store.png" alt="a store">
-                            </div>
-                            <h3 class="name">Store Name</h3>
-                        </a>
-                    </div>
-
-                    <div class="item">
-                        <a href="store-home.php">
-                            <div class="image">
-                                <img src="images/store.png" alt="a store">
-                            </div>
-                            <h3 class="name">Store Name</h3>
-                        </a>
-                    </div>
-
-                    <div class="item">
-                        <a href="store-home.php">
-                            <div class="image">
-                                <img src="images/store.png" alt="a store">
-                            </div>
-                            <h3 class="name">Store Name</h3>
-                        </a>
-                    </div>
-
-                    <div class="item">
-                        <a href="store-home.php">
-                            <div class="image">
-                                <img src="images/store.png" alt="a store">
-                            </div>
-                            <h3 class="name">Store Name</h3>
-                        </a>
-                    </div>
-
-                </div>
+            <?php
+            //display all stores from csv file
+            echo "<div class=\"flex-container\">";
+            $stores = read_all_stores();
+            foreach ($stores as $s) {
+                $id = $s['id'];
+                $name = $s['name'];
+                echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                $count++;
+            }
+            echo "</div>";
+            ?>
         </section>
 
     </main>
