@@ -87,7 +87,7 @@ NGUYEN LINH CHI:
     + Task #6: Register form requirements ==> COMPLETED.
 
 3. Fullstack Assignment (25%):
-    + Task #2: Display stores and products based on data from CSV files ==> .
+    + Task #2: Display stores and products based on data from CSV files ==> COMPLETED.
     + Task #6: Implement the behavior in browse stores pages ==> .
 
 

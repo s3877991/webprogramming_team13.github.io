@@ -1,15 +1,15 @@
 <!-- Assignment 3: FULLSTACK ASSIGNMENT - Task #9: Implement the behavior in Product Details and Order Placement page -->
 
 <!-- PHP code area -->
-<?php 
+<?php
 // Start the session
 session_start();
 
 // Use a function from another PHP file
-require 'mall_prod_functions.php';
+require 'product_functions.php';
 require 'mall_store_functions.php';
 
-$product_id = $_GET['id']; 
+$product_id = $_GET['id'];
 
 $products = read_all_products();
 $stores = read_all_stores();
@@ -33,7 +33,7 @@ $product = get_product($product_id);
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title><?php echo $product['name'];?></title>
+    <title><?php echo $product['name']; ?></title>
 </head>
 
 <body>
@@ -42,15 +42,15 @@ $product = get_product($product_id);
         <nav>
             <!--Logo of the website name-->
             <div id="logo"><a href="store-home.php">
-            <?php
-            foreach ($stores as $store) {
-                if ($store['id'] == $product['store_id']) {
-                    echo $store['name'];
-                    break;
-                }
-            }
-            ?>
-            </a></div>
+                    <?php
+                    foreach ($stores as $store) {
+                        if ($store['id'] == $product['store_id']) {
+                            echo $store['name'];
+                            break;
+                        }
+                    }
+                    ?>
+                </a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -92,15 +92,15 @@ $product = get_product($product_id);
                 <div class="options">
 
                     <h1 class="title">
-                        <?php 
-                            echo $product['name'];
+                        <?php
+                        echo $product['name'];
                         ?>
                     </h1>
                     <h3 class="price">
-                        <?php 
-                            echo "$".$product['price'];
+                        <?php
+                        echo "$" . $product['price'];
                         ?>
-                    </h1>  
+                        </h1>
                     </h3>
 
                     <div class="button-container">
@@ -138,26 +138,61 @@ $product = get_product($product_id);
         <hr>
 
         <!--Visited products area-->
-        <section id="visited-products">
-            <div class="flex-container">
-                <?php 
-                    echo "<div class=\"flex-container\">";
+        <section id="Related-products">
 
-                    // display all featured stores in the csv file using foreach loop
-                    $count = 0;
-                    foreach ($products as $product) {
-                        if ($product['store_id'] == 'TRUE') {
-                            $id = $store['id'];
-                            $name = $store['name'];
-                            echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
-                            $count++;
-                            if ($count == 10) {
-                                break;
-                            }
-                        }
-                    }
-                    echo "</div>";
-                ?>
+            <h2 class="label">Related Products</h2>
+            <div class="flex-container">
+                <div class="item">
+                    <a href="product-details.php">
+                        <div class="image">
+                            <img src="images/store-product.png" alt="a shopping bag">
+                        </div>
+                        <h3 class="name">Product name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="product-details.php">
+                        <div class="image">
+                            <img src="images/store-product.png" alt="a shopping bag">
+                        </div>
+                        <h3 class="name">Product name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="product-details.php">
+                        <div class="image">
+                            <img src="images/store-product.png" alt="a shopping bag">
+                        </div>
+                        <h3 class="name">Product name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="product-details.php">
+                        <div class="image">
+                            <img src="images/store-product.png" alt="a shopping bag">
+                        </div>
+                        <h3 class="name">Product name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="product-details.php">
+                        <div class="image">
+                            <img src="images/store-product.png" alt="a shopping bag">
+                        </div>
+                        <h3 class="name">Product name</h3>
+                        <p class="price">$xxxx.xx</p>
+                    </a>
+                </div>
+
+            </div>
         </section>
 
     </main>

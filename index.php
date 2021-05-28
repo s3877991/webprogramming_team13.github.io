@@ -84,7 +84,6 @@ require 'product_functions.php';
             }
 
             echo "<div class=\"flex-container\">";
-            $stores = read_all_stores();
             $s_sort = sort_store();
             // display all new stores from newest to oldest created
             $count = 0;
@@ -97,6 +96,7 @@ require 'product_functions.php';
                     break;
                 }
             }
+            echo "</div>";
             ?>
         </section>
 
@@ -116,7 +116,6 @@ require 'product_functions.php';
             }
 
             echo "<div class=\"flex-container\">";
-            $products = read_all_products();
             $p_sort = sort_product();
             $count = 0;
             // display new products from newest to oldest created
@@ -130,6 +129,7 @@ require 'product_functions.php';
                     break;
                 }
             }
+            echo "</div>"
             ?>
         </section>
 
@@ -141,7 +141,6 @@ require 'product_functions.php';
 
             <?php
             echo "<div class=\"flex-container\">";
-
             $stores = read_all_stores();
             // display all featured stores in the csv file using foreach loop
             $count = 0;
@@ -168,7 +167,6 @@ require 'product_functions.php';
 
             <?php
             echo "<div class=\"flex-container\">";
-
             $products = read_all_products();
             $count = 0;
             foreach ($products as $product) {
