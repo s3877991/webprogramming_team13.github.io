@@ -99,6 +99,7 @@ require 'mall_store_functions.php';
             //display all stores from csv file
             echo "<div class=\"flex-container\">";
             $stores = read_all_stores();
+            $count = 0;
             foreach ($stores as $s) {
                 $id = $s['id'];
                 $name = $s['name'];
