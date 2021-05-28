@@ -7,6 +7,7 @@ session_start();
 
 // Use a function from another PHP file
 require 'mall_prod_functions.php';
+require 'mall_store_functions.php';
 
 $id = $_GET['id'];
 
@@ -38,7 +39,17 @@ $product = get_product($id);
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="store-home.php">The Store</a></div>
+            <div id="logo"><a href="store-home.php">
+            <?php
+            $stores = read_all_stores();
+            foreach ($stores as $store) {
+                if ($store['id'] == $product['store_id']) {
+                    echo $store['name'];
+                    break;
+                }
+            }
+            ?>
+            </a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -81,16 +92,12 @@ $product = get_product($id);
 
                     <h1 class="title">
                         <?php 
-                            if (isset($product)) {
-                                echo $product['name'];
-                            } 
+                            echo $product['name'];
                         ?>
                     </h1>
                     <h3 class="price">
-                    <?php 
-                            if (isset($product)) {
-                                echo "$".$product['price'];
-                            } 
+                        <?php 
+                            echo "$".$product['price'];
                         ?>
                     </h1>  
                     </h3>
