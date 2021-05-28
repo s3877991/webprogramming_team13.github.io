@@ -82,12 +82,19 @@ require 'mall_store_functions.php';
 
         <section id="list-of stores">
             <?php
-            //display all stores from csv file
+            function alphabet_display() {
+                //display stores in alphabetical order
+                $stores = read_all_stores();
+                $alphabet = $stores;
+                array_multisort(array_column($alphabet, 'name'), SORT_ASC, $alphabet);
+                return $alphabet;
+            }
+            //default display in alphabet order
             echo "<div class=\"flex-container\">";
-            $stores = read_all_stores();
-            foreach ($stores as $s) {
-                $id = $s['id'];
-                $name = $s['name'];
+            $alphabet = alphabet_display();
+            foreach ($alphabet as $a) {
+                $id = $a['id'];
+                $name = $a['name'];
                 echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
             }
             echo "</div>";
