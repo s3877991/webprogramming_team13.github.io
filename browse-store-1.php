@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
-    <title>Shoppiverse - Stores</title>
+    <title>Shoppiverse - Stores by Name</title>
 </head>
 
 <body>
@@ -91,7 +91,6 @@
         <hr>
 
         <section id="list-of stores">
-            <div class="flex-container">
 
                 <div class="flex-container">
 
