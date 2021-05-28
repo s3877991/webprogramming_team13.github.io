@@ -1,3 +1,21 @@
+<!-- Assignment 3: FULLSTACK ASSIGNMENT - Task #9: Implement the behavior in Product Details and Order Placement page -->
+
+<!-- PHP code area -->
+<?php 
+// Start the session
+session_start();
+
+// Use a function from another PHP file
+require '../mall_prod_functions.php';
+
+// Get the product id
+$id = $_GET['id'];
+
+// Use array to extract product information 
+$product = get_product($id);
+?>
+
+<!-- HTML Code Area -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +28,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Product</title>
+    <title><?php $product['name']?></title>
 </head>
 
 <body>

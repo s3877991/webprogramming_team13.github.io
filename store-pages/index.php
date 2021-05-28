@@ -72,23 +72,14 @@
             <h2 class="label">New Products</h2>
             <div class="flex-container">
                 <?php
-                echo '</ul>';
                 foreach ($products as $p) {
                     $id = $p['store_id'];
                     $name = $p['name'];
-                    echo nl2br("<div class=\"item\"><a href=\"product_functions.php?id=$id\"><div class='image'><img src='images/product.png' alt='a shopping bag'></div><h3>Product Name</h3><p class='price'>\$xxxx.xx</p></a></div>");
+                    echo ("<div class=\"item\"><a href=\"product_details.php?id=$id\"><div class='image'><img src='images/product.png' alt='a shopping bag'></div><h3>Product Name</h3><p class='price'>\$xxxx.xx</p></a></div>");
                     $count++;
                     if ($count == 5) {
                         break;
                     }
-                }
-                if (isset($_SESSION['visited_products']) && is_array($_SESSION['visited_products'])) {
-                    echo 'Visited products';
-                    echo '<ul>';
-                    foreach ($_SESSION['visited_products'] as $id) {
-                        echo "<li>$id</li>";
-                    }
-                    echo '</ul>';
                 }
                 ?>
             </div>

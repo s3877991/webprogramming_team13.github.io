@@ -317,9 +317,10 @@ require 'mall_prod_functions.php';
                 $feature_prod = get_featured_product();
                 $count = 0;
                 foreach ($feature_prod as $fprod) {
+                    $id = $fprod['id'];
                     $name = $fprod['name'];
                     $price = $fprod['price'];
-                    echo "<div class=\"item\"><a href=\"store-pages/product-details.php\"><div class=\"image\"><img src=\"images/product.png\" alt=\"a shopping bag\"></div><h3 class=\"name\">$name</h3><p class=\"price\">$$price</p></a></div>";
+                    echo "<div class=\"item\"><a href=\"store-pages/product-details.php?prod=$id\"><div class=\"image\"><img src=\"images/product.png\" alt=\"a shopping bag\"></div><h3 class=\"name\">$name</h3><p class=\"price\">$$price</p></a></div>";
                     $count++;
                     if ($count == 10) {
                         break;
