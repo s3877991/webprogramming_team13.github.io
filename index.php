@@ -122,7 +122,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-home.php">>
+                    <a href="store-home.php">
                         <div class="image">
                             <img src="images/store.png" alt="a store">
                         </div>
