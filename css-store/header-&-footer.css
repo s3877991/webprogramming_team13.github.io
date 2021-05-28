@@ -37,7 +37,7 @@ header a {                                  /* All anchor tags in header section
 header #logo a {
     display: block;
     text-decoration: none;
-    padding: 0 30px;
+    padding: 0 15px;
     float: left;
     font-size: 36px;
     line-height: 60px;
@@ -158,7 +158,7 @@ footer p {
 }
 
 /* Make header bar responsive in all mobile devices */
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1250px) {
     header {
         top: 0;
     }
@@ -217,5 +217,10 @@ footer p {
         display: block;                     
         width: 100%;
         margin: 0;
+    }
+}
+@media all and (max-width: 550px) {
+    header #logo a {
+        font-size: 20px;
     }
 }
