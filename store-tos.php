@@ -66,7 +66,7 @@
 
             <h2>Copyright and ownership</h2>
             <p>
-                All of the content displayed and featured in our website is owned by Eworld. All of the elements in this
+                All of the content displayed and featured in our website is owned by The Store. All of the elements in this
                 website is protected by the law relating to intellectual property rights. You may not modify, copy,
                 distribute, transmit, reproduce or sell any information or work contained in this website. You are
                 authorized to view, play, print, download documents, audio, images on this website for informational,

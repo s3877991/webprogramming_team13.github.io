@@ -56,7 +56,7 @@
 
         <div class="text-3">
             <h1>COPYRIGHT</h1>
-            <h3>Copyright <span class="material-icons">copyright</span> 2021, Shoppiverse Corporation.</h3>
+            <h3>Copyright <span class="material-icons">copyright</span> 2021, The Store Corporation.</h3>
             <h3>All rights reserved.</h3>
         </div>
 
