@@ -4,10 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/header-&-footer.css">
-    <link rel="stylesheet" href="css/generic-text.css">
-    <link rel="stylesheet" href="css/process-denied.css">
-    <link rel="stylesheet" href="css/cookie.css">
+    <link rel="stylesheet" href="css-store/header-&-footer.css">
+    <link rel="stylesheet" href="css-store/generic-text.css">
+    <link rel="stylesheet" href="css-store/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -29,8 +28,8 @@
 
             <!--Navigation-->
             <ul class="menu">
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="about-us.php">ABOUT US</a></li>
+                <li><a href="store-home.php">HOME</a></li>
+                <li><a href="store-about-us.php">ABOUT US</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
                     <label for="dropdown-sub" class="toggle">PRODUCTS <span
@@ -42,7 +41,7 @@
                         <li><a href="browse-products-2.php">by CREATED TIME</a></li>
                     </ul>
                 </li>
-                <li><a href="contact-us.php">CONTACT</a></li>
+                <li><a href="store-contact-us.php">CONTACT</a></li>
                 <li class="your-cart"><a href="your-cart.php">YOUR CART</a></li>
             </ul>
         </nav>
@@ -51,7 +50,7 @@
     <!--Main content-->
     <main>
         <div class="image">
-            <img src="images/privacy-policy.png" alt="a paper with a shield in it">
+            <img src="images/store-privacy-policy.png" alt="a paper with a shield in it">
         </div>
 
         <div class="text">
@@ -98,7 +97,7 @@
 
 
             <p id="note">If you have any questions about this privacy policy, You can contact us <strong><a
-                        href="contact-us.php">HERE</a></strong>.</p>
+                        href="store-contact-us.php">HERE</a></strong>.</p>
 
             <p id="update">Last updated on April 11, 2021.</p>
 
@@ -108,9 +107,9 @@
 
     <!--Footer section with navigation bar-->
     <footer>
-        <a href="copyright.php">Copyright</a>
-        <a href="tos.php">Terms of Service</a>
-        <a href="privacypolicy.php">Privacy Policy</a>
+        <a href="store-copyright.php">Copyright</a>
+        <a href="store-tos.php">Terms of Service</a>
+        <a href="store-privacypolicy.php">Privacy Policy</a>
         <div id="brief-description">
             <em>
                 <h3>by <strong>THE GANG</strong></h3>

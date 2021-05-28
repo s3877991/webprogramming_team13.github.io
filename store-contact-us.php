@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/header-&-footer.css">
-    <link rel="stylesheet" href="css/contact-us.css">
-    <link rel="stylesheet" href="css/cookie.css">
+    <link rel="stylesheet" href="css-store/header-&-footer.css">
+    <link rel="stylesheet" href="css-store/contact-us.css">
+    <link rel="stylesheet" href="css-store/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="index.php">The Store</a></div>
+            <div id="logo"><a href="store-home.php">The Store</a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -28,8 +28,8 @@
 
             <!--Navigation-->
             <ul class="menu">
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="about-us.php">ABOUT US</a></li>
+                <li><a href="store-home.php">HOME</a></li>
+                <li><a href="store-about-us.php">ABOUT US</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
                     <label for="dropdown-sub" class="toggle">PRODUCTS <span
@@ -41,7 +41,7 @@
                         <li><a href="browse-products-2.php">by CREATED TIME</a></li>
                     </ul>
                 </li>
-                <li><a class="active" href="contact-us.php">CONTACT</a></li>
+                <li><a class="active" href="store-contact-us.php">CONTACT</a></li>
                 <li class="your-cart"><a href="your-cart.php">YOUR CART</a></li>
             </ul>
         </nav>
@@ -51,7 +51,7 @@
     <main>
 
         <!--Contact form-->
-        <form method="get" action="index.php">
+        <form method="get" action="store-home.php">
             <div class="container">
 
                 <!--Title-->
@@ -189,9 +189,9 @@
 
     <!--Footer section with navigation bar-->
     <footer>
-        <a href="copyright.php">Copyright</a>
-        <a href="tos.php">Terms of Service</a>
-        <a href="privacypolicy.php">Privacy Policy</a>
+        <a href="store-copyright.php">Copyright</a>
+        <a href="store-tos.php">Terms of Service</a>
+        <a href="store-privacypolicy.php">Privacy Policy</a>
         <div id="brief-description">
             <em>
                 <h3>by <strong>THE GANG</strong></h3>

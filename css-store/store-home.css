@@ -19,7 +19,7 @@ html {
 .banner {
     position: relative;
     height: 700px;
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25)), url(../images/banner.jpg) no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25)), url(../images/store-banner.jpg) no-repeat fixed;
     background-position: 50% 90%;
     background-size: cover;
 }

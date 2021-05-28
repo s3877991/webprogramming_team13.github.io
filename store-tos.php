@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/header-&-footer.css">
-    <link rel="stylesheet" href="css/generic-text.css">
-    <link rel="stylesheet" href="css/cookie.css">
+    <link rel="stylesheet" href="css-store/header-&-footer.css">
+    <link rel="stylesheet" href="css-store/generic-text.css">
+    <link rel="stylesheet" href="css-store/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="index.php">The Store</a></div>
+            <div id="logo"><a href="store-home.php">The Store</a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -28,8 +28,8 @@
 
             <!--Navigation-->
             <ul class="menu">
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="about-us.php">ABOUT US</a></li>
+                <li><a href="store-home.php">HOME</a></li>
+                <li><a href="store-about-us.php">ABOUT US</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
                     <label for="dropdown-sub" class="toggle">PRODUCTS <span
@@ -41,7 +41,7 @@
                         <li><a href="browse-products-2.php">by CREATED TIME</a></li>
                     </ul>
                 </li>
-                <li><a href="contact-us.php">CONTACT</a></li>
+                <li><a href="store-contact-us.php">CONTACT</a></li>
                 <li class="your-cart"><a href="your-cart.php">YOUR CART</a></li>
             </ul>
         </nav>
@@ -50,7 +50,7 @@
     <!--Main content-->
     <main>
         <div class="image">
-            <img src="images/terms-of-service.png" alt="a handshake">
+            <img src="images/store-tos.png" alt="a handshake">
         </div>
 
         <div class="text">
@@ -61,7 +61,7 @@
                 Service below carefully to
                 understand your legal rights and duty to us. After that, by using it, you have accepted and agreed with
                 these terms of service, as well as our
-                privacy policy which can be found <a href="privacypolicy.php">HERE</a>.
+                privacy policy which can be found <a href="store-privacypolicy.php">HERE</a>.
                 Otherwise, please do not use it or be handled with regulations of the law.
 
             <h2>Copyright and ownership</h2>
@@ -127,7 +127,7 @@
             </p>
 
             <p id="note">If you have any questions about these terms of service, You can contact us <strong><a
-                        href="contact-us.php">HERE</a></strong>.</p>
+                        href="store-contact-us.php">HERE</a></strong>.</p>
 
             <p id="update">Last updated on April 13, 2021.</p>
 
@@ -137,9 +137,9 @@
 
     <!--Footer section with navigation bar-->
     <footer>
-        <a href="copyright.php">Copyright</a>
-        <a href="tos.php">Terms of Service</a>
-        <a href="privacypolicy.php">Privacy Policy</a>
+        <a href="store-copyright.php">Copyright</a>
+        <a href="store-tos.php">Terms of Service</a>
+        <a href="store-privacypolicy.php">Privacy Policy</a>
         <div id="brief-description">
             <em>
                 <h3>by <strong>THE GANG</strong></h3>

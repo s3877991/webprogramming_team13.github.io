@@ -77,7 +77,7 @@ require 'mall_prod_functions.php';
             <div class="flex-container">
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-home.php">
                         <div class="image">
                             <img src="images/store.png" alt="a store">
                         </div>
@@ -86,7 +86,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-home.php">
                         <div class="image">
                             <img src="images/store.png" alt="a store">
                         </div>
@@ -95,7 +95,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-home.php">
                         <div class="image">
                             <img src="images/store.png" alt="a store">
                         </div>
@@ -104,7 +104,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-home.php">
                         <div class="image">
                             <img src="images/store.png" alt="a store">
                         </div>
@@ -113,7 +113,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-home.php">
                         <div class="image">
                             <img src="images/store.png" alt="a store">
                         </div>
@@ -122,7 +122,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-home.php">>
                         <div class="image">
                             <img src="images/store.png" alt="a store">
                         </div>
@@ -131,7 +131,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-home.php">
                         <div class="image">
                             <img src="images/store.png" alt="a store">
                         </div>
@@ -140,7 +140,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-home.php">
                         <div class="image">
                             <img src="images/store.png" alt="a store">
                         </div>
@@ -149,7 +149,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-home.php">
                         <div class="image">
                             <img src="images/store.png" alt="a store">
                         </div>
@@ -158,7 +158,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/index.php">
+                    <a href="store-home.php">
                         <div class="image">
                             <img src="images/store.png" alt="a store">
                         </div>
@@ -178,7 +178,7 @@ require 'mall_prod_functions.php';
             <div class="flex-container">
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
+                    <a href="product-details.php">
                         <div class="image">
                             <img src="images/product.png" alt="a shopping bag">
                         </div>
@@ -188,7 +188,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
+                    <a href="product-details.php">
                         <div class="image">
                             <img src="images/product.png" alt="a shopping bag">
                         </div>
@@ -198,7 +198,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
+                    <a href="product-details.php">
                         <div class="image">
                             <img src="images/product.png" alt="a shopping bag">
                         </div>
@@ -208,7 +208,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
+                    <a href="product-details.php">
                         <div class="image">
                             <img src="images/product.png" alt="a shopping bag">
                         </div>
@@ -218,7 +218,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
+                    <a href="product-details.php">
                         <div class="image">
                             <img src="images/product.png" alt="a shopping bag">
                         </div>
@@ -228,7 +228,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
+                    <a href="product-details.php">
                         <div class="image">
                             <img src="images/product.png" alt="a shopping bag">
                         </div>
@@ -238,7 +238,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
+                    <a href="product-details.php">
                         <div class="image">
                             <img src="images/product.png" alt="a shopping bag">
                         </div>
@@ -248,7 +248,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
+                    <a href="product-details.php">
                         <div class="image">
                             <img src="images/product.png" alt="a shopping bag">
                         </div>
@@ -258,7 +258,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
+                    <a href="product-details.php">
                         <div class="image">
                             <img src="images/product.png" alt="a shopping bag">
                         </div>
@@ -268,7 +268,7 @@ require 'mall_prod_functions.php';
                 </div>
 
                 <div class="item">
-                    <a href="store-pages/product-details.php">
+                    <a href="product-details.php">
                         <div class="image">
                             <img src="images/product.png" alt="a shopping bag">
                         </div>
@@ -289,13 +289,13 @@ require 'mall_prod_functions.php';
             <div class="flex-container">
                 <?php
                 $stores = read_all_stores();
-                $feature = get_featured_store(); 
+                $feature = get_featured_store();
                 // display all featured stores in the csv file using foreach loop
                 $count = 0;
                 foreach ($feature as $f) {
                     $id = $f['id'];
                     $name = $f['name'];
-                    echo "<div class=\"item\"><a href=\"store-pages/index.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                    echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
                     $count++;
                     if ($count == 10) {
                         break;
@@ -320,7 +320,7 @@ require 'mall_prod_functions.php';
                     $id = $fprod['id'];
                     $name = $fprod['name'];
                     $price = $fprod['price'];
-                    echo "<div class=\"item\"><a href=\"store-pages/product-details.php?prod=$id\"><div class=\"image\"><img src=\"images/product.png\" alt=\"a shopping bag\"></div><h3 class=\"name\">$name</h3><p class=\"price\">$$price</p></a></div>";
+                    echo "<div class=\"item\"><a href=\"product-details.php?prod=$id\"><div class=\"image\"><img src=\"images/product.png\" alt=\"a shopping bag\"></div><h3 class=\"name\">$name</h3><p class=\"price\">$$price</p></a></div>";
                     $count++;
                     if ($count == 10) {
                         break;

@@ -96,7 +96,7 @@
                 <div class="flex-container">
 
                     <div class="item">
-                        <a href="store-pages/index.php">
+                        <a href="store-home.php">
                             <div class="image">
                                 <img src="images/store.png" alt="a store">
                             </div>
@@ -105,7 +105,7 @@
                     </div>
 
                     <div class="item">
-                        <a href="store-pages/index.php">
+                        <a href="store-home.php">
                             <div class="image">
                                 <img src="images/store.png" alt="a store">
                             </div>
@@ -114,7 +114,7 @@
                     </div>
 
                     <div class="item">
-                        <a href="store-pages/index.php">
+                        <a href="store-home.php">
                             <div class="image">
                                 <img src="images/store.png" alt="a store">
                             </div>
@@ -123,7 +123,7 @@
                     </div>
 
                     <div class="item">
-                        <a href="store-pages/index.php">
+                        <a href="store-home.php">
                             <div class="image">
                                 <img src="images/store.png" alt="a store">
                             </div>
@@ -132,7 +132,7 @@
                     </div>
 
                     <div class="item">
-                        <a href="store-pages/index.php">
+                        <a href="store-home.php">
                             <div class="image">
                                 <img src="images/store.png" alt="a store">
                             </div>
@@ -141,7 +141,7 @@
                     </div>
 
                     <div class="item">
-                        <a href="store-pages/index.php">
+                        <a href="store-home.php">
                             <div class="image">
                                 <img src="images/store.png" alt="a store">
                             </div>
@@ -150,7 +150,7 @@
                     </div>
 
                     <div class="item">
-                        <a href="store-pages/index.php">
+                        <a href="store-home.php">
                             <div class="image">
                                 <img src="images/store.png" alt="a store">
                             </div>
@@ -159,7 +159,7 @@
                     </div>
 
                     <div class="item">
-                        <a href="store-pages/index.php">
+                        <a href="store-home.php">
                             <div class="image">
                                 <img src="images/store.png" alt="a store">
                             </div>
@@ -168,7 +168,7 @@
                     </div>
 
                     <div class="item">
-                        <a href="store-pages/index.php">
+                        <a href="store-home.php">
                             <div class="image">
                                 <img src="images/store.png" alt="a store">
                             </div>
@@ -177,7 +177,7 @@
                     </div>
 
                     <div class="item">
-                        <a href="store-pages/index.php">
+                        <a href="store-home.php">
                             <div class="image">
                                 <img src="images/store.png" alt="a store">
                             </div>
