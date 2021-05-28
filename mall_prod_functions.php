@@ -25,22 +25,4 @@ function get_product($product_id) {
   }
   return false;
 }
-
-function get_featured_product() {
-  $products = read_all_products();
-  $feature_prod = [];
-  foreach ($products as $p) {
-    if ($p['featured_in_mall'] == 'TRUE') {
-      $feature_prod[] = $p;
-    }
-  }
-  return $feature_prod ? $feature_prod : false;
-}
-/*
-$products = read_all_products();
-$feature_prod = get_featured_product();
-
-echo '<pre>';
-print_r($feature_prod);
-echo '</pre>'*/
 ?>

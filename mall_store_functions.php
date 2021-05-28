@@ -1,5 +1,4 @@
 <?php
-
 function read_all_stores() {
   $file_name = 'csv_files/stores.csv';
   $fp = fopen($file_name, 'r');
@@ -16,15 +15,4 @@ function read_all_stores() {
   }
   return $stores;
 }
-
-function get_featured_store() {
-    $stores = read_all_stores();
-    $feature = [];
-    foreach ($stores as $s) {
-      if ($s['featured'] == 'TRUE') {
-        $feature[] = $s;
-      }
-    }
-    return $feature ? $feature : false;
-  }
 ?>

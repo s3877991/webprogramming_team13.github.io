@@ -30,7 +30,7 @@ $product = get_product($id);
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title><?php $product['name']?></title>
+    <title><?php echo $product['name'];?></title>
 </head>
 
 <body>
@@ -48,7 +48,7 @@ $product = get_product($id);
 
             <!--Navigation-->
             <ul class="menu">
-                <li><a href="store.php">HOME</a></li>
+                <li><a href="store-home.php">HOME</a></li>
                 <li><a href="store-about-us.php">ABOUT US</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
@@ -89,7 +89,7 @@ $product = get_product($id);
                     <h3 class="price">
                     <?php 
                             if (isset($product)) {
-                                echo $product['price'];
+                                echo "$".$product['price'];
                             } 
                         ?>
                     </h1>  
@@ -131,7 +131,7 @@ $product = get_product($id);
 
         <!--Visited products area-->
         <section id="visited-products">
-            <h2 class="label">Visited Products</h2>
+            <h2 class="label">Related Products</h2>
             <div class="flex-container">
                 <div class="item">
                     <a href="product-details.php">

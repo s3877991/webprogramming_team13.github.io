@@ -286,23 +286,25 @@ require 'mall_prod_functions.php';
         <section id="sub-sect-3">
             <h2 class="label">Featured Stores</h2>
 
-            <div class="flex-container">
-                <?php
-                $stores = read_all_stores();
-                $feature = get_featured_store();
-                // display all featured stores in the csv file using foreach loop
-                $count = 0;
-                foreach ($feature as $f) {
-                    $id = $f['id'];
-                    $name = $f['name'];
+            <?php
+            echo "<div class=\"flex-container\">";
+
+            $stores = read_all_stores();
+            // display all featured stores in the csv file using foreach loop
+            $count = 0;
+            foreach ($stores as $store) {
+                if ($store['featured'] == 'TRUE') {
+                    $id = $store['id'];
+                    $name = $store['name'];
                     echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
                     $count++;
                     if ($count == 10) {
                         break;
                     }
                 }
-                ?>
-            </div>
+            }
+            echo "</div>";
+            ?>
         </section>
 
         <hr>
@@ -311,23 +313,25 @@ require 'mall_prod_functions.php';
         <section id="sub-sect-4">
             <h2 class="label">Featured Products</h2>
 
-            <div class="flex-container">
-                <?php
-                $products = read_all_products();
-                $feature_prod = get_featured_product();
-                $count = 0;
-                foreach ($feature_prod as $fprod) {
-                    $id = $fprod['id'];
-                    $name = $fprod['name'];
-                    $price = $fprod['price'];
-                    echo "<div class=\"item\"><a href=\"product-details.php?prod=$id\"><div class=\"image\"><img src=\"images/product.png\" alt=\"a shopping bag\"></div><h3 class=\"name\">$name</h3><p class=\"price\">$$price</p></a></div>";
+            <?php
+            echo "<div class=\"flex-container\">";
+
+            $products = read_all_products();
+            $count = 0;
+            foreach ($products as $product) {
+                if ($product['featured_in_mall'] == 'TRUE') {
+                    $id = $product['id'];
+                    $name = $product['name'];
+                    $price = $product['price'];
+                    echo "<div class=\"item\"><a href=\"product-details.php?id=$id\"><div class=\"image\"><img src=\"images/product.png\" alt=\"a shopping bag\"></div><h3 class=\"name\">$name</h3><p class=\"price\">$$price</p></a></div>";
                     $count++;
                     if ($count == 10) {
                         break;
                     }
                 }
-                ?>
-            </div>
+            }
+            echo "</div>";
+            ?>
         </section>
 
     </main>
