@@ -2,7 +2,7 @@
 session_start();
 
 require 'mall_store_functions.php';
-require 'mall_prod_functions.php';
+require 'product_functions.php';
 ?>
 
 <!DOCTYPE html>
@@ -73,100 +73,31 @@ require 'mall_prod_functions.php';
         <!--New Stores Area-->
         <section id="sub-sect-1">
             <h2 class="label">New Stores</h2>
+            <?php
+            function sort_store() {
+                $stores = read_all_stores();
+                $s_sort = $stores;
+                /* turn each value from the 'created_time' column to unix timestamp
+                then use array_multisort to sort those values in descending order */
+                array_multisort(array_map('strtotime', array_column($s_sort, 'created_time')), SORT_DESC, $s_sort);
+                return $s_sort;
+            }
 
-            <div class="flex-container">
-
-                <div class="item">
-                    <a href="store-home.php">
-                        <div class="image">
-                            <img src="images/store.png" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="store-home.php">
-                        <div class="image">
-                            <img src="images/store.png" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="store-home.php">
-                        <div class="image">
-                            <img src="images/store.png" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="store-home.php">
-                        <div class="image">
-                            <img src="images/store.png" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="store-home.php">
-                        <div class="image">
-                            <img src="images/store.png" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="store-home.php">
-                        <div class="image">
-                            <img src="images/store.png" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="store-home.php">
-                        <div class="image">
-                            <img src="images/store.png" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="store-home.php">
-                        <div class="image">
-                            <img src="images/store.png" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="store-home.php">
-                        <div class="image">
-                            <img src="images/store.png" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="store-home.php">
-                        <div class="image">
-                            <img src="images/store.png" alt="a store">
-                        </div>
-                        <h3 class="name">Store Name</h3>
-                    </a>
-                </div>
-
-            </div>
+            echo "<div class=\"flex-container\">";
+            $stores = read_all_stores();
+            $s_sort = sort_store();
+            // display all new stores from newest to oldest created
+            $count = 0;
+            foreach ($s_sort as $sort) {
+                $id = $sort['id'];
+                $name = $sort['name'];
+                echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                $count++;
+                if ($count == 10) {
+                    break;
+                }
+            }
+            ?>
         </section>
 
         <hr>
@@ -174,110 +105,32 @@ require 'mall_prod_functions.php';
         <!--New Products Area-->
         <section id="sub-sect-2">
             <h2 class="label">New Products</h2>
+            <?php
+            function sort_product() {
+                $products = read_all_products();
+                $p_sort = $products;
+                /* turn each value from the 'created_time' column to unix timestamp
+                then use array_multisort to sort those values in descending order */
+                array_multisort(array_map('strtotime', array_column($p_sort, 'created_time')), SORT_DESC, $p_sort);
+                return $p_sort;
+            }
 
-            <div class="flex-container">
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product Name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product Name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product Name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product Name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product Name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product Name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product Name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product Name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product Name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product Name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-            </div>
+            echo "<div class=\"flex-container\">";
+            $products = read_all_products();
+            $p_sort = sort_product();
+            $count = 0;
+            // display new products from newest to oldest created
+            foreach ($p_sort as $sort) {
+                $id = $sort['id'];
+                $name = $sort['name'];
+                $price = $sort['price'];
+                echo "<div class=\"item\"><a href=\"product-details.php?id=$id\"><div class=\"image\"><img src=\"images/product.png\" alt=\"a shopping bag\"></div><h3 class=\"name\">$name</h3><p class=\"price\">$$price</p></a></div>";
+                $count++;
+                if ($count == 10) {
+                    break;
+                }
+            }
+            ?>
         </section>
 
         <hr>
