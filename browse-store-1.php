@@ -59,7 +59,7 @@ require 'mall_store_functions.php';
         <section id="select">
             <div class="select">
                 <label for="letter-start">Store names start with letter </label>
-                <select id="letter-start">
+                <select id="letter-start" name="letter-start">
                     <option id="all">All</option>
                     <option id="#">#</option>
                     <option id="a">A</option>
@@ -139,6 +139,7 @@ require 'mall_store_functions.php';
 
     <!--Link to external JavaScript file-->
     <script src="javascript/cookie.js"></script>
+    <script src="javascript/browse-store.js"></script>
 </body>
 
 </html>

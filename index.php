@@ -78,7 +78,7 @@ require 'product_functions.php';
                 $stores = read_all_stores();
                 $s_sort = $stores;
                 /* turn each value from the 'created_time' column to unix timestamp
-                then use array_multisort to sort those values in descending order */
+                then use array_multisort to sort values from that column in descending order */
                 array_multisort(array_map('strtotime', array_column($s_sort, 'created_time')), SORT_DESC, $s_sort);
                 return $s_sort;
             }

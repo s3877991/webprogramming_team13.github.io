@@ -59,7 +59,7 @@ require 'mall_store_functions.php';
         <section id="select">
             <div class="select">
                 <label for="category">Your favourite category is</label>
-                <select id="category">
+                <select id="category" name="category">
                     <option id="all">All</option>
                     <option id="1">Department stores</option>
                     <option id="2">Grocery stores</option>
@@ -125,6 +125,7 @@ require 'mall_store_functions.php';
 
     <!--Link to external JavaScript file-->
     <script src="javascript/cookie.js"></script>
+    <script src="javascript/browse-store.js"></script>
 </body>
 
 </html>
