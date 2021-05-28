@@ -6,13 +6,15 @@
 session_start();
 
 // Use a function from another PHP file
-require 'product_functions.php';
+require 'mall_prod_functions.php';
 
-// Get the product id
 $id = $_GET['id'];
 
-// Use array to extract product information 
 $product = get_product($id);
+
+// echo '<pre>';
+// echo print_r($product);
+// echo '</pre>';
 ?>
 
 <!-- HTML Code Area -->
@@ -77,8 +79,21 @@ $product = get_product($id);
 
                 <div class="options">
 
-                    <h1 class="title">Product Name</h1>
-                    <h3 class="price">$xxxx.xx</h3>
+                    <h1 class="title">
+                        <?php 
+                            if (isset($product)) {
+                                echo $product['name'];
+                            } 
+                        ?>
+                    </h1>
+                    <h3 class="price">
+                    <?php 
+                            if (isset($product)) {
+                                echo $product['price'];
+                            } 
+                        ?>
+                    </h1>  
+                    </h3>
 
                     <div class="button-container">
                         <div class="buttons">
