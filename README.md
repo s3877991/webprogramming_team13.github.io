@@ -1,9 +1,9 @@
 # webprogramming_team13.github.io
-COSC2430 - Web Programming
+COSC2430 - Web Programming.
 
-Lecturer/Tutor: Tri Dang Tran
+Lecturer/Tutor: Tri Dang Tran.
 
-Project Group 13 - THE GANG
+Project Group 13 - THE GANG.
 
 Our GitHub repository: https://github.com/shynkwanchi/webprogramming_team13.github.io
 
