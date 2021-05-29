@@ -1,3 +1,19 @@
+<!-- Assignment 3: FULLSTACK ASSIGNMENT - Task #9: Implement the behavior in Product Details and Order Placement page -->
+
+<!-- PHP code area -->
+<?php
+// Start the session
+session_start();
+
+if (isset($_POST['check-out'])) {
+    if (!isset($_SESSION["email"])) {
+        header('location: register.php');
+    } else {
+        header('location: thankyou.php');
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,8 +48,7 @@
                 <li><a href="store-about-us.php">ABOUT US</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">PRODUCTS <span
-                            class="material-icons">expand_more</span></label>
+                    <label for="dropdown-sub" class="toggle">PRODUCTS <span class="material-icons">expand_more</span></label>
                     <a href="#">PRODUCTS <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
@@ -94,17 +109,19 @@
         </section>
 
         <section id="btn-area">
-            <div class="button-container">
+            <form method="post">
+                <div class="button-container">
 
-                <div class="button">
-                    <a href="product-details.php">Continue Shopping</a>
+                    <div class="button">
+                        <button type="button" id="continue"><a href="store-home.php">Continue Shopping</a></button>
+                    </div>
+
+                    <div class="button">
+                        <button type="submit" id="check-out" name="check-out">ORDER</button>
+                    </div>
+
                 </div>
-
-                <div class="button">
-                    <a href="thankyou.php">ORDER</a>
-                </div>
-
-            </div>
+            </form>
         </section>
 
     </main>

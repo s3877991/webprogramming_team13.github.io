@@ -113,38 +113,43 @@ th:last-child {
 .button-container {
     display: flex;
     flex-wrap: wrap;
-}
-.button-container {
     justify-content: flex-end;
 }
 .button {
     margin: 30px 5px;
-    padding: 10px 0px;
-    border-radius: 8px;
     text-align: center;
-    width: 20%;
 }
-.button:last-child {
-    background-color: #f00;
+.button button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Poppins',sans-serif;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
 }
-.button:last-child a {
+.button:last-child button {
     font-weight: bold;
     color: #fff;
-    text-decoration: none;
+    background-color: #f00;
 }
-.button:last-child:hover {
+.button:last-child button:hover {
     background-color: #600;
     transition: 0.5s;
-}
-.button:first-child {
+}   
+.button:first-child button {
     background-color: #ddd;
 }
-.button:first-child a {
+.button:first-child button a {
     color: #000;
     text-decoration: none;
 }
-.button:first-child:hover {
+.button:first-child button:hover {
     background-color: #eee;
+    transition: 0.5s;
+}
+.button:first-child button a:hover {
+    font-weight: bold;
     transition: 0.5s;
 }
 
@@ -180,33 +185,33 @@ th:last-child {
 }
 
 /* Button Area */
-@media screen and (max-width: 1360px) {
+@media screen and (min-width: 1360px) {
     .button {
         width: 25%;
     }
 }
-@media screen and (max-width: 1050px) {
+@media screen and (min-width: 1050px) and (max-width: 1360px) {
     .button {
         width: 30%;
     }
 }
-@media screen and (max-width: 870px) {
+@media screen and (min-width: 870px) and (max-width: 1050px) {
     .button {
         width: 35%;
     }
 }
-@media screen and (max-width: 620px) {
+@media screen and (min-width: 620px) and (max-width: 870px) {
     .button {
         width: 40%;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 500px) and (max-width: 620px) {
     .button {
         width: 45%;
-        justify-content: flex-start;
+        justify-content: space-evenly;
     }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     .button-container {
         display: block;
         text-align: center;

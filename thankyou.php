@@ -62,7 +62,7 @@
         </div>
         
         <div class="btn">
-            <a href="index.php">Exit to Mall page</a>
+            <button id="exit"><a href="index.php">Exit to Shoppiverse Mall</a></button>
         </div>
 
     </main>
