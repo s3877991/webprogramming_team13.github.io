@@ -9,6 +9,7 @@ session_start();
 require 'product_functions.php';
 require 'mall_store_functions.php';
 
+// When users click a product in mall pages or store pages, they will be directed to product details page displaying that product.
 $product_id = $_GET['id'];
 
 $products = read_all_products();
@@ -41,16 +42,19 @@ $product = get_product($product_id);
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="store-home.php">
-                    <?php
-                    foreach ($stores as $store) {
-                        if ($store['id'] == $product['store_id']) {
-                            echo $store['name'];
-                            break;
-                        }
+            <div id="logo">
+                <?php
+                foreach ($stores as $store) {
+                    if ($store['id'] == $product['store_id']) {
+                        $store_id = $store['id'];
+                        echo "<a href=\"store-home.php?store=$store_id\">";
+                        echo $store['name'];
+                        echo "</a>";
+                        break;
                     }
-                    ?>
-                </a></div>
+                }
+                ?>
+            </div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -141,58 +145,25 @@ $product = get_product($product_id);
         <section id="Related-products">
 
             <h2 class="label">Related Products</h2>
-            <div class="flex-container">
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/store-product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
+                <?php
+                echo "<div class=\"flex-container\">";
+                $products = read_all_products();
+                $count = 0;
+                foreach ($products as $product) {
+                    if ($product['store_id'] == $store['id']) {
+                        $id = $product['id'];
+                        $name = $product['name'];
+                        $price = $product['price'];
+                        echo "<div class=\"item\"><a href=\"product-details.php?id=$id\"><div class=\"image\"><img src=\"images/store-product.png\" alt=\"a shopping bag\"></div><h3 class=\"name\">$name</h3><p class=\"price\">$$price</p></a></div>";
+                        $count++;
+                        if ($count == 5) {
+                            break;
+                        }
+                    }
+                }
+                echo "</div>";
+                ?>
 
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/store-product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/store-product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/store-product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/store-product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-            </div>
         </section>
 
     </main>
