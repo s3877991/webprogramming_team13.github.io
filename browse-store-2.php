@@ -61,19 +61,19 @@ require 'mall_store_functions.php';
                 <label for="category">Your favourite category is</label>
                 <select id="category" name="category">
                     <option id="all">All</option>
-                    <option id="1">Department stores</option>
-                    <option id="2">Grocery stores</option>
-                    <option id="3">Restaurant</option>
-                    <option id="4">Clothing stores</option>
-                    <option id="5">Accessory stores</option>
-                    <option id="6">Pharmacies</option>
-                    <option id="7">Technology stores</option>
-                    <option id="8">Pet stores</option>
-                    <option id="9">Toy stores</option>
-                    <option id="10">Specialty stores</option>
-                    <option id="11">Thrift stores</option>
-                    <option id="12">Services</option>
-                    <option id="13">Kiosks</option>
+                    <option id="1" value="department">Department stores</option>
+                    <option id="2" value="grocery">Grocery stores</option>
+                    <option id="3" value="restaurant">Restaurant</option>
+                    <option id="4" value="clothing">Clothing stores</option>
+                    <option id="5" value="accessory">Accessory stores</option>
+                    <option id="6" value="pharmacies">Pharmacies</option>
+                    <option id="7" value="tech">Technology stores</option>
+                    <option id="8" value="pet">Pet stores</option>
+                    <option id="9" value="toy">Toy stores</option>
+                    <option id="10" value="specialty">Specialty stores</option>
+                    <option id="11" value="thrift">Thrift stores</option>
+                    <option id="12" value="services">Services</option>
+                    <option id="13" value="kiosks">Kiosks</option>
                 </select>
             </div>
         </section>

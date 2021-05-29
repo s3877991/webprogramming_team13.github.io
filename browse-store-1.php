@@ -61,33 +61,33 @@ require 'mall_store_functions.php';
                 <label for="letter-start">Store names start with letter </label>
                 <select id="letter-start" name="letter-start">
                     <option id="all">All</option>
-                    <option id="#">#</option>
-                    <option id="a">A</option>
-                    <option id="b">B</option>
-                    <option id="c">C</option>
-                    <option id="d">D</option>
-                    <option id="e">E</option>
-                    <option id="f">F</option>
-                    <option id="g">G</option>
-                    <option id="h">H</option>
-                    <option id="i">I</option>
-                    <option id="j">J</option>
-                    <option id="k">K</option>
-                    <option id="l">L</option>
-                    <option id="m">M</option>
-                    <option id="n">N</option>
-                    <option id="o">O</option>
-                    <option id="p">P</option>
-                    <option id="q">Q</option>
-                    <option id="r">R</option>
-                    <option id="s">S</option>
-                    <option id="t">T</option>
-                    <option id="u">U</option>
-                    <option id="v">V</option>
-                    <option id="w">W</option>
-                    <option id="x">X</option>
-                    <option id="y">Y</option>
-                    <option id="z">Z</option>
+                    <option id="#" value="#">#</option>
+                    <option id="a" value="a">A</option>
+                    <option id="b" value="b">B</option>
+                    <option id="c" value="c">C</option>
+                    <option id="d" value="d">D</option>
+                    <option id="e" value="e">E</option>
+                    <option id="f" value="f">F</option>
+                    <option id="g" value="g">G</option>
+                    <option id="h" value="h">H</option>
+                    <option id="i" value="i">I</option>
+                    <option id="j" value="j">J</option>
+                    <option id="k" value="k">K</option>
+                    <option id="l" value="l">L</option>
+                    <option id="m" value="m">M</option>
+                    <option id="n" value="n">N</option>
+                    <option id="o" value="n">O</option>
+                    <option id="p" value="p">P</option>
+                    <option id="q" value="q">Q</option>
+                    <option id="r" value="r">R</option>
+                    <option id="s" value="s">S</option>
+                    <option id="t" value="t">T</option>
+                    <option id="u" value="u">U</option>
+                    <option id="v" value="v">V</option>
+                    <option id="w" value="w">W</option>
+                    <option id="x" value="x">X</option>
+                    <option id="y" value="y">Y</option>
+                    <option id="z" value="z">Z</option>
                 </select>
             </div>
         </section>
@@ -139,7 +139,7 @@ require 'mall_store_functions.php';
 
     <!--Link to external JavaScript file-->
     <script src="javascript/cookie.js"></script>
-    <script src="javascript/browse-store.js"></script>
+    <script src="javascript/browse.js"></script>
 </body>
 
 </html>
