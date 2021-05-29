@@ -12,6 +12,7 @@ require 'mall_store_functions.php';
 // When users click a product in mall pages or store pages, they will be directed to product details page displaying that product.
 $product_id = $_GET['id'];
 
+// Set arrays from data files.
 $products = read_all_products();
 $stores = read_all_stores();
 $product = get_product($product_id);
@@ -19,6 +20,16 @@ $product = get_product($product_id);
 // echo '<pre>';
 // echo print_r($product);
 // echo '</pre>';
+
+// When users click "Add to cart" button, the product information will be stored and it will be reused in "Your cart" page.
+if (isset($_POST['add-to-cart'])) {
+    $added_product = [
+        'name' => $product['name'],
+        'price' => $product['price'],
+        'store' => $product['store_id']
+    ];
+    $_SESSION['added_products'][] = $added_product;                    
+}
 ?>
 
 <!-- HTML Code Area -->
@@ -107,14 +118,24 @@ $product = get_product($product_id);
                         </h1>
                     </h3>
 
+                    <form method="post" action="product-details.php?id=<?=$product_id?>">
                     <div class="button-container">
                         <div class="buttons">
-                            <button type="button" id="add-to-cart">Add to cart</button>
+                            <button type="submit" id="add-to-cart" name="add-to-cart">Add to cart</button>
                         </div>
                         <div class="buttons">
                             <button type="button" id="buy-now">BUY NOW!</button>
                         </div>
                     </div>
+                    </form>
+
+                    <?php 
+                    // if (isset($_SESSION['added_products'])) {
+                    //    echo '<pre>';
+                    //    print_r($_SESSION['added_products']);
+                    //    echo '</pre>';
+                    // }
+                    ?>
 
                 </div>
             </div>
