@@ -201,7 +201,7 @@ if (!isset($_SESSION['username'])) {
                 <hr>
 
                 <div id="logout">
-                    <h2>What to change Admin account?</h2>
+                    <h2>Want to change Admin account?</h2>
                     <button><a href="logout.php">Log Out</a></button>
                 </div>
 
