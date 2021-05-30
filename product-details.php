@@ -216,7 +216,6 @@ if (isset($_POST['add-to-cart'])) {
     </div>
 
     <!--Link to external JavaScript file-->
-    <!-- <script src="../javascript/add-to-cart.js"></script> -->
     <script src="../javascript/cookie.js"></script>
 </body>
 
