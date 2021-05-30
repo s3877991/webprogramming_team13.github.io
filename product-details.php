@@ -31,7 +31,8 @@ if (isset($_POST['add-to-cart'])) {
     $added_product = [
         'name' => $product['name'],
         'price' => $product['price'],
-        'store' => $product['store_id']
+        'store' => $product['store_id'],
+        'incart' => 1
     ];
     $_SESSION['added_products'][] = $added_product;                    
 }

@@ -87,6 +87,31 @@ if (isset($_POST['check-out'])) {
                         <th><strong>QUANTITY</strong></th>
                         <th><strong>SUB-TOTAL</strong></th>
                     </tr>
+                    <?php
+                    echo "<tr>";
+                    if (isset($_SESSION['added_products'])) {
+                        $name = $_SESSION['added_products']['name'];
+                        $price = $_SESSION['added_products']['price'];
+                        $quantity = $_SESSION['added_products']['incart'];
+                        $sub_total = $price * $quantity;
+                        echo "<td>
+                                <div class=\"cart-info\">
+                                    <img src=\"images/store-product.png\" alt=\"a shopping bag\">
+                                    <div>
+                                        <p class=\"name\">$name</p>
+                                        <p class=\"price\">$price</p>
+                                        <a href=\"remove\">Remove</a>
+                                    </div>
+                            </td>
+                            <td>
+                                <input class=\"quantity-input\" name=\"quantity\" type=\"number\" min=1 value=$quantity>
+                            </td>
+                            <td class=\"sub-total\">
+                                $sub_total
+                            </td>";
+                    }
+                    echo "</tr>";
+                    ?>
                 </table>
 
                 <hr>
