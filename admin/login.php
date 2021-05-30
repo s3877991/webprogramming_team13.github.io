@@ -45,10 +45,6 @@ if (isset($_POST['login'])) {
       // Note: the location is outside of document root to avoid strangers accessing 
       file_put_contents("../$username", $uniqid);
 
-      // Create a Cookie that expires after a week (7 days)
-      setcookie('logged_username', $username, time() + 60 * 60 * 24 * 7);
-      setcookie('uniqid', $uniqid, time() + 60 * 60 * 24 * 7);
-
       // Redirect to dashboard page and the username is saved on server
       $_SESSION['username'] = $_POST['username'];
       header('location: dashboard.php');

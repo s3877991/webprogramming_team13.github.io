@@ -10,21 +10,6 @@ session_start();
 //    die("You have to delete <code>'install.php'</code> file manually to activate the System");
 // } 
 
-// Check if user cookie is still active or not
-if (!isset($_SESSION['username'])) {
-    // Check user cookie
-    if (isset($_COOKIE['logged_username'])) {
-        $logged_username = $_COOKIE['logged_username'];
-        // Check if the user cookie is valid one
-        if (file_exists("../$logged_username")) {
-            $uniqid_value = file_get_contents("../$logged_username");
-            if ($_COOKIE['uniqid'] == $uniqid_value) {
-                $_SESSION['username'] = $_COOKIE['logged_username'];
-            }
-        }
-    }
-}
-
 // Check if admin has logged in or not
 if (!isset($_SESSION['username'])) {
     header('location: login.php');
@@ -209,8 +194,15 @@ if (!isset($_SESSION['username'])) {
                 ?>
 
                 <!-- Save button -->
-                <div class="actions">
-                    <input type="submit" name="save" value="Save">
+                <div id="submit">
+                    <button type="submit" name="save">Save</button>
+                </div>
+
+                <hr>
+
+                <div id="logout">
+                    <h2>What to change Admin account?</h2>
+                    <button><a href="logout.php">Log Out</a></button>
                 </div>
 
             </form>
