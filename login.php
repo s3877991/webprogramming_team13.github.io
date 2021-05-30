@@ -1,5 +1,13 @@
 <?php
+// Start the session
 session_start();
+
+// If file 'install.php' still exists, the current PHP script in this file will be terminated
+// if (file_exists('admin/install.php')) {
+// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+// }
+
+
 if (isset($_SESSION["email"])) { header('location: user-info.php'); }
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $password = $email_temp = $password_temp = "";

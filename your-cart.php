@@ -5,6 +5,13 @@
 // Start the session
 session_start();
 
+// If file 'install.php' still exists, the current PHP script in this file will be terminated
+// if (file_exists('admin/install.php')) {
+// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+// }
+
+/* When they click 'ORDER' button, if users haven't logged in yet, they'll be redirected to 'Register' page. 
+Otherwise, they'll be directed to 'Thank you' page. */
 if (isset($_POST['check-out'])) {
     if (!isset($_SESSION["email"])) {
         header('location: register.php');
