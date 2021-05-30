@@ -92,8 +92,7 @@ main {
     text-decoration: none;
 }
 .item h3 {
-    font-size: 25px;
-    padding: 5px 10px;
+    font-size: 22.5px;
 }
 .item .price {
     font-size: 20px;
@@ -103,7 +102,7 @@ main {
     font-size: 13px;
 }
 .item img {
-    width: 200px;
+    width: 70%;
     margin: 10px 10px 0 10px;
 }
 .item:hover {

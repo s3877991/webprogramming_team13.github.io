@@ -17,7 +17,7 @@
     text-decoration: none;
 }
 .item h3 {
-    font-size: 25px;
+    font-size: 22.5px;
 }
 .item .price {
     font-size: 20px;
@@ -32,6 +32,7 @@
 }
 .item:hover {
     background-color: #eee;
+    font-weight: bold;
     transition: 0.5s;
 }
 @media screen and (max-width: 470px) {
