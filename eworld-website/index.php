@@ -1,3 +1,24 @@
+<?php
+session_start();
+require 'product_functions.php';
+/**
+* For printing array data
+*
+* @param string $arr array
+* @param string $returnAsString if true, return the string
+* @return string
+*/
+function printArray($arr, $returnAsString=false ) {
+    $ret  = '<pre>' . print_r($arr, true) . '</pre>';
+    if ($returnAsString)
+        return $ret;
+    else
+        echo $ret;
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,8 +54,7 @@
                 <li><a href="about-us.php">ABOUT US</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">PRODUCTS <span
-                            class="material-icons">expand_more</span></label>
+                    <label for="dropdown-sub" class="toggle">PRODUCTS <span class="material-icons">expand_more</span></label>
                     <a href="#">PRODUCTS <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
@@ -63,36 +83,49 @@
             </div>
         </section>
 
-        <?php
-            session_start();
-            require 'product_functions.php';
-            $products = read_all_products();
-
-            $count = 0;
-        ?>
         <h2 class="label">New Products</h2>
         <div class="product-detail-cart">
-        <?php
+            <?php
+            $products = read_all_products();
+            $products_sorted = $products; 
+            $dateTime = array_column($products_sorted, 'created_time');
+            array_multisort($dateTime, SORT_DESC, $products_sorted);
+            // printArray($products_sorted);
+            $count = 0;
             echo '</ul>';
-            foreach ($products as $p) {
-            $id = $p['store_id'];
-            $name = $p['name']; 
-            echo nl2br ("<div class='product-details'><img src='images/galaxy-s21-ultra.jpeg' alt='a phone with quad camera' width=100px> \n\n <a href=\"product_functions.php?id=$id\">Samsung Galaxy S21 Ultra</a> \n <p class='price'>$1058.69</p><p class='rank material-icons'> star star star star star</p></div>");
-            $count++;
-            if ($count == 5) {
-                break;
-            } 
+            foreach ($products_sorted as $p) {
+                $id = $p['id'];
+                $name = $p['name']; 
+                $price = $p['price'];
+                echo nl2br("<div class='product-details'><img src='images/galaxy-s21-ultra.jpeg' alt='a phone with quad camera' width=100px> \n\n <a href=\"product.php?id=$id\">$name</a> \n <p class='price'>$price$</p><p class='rank material-icons'> star star star star star</p></div>");
+                $count++;
+                if ($count == 5) {
+                    break;
+                }
             }
-            if (isset($_SESSION['visited_products']) && is_array($_SESSION['visited_products'])) {
-            echo 'Visited products';
-            echo '<ul>';
-            foreach ($_SESSION['visited_products'] as $id) {
-                echo "<li>$id</li>";
-            }
-            echo '</ul>';
-            }
-        ?> 
+            ?>
         </div>
+
+        <h2 class="label">Featured Products</h2>
+        <div class="product-detail-cart">
+            <?php
+                $count = 0;
+                echo '</ul>';
+                foreach ($products as $p) {
+                    if ($p['featured_in_store'] == 'TRUE') {
+                        $id = $p['id'];
+                        $name = $p['name']; 
+                        $price = $p['price'];
+                        echo nl2br("<div class='product-details'><img src='images/galaxy-s21-ultra.jpeg' alt='a phone with quad camera' width=100px> \n\n <a href=\"product.php?id=$id\">$name</a> \n <p class='price'>$price$</p><p class='rank material-icons'> star star star star star</p></div>");
+                        $count++;
+                        if ($count == 5) {
+                            break;
+                        }
+                    }
+                }
+            ?>
+        </div>
+            
     </main>
 
     <!--Footer section with navigation bar-->
@@ -120,4 +153,5 @@
     <script src="javascript/navbar.js" async></script>
     <script src="../javascript/cookie.js"></script>
 </body>
+
 </html>
