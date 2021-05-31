@@ -35,9 +35,15 @@ if (isset($_POST['check-out'])) {
     if (!isset($_SESSION["email"])) {
         header('location: register.php');
     } else {
-        header('location: thankyou.php');
+        header('location: thankyou.php?store='.$id);
     }
 }
+
+// if (isset($_SESSION['cart'])) {
+//    echo "<pre>";
+//    print_r($_SESSION['cart']);
+//    echo "</pre>";
+// }
 ?>
 
 <!DOCTYPE html>
@@ -115,10 +121,10 @@ if (isset($_POST['check-out'])) {
                     </tr>
                     <?php
                     echo "<tr>";
-                    if (isset($_SESSION['added_products'])) {
-                        $name = $_SESSION['added_products']['name'];
-                        $price = $_SESSION['added_products']['price'];
-                        $quantity = $_SESSION['added_products']['incart'];
+                    if (isset($_SESSION['cart'])) {
+                        $name = $_SESSION['cart']['name'];
+                        $price = $_SESSION['cart']['price'];
+                        $quantity = $_SESSION['cart']['incart'];
                         $sub_total = $price * $quantity;
                         echo "<td>
                                 <div class=\"cart-info\">
@@ -126,7 +132,7 @@ if (isset($_POST['check-out'])) {
                                     <div>
                                         <p class=\"name\">$name</p>
                                         <p class=\"price\">$price</p>
-                                        <a href=\"remove\">Remove</a>
+                                        <a href=\"remove.php\">Remove</a>
                                     </div>
                             </td>
                             <td>

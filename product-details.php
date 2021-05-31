@@ -36,8 +36,14 @@ if (isset($_POST['add-to-cart'])) {
         'store' => $product['store_id'],
         'incart' => 1
     ];
-    $_SESSION['added_products'][] = $added_product;
+    $_SESSION['cart'][$product_id] = $added_product;
 }
+
+// if (isset($_SESSION['cart'])) {
+//    echo "<pre>";
+//    print_r($_SESSION['cart']);
+//    echo "</pre>";
+// }
 ?>
 
 <!-- HTML Code Area -->
