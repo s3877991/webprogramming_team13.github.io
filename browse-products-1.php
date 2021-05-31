@@ -1,3 +1,33 @@
+<?php
+// If file 'install.php' still exists, the current PHP script in this page will be terminated
+// if (file_exists('admin/install.php')) {
+// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+// }
+
+// Use a function from another PHP file
+require 'mall_store_functions.php';
+require 'product_functions.php';
+
+// When users click a link in navigation bar store pages, they will be directed to page with that link.
+// If that link is unavailable, he dead message will appear and the script in this page will be terminated.
+if (isset($_GET['store'])) {
+    $store_id = $_GET['store'];
+} else {
+    die('Page not found!');
+}
+
+// Get a store array
+$store = get_store($store_id);
+
+// echo "<pre>";
+// print_r($store);
+// echo "</pre>";
+
+// Get a store name and its id
+$name = $store['name'];
+$id = $store['id'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +41,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Products by Category</title>
+    <title><?php echo $name . " - "; ?>Products by Category</title>
 </head>
 
 <body>
@@ -19,7 +49,11 @@
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="store-home.php">The Store</a></div>
+            <div id="logo">
+                <?php
+                echo "<a href=\"store-home.php?store=$id\">$name</a>";
+                ?>
+            </div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -28,22 +62,25 @@
             <input type="checkbox" id="dropdown-main">
 
             <!--Navigation-->
-            <ul class="menu">
-                <li><a href="store-home.php">HOME</a></li>
-                <li><a href="store-about-us.php">ABOUT US</a></li>
+            <?php
+            echo
+            "<ul class=\"menu\">
+                <li><a href=\"store-home.php?store=$id\">HOME</a></li>
+                <li><a href=\"store-about-us.php?store=$id\">ABOUT US</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">PRODUCTS <span class="material-icons">expand_more</span></label>
-                    <a class="active" href="#">PRODUCTS <span class="material-icons">expand_more</span></a>
-                    <input type="checkbox" id="dropdown-sub">
-                    <ul class="sub-menu">
-                        <li><a class="active" href="browse-products-1.php">by CATEGORY</a></li>
-                        <li><a href="browse-products-2.php">by CREATED TIME</a></li>
+                    <label for=\"dropdown-sub\" class=\"toggle\">PRODUCTS <span class=\"material-icons\">expand_more</span></label>
+                    <a  class=\"active\" href=\"#\">PRODUCTS <span class=\"material-icons\">expand_more</span></a>
+                    <input type=\"checkbox\" id=\"dropdown-sub\">
+                    <ul class=\"sub-menu\">
+                        <li><a class=\"active\" href=\"browse-products-1.php?store=$id\">by CATEGORY</a></li>
+                        <li><a href=\"browse-products-2.php?store=$id\">by CREATED TIME</a></li>
                     </ul>
                 </li>
-                <li><a href="store-contact-us.php">CONTACT</a></li>
-                <li class="your-cart"><a href="your-cart.php">YOUR CART</a></li>
-            </ul>
+                <li><a href=\"store-contact-us.php?store=$id\">CONTACT</a></li>
+                <li class=\"your-cart\"><a href=\"your-cart.php?store=$id\">YOUR CART</a></li>
+            </ul>";
+            ?>
         </nav>
     </header>
 
@@ -70,105 +107,17 @@
         <!--Products section-->
         <div class="flex-container">
 
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
+            <?php
+            $products = read_all_products();
+            foreach ($products as $p) {
+                if ($p['store_id'] == $id) {
+                    $product_id = $p['id'];
+                    $product_name = $p['name'];
+                    $price = $p['price'];
+                    echo ("<div class=\"item\"><a href=\"product-details.php?id=$product_id\"><div class='image'><img src='images/store-product.png' alt='a shopping bag'></div><h3>$product_name</h3><p class='price'>$$price</p></a></div>");
+                }
+            }
+            ?>
 
         </div>
 
@@ -176,9 +125,12 @@
 
     <!--Footer section with navigation bar-->
     <footer>
-        <a href="store-copyright.php">Copyright</a>
-        <a href="store-tos.php">Terms of Service</a>
-        <a href="store-privacypolicy.php">Privacy Policy</a>
+        <?php
+        echo
+        "<a href=\"store-copyright.php?store=$id\">Copyright</a>
+        <a href=\"store-tos.php?store=$id\">Terms of Service</a>
+        <a href=\"store-privacypolicy.php?store=$id\">Privacy Policy</a>";
+        ?>
         <div id="brief-description">
             <em>
                 <h3>by <strong>THE GANG</strong></h3>

@@ -1,6 +1,3 @@
-<!-- Assignment 3: FULLSTACK ASSIGNMENT - Task #9: Implement the behavior in Product Details and Order Placement page -->
-
-<!-- PHP code area -->
 <?php
 // Start the session
 session_start();
@@ -15,7 +12,12 @@ require 'product_functions.php';
 require 'mall_store_functions.php';
 
 // When users click a product in mall pages or store pages, they will be directed to product details page displaying that product.
-$product_id = $_GET['id'];
+// If the products they want to access is unavailable. The dead message will appear and the page will be terminated.
+if (isset($_GET['id'])) {
+    $product_id = $_GET['id'];
+} else {
+    die('Product not found!');
+}
 
 // Set arrays from data files.
 $products = read_all_products();
@@ -34,7 +36,7 @@ if (isset($_POST['add-to-cart'])) {
         'store' => $product['store_id'],
         'incart' => 1
     ];
-    $_SESSION['added_products'][] = $added_product;                    
+    $_SESSION['added_products'][] = $added_product;
 }
 ?>
 
@@ -80,22 +82,25 @@ if (isset($_POST['add-to-cart'])) {
             <input type="checkbox" id="dropdown-main">
 
             <!--Navigation-->
-            <ul class="menu">
-                <li><a href="store-home.php">HOME</a></li>
-                <li><a href="store-about-us.php">ABOUT US</a></li>
+            <?php
+            echo
+            "<ul class=\"menu\">
+                <li><a href=\"store-home.php?store=$store_id\">HOME</a></li>
+                <li><a href=\"store-about-us.php?store=$store_id\">ABOUT US</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">PRODUCTS <span class="material-icons">expand_more</span></label>
-                    <a class="active" href="#">PRODUCTS <span class="material-icons">expand_more</span></a>
-                    <input type="checkbox" id="dropdown-sub">
-                    <ul class="sub-menu">
-                        <li><a href="browse-products-1.php">by CATEGORY</a></li>
-                        <li><a href="browse-products-2.php">by CREATED TIME</a></li>
+                    <label for=\"dropdown-sub\" class=\"toggle\">PRODUCTS <span class=\"material-icons\">expand_more</span></label>
+                    <a class=\"active\" href=\"#\">PRODUCTS <span class=\"material-icons\">expand_more</span></a>
+                    <input type=\"checkbox\" id=\"dropdown-sub\">
+                    <ul class=\"sub-menu\">
+                        <li><a href=\"browse-products-1.php?store=$store_id\">by CATEGORY</a></li>
+                        <li><a href=\"browse-products-2.php?store=$store_id\">by CREATED TIME</a></li>
                     </ul>
                 </li>
-                <li><a href="store-contact-us.php">CONTACT</a></li>
-                <li class="your-cart"><a href="your-cart.php">YOUR CART</a></li>
-            </ul>
+                <li><a href=\"store-contact-us.php?store=$store_id\">CONTACT</a></li>
+                <li class=\"your-cart\"><a href=\"your-cart.php?store=$store_id\">YOUR CART</a></li>
+            </ul>";
+            ?>
         </nav>
     </header>
 
@@ -124,18 +129,18 @@ if (isset($_POST['add-to-cart'])) {
                         </h1>
                     </h3>
 
-                    <form method="post" action="product-details.php?id=<?=$product_id?>">
-                    <div class="button-container">
-                        <div class="buttons">
-                            <button type="submit" id="add-to-cart" name="add-to-cart">Add to cart</button>
+                    <form method="post" action="product-details.php?id=<?= $product_id ?>">
+                        <div class="button-container">
+                            <div class="buttons">
+                                <button type="submit" id="add-to-cart" name="add-to-cart">Add to cart</button>
+                            </div>
+                            <div class="buttons">
+                                <button type="button" id="buy-now">BUY NOW!</button>
+                            </div>
                         </div>
-                        <div class="buttons">
-                            <button type="button" id="buy-now">BUY NOW!</button>
-                        </div>
-                    </div>
                     </form>
 
-                    <?php 
+                    <?php
                     // if (isset($_SESSION['added_products'])) {
                     //    echo '<pre>';
                     //    print_r($_SESSION['added_products']);
@@ -172,24 +177,23 @@ if (isset($_POST['add-to-cart'])) {
         <section id="Related-products">
 
             <h2 class="label">Related Products</h2>
-                <?php
-                echo "<div class=\"flex-container\">";
-                $products = read_all_products();
-                $count = 0;
-                foreach ($products as $product) {
-                    if ($product['store_id'] == $store['id']) {
-                        $id = $product['id'];
-                        $name = $product['name'];
-                        $price = $product['price'];
-                        echo "<div class=\"item\"><a href=\"product-details.php?id=$id\"><div class=\"image\"><img src=\"images/store-product.png\" alt=\"a shopping bag\"></div><h3 class=\"name\">$name</h3><p class=\"price\">$$price</p></a></div>";
-                        $count++;
-                        if ($count == 5) {
-                            break;
-                        }
+            <?php
+            echo "<div class=\"flex-container\">";
+            $count = 0;
+            foreach ($products as $product) {
+                if ($product['store_id'] == $store['id']) {
+                    $id = $product['id'];
+                    $name = $product['name'];
+                    $price = $product['price'];
+                    echo "<div class=\"item\"><a href=\"product-details.php?id=$id\"><div class=\"image\"><img src=\"images/store-product.png\" alt=\"a shopping bag\"></div><h3 class=\"name\">$name</h3><p class=\"price\">$$price</p></a></div>";
+                    $count++;
+                    if ($count == 5) {
+                        break;
                     }
                 }
-                echo "</div>";
-                ?>
+            }
+            echo "</div>";
+            ?>
 
         </section>
 
@@ -197,9 +201,12 @@ if (isset($_POST['add-to-cart'])) {
 
     <!--Footer section with navigation bar-->
     <footer>
-        <a href="store-copyright.php">Copyright</a>
-        <a href="store-tos.php">Terms of Service</a>
-        <a href="store-privacypolicy.php">Privacy Policy</a>
+        <?php
+        echo
+        "<a href=\"store-copyright.php?store=$store_id\">Copyright</a>
+        <a href=\"store-tos.php?store=$store_id\">Terms of Service</a>
+        <a href=\"store-privacypolicy.php?store=$store_id\">Privacy Policy</a>";
+        ?>
         <div id="brief-description">
             <em>
                 <h3>by <strong>THE GANG</strong></h3>

@@ -15,4 +15,14 @@ function read_all_stores() {
   }
   return $stores;
 }
+
+function get_store($store_id) {
+  $stores = read_all_stores();
+  foreach ($stores as $s) {
+    if ($s['id'] == $store_id) {
+      return $s;
+    }
+  }
+  return false;
+}
 ?>

@@ -64,49 +64,54 @@
                 </div>
             </div>
         </section>
-        <br><br>
-        <h2 class="label">New Products</h2>
-        <?php
-        $products = read_all_products();
-        $products_sorted = $products; 
-        $dateTime = array_column($products_sorted, 'created_time');
-        array_multisort($dateTime, SORT_DESC, $products_sorted);
-        // printArray($products_sorted);
-        $count = 0;
-        echo "<div class=\"flex-container\">";
-        foreach ($products_sorted as $p) {
-            $id = $p['id'];
-            $name = $p['name']; 
-            $price = $p['price'];
-            echo "<div class=\"item\"><a href=\"product-details.php?id=$id\"><div class=\"image\"><img src=\"images/product.png\" alt=\"a shopping bag\"></div><h3 class=\"name\">$name</h3><p class=\"price\">$$price</p></a></div>";
-            $count++;
-            if ($count == 5) {
-                break;
-            }
-        }
-        echo "</div>";
-        ?>
-        <br><br>
-        <h2 class="label">Featured Products</h2>
-        <div class="product-detail-cart">
-            <?php
+
+        <section id="sub-sect-1">
+            <h2 class="label">New Products</h2>
+            <div class="flex-container">
+                <?php
+                $products = read_all_products();
+                $products_sorted = $products;
+                $dateTime = array_column($products_sorted, 'created_time');
+                array_multisort($dateTime, SORT_DESC, $products_sorted);
+                // printArray($products_sorted);
                 $count = 0;
-                echo "<div class=\"flex-container\">";
+                foreach ($products_sorted as $p) {
+                    $id = $p['id'];
+                    $name = $p['name'];
+                    $price = $p['price'];
+                    echo ("<div class=\"item\"><a href=\"product-details.php?id=$id\"><div class='image'><img src='images/store-product.png' alt='a shopping bag'></div><h3>$name</h3><p class='price'>$price</p></a></div>");
+                    $count++;
+                    if ($count == 5) {
+                        break;
+                    }
+                }
+                ?>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="sub-sect-2">
+
+            <h2 class="label">Featured Products</h2>
+            <div class="flex-container">
+                <?php
+                $count = 0;
                 foreach ($products as $p) {
                     if ($p['featured_in_store'] == 'TRUE') {
                         $id = $p['id'];
-                        $name = $p['name']; 
+                        $name = $p['name'];
                         $price = $p['price'];
-                        echo "<div class=\"item\"><a href=\"product-details.php?id=$id\"><div class=\"image\"><img src=\"images/product.png\" alt=\"a shopping bag\"></div><h3 class=\"name\">$name</h3><p class=\"price\">$$price</p></a></div>";
+                        echo ("<div class=\"item\"><a href=\"product-details.php?id=$id\"><div class='image'><img src='images/store-product.png' alt='a shopping bag'></div><h3>$name</h3><p class='price'>$price</p></a></div>");
                         $count++;
                         if ($count == 5) {
                             break;
                         }
                     }
                 }
-                echo "</div>";
-            ?>
-        </div>
+                ?>
+            </div>
+        </section>
 
     </main>
 

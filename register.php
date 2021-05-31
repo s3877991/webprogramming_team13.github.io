@@ -1,4 +1,3 @@
-<!-- PHP code area -->
 <?php
 // session_start();
 // unset($_SESSION);
