@@ -1,9 +1,21 @@
 <?php
-    session_start();
-    require 'product_functions.php';
-    $products = read_all_products();
-
-    $count = 0;
+session_start();
+require 'product_functions.php';
+/**
+ * For printing array data
+ *
+ * @param string $arr array
+ * @param string $returnAsString if true, return the string
+ * @return string
+ */
+function printArray($arr, $returnAsString = false)
+{
+    $ret  = '<pre>' . print_r($arr, true) . '</pre>';
+    if ($returnAsString)
+        return $ret;
+    else
+        echo $ret;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -72,10 +84,17 @@
             <h2 class="label">New Products</h2>
             <div class="flex-container">
                 <?php
-                foreach ($products as $p) {
-                    $id = $p['store_id'];
+                $products = read_all_products();
+                $products_sorted = $products;
+                $dateTime = array_column($products_sorted, 'created_time');
+                array_multisort($dateTime, SORT_DESC, $products_sorted);
+                // printArray($products_sorted);
+                $count = 0;
+                foreach ($products_sorted as $p) {
+                    $id = $p['id'];
                     $name = $p['name'];
-                    echo ("<div class=\"item\"><a href=\"product_details.php?id=$id\"><div class='image'><img src='images/store-product.png' alt='a shopping bag'></div><h3>Product Name</h3><p class='price'>\$xxxx.xx</p></a></div>");
+                    $price = $p['price'];
+                    echo ("<div class=\"item\"><a href=\"product-details.php?id=$id\"><div class='image'><img src='images/store-product.png' alt='a shopping bag'></div><h3>$name</h3><p class='price'>$price</p></a></div>");
                     $count++;
                     if ($count == 5) {
                         break;
@@ -91,56 +110,21 @@
 
             <h2 class="label">Featured Products</h2>
             <div class="flex-container">
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/store-product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/store-product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/store-product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/store-product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="product-details.php">
-                        <div class="image">
-                            <img src="images/store-product.png" alt="a shopping bag">
-                        </div>
-                        <h3 class="name">Product name</h3>
-                        <p class="price">$xxxx.xx</p>
-                    </a>
-                </div>
-
+                <?php
+                $count = 0;
+                foreach ($products as $p) {
+                    if ($p['featured_in_store'] == 'TRUE') {
+                        $id = $p['id'];
+                        $name = $p['name'];
+                        $price = $p['price'];
+                        echo ("<div class=\"item\"><a href=\"product-details.php?id=$id\"><div class='image'><img src='images/store-product.png' alt='a shopping bag'></div><h3>$name</h3><p class='price'>$price</p></a></div>");
+                        $count++;
+                        if ($count == 5) {
+                            break;
+                        }
+                    }
+                }
+                ?>
             </div>
         </section>
 
