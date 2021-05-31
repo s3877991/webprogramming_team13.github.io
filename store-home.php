@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    require 'product_functions.php';
+    $products = read_all_products();
+
+    $count = 0;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -62,13 +69,6 @@
         </section>
 
         <section id="sub-sect-1">
-            <?php
-            session_start();
-            require 'product_functions.php';
-            $products = read_all_products();
-
-            $count = 0;
-            ?>
             <h2 class="label">New Products</h2>
             <div class="flex-container">
                 <?php

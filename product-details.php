@@ -1,6 +1,3 @@
-<!-- Assignment 3: FULLSTACK ASSIGNMENT - Task #9: Implement the behavior in Product Details and Order Placement page -->
-
-<!-- PHP code area -->
 <?php
 // Start the session
 session_start();

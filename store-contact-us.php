@@ -1,4 +1,3 @@
-<!-- PHP code area -->
 <?php
 // If file 'install.php' still exists, the current PHP script in this file will be terminated
 // if (file_exists('admin/install.php')) {

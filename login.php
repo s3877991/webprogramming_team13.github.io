@@ -1,5 +1,4 @@
 <?php
-// Start the session
 session_start();
 
 // If file 'install.php' still exists, the current PHP script in this file will be terminated
