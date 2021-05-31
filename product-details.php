@@ -12,7 +12,12 @@ require 'product_functions.php';
 require 'mall_store_functions.php';
 
 // When users click a product in mall pages or store pages, they will be directed to product details page displaying that product.
+// If the products they want to access is unavailable. The dead message will appear and the page will be terminated.
+if (isset($_GET['id'])) {
 $product_id = $_GET['id'];
+} else {
+    die('Product not found!');
+}
 
 // Set arrays from data files.
 $products = read_all_products();
