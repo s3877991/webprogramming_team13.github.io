@@ -76,7 +76,7 @@ $id = $store['id'];
                     </ul>
                 </li>
                 <li><a href=\"store-contact-us.php?store=$id\">CONTACT</a></li>
-                <li class=\"your-cart\"><a href=\"your-cart.php?store=$id\">YOUR CART</a></li>
+                <li class=\"your-cart\"><a class=\"active\" href=\"your-cart.php?store=$id\">YOUR CART</a></li>
             </ul>";
             ?>
         </nav>
