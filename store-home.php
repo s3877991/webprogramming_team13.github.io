@@ -79,7 +79,7 @@
                     $id = $p['id'];
                     $name = $p['name'];
                     $price = $p['price'];
-                    echo ("<div class=\"item\"><a href=\"product-details.php?id=$id\"><div class='image'><img src='images/store-product.png' alt='a shopping bag'></div><h3>$name</h3><p class='price'>$price</p></a></div>");
+                    echo ("<div class=\"item\"><a href=\"product-details.php?id=$id\"><div class='image'><img src='images/store-product.png' alt='a shopping bag'></div><h3>$name</h3><p class='price'>$price$</p></a></div>");
                     $count++;
                     if ($count == 5) {
                         break;
@@ -102,7 +102,7 @@
                         $id = $p['id'];
                         $name = $p['name'];
                         $price = $p['price'];
-                        echo ("<div class=\"item\"><a href=\"product-details.php?id=$id\"><div class='image'><img src='images/store-product.png' alt='a shopping bag'></div><h3>$name</h3><p class='price'>$price</p></a></div>");
+                        echo ("<div class=\"item\"><a href=\"product-details.php?id=$id\"><div class='image'><img src='images/store-product.png' alt='a shopping bag'></div><h3>$name</h3><p class='price'>$price$</p></a></div>");
                         $count++;
                         if ($count == 5) {
                             break;
