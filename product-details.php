@@ -94,7 +94,7 @@ if (isset($_POST['add-to-cart'])) {
                     <input type=\"checkbox\" id=\"dropdown-sub\">
                     <ul class=\"sub-menu\">
                         <li><a href=\"browse-products-1.php?store=$store_id\">by CATEGORY</a></li>
-                        <li><a href=\"browse-products-2.php\">by CREATED TIME</a></li>
+                        <li><a href=\"browse-products-2.php?store=$store_id\">by CREATED TIME</a></li>
                     </ul>
                 </li>
                 <li><a href=\"store-contact-us.php?store=$store_id\">CONTACT</a></li>
@@ -179,7 +179,6 @@ if (isset($_POST['add-to-cart'])) {
             <h2 class="label">Related Products</h2>
             <?php
             echo "<div class=\"flex-container\">";
-            $products = read_all_products();
             $count = 0;
             foreach ($products as $product) {
                 if ($product['store_id'] == $store['id']) {
