@@ -95,7 +95,7 @@ require 'product_functions.php';
             foreach ($s_sort as $sort) {
                 $id = $sort['id'];
                 $name = $sort['name'];
-                echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                echo "<div class=\"item\"><a href=\"store-home.php?store=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
                 $count++;
                 if ($count == 10) {
                     break;
@@ -153,7 +153,7 @@ require 'product_functions.php';
                 if ($store['featured'] == 'TRUE') {
                     $id = $store['id'];
                     $name = $store['name'];
-                    echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                    echo "<div class=\"item\"><a href=\"store-home.php?store=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
                     $count++;
                     if ($count == 10) {
                         break;
