@@ -1,0 +1,226 @@
+/* To define new fonts which is not available in IDE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* STYLE OF THE WHOLE PAGE */
+body {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-wrap: break-word !important;
+    font-family: "Poppins", sans-serif;     /* When this font is already defined, it is able to be use to trigger the style of any selectors */
+    min-height: 100vh;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* STYLE OF THE HEADER SECTIONS */
+header {
+    background-color: #000;
+    line-height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+header:after {                              /* Self-clearing element */
+    content: " ";
+    display: table;
+    clear: both;
+}
+header a {                                  /* All anchor tags in header sections in HTML file */
+    color: #fff;
+}
+.toggle, [id^=dropdown] {                   /* Any elements of which ID started with keyword "dropdown" will be selected */
+    display: none;                          /* The elements in this selectors will disappear */
+}
+header #logo a {
+    display: block;
+    text-decoration: none;
+    padding: 0 5px 0 20px;
+    float: left;
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: bold;
+}
+#main-toggle {                              /* Create a responsive navigation icon in header bar */
+    cursor: pointer;                        /* When the mouse cursor touch this item, its icon will change into pointer icon, which means users can click this item */
+    float: right;
+    padding: 30px 24px;
+    position: relative;
+    user-select: none;
+}
+.navigation-icon {                           /* Create that icon by drawing 3 lines, not using available icons from the Internet */
+    background: #fff;
+    display: block;
+    height: 2px;
+    width: 20px;
+    position: relative;
+}
+.navigation-icon:before, .navigation-icon:after {
+    background: #fff;
+    content: " ";                           /* The content before and after this element will be nothing but a single line */
+    height: 100%;
+    width: 100%;
+    position: absolute;                     /* To make one line move up, one line move down */
+}
+.navigation-icon:before {
+    top: 5px;                               /* Make the top line move up */
+}
+.navigation-icon:after {
+    top:-5px;                               /* Make the bottom line move down */
+}
+header nav ul {                             /* Arrange the desktop header bar */
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;                       /* Remove the bullets of any unordered list */
+}
+header nav ul li {
+    margin: 0;
+    float: left;
+    background-color: #000;
+}
+header nav a {                              
+    display: block;                         /* To enable user to click the whole button area, not the button text */
+    padding: 0 20px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;                  /* To remove all underlines in anchor tags in header bar */
+}
+.active {
+    background-color: #f00;               /* When users click on any item, they'll be move to another page in which that item is highlighted */
+    color: #600;
+    font-weight: bold;
+}
+header nav ul li:hover {                    /* Main menu in hover states */
+    background-color: #f00;
+    transition: 0.5s;
+}
+header nav ul li a:hover {
+    color: #600;
+    font-weight: bold;
+    transition: 0.5s;
+}
+header nav ul li ul li:hover {              /* Sub menu in hover states */
+    background-color: #f00;
+    transition: 0.5s;
+}
+header nav ul li ul li a:hover {
+    color: #600;
+    font-weight: bold;
+    transition: 0.5s;
+} 
+header nav ul ul {                          /* To make the sub menu dropdown, we have to make it disappear first */
+    display: none;
+    position: absolute;
+    top: 60px;                              
+}
+header nav ul ul li {                       /* Remaster the submenu */
+    width: 210px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+nav ul li:hover > ul {                      /* When the mouse cursor touchs the navigation items which have sub menus, those sub menus appear*/
+    display: inherit;
+}
+
+/* STYLE OF THE FOOTER SECTIONS */
+footer {
+    clear: both;
+    background-color: #000;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 100%;
+    margin-top: 60px;
+}
+footer a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    margin: 10px 50px;
+}
+footer a:hover {
+    color: #f00;
+    font-weight: bold;
+    transition: 0.5s;
+}
+footer #brief-descrpition {
+    margin-top: 30px;
+}
+footer p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* Make header bar responsive in all mobile devices */
+@media all and (max-width: 1250px) {
+    header {
+        top: 0;
+    }
+    header nav {
+        margin: 0;
+    }
+    header nav ul {
+        float: none;
+    }
+    header nav ul ul {                       /* Arrange the sub menu items into a vertical line */
+        float: none;
+        position: static;                    
+        width: 100%;
+    }
+    .toggle + a, .menu {                     /* Turn off the menu */
+        display: none;
+    }
+    .toggle {                                /* Make the responsive navigation icon appaer */
+        display: block;
+        background: #000;
+        padding: 0 20px;
+        font-size: 20px;
+        color: #fff;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+    }
+    .toggle:hover {
+        background: #f00;
+        transition: 0.5s;
+    }
+    [id^=dropdown]:checked + ul {           /* When user tap on the navigation icon, the main menu appears */            
+        display: block;                     /* Note: the tags selected must be at the same hierachy */
+    }
+    header nav ul li, header nav ul ul li{                       /* Arrange the main menu items into a vertical line */
+        display: block;
+        width: 100%;
+    }
+    header nav ul ul .toggle, header nav ul ul a {
+        padding: 0 40px;
+    }
+    header nav ul ul li:hover > ul, header nav ul li:hover > ul {
+        display: none;
+    }
+}
+@media all and (max-width: 848px) {
+    footer a {                              /* Resize the footer navigation bar */
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        margin: 30px 40px;
+    }
+}
+@media all and (max-width: 688px) {
+    footer a {                              /* Make the footer navigation items appear in single lines */
+        display: block;                     
+        width: 100%;
+        margin: 0;
+    }
+}
+@media all and (max-width: 550px) {
+    header #logo a {
+        font-size: 20px;
+    }
+}

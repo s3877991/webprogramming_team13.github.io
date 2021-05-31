@@ -1,3 +1,16 @@
+<!-- PHP code area -->
+<?php
+session_start();
+
+// If file 'install.php' still exists, the current PHP script in this file will be terminated
+// if (file_exists('admin/install.php')) {
+// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+// }
+
+require 'mall_store_functions.php';
+require 'product_functions.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/header-&-footer.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/flexbox.css">
     <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -34,8 +47,7 @@
                 <li><a href="fees.php">FEES</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">STORES <span
-                            class="material-icons">expand_more</span></label>
+                    <label for="dropdown-sub" class="toggle">STORES <span class="material-icons">expand_more</span></label>
                     <a href="#">STORES <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
@@ -67,216 +79,90 @@
         <!--New Stores Area-->
         <section id="sub-sect-1">
             <h2 class="label">New Stores</h2>
-            <div class="slider">
-            <div class="slide-track">
+            <?php
+            function sort_store() {
+                $stores = read_all_stores();
+                $s_sort = $stores;
+                /* turn each value from the 'created_time' column to unix timestamp
+                then use array_multisort to sort values from that column in descending order */
+                array_multisort(array_map('strtotime', array_column($s_sort, 'created_time')), SORT_DESC, $s_sort);
+                return $s_sort;
+            }
 
-                <div class="slide">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/eworld.png" alt="a letter e logo">
-                        </div>
-                        <h3 class="name">Eworld</h3>
-                        <p class="des">Media Technology Store</p>
-                    </a>
-                </div>
-
-                <div class="slide">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/millennium.png" alt="a letter M logo">
-                        </div>
-                        <h3 class="name">Millennium</h3>
-                        <p class="des">Novel Bookstore</p>
-                    </a>
-                </div>
-
-                <div class="slide">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/mac.png" alt="M . A . C">
-                        </div>
-                        <h3 class="name">Make-up Art Cosmetics</h3>
-                        <p class="des">Cosmetics Store</p>
-                    </a>
-                </div>
-
-                <div class="slide">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/mojito.png" alt="a glass of drink with stars an dots">
-                        </div>
-                        <h3 class="name">Mojito</h3>
-                        <p class="des">Art Stationery Store</p>
-                    </a>
-                </div>
-
-                <div class="slide">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/nike.png" alt="a word 'NIKE' and a slash below it">
-                        </div>
-                        <h3 class="name">NIKE</h3>
-                        <p class="des">Sports Store</p>
-                    </a>
-                </div>
-
-                <div class="slide">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/gucci.png" alt="a symbol and a name above">
-                        </div>
-                        <h3 class="name">Gucci</h3>
-                        <p class="des">Premium Fashion Store</p>
-                    </a>
-                </div>
-
-                <div class="slide">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/tocotoco.jpg" alt="a black circle with many stars">
-                        </div>
-                        <h3 class="name">ToCoToCo</h3>
-                        <p class="des">Milk Tea Store</p>
-                    </a>
-                </div>
-
-                <div class="slide">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/don-chicken.png" alt="a man sit on a big chicken">
-                        </div>
-                        <h3 class="name">Don Chicken</h3>
-                        <p class="des">Korean Chicken Restaurant</p>
-                    </a>
-                </div>
-
-            </div>
-            </div>
+            echo "<div class=\"flex-container\">";
+            $s_sort = sort_store();
+            // display all new stores from newest to oldest created
+            $count = 0;
+            foreach ($s_sort as $sort) {
+                $id = $sort['id'];
+                $name = $sort['name'];
+                echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                $count++;
+                if ($count == 10) {
+                    break;
+                }
+            }
+            echo "</div>";
+            ?>
         </section>
 
         <hr>
 
         <!--New Products Area-->
-        <section id="sub-sect-3">
+        <section id="sub-sect-2">
             <h2 class="label">New Products</h2>
+            <?php
+            function sort_product() {
+                $products = read_all_products();
+                $p_sort = $products;
+                /* turn each value from the 'created_time' column to unix timestamp
+                then use array_multisort to sort those values in descending order */
+                array_multisort(array_map('strtotime', array_column($p_sort, 'created_time')), SORT_DESC, $p_sort);
+                return $p_sort;
+            }
 
-            <div class="slider">
-                <div class="slide-track">
-
-                <div class="slide">
-                    <a href="eworld-website/product-details.php">
-                        <img src="eworld-website/images/galaxy-s21-ultra.jpeg" alt="a phone with quad camera">
-                        <h3 class="name">Samsung Galaxy S21 Ultra</h3>
-                        <p class="price">$1058.69</p>
-                    </a>
-                </div>
-
-                <div class="slide">
-                    <a href="eworld-website/product-details-2.php">
-                        <img src="images/book-2-responsive.png" alt="a cover page with some letters and a fingerprint">
-                        <h3 class="name">Sapiens: A Brief History of Humankind - Yuval Noah Harari</h3>
-                        <p class="price">$10.99</p>
-                    </a>
-                </div>
-
-                <div class="slide">
-                    <a href="eworld-website/product-details.php">
-                        <img src="images/matte-lipstick.png" alt="a lipstick">
-                        <h3 class="name">Mattle Lipstick</h3>
-                        <p class="price">$19.99</p>
-                    </a>
-                </div>
-
-                <div class="slide">
-                    <a href="eworld-website/product-details-2.php">
-                        <img src="images/faber-watercolor-pencil.jpg" alt="a box of colored pencils">
-                        <h3 class="name">72 Faber Castell watercolor pencils set</h3>
-                        <p class="price">$24.99</p>
-                    </a>
-                </div>
-
-                <div class="slide">
-                    <a href="eworld-website/product-details.php">
-                        <img src="images/nike-sneaker.jpg" alt="a sneaker">
-                        <h3 class="name">Air Jordan 1 Mid</h3>
-                        <p class="price">$140.83</p>
-                    </a>
-                </div>
-
-                <div class="slide">
-                    <a href="eworld-website/product-details-2.php">
-                        <img src="images/gucci-bag.jpg" alt="a handbag">
-                        <h3 class="name">Marmont mini top handle bag</h3>
-                        <p class="price">$2190</p>
-                    </a>
-                </div>
-
-                <div class="slide">
-                    <a href="eworld-website/product-details.php">
-                        <img src="images/matcha-milk-tea.jpg" alt="a cup of green milk tea">
-                        <h3 class="name">Matcha milk tea</h3>
-                        <p class="price">$1.07</p>
-                    </a>
-                </div>
-
-                <div class="slide">
-                    <a href="eworld-website/product-details-2.php">
-                        <img src="images/spicy-cheese-chicken.jpg" alt="a chicken dish">
-                        <h3 class="name">Spicy cheese chicken</h3>
-                        <p class="price">$13.04</p>
-                    </a>
-                </div>
-
-            </div>
+            echo "<div class=\"flex-container\">";
+            $p_sort = sort_product();
+            $count = 0;
+            // display new products from newest to oldest created
+            foreach ($p_sort as $sort) {
+                $id = $sort['id'];
+                $name = $sort['name'];
+                $price = $sort['price'];
+                echo "<div class=\"item\"><a href=\"product-details.php?id=$id\"><div class=\"image\"><img src=\"images/product.png\" alt=\"a shopping bag\"></div><h3 class=\"name\">$name</h3><p class=\"price\">$$price</p></a></div>";
+                $count++;
+                if ($count == 10) {
+                    break;
+                }
+            }
+            echo "</div>"
+            ?>
         </section>
 
         <hr>
 
         <!--Featured Stores Area-->
-        <section id="sub-sect-2">
+        <section id="sub-sect-3">
             <h2 class="label">Featured Stores</h2>
 
-            <div class="flex-container">
-
-                <div class="item">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/nike.png" alt="a word 'NIKE' and a slash below it">
-                        </div>
-                        <h3 class="name">NIKE</h3>
-                        <p class="des">Sports Store</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="eworld-website/index.php">
-                        <img src="images/eworld.png" alt="a letter e logo">
-                        <h3 class="name">Eworld</h3>
-                        <p class="des">Media Technology Store</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/don-chicken.png" alt="a man sit on a big chicken">
-                        </div>
-                        <h3 class="name">Don Chicken</h3>
-                        <p class="des">Korean Chicken Restaurant</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/tocotoco.jpg" alt="a black circle with many stars">
-                        </div>
-                        <h3 class="name">ToCoToCo</h3>
-                        <p class="des">Milk Tea Store</p>
-                    </a>
-                </div>
-
-            </div>
+            <?php
+            echo "<div class=\"flex-container\">";
+            $stores = read_all_stores();
+            // display all featured stores in the csv file using foreach loop
+            $count = 0;
+            foreach ($stores as $store) {
+                if ($store['featured'] == 'TRUE') {
+                    $id = $store['id'];
+                    $name = $store['name'];
+                    echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                    $count++;
+                    if ($count == 10) {
+                        break;
+                    }
+                }
+            }
+            echo "</div>";
+            ?>
         </section>
 
         <hr>
@@ -285,41 +171,24 @@
         <section id="sub-sect-4">
             <h2 class="label">Featured Products</h2>
 
-            <div class="flex-container">
-
-                <div class="item">
-                    <a href="eworld-website/product-details.php">
-                        <img src="eworld-website/images/iphone-12-pro-max.jpg" alt="a phone with a notch display">
-                        <h3 class="name">Apple iPhone 12 Pro Max</h3>
-                        <p class="price">$1264.78</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="eworld-website/product-details-2.php">
-                        <img src="images/nike-sneaker-2.jpg" alt="another sneaker">
-                        <h3 class="name">Air Force 1 </h3>
-                        <p class="price">$166.48</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="eworld-website/product-details.php">
-                        <img src="images/black-diamond-milk-tea.jpg" alt="a cup of brown milk tea with topping">
-                        <h3 class="name">Okinawan Black Diamond milk tea</h3>
-                        <p class="price">$1.07</p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="eworld-website/product-details-2.php">
-                        <img src="images/brush.png" alt="10 make-up brushes varied in sizes">
-                        <h3 class="name">M.A.C Student Pro Brush</h3>
-                        <p class="price">$20</p>
-                    </a>
-                </div>
-
-            </div>
+            <?php
+            echo "<div class=\"flex-container\">";
+            $products = read_all_products();
+            $count = 0;
+            foreach ($products as $product) {
+                if ($product['featured_in_mall'] == 'TRUE') {
+                    $id = $product['id'];
+                    $name = $product['name'];
+                    $price = $product['price'];
+                    echo "<div class=\"item\"><a href=\"product-details.php?id=$id\"><div class=\"image\"><img src=\"images/product.png\" alt=\"a shopping bag\"></div><h3 class=\"name\">$name</h3><p class=\"price\">$$price</p></a></div>";
+                    $count++;
+                    if ($count == 10) {
+                        break;
+                    }
+                }
+            }
+            echo "</div>";
+            ?>
         </section>
 
     </main>
@@ -346,7 +215,6 @@
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="javascript/login-status.js"></script>
     <script src="javascript/cookie.js"></script>
 </body>
 

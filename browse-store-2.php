@@ -1,3 +1,7 @@
+<?php
+session_start();
+require 'mall_store_functions.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,12 +9,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/header-&-footer.css">
-    <link rel="stylesheet" href="css/browse-store-2.css">
+    <link rel="stylesheet" href="css/browse-filter.css">
+    <link rel="stylesheet" href="css/flexbox.css">
     <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
-    <title>Shoppiverse - Stores</title>
+    <title>Shoppiverse - Stores by Category</title>
 </head>
 
 <body>
@@ -33,8 +38,7 @@
                 <li><a href="fees.php">FEES</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">STORES <span
-                            class="material-icons">expand_more</span></label>
+                    <label for="dropdown-sub" class="toggle">STORES <span class="material-icons">expand_more</span></label>
                     <a href="">STORES <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
@@ -53,169 +57,48 @@
     <main>
 
         <section id="select">
-                <div class="select">
-                    <label for="category">Your favourite category is</label>
-                    <select id="category">
-                        <option id="all">All</option>
-                        <option id="1">Department stores</option>
-                        <option id="2">Grocery stores</option>
-                        <option id="3">Restaurant</option>
-                        <option id="4">Clothing stores</option>
-                        <option id="5">Accessory stores</option>
-                        <option id="6">Pharmacies</option>
-                        <option id="7">Technology stores</option>
-                        <option id="8">Pet stores</option>
-                        <option id="9">Toy stores</option>
-                        <option id="10">Specialty stores</option>
-                        <option id="11">Thrift stores</option>
-                        <option id="12">Services</option>
-                        <option id="13">Kiosks</option>
-                    </select>
-                </div>
+            <div class="select">
+                <label for="category">Your favourite category is</label>
+                <select id="category" name="category">
+                    <option id="all">All</option>
+                    <option id="1" value="department">Department stores</option>
+                    <option id="2" value="grocery">Grocery stores</option>
+                    <option id="3" value="restaurant">Restaurant</option>
+                    <option id="4" value="clothing">Clothing stores</option>
+                    <option id="5" value="accessory">Accessory stores</option>
+                    <option id="6" value="pharmacies">Pharmacies</option>
+                    <option id="7" value="tech">Technology stores</option>
+                    <option id="8" value="pet">Pet stores</option>
+                    <option id="9" value="toy">Toy stores</option>
+                    <option id="10" value="specialty">Specialty stores</option>
+                    <option id="11" value="thrift">Thrift stores</option>
+                    <option id="12" value="services">Services</option>
+                    <option id="13" value="kiosks">Kiosks</option>
+                </select>
+            </div>
         </section>
 
         <hr>
 
         <section id="list-of stores">
-            <div class="flex-container">
-
-                <div class="item">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/eworld.png" alt="a letter e logo">
-                        </div>
-                        <h3 class="name">Eworld</h3>
-                        <p class="des">Media Technology Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/millennium.png" alt="a letter M logo">
-                        </div>
-                        <h3 class="name">Millennium</h3>
-                        <p class="des">Novel Bookstore</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_border</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/mac.png" alt="M . A . C">
-                        </div>
-                        <h3 class="name">Make-up Art Cosmetics</h3>
-                        <p class="des">Cosmetics Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/mojito.png" alt="a glass of drink with stars an dots">
-                        </div>
-                        <h3 class="name">Mojito</h3>
-                        <p class="des">Art Stationery Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_border</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/nike.png" alt="a word 'NIKE' and a slash below it">
-                        </div>
-                        <h3 class="name">NIKE</h3>
-                        <p class="des">Sports Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/gucci.png" alt="a symbol and a name above">
-                        </div>
-                        <h3 class="name">Gucci</h3>
-                        <p class="des">Premium Fashion Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/tocotoco.jpg" alt="a black circle with many stars">
-                        </div>
-                        <h3 class="name">ToCoToCo</h3>
-                        <p class="des">Milk Tea Store</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="eworld-website/index.php">
-                        <div class="image">
-                            <img src="images/don-chicken.png" alt="a man sit on a big chicken">
-                        </div>
-                        <h3 class="name">Don Chicken</h3>
-                        <p class="des">Korean Chicken Restaurant</p>
-                        <p class="rank">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
-                    </a>
-                </div>
-
-            </div>
+            <?php
+            function alphabet_display() {
+                //display stores in alphabetical order
+                $stores = read_all_stores();
+                $alphabet = $stores;
+                array_multisort(array_column($alphabet, 'name'), SORT_ASC, $alphabet);
+                return $alphabet;
+            }
+            //default display in alphabet order
+            echo "<div class=\"flex-container\">";
+            $alphabet = alphabet_display();
+            foreach ($alphabet as $a) {
+                $id = $a['id'];
+                $name = $a['name'];
+                echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+            }
+            echo "</div>";
+            ?>
         </section>
 
     </main>
@@ -241,8 +124,8 @@
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="javascript/login-status.js"></script>
     <script src="javascript/cookie.js"></script>
+    <script src="javascript/browse-store.js"></script>
 </body>
 
 </html>

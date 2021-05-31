@@ -6,9 +6,9 @@
 session_start();
 
 // If file 'install.php' still exists, the current PHP script in this file will be terminated
-if (file_exists('install.php')) {
-  die("You have to delete <code>'install.php'</code> file manually to activate the System!");
-}
+// if (file_exists('install.php')) {
+//  die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+// }
 
 // VALIDATE INPUTS BASED ON DATA FROM ADMIN ACCOUNT DATA FILE
 if (isset($_POST['login'])) {
@@ -44,10 +44,6 @@ if (isset($_POST['login'])) {
       // Store the pair of username  on the server for later validation
       // Note: the location is outside of document root to avoid strangers accessing 
       file_put_contents("../$username", $uniqid);
-
-      // Create a Cookie that expires after a week (7 days)
-      setcookie('logged_username', $username, time() + 60 * 60 * 24 * 7);
-      setcookie('uniqid', $uniqid, time() + 60 * 60 * 24 * 7);
 
       // Redirect to dashboard page and the username is saved on server
       $_SESSION['username'] = $_POST['username'];

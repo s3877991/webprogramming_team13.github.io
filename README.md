@@ -1,13 +1,15 @@
 # webprogramming_team13.github.io
-COSC2430 - Web Programming
+COSC2430 - Web Programming.
 
-Lecturer/Tutor: Tri Dang Tran
+Lecturer/Tutor: Tri Dang Tran.
 
-Project Group 13 - THE GANG
+Project Group 13 - THE GANG.
 
 Our GitHub repository: https://github.com/shynkwanchi/webprogramming_team13.github.io
 
-Our Website: https://shynkwanchi.github.io/webprogramming_team13.github.io/
+Our Website - Using local web server (localhost) to run:
++ For common users: localhost:xxxx/index.php
++ For admin users: localhost:xxxx/admin/file_name.php
 
 # Group Members:
 Phan Do Ngoc Linh - s3881557.
@@ -29,7 +31,7 @@ PHAN DO NGOC LINH:
     + Task #1: Cookies consent message ==> COMPLETED.
     + Task #4: Contact Us form requirements ==> COMPLETED.
 
-3. Fullstack Assignment (--%):
+3. Fullstack Assignment (25%):
     + Task #7: Implement the behavior in Store Home page ==> .
     + Task #8: Implement the behavior in Browse Products page ==> .
 
@@ -45,9 +47,9 @@ NGUYEN HAI MINH TRANG:
     + Task #8: Order Placement ==> COMPLETED.
     + Task #9: Sample data ==> COMPLETED.
 
-3. Fullstack Assignment (--%):
-    + Task #4: Implement the behavior in My Account and Login page ==> .
-    + Task #5: Register ==> .
+3. Fullstack Assignment (25%):
+    + Task #4: Implement the behavior in My Account and Login page ==> COMPLETED.
+    + Task #5: Register ==> COMPLETED.
 
 
 NGUYEN QUANG DUY:
@@ -68,7 +70,7 @@ NGUYEN QUANG DUY:
     + Check and Modify codes and to make it consistent, clean, efficient, run properly ==> COMPLETED.
     + Finalize and compress all files and folders into a ZIP file ==> COMPLETED.
 
-3. Fullstack Assignment (--%):
+3. Fullstack Assignment (25%):
     + Task #1: Create and develop an install file for admin ==> COMPLETED.
     + Task #3: Create and develop an admin dashboard page ==> COMPLETED.
     + Task #9: Implement the behavior in Product Details and Order Placement page ==> .
@@ -84,8 +86,8 @@ NGUYEN LINH CHI:
     + Task #2: Carousel in Home page ==> COMPLETED.
     + Task #6: Register form requirements ==> COMPLETED.
 
-3. Fullstack Assignment (--%):
-    + Task #2: Display stores and products based on data from CSV files ==> .
+3. Fullstack Assignment (25%):
+    + Task #2: Display stores and products based on data from CSV files ==> COMPLETED.
     + Task #6: Implement the behavior in browse stores pages ==> .
 
 

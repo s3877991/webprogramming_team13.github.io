@@ -12,12 +12,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/header-&-footer.css">
-    <link rel="stylesheet" href="css/copyright.css">
-    <link rel="stylesheet" href="css/cookie.css">
+    <link rel="stylesheet" href="css-store/header-&-footer.css">
+    <link rel="stylesheet" href="css-store/generic-text.css">
+    <link rel="stylesheet" href="css-store/cookie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Copyright</title>
 </head>
 
@@ -26,7 +26,7 @@
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="index.php">SHOPPIVERSE</a></div>
+            <div id="logo"><a href="store-home.php">The Store</a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -36,22 +36,21 @@
 
             <!--Navigation-->
             <ul class="menu">
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="aboutus.php">ABOUT US</a></li>
-                <li><a href="fees.php">FEES</a></li>
+                <li><a href="store-home.php">HOME</a></li>
+                <li><a href="store-about-us.php">ABOUT US</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">STORES <span class="material-icons">expand_more</span></label>
-                    <a href="">STORES <span class="material-icons">expand_more</span></a>
+                    <label for="dropdown-sub" class="toggle">PRODUCTS <span
+                            class="material-icons">expand_more</span></label>
+                    <a href="#">PRODUCTS <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
-                        <li><a href="browse-store-1.php">by NAME</a></li>
-                        <li><a href="browse-store-2.php">by CATEGORY</a></li>
+                        <li><a href="browse-products-1.php">by CATEGORY</a></li>
+                        <li><a href="browse-products-2.php">by CREATED TIME</a></li>
                     </ul>
                 </li>
-                <li><a href="contactus.php">CONTACT US</a></li>
-                <li><a href="faqs.php">FAQS</a></li>
-                <li><a href="login.php" id="my-account">MY ACCOUNT</a></li>
+                <li><a href="store-contact-us.php">CONTACT</a></li>
+                <li class="your-cart"><a href="your-cart.php">YOUR CART</a></li>
             </ul>
         </nav>
     </header>
@@ -59,40 +58,23 @@
     <!--Main content-->
     <main>
 
-        <section id="copyright">
+        <div class="image">
+            <img src="images/store-copyright.png" alt="a circle with a letter C inside it">
+        </div>
 
-            <div class="image">
-                <img src="images/copyright.png" alt="a stamp mark with copyright statement">
-            </div>
-
-            <div class="text">
-
-                <h1>COPYRIGHT</h1>
-
-                <hr>
-
-                <?php
-                /* In admin "Dashboard" page, after clicking save button, the content in textarea input
-                will be saved in an external file. From that file, the content will be displayed in this
-                page */
-                $content_file = "admin/copyright.txt";
-                $open = fopen($content_file, 'r');
-                $content = fread($open, filesize($content_file));
-                fclose($open);
-                echo $content;
-                ?>
-
-            </div>
-
-        </section>
+        <div class="text-3">
+            <h1>COPYRIGHT</h1>
+            <h3>Copyright <span class="material-icons">copyright</span> 2021, The Store Corporation.</h3>
+            <h3>All rights reserved.</h3>
+        </div>
 
     </main>
 
     <!--Footer section with navigation bar-->
     <footer>
-        <a href="copyright.php">Copyright</a>
-        <a href="tos.php">Terms of Service</a>
-        <a href="privacy-policy.php">Privacy Policy</a>
+        <a href="store-copyright.php">Copyright</a>
+        <a href="store-tos.php">Terms of Service</a>
+        <a href="store-privacypolicy.php">Privacy Policy</a>
         <div id="brief-description">
             <em>
                 <h3>by <strong>THE GANG</strong></h3>
@@ -110,7 +92,7 @@
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="javascript/cookie.js"></script>
+    <script src="../javascript/cookie.js"></script>
 </body>
 
 </html>

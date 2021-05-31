@@ -1,3 +1,11 @@
+<!-- PHP code area -->
+<?php
+// If file 'install.php' still exists, the current PHP script in this file will be terminated
+// if (file_exists('admin/install.php')) {
+// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+// }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -94,7 +102,7 @@
                 </p>
 
                 <h2>7/ How many stores do you have?</h2>
-                <p>We have 4 stores in total.</p>
+                <p>We have 100 stores in total.</p>
 
                 <h2>8/ Can I return the products and get a refund?</h2>
                 <p>
@@ -130,7 +138,6 @@
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="javascript/login-status.js"></script>
     <script src="javascript/cookie.js"></script>
 </body>
 

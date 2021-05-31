@@ -1,3 +1,53 @@
+<?php
+// Start the session
+session_start();
+
+// If file 'install.php' still exists, the current PHP script in this file will be terminated
+// if (file_exists('admin/install.php')) {
+// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+// }
+
+
+if (isset($_SESSION["email"])) { header('location: user-info.php'); }
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $password = $email_temp = $password_temp = "";
+    $errors = 0;
+    if (empty($_POST["email"]) || empty($_POST["password"])) {
+        $errors++;
+        $status = "Please do not leave any fields empty!";
+    } else {
+        $email_temp = validate_input($_POST["email"]);
+        $password_temp = validate_input($_POST["password"]);
+        if (file_exists("../users.csv")) {
+            $file = fopen("../users.csv", "r");
+            while (($data = fgetcsv($file)) !== FALSE) {
+                $email_data = $data[0];
+                $password_data = $data[12];
+                if ($email_temp == $email_data && password_verify($password_temp, $password_data)) {
+                    $email = $email_temp;
+                    $password = $password_temp;
+                    break;
+                }
+                else {
+                    $status = "Your email or password is INCORRECT!";
+                } 
+            }
+        }
+    }
+    if ($email != "" && $password != "") {
+        $_SESSION["email"] = $email;
+        header('location: user-info.php');
+    }
+}
+
+function validate_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,7 +109,7 @@
                 </div>
 
                 <div class="form">
-                    <form method="get" action="user-info.php" id="login-form">
+                    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
                         <div class="input">
                             <label for="email" class="label">Your Email</label>
@@ -71,12 +121,18 @@
                         <div class="input">
                             <label for="password" class="label">Your Password</label>
                             <br>
-                            <input type="password" class="text-field" name="pasword" id="password"
+                            <input type="password" class="text-field" name="password" id="password"
                                 placeholder="Enter your password" required>
                         </div>
 
                         <div class="error">
-                            <p id="error-message">Your email or password is INCORRECT</p>
+                            <p id="error-message">
+                            <?php
+                            if (isset($status)) {
+                                echo $status;
+                            }
+                            ?>
+                            </p>
                         </div>
 
                         <div class="action-1">
@@ -123,20 +179,6 @@
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="javascript/login-validation.js"></script>
     <script src="javascript/cookie.js"></script>
 </body>
-
-<!--php-->
-<?php
-    extract($_REQUEST);
-    $file = fopen("form-save.txt", "w");
-
-    fwrite($file, "email: ");
-    fwrite($file, $email ."\n");
-    fwrite($file, "password: ");
-    fwrite($file, $password ."\n");
-
-    fclose($file);
-?>
 </html>

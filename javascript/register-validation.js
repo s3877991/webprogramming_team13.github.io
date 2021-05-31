@@ -73,7 +73,7 @@ var fname = document.getElementById("first-name");
 var fnameErr = document.getElementById("fname-error");
 
 fname.addEventListener('input', function(e) {
-  var fnameregex = /^[A-Za-z]{3,}$/; //at least 3 characters
+  var fnameregex = /^[A-Za-z]{2,}$/; //at least 3 characters
   var current_fname = e.target.value;
   var fnamevalid = fnameregex.test(current_fname);
 
@@ -89,7 +89,7 @@ var lname = document.getElementById("last-name");
 var lnameErr = document.getElementById("lname-error");
 
 lname.addEventListener('input', function(e) {
-  var lnameregex = /^[A-Za-z]{3,}$/; //at least 3 characters
+  var lnameregex = /^[A-Za-z]{2,}$/; //at least 3 characters
   var current_lname = e.target.value;
   var lnamevalid = lnameregex.test(current_lname);
 
@@ -105,7 +105,7 @@ var address = document.getElementById("address");
 var addressErr = document.getElementById("address-error");
 
 address.addEventListener('input', function(e) {
-  var addressregex = /^([a-zA-Z0-9]{2,}[ ]?[a-zA-Z0-9 ]+[, ]*[a-zA-Z0-9 ]*)+$/;
+  var addressregex = /^([a-zA-Z0-9]{2,}[\/]*[a-zA-Z0-9]*[ ]?[a-zA-Z0-9 ]+[- ]*[a-zA-Z0-9 ]*)+$/;
   var current_address = e.target.value;
   var addressvalid = addressregex.test(current_address);
 

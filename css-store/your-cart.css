@@ -1,0 +1,223 @@
+/* To define new fonts which is not available in IDE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* STYLE OF THE WHOLE PAGE */
+body {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word !important;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;     /* When this font is already defined, it is able to be use to trigger the style of any selectors */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* STYLE OF HEADER AND FOOTER */
+header {
+    margin: 0;
+}
+footer {
+    margin: 0;
+}
+
+/* STYLE OF MAIN SECTION */
+main {
+    margin: 70px 100px;
+}
+h1 {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+/* Order Placement */
+.cart-page {
+    margin: auto;
+}
+.cart-page p {
+    margin: 0;
+    padding: 0;
+}
+.cart-page .name, .cart-page .price {
+    font-weight: bold;
+}
+.cart-page .price {
+    color: #f00;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+th {
+    text-align: left;
+    padding: 5px;
+    border-bottom: 2.5px solid;
+    font-weight: normal;
+}
+td {
+    padding: 10px 5px;
+}
+td input {
+    width: 70px;
+    border: none;
+    border-bottom: 1px solid;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    height: 30px;
+    padding: 5px;
+}
+td a {
+    color: #f00;
+    font-size: 18px;
+    text-decoration: none;
+}
+td a:hover {
+    color: #600;
+    font-weight: bold;
+    transition: 0.5s;
+}
+img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table {
+    width: 100%;
+    max-width: 380px;
+}
+td:last-child {
+    text-align: right;
+}
+th:last-child {
+    text-align: right;
+}
+/* Total Price */
+.total-price tr:last-child {
+    color: #f00;
+    font-style: italic;
+}
+#coupon {
+    width: 100%;
+}
+/* Button Area */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.button {
+    margin: 30px 5px;
+    text-align: center;
+}
+.button button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Poppins',sans-serif;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.button:last-child button {
+    font-weight: bold;
+    color: #fff;
+    background-color: #f00;
+}
+.button:last-child button:hover {
+    background-color: #600;
+    transition: 0.5s;
+}   
+.button:first-child button {
+    background-color: #ddd;
+}
+.button:first-child button a {
+    color: #000;
+    text-decoration: none;
+}
+.button:first-child button:hover {
+    background-color: #eee;
+    transition: 0.5s;
+}
+.button:first-child button a:hover {
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+
+/* MAKE THE WHOLE PAGE RESPONSIVE */
+@media screen and (max-width: 820px) {
+    main {
+        margin: 70px 50px;
+    }
+}
+@media screen and (max-width: 720px) {
+    main {
+        margin: 70px 25px;
+    }
+}
+@media screen and (max-width: 660px) {
+    main {
+        margin: 70px 10px;
+    }
+}
+@media screen and (max-width: 350px) {
+    main {
+        margin: 70px auto;
+    }
+}
+
+/* Order Placement */
+@media screen and (max-width: 660px) {
+    .cart-info {
+        display: block;
+        align-items: center;
+    }
+}
+
+/* Button Area */
+@media screen and (min-width: 1360px) {
+    .button {
+        width: 25%;
+    }
+}
+@media screen and (min-width: 1050px) and (max-width: 1360px) {
+    .button {
+        width: 30%;
+    }
+}
+@media screen and (min-width: 870px) and (max-width: 1050px) {
+    .button {
+        width: 35%;
+    }
+}
+@media screen and (min-width: 620px) and (max-width: 870px) {
+    .button {
+        width: 40%;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 620px) {
+    .button {
+        width: 45%;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 500px) {
+    .button-container {
+        display: block;
+        text-align: center;
+    }
+    .button {
+        width: 80%;
+        margin: 15px auto;
+    }
+}

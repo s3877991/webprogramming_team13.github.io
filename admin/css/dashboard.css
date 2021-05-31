@@ -93,11 +93,11 @@ textarea:focus {
 }
 
 /* BUTTONS */
-.actions {
+#submit, #logout {
     text-align: center;
     margin-top: 50px;
 }
-.actions input {
+button {
     width: 30%;
     margin: 0 5%;
     border: none;
@@ -107,12 +107,24 @@ textarea:focus {
     font-family: 'Nunito', sans-serif;
     cursor: pointer;
 }
-.actions input {
+#submit button {
     background-color: #f93;
 }
-.actions input:hover {
+#submit button:hover {
     background-color: #c60;
     color: #fff;
+    font-weight: bold;
+    transition: 0.5s;
+}
+#logout button {
+    background-color: #ddd;
+}
+#logout button a {
+    text-decoration: none;
+    color: #000;
+}
+#logout button:hover {
+    background-color: #ccc;
     font-weight: bold;
     transition: 0.5s;
 }
@@ -157,5 +169,20 @@ textarea:focus {
 @media screen and (max-width: 360px) {
     #title {
         font-size: 40px;
+    }
+}
+@media screen and (max-width: 500px) {
+    button {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 768px) {
+    button {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    button {
+        width: 40%;
     }
 }

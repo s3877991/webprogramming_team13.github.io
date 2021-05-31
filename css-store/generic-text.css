@@ -1,0 +1,133 @@
+/* To define new fonts which is not available in IDE */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
+/* STYLE OF THE WHOLE PAGE */
+body {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word !important;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* STYLE OF MAIN SECTION */
+main {
+    margin: 50px 100px;
+}
+/* Image section */
+.image {
+    text-align: center;
+}
+.image img {
+    width: 250px;
+    height: 250px;
+}
+
+/* In Terms of service and Privacy Policy HTML file */
+/* Text section */
+.text h1 {
+    text-align: center;
+}
+.text h2 {
+    border-bottom: 5px solid #f00;
+}
+.text p {
+    text-align: justify;
+}
+.text h2, #note {
+    padding-top: 30px;
+}
+#update {
+    text-align: right;
+    font-style: italic;
+    font-size: 15px;
+}
+.text a {
+    text-decoration: none;
+    color: #f00;
+    font-weight: bold;
+}
+.text a:hover {
+    text-decoration: none;
+    color: #600;
+    transition: 0.5s;
+}
+
+/* In Thank You HTML file */
+/* Text section */
+.text-2 h1 {
+    text-align: center;
+    margin: 10px auto;
+}
+/* Button area */
+.btn {
+    margin: 30px 0 70px;
+    text-align: center;
+}
+.btn #exit {
+    padding: 8px 30px;
+    background-color: #f00;
+    border-radius: 10px;
+    border: none;
+}
+.btn #exit a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Poppins',sans-serif;
+}
+.btn #exit:hover {
+    background-color: #600;
+    transition: 0.5s;
+}
+.btn #exit a:hover {
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+/* In copyright HTML file */
+.text-3 {
+    text-align: center;
+}
+
+/* MAKE THE PAGE RESPONSIVE */
+@media screen and (max-width: 950px) {
+    main {
+        margin: 25px 50px;
+    }
+}
+@media screen and (max-width: 455px) {
+    .image img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Make the button on Thank you HTML file display evenly */
+@media screen and (max-width: 494px) {
+    .btn {
+        background-color: #f00;
+        border-radius: 10px;
+    }
+    .btn a {
+        background: none;
+    }
+    .btn:hover {
+        background-color: #600;
+        transition: 0.5s;
+    }
+    .btn a:hover {
+        background: none;
+        transition: 0.5s;
+    }
+}
+
+/* Edit the heading on Copyright */
+@media screen and (max-width: 324px) {
+    .text-3 h1 {
+        font-size: 34px;
+    }
+}

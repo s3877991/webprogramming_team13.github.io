@@ -6,24 +6,9 @@
 session_start();
 
 // If file 'install.php' still exists, the current PHP script in this file will be terminated
-if (file_exists('install.php')) {
-    die("You have to delete <code>'install.php'</code> file manually to activate the System");
-} 
-
-// Check if user cookie is still active or not
-if (!isset($_SESSION['username'])) {
-    // Check user cookie
-    if (isset($_COOKIE['logged_username'])) {
-        $logged_username = $_COOKIE['logged_username'];
-        // Check if the user cookie is valid one
-        if (file_exists("../$logged_username")) {
-            $uniqid_value = file_get_contents("../$logged_username");
-            if ($_COOKIE['uniqid'] == $uniqid_value) {
-                $_SESSION['username'] = $_COOKIE['logged_username'];
-            }
-        }
-    }
-}
+// if (file_exists('install.php')) {
+//    die("You have to delete <code>'install.php'</code> file manually to activate the System");
+// } 
 
 // Check if admin has logged in or not
 if (!isset($_SESSION['username'])) {
@@ -89,7 +74,7 @@ if (!isset($_SESSION['username'])) {
                     <?php
                     // Save the content data in an external file when clicking "Save" button
                     $content_data = file("../admin/copyright.txt");
-                    // Avoid overwriting the previous content when updating content in text area input
+                    // Overwriting the previous content when updating content in text area input
                     foreach ($content_data as $update) {
                         echo $update;
                     }
@@ -209,8 +194,15 @@ if (!isset($_SESSION['username'])) {
                 ?>
 
                 <!-- Save button -->
-                <div class="actions">
-                    <input type="submit" name="save" value="Save">
+                <div id="submit">
+                    <button type="submit" name="save">Save</button>
+                </div>
+
+                <hr>
+
+                <div id="logout">
+                    <h2>Want to change Admin account?</h2>
+                    <button><a href="logout.php">Log Out</a></button>
                 </div>
 
             </form>

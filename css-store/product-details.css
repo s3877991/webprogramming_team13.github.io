@@ -1,0 +1,170 @@
+main {
+    margin: 0 30px;
+}
+.label {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px 0;
+    text-transform: uppercase;
+    border-bottom: 5px solid #f00;
+}
+
+/* Customers' choice area */
+.flex-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0 20px;
+}
+.avatar {
+    text-align: center;
+}
+.avatar img {
+    width: 100%;
+}
+.button-container {
+    display: flex;
+}
+.button-container .buttons {
+    text-align: center;
+    width: 50%;
+}
+#title, #price {
+    text-align: center;
+}
+#price {
+    color: #f00;
+    font-size: 25px;
+}
+/* Button Area */
+.button-container button {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.button-container #buy-now {
+    background-color: #f00;
+    font-weight: bold;
+    color: #fff;
+}
+.button-container #buy-now:hover {
+    background-color: #600;
+    transition: 0.5s;
+}
+.button-container #add-to-cart {
+    background-color: #ddd;
+    color: #000;
+    text-decoration: none;
+}
+.button-container #add-to-cart:hover {
+    background-color: #eee;
+    transition: 0.5s;
+}
+
+/* Description */
+.text p {
+    text-align: justify;
+    margin: 30px 0;
+}
+
+/* List of products */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+}
+.item {
+    box-sizing: border-box;
+    margin: 5px auto;
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+.item a {
+    color: #000;
+    text-decoration: none;
+}
+.item h3 {
+    font-size: 22.5px;
+}
+.item .price {
+    font-size: 20px;
+    color: #f00;
+}
+.created-date {
+    font-size: 13px;
+}
+.item img {
+    width: 70%;
+    margin: 10px 10px 0 10px;
+}
+.item:hover {
+    background-color: #eee;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+
+/* MAKE THE WHOLE PAGE RESPONSIVE */
+@media screen and (max-width: 470px) {
+    .item {
+      width: 100%;
+    }
+    .item img {
+        margin: 20px 0;
+    }
+}
+@media screen and (min-width: 470px) and (max-width: 690px) {
+    .item {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 690px) and (max-width: 860px) {
+    .item {
+        width: calc(100% / 3);
+    }
+}
+@media screen and (min-width: 860px) and (max-width: 1100px) {
+    .item {
+        width: 25%;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .item {
+        width: 20%;
+    }
+}
+/* Customers' choice area */
+@media screen and (min-width: 1050px) {
+    .options, .avatar {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .options, .avatar {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .flex-container-1 {
+        display: block;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 460px) {
+    .button-container {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .button-container button {
+        width: 185%;
+    }
+}
