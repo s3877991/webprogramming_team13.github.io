@@ -1,5 +1,9 @@
 # webprogramming_team13.github.io
-COSC2430 - Web Programming.
+RMIT University Vietnam SGS.
+
+Semester: 2021A.
+
+Course: COSC2430 - Web Programming.
 
 Lecturer/Tutor: Tri Dang Tran.
 
