@@ -50,8 +50,8 @@ require 'product_functions.php';
                     <a href="#">STORES <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
-                        <li><a class="active" href="browse-store-1.php?letter-start=All&act=Browse">by NAME</a></li>
-                        <li><a class="active" href="browse-store-2.php?category=All&act=Browse">by CATEGORY</a></li>
+                        <li><a href="browse-store-1.php">by NAME</a></li>
+                        <li><a href="browse-store-2.php">by CATEGORY</a></li>
                     </ul>
                 </li>
                 <li><a href="contactus.php">CONTACT US</a></li>
