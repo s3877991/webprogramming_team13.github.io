@@ -1,4 +1,4 @@
-<h2>1/ When do we collect your data?</h2>
+ <h2>1/ When do we collect your data?</h2>
 <p>When you sign up and/or use our services, or when you become our partner.</p>
 <p>When you send any type of form, including login form or other forms related to our products or services via online or offline.</p>
 <p>When you interact with us through our social media platforms, or calls (which are also recorded).</p>
