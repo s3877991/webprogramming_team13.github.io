@@ -7,7 +7,7 @@ Project Group 13 - THE GANG.
 
 Our GitHub repository: https://github.com/shynkwanchi/webprogramming_team13.github.io
 
-Our Website - Using local web server (localhost) to run:
+Our Website - Use local web server (localhost) to run:
 + For common users: localhost:xxxx/index.php
 + For admin users: localhost:xxxx/admin/file_name.php
 
@@ -21,7 +21,7 @@ Nguyen Quang Duy - s3877991.
 Nguyen Linh Chi - s3878609.
 
 # Group Contribution:
-PHAN DO NGOC LINH:
+PHAN DO NGOC LINH - S3881557:
 
 1. HTML & CSS Assignment (24%):
     + Make Mall's Privacy Policy page and Terms of Service page ==> COMPLETED.
@@ -36,7 +36,7 @@ PHAN DO NGOC LINH:
     + Task #8: Implement the behavior in Browse Products page ==> COMPLETED.
 
 
-NGUYEN HAI MINH TRANG:
+NGUYEN HAI MINH TRANG - S3878058:
 
 1. HTML & CSS Assignment (24%):
     + Make Mall's About Us page and FAQs page ==> COMPLETED.
@@ -52,7 +52,7 @@ NGUYEN HAI MINH TRANG:
     + Task #5: Register ==> COMPLETED.
 
 
-NGUYEN QUANG DUY:
+NGUYEN QUANG DUY - S3877991:
 
 1. HTML & CSS Assignment (28%):
     + Write and update group progress on README.md file ==> COMPLETED.
@@ -73,10 +73,11 @@ NGUYEN QUANG DUY:
 3. Fullstack Assignment (25%):
     + Task #1: Create and develop an install file for admin ==> COMPLETED.
     + Task #3: Create and develop an admin dashboard page ==> COMPLETED.
-    + Task #9: Implement the behavior in Product Details and Order Placement page ==> .
+    + Task #9: Implement the behavior in Product Details and Order Placement page ==> COMPLETED.
+    + Check and Modify codes and to make it consistent, clean, efficient, run properly ==> COMPLETED.
+    + Finalize and compress all files and folders into a ZIP file ==> COMPLETED.
 
-
-NGUYEN LINH CHI:
+NGUYEN LINH CHI - S3878609:
 
 1. HTML & CSS Assignment (24%):
     + Make Mall's Fees page and Copyright page ==> COMPLETED.
