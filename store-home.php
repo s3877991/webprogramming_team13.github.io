@@ -54,7 +54,7 @@
             <?php
             echo
             "<ul class=\"menu\">
-                <li><a href=\"store-home.php?store=$storeid\">HOME</a></li>
+                <li><a class=\"active\" href=\"store-home.php?store=$storeid\">HOME</a></li>
                 <li><a href=\"store-about-us.php?store=$storeid\">ABOUT US</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
