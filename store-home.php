@@ -2,9 +2,9 @@
 session_start();
 
 // If file 'install.php' still exists, the current PHP script in this page will be terminated
-// if (file_exists('admin/install.php')) {
-// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
-// }
+if (file_exists('admin/install.php')) {
+die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+}
 
 require 'backend/product_functions.php';
 require 'backend/mall_store_functions.php';

@@ -2,14 +2,15 @@
 session_start();
 
 // If file 'install.php' still exists, the current PHP script in this page will be terminated
-// if (file_exists('admin/install.php')) {
-// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
-// }
+if (file_exists('admin/install.php')) {
+    die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+}
 
 require 'backend/mall_store_functions.php';
 
 //function to display chosen value in the select box field after clicking the dropdown options
-function keepFieldSelected($str) {
+function keepFieldSelected($str)
+{
     if (isset($_GET['category']) && $_GET['category'] === $str) {
         echo "selected";
     } else {
@@ -73,26 +74,26 @@ function keepFieldSelected($str) {
 
         <section id="select">
             <div class="select">
-              <form method="get" action='browse-store-2.php'>
-                <label for="category">Your favourite category is</label>
-                <select id="category" name="category">
-                <option <?php keepFieldSelected("All") ?> value="All">All</option>
-                    <option <?php keepFieldSelected("1") ?> value="1">Department stores</option>
-                    <option <?php keepFieldSelected("2") ?> value="2">Grocery stores</option>
-                    <option <?php keepFieldSelected("3") ?> value="3">Restaurants</option>
-                    <option <?php keepFieldSelected("4") ?> value="4">Clothing stores</option>
-                    <option <?php keepFieldSelected("5") ?> value="5">Accessory stores</option>
-                    <option <?php keepFieldSelected("6") ?> value="6">Pharmacies</option>
-                    <option <?php keepFieldSelected("7") ?> value="7">Technology stores</option>
-                    <option <?php keepFieldSelected("8") ?> value="8">Pet stores</option>
-                    <option <?php keepFieldSelected("9") ?> value="9">Toy stores</option>
-                    <option <?php keepFieldSelected("10") ?> value="10">Specialty stores</option>
-                    <option <?php keepFieldSelected("11") ?> value="11">Thrift stores</option>
-                    <option <?php keepFieldSelected("12") ?> value="12">Services</option>
-                    <option <?php keepFieldSelected("13") ?> value="13">Kiosks</option>
-                </select>
-                <button type="submit" name="act"><span class="material-icons">check</span></button>
-              </form>
+                <form method="get" action='browse-store-2.php'>
+                    <label for="category">Your favourite category is</label>
+                    <select id="category" name="category">
+                        <option <?php keepFieldSelected("All") ?> value="All">All</option>
+                        <option <?php keepFieldSelected("1") ?> value="1">Department stores</option>
+                        <option <?php keepFieldSelected("2") ?> value="2">Grocery stores</option>
+                        <option <?php keepFieldSelected("3") ?> value="3">Restaurants</option>
+                        <option <?php keepFieldSelected("4") ?> value="4">Clothing stores</option>
+                        <option <?php keepFieldSelected("5") ?> value="5">Accessory stores</option>
+                        <option <?php keepFieldSelected("6") ?> value="6">Pharmacies</option>
+                        <option <?php keepFieldSelected("7") ?> value="7">Technology stores</option>
+                        <option <?php keepFieldSelected("8") ?> value="8">Pet stores</option>
+                        <option <?php keepFieldSelected("9") ?> value="9">Toy stores</option>
+                        <option <?php keepFieldSelected("10") ?> value="10">Specialty stores</option>
+                        <option <?php keepFieldSelected("11") ?> value="11">Thrift stores</option>
+                        <option <?php keepFieldSelected("12") ?> value="12">Services</option>
+                        <option <?php keepFieldSelected("13") ?> value="13">Kiosks</option>
+                    </select>
+                    <button type="submit" name="act"><span class="material-icons">check</span></button>
+                </form>
             </div>
         </section>
 
@@ -100,7 +101,8 @@ function keepFieldSelected($str) {
 
         <section id="list-of stores">
             <?php
-            function alphabet_display() {
+            function alphabet_display()
+            {
                 //display stores in alphabetical order
                 $stores = read_all_stores();
                 $alphabet = $stores;
@@ -116,8 +118,7 @@ function keepFieldSelected($str) {
                     $name = $a['name'];
                     $category = $a['category_id'];
                     echo "<div class=\"item\"><a href=\"store-home.php?store=$id&category=$category\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
-                }
-                elseif (empty($_GET['category']) || $_GET['category'] === 'All') {
+                } elseif (empty($_GET['category']) || $_GET['category'] === 'All') {
                     $id = $a['id'];
                     $name = $a['name'];
                     $category = $a['category_id'];

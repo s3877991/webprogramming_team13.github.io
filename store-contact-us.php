@@ -1,8 +1,8 @@
 <?php
 // If file 'install.php' still exists, the current PHP script in this file will be terminated
-// if (file_exists('admin/install.php')) {
-// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
-// }
+if (file_exists('admin/install.php')) {
+    die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+}
 
 // Use a function from another PHP file
 require 'backend/mall_store_functions.php';
@@ -89,136 +89,136 @@ $id = $store['id'];
         <?php
         echo "<form method=\"get\" action=\"store-home.php?store=$id\">";
         ?>
-            <div class="container">
+        <div class="container">
 
-                <!--Title-->
-                <div class="title">
-                    <h1>CONTACT US</h1>
-                    <p>Feel free to contact us</p>
-                </div>
+            <!--Title-->
+            <div class="title">
+                <h1>CONTACT US</h1>
+                <p>Feel free to contact us</p>
+            </div>
 
-                <!--Purpose and full name area-->
-                <div class="flex-container">
+            <!--Purpose and full name area-->
+            <div class="flex-container">
 
-                    <div class="item flex">
-                        <label class="label" for="purpose">Your purpose</label>
-                        <br>
-                        <select id="purpose" required>
-                            <option value="" selected>Choose your purpose</option>
-                            <option id="shop-online">Shop online</option>
-                            <option id="customer-care">Customer care</option>
-                            <option id="feedback">Feedback</option>
-                            <option id="others">Others</option>
-                        </select>
-                    </div>
-
-                    <div class="item flex">
-                        <label class="label" for="name">Your name</label>
-                        <br>
-                        <input type="text" name="name" maxlength="50" placeholder="Enter your full name" required>
-                    </div>
-
-                </div>
-
-                <div class="flex-container">
-
-                    <div class="item flex">
-                        <label class="label" for="email">Your email</label>
-                        <br>
-                        <input type="email" name="email" placeholder="Enter your email address" required>
-                    </div>
-
-                    <div class="item flex">
-                        <label class="label" for="phone">Your phone</label>
-                        <br>
-                        <input type="tel" name="phone" minlength=9 maxlength=13 placeholder="Enter your phone number" required>
-                    </div>
-
-                </div>
-
-                <div class="flex-container">
-
-                    <div class="item flex">
-                        <label class="label" for="method">Preferred contact method</label>
-                    </div>
-
-                    <div class="item radio">
-
-                        <input type="radio" name="method" value="email">
-                        <label class="options" for="email">Email</label>
-
-                        <input type="radio" name="method" value="phone">
-                        <label class="options" for="phone">Phone</label>
-
-                    </div>
-
-                </div>
-
-                <div class="item-container">
-
-                    <label class="label" for="days">Preferred contact days</label>
+                <div class="item flex">
+                    <label class="label" for="purpose">Your purpose</label>
                     <br>
-                    <ul class="checkbox">
-
-                        <li>
-                            <input type="checkbox" name="mon" value="mon">
-                            <label class="options" for="mon">Monday</label>
-                        </li>
-
-                        <li>
-                            <input type="checkbox" name="tue" value="tue">
-                            <label class="options" for="tue">Tuesday</label>
-                        </li>
-
-                        <li>
-                            <input type="checkbox" name="wed" value="wed">
-                            <label class="options" for="wed">Wednesday</label>
-                        </li>
-
-                        <li>
-                            <input type="checkbox" name="thu" value="thu">
-                            <label class="options" for="thu">Thursday</label>
-                        </li>
-
-                        <li>
-                            <input type="checkbox" name="fri" value="fri">
-                            <label class="options" for="fri">Friday</label>
-                        </li>
-
-                        <li>
-                            <input type="checkbox" name="sat" value="sat">
-                            <label class="options" for="sat">Saturday</label>
-                        </li>
-
-                        <li>
-                            <input type="checkbox" name="sun" value="sun">
-                            <label class="options" for="sun">Sunday</label>
-                        </li>
-
-                    </ul>
+                    <select id="purpose" required>
+                        <option value="" selected>Choose your purpose</option>
+                        <option id="shop-online">Shop online</option>
+                        <option id="customer-care">Customer care</option>
+                        <option id="feedback">Feedback</option>
+                        <option id="others">Others</option>
+                    </select>
                 </div>
 
-                <div class="item-container">
-
-                    <label class="label" for="message">Your message</label>
+                <div class="item flex">
+                    <label class="label" for="name">Your name</label>
                     <br>
-                    <textarea placeholder="Enter your message"></textarea>
-
+                    <input type="text" name="name" maxlength="50" placeholder="Enter your full name" required>
                 </div>
 
-                <div class="button-container">
+            </div>
 
-                    <div class="button">
-                        <input type="reset" id="clear" value="Clear">
-                    </div>
+            <div class="flex-container">
 
-                    <div class="button">
-                        <input type="submit" id="send" value="Send">
-                    </div>
+                <div class="item flex">
+                    <label class="label" for="email">Your email</label>
+                    <br>
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="item flex">
+                    <label class="label" for="phone">Your phone</label>
+                    <br>
+                    <input type="tel" name="phone" minlength=9 maxlength=13 placeholder="Enter your phone number" required>
+                </div>
+
+            </div>
+
+            <div class="flex-container">
+
+                <div class="item flex">
+                    <label class="label" for="method">Preferred contact method</label>
+                </div>
+
+                <div class="item radio">
+
+                    <input type="radio" name="method" value="email">
+                    <label class="options" for="email">Email</label>
+
+                    <input type="radio" name="method" value="phone">
+                    <label class="options" for="phone">Phone</label>
 
                 </div>
 
             </div>
+
+            <div class="item-container">
+
+                <label class="label" for="days">Preferred contact days</label>
+                <br>
+                <ul class="checkbox">
+
+                    <li>
+                        <input type="checkbox" name="mon" value="mon">
+                        <label class="options" for="mon">Monday</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="tue" value="tue">
+                        <label class="options" for="tue">Tuesday</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="wed" value="wed">
+                        <label class="options" for="wed">Wednesday</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="thu" value="thu">
+                        <label class="options" for="thu">Thursday</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="fri" value="fri">
+                        <label class="options" for="fri">Friday</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="sat" value="sat">
+                        <label class="options" for="sat">Saturday</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="sun" value="sun">
+                        <label class="options" for="sun">Sunday</label>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="item-container">
+
+                <label class="label" for="message">Your message</label>
+                <br>
+                <textarea placeholder="Enter your message"></textarea>
+
+            </div>
+
+            <div class="button-container">
+
+                <div class="button">
+                    <input type="reset" id="clear" value="Clear">
+                </div>
+
+                <div class="button">
+                    <input type="submit" id="send" value="Send">
+                </div>
+
+            </div>
+
+        </div>
         </form>
 
     </main>

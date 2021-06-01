@@ -1,8 +1,8 @@
 <?php
 // If file 'install.php' still exists, the current PHP script in this file will be terminated
-// if (file_exists('admin/install.php')) {
-// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
-// }
+if (file_exists('admin/install.php')) {
+    die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+}
 ?>
 
 <!DOCTYPE html>
@@ -40,8 +40,7 @@
                 <li><a href="fees.php">FEES</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">STORES <span
-                            class="material-icons">expand_more</span></label>
+                    <label for="dropdown-sub" class="toggle">STORES <span class="material-icons">expand_more</span></label>
                     <a href="">STORES <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
@@ -103,8 +102,8 @@
                                 <label class="label" for="email">Your email</label>
                                 <br>
                                 <form action="#">
-                                <input type="email" name="email" id="email" placeholder="Enter your email address">
-                                <small>Error message</small>
+                                    <input type="email" name="email" id="email" placeholder="Enter your email address">
+                                    <small>Error message</small>
                                 </form>
                             </div>
                         </div>
@@ -179,7 +178,7 @@
                             </li>
 
                         </ul>
-                    
+
                     </div>
 
                     <div class="item-container">
@@ -203,7 +202,7 @@
 
                 </div>
             </form>
-            
+
         </section>
 
     </main>
@@ -232,6 +231,7 @@
     <!--Link to external JavaScript file-->
     <script src="javascript/cookie.js"></script>
     <script src="javascript/contactus.js"></script>
-    
+
 </body>
+
 </html>

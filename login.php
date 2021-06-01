@@ -2,12 +2,14 @@
 session_start();
 
 // If file 'install.php' still exists, the current PHP script in this file will be terminated
-// if (file_exists('admin/install.php')) {
-// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
-// }
+if (file_exists('admin/install.php')) {
+    die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+}
 
 
-if (isset($_SESSION["email"])) { header('location: user-info.php'); }
+if (isset($_SESSION["email"])) {
+    header('location: user-info.php');
+}
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $password = $email_temp = $password_temp = "";
     $errors = 0;
@@ -26,10 +28,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $email = $email_temp;
                     $password = $password_temp;
                     break;
-                }
-                else {
+                } else {
                     $status = "Your email or password is INCORRECT!";
-                } 
+                }
             }
         }
     }
@@ -39,7 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-function validate_input($data) {
+function validate_input($data)
+{
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
@@ -82,8 +84,7 @@ function validate_input($data) {
                 <li><a href="fees.php">FEES</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">STORES <span
-                            class="material-icons">expand_more</span></label>
+                    <label for="dropdown-sub" class="toggle">STORES <span class="material-icons">expand_more</span></label>
                     <a href="">STORES <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
@@ -108,29 +109,27 @@ function validate_input($data) {
                 </div>
 
                 <div class="form">
-                    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 
                         <div class="input">
                             <label for="email" class="label">Your Email</label>
                             <br>
-                            <input type="email" class="text-field" name="email" id="email"
-                                placeholder="Enter your email address" required>
+                            <input type="email" class="text-field" name="email" id="email" placeholder="Enter your email address" required>
                         </div>
 
                         <div class="input">
                             <label for="password" class="label">Your Password</label>
                             <br>
-                            <input type="password" class="text-field" name="password" id="password"
-                                placeholder="Enter your password" required>
+                            <input type="password" class="text-field" name="password" id="password" placeholder="Enter your password" required>
                         </div>
 
                         <div class="error">
                             <p id="error-message">
-                            <?php
-                            if (isset($status)) {
-                                echo $status;
-                            }
-                            ?>
+                                <?php
+                                if (isset($status)) {
+                                    echo $status;
+                                }
+                                ?>
                             </p>
                         </div>
 
@@ -180,4 +179,5 @@ function validate_input($data) {
     <!--Link to external JavaScript file-->
     <script src="javascript/cookie.js"></script>
 </body>
+
 </html>

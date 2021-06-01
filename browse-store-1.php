@@ -2,14 +2,15 @@
 session_start();
 
 // If file 'install.php' still exists, the current PHP script in this page will be terminated
-// if (file_exists('admin/install.php')) {
-// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
-// }
+if (file_exists('admin/install.php')) {
+    die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+}
 
 require 'backend/mall_store_functions.php';
 
 //function to display chosen value in the select box field after clicking the dropdown options
-function keepFieldSelected($str) {
+function keepFieldSelected($str)
+{
     if (isset($_GET['letter-start']) && $_GET['letter-start'] === $str) {
         echo "selected";
     } else {
@@ -73,40 +74,40 @@ function keepFieldSelected($str) {
 
         <section id="select">
             <div class="select">
-              <form method="get" action="browse-store-1.php">
-                <label for="letter-start">Store names start with letter </label>
-                <select id="letter-start" name="letter-start">
-                    <option <?php keepFieldSelected("All") ?> value="All">All</option>
-                    <option <?php keepFieldSelected("#") ?> value="#">#</option>
-                    <option <?php keepFieldSelected("A") ?> value="A">A</option>
-                    <option <?php keepFieldSelected("B") ?> value="B">B</option>
-                    <option <?php keepFieldSelected("C") ?> value="C">C</option>
-                    <option <?php keepFieldSelected("D") ?> value="D">D</option>
-                    <option <?php keepFieldSelected("E") ?> value="E">E</option>
-                    <option <?php keepFieldSelected("F") ?> value="F">F</option>
-                    <option <?php keepFieldSelected("G") ?> value="G">G</option>
-                    <option <?php keepFieldSelected("H") ?> value="H">H</option>
-                    <option <?php keepFieldSelected("I") ?> value="I">I</option>
-                    <option <?php keepFieldSelected("J") ?> value="J">J</option>
-                    <option <?php keepFieldSelected("K") ?> value="K">K</option>
-                    <option <?php keepFieldSelected("L") ?> value="L">L</option>
-                    <option <?php keepFieldSelected("M") ?> value="M">M</option>
-                    <option <?php keepFieldSelected("N") ?> value="N">N</option>
-                    <option <?php keepFieldSelected("O") ?> value="O">O</option>
-                    <option <?php keepFieldSelected("P") ?> value="P">P</option>
-                    <option <?php keepFieldSelected("Q") ?> value="Q">Q</option>
-                    <option <?php keepFieldSelected("R") ?> value="R">R</option>
-                    <option <?php keepFieldSelected("S") ?> value="S">S</option>
-                    <option <?php keepFieldSelected("T") ?> value="T">T</option>
-                    <option <?php keepFieldSelected("U") ?> value="U">U</option>
-                    <option <?php keepFieldSelected("V") ?> value="V">V</option>
-                    <option <?php keepFieldSelected("W") ?> value="W">W</option>
-                    <option <?php keepFieldSelected("X") ?> value="X">X</option>
-                    <option <?php keepFieldSelected("Y") ?> value="Y">Y</option>
-                    <option <?php keepFieldSelected("Z") ?> value="Z">Z</option>
-                </select>
-                <button type="submit" name="act"><span class="material-icons">check</span></button>
-              </form>
+                <form method="get" action="browse-store-1.php">
+                    <label for="letter-start">Store names start with letter </label>
+                    <select id="letter-start" name="letter-start">
+                        <option <?php keepFieldSelected("All") ?> value="All">All</option>
+                        <option <?php keepFieldSelected("#") ?> value="#">#</option>
+                        <option <?php keepFieldSelected("A") ?> value="A">A</option>
+                        <option <?php keepFieldSelected("B") ?> value="B">B</option>
+                        <option <?php keepFieldSelected("C") ?> value="C">C</option>
+                        <option <?php keepFieldSelected("D") ?> value="D">D</option>
+                        <option <?php keepFieldSelected("E") ?> value="E">E</option>
+                        <option <?php keepFieldSelected("F") ?> value="F">F</option>
+                        <option <?php keepFieldSelected("G") ?> value="G">G</option>
+                        <option <?php keepFieldSelected("H") ?> value="H">H</option>
+                        <option <?php keepFieldSelected("I") ?> value="I">I</option>
+                        <option <?php keepFieldSelected("J") ?> value="J">J</option>
+                        <option <?php keepFieldSelected("K") ?> value="K">K</option>
+                        <option <?php keepFieldSelected("L") ?> value="L">L</option>
+                        <option <?php keepFieldSelected("M") ?> value="M">M</option>
+                        <option <?php keepFieldSelected("N") ?> value="N">N</option>
+                        <option <?php keepFieldSelected("O") ?> value="O">O</option>
+                        <option <?php keepFieldSelected("P") ?> value="P">P</option>
+                        <option <?php keepFieldSelected("Q") ?> value="Q">Q</option>
+                        <option <?php keepFieldSelected("R") ?> value="R">R</option>
+                        <option <?php keepFieldSelected("S") ?> value="S">S</option>
+                        <option <?php keepFieldSelected("T") ?> value="T">T</option>
+                        <option <?php keepFieldSelected("U") ?> value="U">U</option>
+                        <option <?php keepFieldSelected("V") ?> value="V">V</option>
+                        <option <?php keepFieldSelected("W") ?> value="W">W</option>
+                        <option <?php keepFieldSelected("X") ?> value="X">X</option>
+                        <option <?php keepFieldSelected("Y") ?> value="Y">Y</option>
+                        <option <?php keepFieldSelected("Z") ?> value="Z">Z</option>
+                    </select>
+                    <button type="submit" name="act"><span class="material-icons">check</span></button>
+                </form>
             </div>
         </section>
 
@@ -114,7 +115,8 @@ function keepFieldSelected($str) {
 
         <section id="list-of stores">
             <?php
-            function alphabet_display() {
+            function alphabet_display()
+            {
                 //display stores in alphabetical order
                 $stores = read_all_stores();
                 $alphabet = $stores;
@@ -131,18 +133,16 @@ function keepFieldSelected($str) {
                     $id = $a['id'];
                     $name = $a['name'];
                     echo "<div class=\"item\"><a href=\"store-home.php?store=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
-                }
-                elseif ($a['name'][0] === '2' && $_GET['letter-start'] === '#') {
+                } elseif ($a['name'][0] === '2' && $_GET['letter-start'] === '#') {
+                    $id = $a['id'];
+                    $name = $a['name'];
+                    echo "<div class=\"item\"><a href=\"store-home.php?store=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                } elseif (empty($_GET['letter-start']) || $_GET['letter-start'] === 'All') {
                     $id = $a['id'];
                     $name = $a['name'];
                     echo "<div class=\"item\"><a href=\"store-home.php?store=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
                 }
-                elseif (empty($_GET['letter-start']) || $_GET['letter-start'] === 'All') {
-                    $id = $a['id'];
-                    $name = $a['name'];
-                    echo "<div class=\"item\"><a href=\"store-home.php?store=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
-                }
-            }   
+            }
             echo "</div>";
             ?>
         </section>

@@ -2,9 +2,9 @@
 session_start();
 
 // If file 'install.php' still exists, the current PHP script in this file will be terminated
-// if (file_exists('admin/install.php')) {
-// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
-// }
+if (file_exists('admin/install.php')) {
+    die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+}
 
 $fname = $lname = $email = $phone = $address = $city = $zip = $country = $acctype = "";
 if (isset($_SESSION["email"])) {
@@ -23,12 +23,10 @@ if (isset($_SESSION["email"])) {
                 $country = $userInfo[7];
                 $acctype = $userInfo[8];
                 break;
-            } 
-            
+            }
         }
     }
-}
-else {
+} else {
     header('location: login.php');
 }
 ?>
@@ -68,8 +66,7 @@ else {
                 <li><a href="fees.php">FEES</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">STORES <span
-                            class="material-icons">expand_more</span></label>
+                    <label for="dropdown-sub" class="toggle">STORES <span class="material-icons">expand_more</span></label>
                     <a href="">STORES <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">

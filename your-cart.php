@@ -3,9 +3,9 @@
 session_start();
 
 // If file 'install.php' still exists, the current PHP script in this file will be terminated
-// if (file_exists('admin/install.php')) {
-// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
-// }
+if (file_exists('admin/install.php')) {
+    die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+}
 
 // Use a function from another PHP file
 require 'backend/mall_store_functions.php';
@@ -35,7 +35,7 @@ if (isset($_POST['check-out'])) {
     if (!isset($_SESSION["email"])) {
         header('location: register.php');
     } else {
-        header('location: thankyou.php?store='.$id);
+        header('location: thankyou.php?store=' . $id);
     }
 }
 ?>
@@ -147,9 +147,9 @@ if (isset($_POST['check-out'])) {
 
                     <div class="button">
                         <button type="button" id="continue">
-                        <?php
-                        echo "<a href=\"store-home.php?store=$id\">Continue Shopping</a>";
-                        ?>
+                            <?php
+                            echo "<a href=\"store-home.php?store=$id\">Continue Shopping</a>";
+                            ?>
                         </button>
                     </div>
 
@@ -165,7 +165,7 @@ if (isset($_POST['check-out'])) {
 
     <!--Footer section with navigation bar-->
     <footer>
-    <?php
+        <?php
         echo
         "<a href=\"store-copyright.php?store=$id\">Copyright</a>
         <a href=\"store-tos.php?store=$id\">Terms of Service</a>

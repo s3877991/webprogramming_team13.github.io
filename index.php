@@ -2,9 +2,9 @@
 session_start();
 
 // If file 'install.php' still exists, the current PHP script in this file will be terminated
-// if (file_exists('admin/install.php')) {
-// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
-// }
+if (file_exists('admin/install.php')) {
+    die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+}
 
 require 'backend/mall_store_functions.php';
 require 'backend/product_functions.php';
@@ -79,7 +79,8 @@ require 'backend/product_functions.php';
         <section id="sub-sect-1">
             <h2 class="label">New Stores</h2>
             <?php
-            function sort_store() {
+            function sort_store()
+            {
                 $stores = read_all_stores();
                 $s_sort = $stores;
                 /* turn each value from the 'created_time' column to unix timestamp
@@ -111,7 +112,8 @@ require 'backend/product_functions.php';
         <section id="sub-sect-2">
             <h2 class="label">New Products</h2>
             <?php
-            function sort_product() {
+            function sort_product()
+            {
                 $products = read_all_products();
                 $p_sort = $products;
                 /* turn each value from the 'created_time' column to unix timestamp

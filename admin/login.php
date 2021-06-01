@@ -6,9 +6,9 @@
 session_start();
 
 // If file 'install.php' still exists, the current PHP script in this file will be terminated
-// if (file_exists('install.php')) {
-//  die("You have to delete <code>'install.php'</code> file manually to activate the System!");
-// }
+if (file_exists('install.php')) {
+  die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+}
 
 // VALIDATE INPUTS BASED ON DATA FROM ADMIN ACCOUNT DATA FILE
 if (isset($_POST['login'])) {
@@ -48,12 +48,11 @@ if (isset($_POST['login'])) {
       // Redirect to dashboard page and the username is saved on server
       $_SESSION['username'] = $_POST['username'];
       header('location: dashboard.php');
-      
-    // Otherwise, an error message appears. 
+
+      // Otherwise, an error message appears. 
     } else if ($admin['Username'] !== $username || !password_verify($password, $admin['Password'])) {
       $status = "Your username or password is INCORRECT!";
     }
-
   }
 }
 ?>
