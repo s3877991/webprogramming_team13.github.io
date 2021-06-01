@@ -165,7 +165,7 @@
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="../javascript/cookie.js"></script>
+    <script src="javascript/cookie.js"></script>
 </body>
 
 </html>
