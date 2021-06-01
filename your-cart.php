@@ -1,3 +1,5 @@
+<!-- Assigment 3: FULLSTACK ASSIGNMENT - TASK #9: Implement the behavior in Product Details and Order Placement page -->
+
 <?php
 // Start the session
 session_start();
@@ -38,12 +40,6 @@ if (isset($_POST['check-out'])) {
         header('location: thankyou.php?store='.$id);
     }
 }
-
-// if (isset($_SESSION['cart'])) {
-//    echo "<pre>";
-//    print_r($_SESSION['cart']);
-//    echo "</pre>";
-// }
 ?>
 
 <!DOCTYPE html>
@@ -119,31 +115,6 @@ if (isset($_POST['check-out'])) {
                         <th><strong>QUANTITY</strong></th>
                         <th><strong>SUB-TOTAL</strong></th>
                     </tr>
-                    <?php
-                    echo "<tr>";
-                    if (isset($_SESSION['cart'])) {
-                        $name = $_SESSION['cart']['name'];
-                        $price = $_SESSION['cart']['price'];
-                        $quantity = $_SESSION['cart']['incart'];
-                        $sub_total = $price * $quantity;
-                        echo "<td>
-                                <div class=\"cart-info\">
-                                    <img src=\"images/store-product.png\" alt=\"a shopping bag\">
-                                    <div>
-                                        <p class=\"name\">$name</p>
-                                        <p class=\"price\">$price</p>
-                                        <a href=\"remove.php\">Remove</a>
-                                    </div>
-                            </td>
-                            <td>
-                                <input class=\"quantity-input\" name=\"quantity\" type=\"number\" min=1 value=$quantity>
-                            </td>
-                            <td class=\"sub-total\">
-                                $sub_total
-                            </td>";
-                    }
-                    echo "</tr>";
-                    ?>
                 </table>
 
                 <hr>
@@ -219,6 +190,7 @@ if (isset($_POST['check-out'])) {
     </div>
 
     <!--Link to external JavaScript file-->
+    <script src="javascript/your-cart.js"></script>
     <script src="javascript/cookie.js"></script>
 </body>
 
