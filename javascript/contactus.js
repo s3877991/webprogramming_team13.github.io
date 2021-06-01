@@ -82,7 +82,7 @@ function isEmail(email) {
 }
 	
 function isPhone(phone) {
-	return /^([0-9]([-. ]?)){9,11}[^-. ]$/.test(phone);
+	return /^([0-9][-. ]?){8,10}[0-9]$/.test(phone);
 }
 
 

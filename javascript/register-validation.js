@@ -24,7 +24,7 @@ var phone = document.getElementById("phone");
 var phoneErr = document.getElementById("phone-error");
 
 phone.addEventListener('input', function(e) {
-  var phoneregex = /^([0-9]([-. ]?)){9,11}[^-. ]$/
+  var phoneregex = /^([0-9][-. ]?){8,10}[0-9]$/;
   var currentnum = e.target.value;
   var phonevalid = phoneregex.test(currentnum);
 
