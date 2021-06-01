@@ -54,11 +54,11 @@ function keepFieldSelected($str) {
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
                     <label for="dropdown-sub" class="toggle">STORES <span class="material-icons">expand_more</span></label>
-                    <a href="">STORES <span class="material-icons">expand_more</span></a>
+                    <a class="active" href="">STORES <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
                         <li><a href="browse-store-1.php?letter-start=All&act=Browse">by NAME</a></li>
-                        <li><a href="browse-store-2.php?category=All&act=Browse">by CATEGORY</a></li>
+                        <li><a class="active" href="browse-store-2.php?category=All&act=Browse">by CATEGORY</a></li>
                     </ul>
                 </li>
                 <li><a href="contactus.php">CONTACT US</a></li>
@@ -91,7 +91,7 @@ function keepFieldSelected($str) {
                     <option <?php keepFieldSelected("12") ?> value="12">Services</option>
                     <option <?php keepFieldSelected("13") ?> value="13">Kiosks</option>
                 </select>
-                <input type="submit" name="act" value="Browse">
+                <button type="submit" name="act"><span class="material-icons">check</span></button>
               </form>
             </div>
         </section>
