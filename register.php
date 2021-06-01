@@ -39,6 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // check if e-mail address is well-formed
         if (!preg_match('/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/', $email)) {
             $errors++;
+            echo 'email';
         } else {
             if (file_exists("../users.csv")) {
                 $file = file("../users.csv");
@@ -60,6 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // check if name only contains letters and whitespace
         if (!preg_match("/^([0-9]([-. ]?)){9,11}[^-. ]$/", $phone)) {
             $errors++;
+            echo 'phone';
         } else {
             if (file_exists("../users.csv")) {
                 $file = file("../users.csv");
@@ -81,6 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // check if name only contains letters and whitespace
         if (!preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,20}$/", $password)) {
             $errors++;
+            echo 'pass';
         }
     }
 
@@ -91,6 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // check if name only contains letters and whitespace
         if ($password != $retypepassword) {
             $errors++;
+            echo 'repass';
         }
     }
 
@@ -101,6 +105,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // check if name only contains letters and whitespace
         if (!preg_match("/^([a-zA-Z0-9]{2,}[\/]*[a-zA-Z0-9]*[ ]?[a-zA-Z0-9 ]+[- ]*[a-zA-Z0-9 ]*)+$/", $address)) {
             $errors++;
+            echo 'add';
         }
     }
 
@@ -111,6 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // check if name only contains letters and whitespace
         if (!preg_match("/^([a-zA-Z]{2,}[ ]*[a-zA-Z]+)+$/", $city)) {
             $errors++;
+            echo 'city';
         }
     }
 
@@ -121,57 +127,68 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // check if name only contains letters and whitespace
         if (!preg_match("/^[0-9]{4,6}$/", $zip)) {
             $errors++;
+            echo 'zip';
         }
     }
 
     if (empty($_POST["country"])) {
         $errors++;
+        echo 'country1';
     } else {
         $country = validate_input($_POST["country"]);
-        $country_list = ["AR", "AU", "AT", "BY", "BR", "KH", "CA", "CL", "CN", "CO", "CR", "EG", "EE", "FI", "FR", "DE", "VA", "HK", "ID", "IE", "IL", "JM", "JP", "JE", "KZ", "KW", "LV", "LR", "LU", "MO", "MK", "MY", "MX", "FM", "MD", "MC", "MN", "MZ", "MM", "NP", "NL", "NZ", "NI", "NG", "NO", "PK", "PA", "PY", "PE", "PH", "PT", "QA", "RU", "RW", "SA", "SN", "RS", "SG", "ZA", "KR", "ES", "LK", "SW", "CH", "TW", "TH", "TR", "UA", "AE", "GB", "US", "UY", "VE", "VN", "ZW"];
+        $country_list = ["Argentina", "Australia", "Austria", "Belarus", "Brazil", "Cambodia", "Canada", "Chile", "China", "Colombia", "Costa Rica", "Egypt", "Estonia", "Finland", "France", "Germany", "Holy See (Vantican City State)", "Hong Kong", "Indonesia", "Ireland", "IsraelL", "Jamaica", "Japan", "Jersey", "Kazakhstan", "Kuwait", "Latvia", "Liberia", "Luxembourg", "Macao", "Macedonia", "Malaysia", "Mexico", "Micronesia", "Moldova", "Monaco", "Mongolia", "Mozambique", "Myanmar", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Nigeria", "Norway", "Pakistan", "Panama", "Paraguay", "Peru", "The Philippines", "Portugal", "Qatar", "Russia", "Rwanda", "Saudi Arabia", "Senegal", "Serbia", "Singapore", "South Africa", "South Korea", "Spain", "Sri Lanka", "Sweden", "Switzerland", "Taiwan", "Thailand", "Turkey", "Ukraine", "United Arab Emirates", "United Kingdom", "United States of America", "Uruguay", "Venezuela", "Vietnam", "Zimbabwe"];
         if (!in_array($country, $country_list)) {
             $errors++;
+            echo 'country';
         }
     }
 
     if (empty($_POST["acc-type"])) {
         $errors++;
+        echo 'acc1';
     } else {
         $acctype = validate_input($_POST["acc-type"]);
         if ($acctype != 'shopper' && $acctype != 'store-owner') {
             $errors++;
+            echo 'acc';
         }
     }
 
     if ($acctype == 'store-owner') {
         if (empty($_POST["business-name"])) {
             $errors++;
+            echo 'buss1';
         } else {
             $businessname = validate_input($_POST["business-name"]);
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z-' ]*$/", $businessname)) {
                 $errors++;
+                echo 'buss';
             }
         }
 
 
         if (empty($_POST["store-name"])) {
             $errors++;
+            echo 'store1';
         } else {
             $storename = validate_input($_POST["store-name"]);
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z-' ]*$/", $storename)) {
                 $errors++;
+                echo 'store';
             }
         }
 
         if (empty($_POST["store-category"])) {
             $errors++;
+            echo 'cate1';
         } else {
             $storecategory = validate_input($_POST["store-category"]);
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z-' ]*$/", $storecategory)) {
                 $errors++;
+                echo 'cate';
             }
         }
     }
@@ -413,81 +430,81 @@ function validate_input($data)
                                 <div>
                                     <select id="country" name="country" required>
                                         <option value="" selected>Choose your country</option>
-                                        <option value="AR">Argentina</option>
-                                        <option value="AU">Australia</option>
-                                        <option value="AT">Austria</option>
-                                        <option value="BY">Belarus</option>
-                                        <option value="BR">Brazil</option>
-                                        <option value="KH">Cambodia</option>
-                                        <option value="CA">Canada</option>
-                                        <option value="CL">Chile</option>
-                                        <option value="CN">China</option>
-                                        <option value="CO">Colombia</option>
-                                        <option value="CR">Costa Rica</option>
-                                        <option value="EG">Egypt</option>
-                                        <option value="EE">Estonia</option>
-                                        <option value="FI">Finland</option>
-                                        <option value="FR">France</option>
-                                        <option value="DE">Germany</option>
-                                        <option value="VA">Holy See (Vantican City State)</option>
-                                        <option value="HK">Hong Kong</option>
-                                        <option value="ID">Indonesia</option>
-                                        <option value="IE">Ireland</option>
-                                        <option value="IL">Israel</option>
-                                        <option value="JM">Jamaica</option>
-                                        <option value="JP">Japan</option>
-                                        <option value="JE">Jersey</option>
-                                        <option value="KZ">Kazakhstan</option>
-                                        <option value="KW">Kuwait</option>
-                                        <option value="LV">Latvia</option>
-                                        <option value="LR">Liberia</option>
-                                        <option value="LU">Luxembourg</option>
-                                        <option value="MO">Macao</option>
-                                        <option value="MK">Macedonia</option>
-                                        <option value="MY">Malaysia</option>
-                                        <option value="MX">Mexico</option>
-                                        <option value="FM">Micronesia</option>
-                                        <option value="MD">Moldova</option>
-                                        <option value="MC">Monaco</option>
-                                        <option value="MN">Mongolia</option>
-                                        <option value="MZ">Mozambique</option>
-                                        <option value="MM">Myanmar</option>
-                                        <option value="NP">Nepal</option>
-                                        <option value="NL">Netherlands</option>
-                                        <option value="NZ">New Zealand</option>
-                                        <option value="NI">Nicaragua</option>
-                                        <option value="NG">Nigeria</option>
-                                        <option value="NO">Norway</option>
-                                        <option value="PK">Pakistan</option>
-                                        <option value="PA">Panama</option>
-                                        <option value="PY">Paraguay</option>
-                                        <option value="PE">Peru</option>
-                                        <option value="PH">The Philippines</option>
-                                        <option value="PT">Portugal</option>
-                                        <option value="QA">Qatar</option>
-                                        <option value="RU">Russia</option>
-                                        <option value="RW">Rwanda</option>
-                                        <option value="SA">Saudi Arabia</option>
-                                        <option value="SN">Senegal</option>
-                                        <option value="RS">Serbia</option>
-                                        <option value="SG">Singapore</option>
-                                        <option value="ZA">South Africa</option>
-                                        <option value="KR">South Korea</option>
-                                        <option value="ES">Spain</option>
-                                        <option value="LK">Sri Lanka</option>
-                                        <option value="SW">Sweden</option>
-                                        <option value="CH">Switzerland</option>
-                                        <option value="TW">Taiwan</option>
-                                        <option value="TH">Thailand</option>
-                                        <option value="TR">Turkey</option>
-                                        <option value="UA">Ukraine</option>
-                                        <option value="AE">United Arab Emirates</option>
-                                        <option value="GB">United Kingdom</option>
-                                        <option value="US">United States of America</option>
-                                        <option value="UY">Uruguay</option>
-                                        <option value="VE">Venezuela</option>
-                                        <option value="VN">Vietnam</option>
-                                        <option value="ZW">Zimbabwe</option>
+                                        <option value="Argentina">Argentina</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="Austria">Austria</option>
+                                        <option value="Belarus">Belarus</option>
+                                        <option value="Brazil">Brazil</option>
+                                        <option value="Cambodia">Cambodia</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Chile">Chile</option>
+                                        <option value="China">China</option>
+                                        <option value="Colombia">Colombia</option>
+                                        <option value="Costa Rica">Costa Rica</option>
+                                        <option value="Egypt">Egypt</option>
+                                        <option value="Estonia">Estonia</option>
+                                        <option value="Finland">Finland</option>
+                                        <option value="France">France</option>
+                                        <option value="Germany">Germany</option>
+                                        <option value="Holy See (Vantican City State)">Holy See (Vantican City State)</option>
+                                        <option value="Hong Kong">Hong Kong</option>
+                                        <option value="Indonesia">Indonesia</option>
+                                        <option value="Ireland">Ireland</option>
+                                        <option value="IsraelL">Israel</option>
+                                        <option value="Jamaica">Jamaica</option>
+                                        <option value="Japan">Japan</option>
+                                        <option value="Jersey">Jersey</option>
+                                        <option value="Kazakhstan">Kazakhstan</option>
+                                        <option value="Kuwait">Kuwait</option>
+                                        <option value="Latvia">Latvia</option>
+                                        <option value="Liberia">Liberia</option>
+                                        <option value="Luxembourg">Luxembourg</option>
+                                        <option value="Macao">Macao</option>
+                                        <option value="Macedonia">Macedonia</option>
+                                        <option value="Malaysia">Malaysia</option>
+                                        <option value="Mexico">Mexico</option>
+                                        <option value="Micronesia">Micronesia</option>
+                                        <option value="Moldova">Moldova</option>
+                                        <option value="Monaco">Monaco</option>
+                                        <option value="Mongolia">Mongolia</option>
+                                        <option value="Mozambique">Mozambique</option>
+                                        <option value="Myanmar">Myanmar</option>
+                                        <option value="Nepal">Nepal</option>
+                                        <option value="Netherlands">Netherlands</option>
+                                        <option value="New Zealand">New Zealand</option>
+                                        <option value="Nicaragua">Nicaragua</option>
+                                        <option value="Nigeria">Nigeria</option>
+                                        <option value="Norway">Norway</option>
+                                        <option value="Pakistan">Pakistan</option>
+                                        <option value="Panama">Panama</option>
+                                        <option value="Paraguay">Paraguay</option>
+                                        <option value="Peru">Peru</option>
+                                        <option value="The Philippines">The Philippines</option>
+                                        <option value="Portugal">Portugal</option>
+                                        <option value="Qatar">Qatar</option>
+                                        <option value="Russia">Russia</option>
+                                        <option value="Rwanda">Rwanda</option>
+                                        <option value="Saudi Arabia">Saudi Arabia</option>
+                                        <option value="Senegal">Senegal</option>
+                                        <option value="Serbia">Serbia</option>
+                                        <option value="Singapore">Singapore</option>
+                                        <option value="South Africa">South Africa</option>
+                                        <option value="South Korea">South Korea</option>
+                                        <option value="Spain">Spain</option>
+                                        <option value="Sri Lanka">Sri Lanka</option>
+                                        <option value="Sweden">Sweden</option>
+                                        <option value="Switzerland">Switzerland</option>
+                                        <option value="Taiwan">Taiwan</option>
+                                        <option value="Thailand">Thailand</option>
+                                        <option value="Turkey">Turkey</option>
+                                        <option value="Ukraine">Ukraine</option>
+                                        <option value="United Arab Emirates">United Arab Emirates</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="United States of America">United States of America</option>
+                                        <option value="Uruguay">Uruguay</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                        <option value="Vietnam">Vietnam</option>
+                                        <option value="Zimbabwe">Zimbabwe</option>
                                     </select>
                                 </div>
                             </div>
