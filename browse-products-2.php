@@ -46,7 +46,7 @@ if (!isset($_GET['store'])) {
 }
 
 $pageNext = $pagePrev = $totalPageNum = 0;
-$products = read_store_products($storeid);
+$products = read_all_products($storeid);
 $dateTime = array_column($products, 'created_time');
 $orderby = 'none';
 if (isset($_GET['orderby'])) {
@@ -121,11 +121,11 @@ else if (isset($_GET['orderby']) && $_GET['orderby'] === 'oldest') {
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
                     <label for=\"dropdown-sub\" class=\"toggle\">PRODUCTS <span class=\"material-icons\">expand_more</span></label>
-                    <a href=\"#\">PRODUCTS <span class=\"material-icons\">expand_more</span></a>
+                    <a class=\"active\" href=\"#\">PRODUCTS <span class=\"material-icons\">expand_more</span></a>
                     <input type=\"checkbox\" id=\"dropdown-sub\">
                     <ul class=\"sub-menu\">
                         <li><a href=\"browse-products-1.php?store=$storeid\">by CATEGORY</a></li>
-                        <li><a href=\"browse-products-2.php?store=$storeid&orderby=none\">by CREATED TIME</a></li>
+                        <li><a class=\"active\" href=\"browse-products-2.php?store=$storeid&orderby=none\">by CREATED TIME</a></li>
                     </ul>
                 </li>
                 <li><a href=\"store-contact-us.php?store=$storeid\">CONTACT</a></li>
@@ -152,7 +152,7 @@ else if (isset($_GET['orderby']) && $_GET['orderby'] === 'oldest') {
                         <option <?php keepFieldSelected("oldest") ?> id="oldest" value="oldest" name="oldest">Oldest first</option>
                         <input type="hidden" name="store" value="<?php echo $storeid; ?>">
                         <input type="hidden" name="page" value="1">
-                        <input type="submit" id="order-by-button">
+                        <button type="submit" id="order-by-button"><span class="material-icons">check</span></button>
                     </select>
                 </form>
             </div>
@@ -188,22 +188,22 @@ else if (isset($_GET['orderby']) && $_GET['orderby'] === 'oldest') {
         echo "  <form method=\"get\" action=\"".htmlspecialchars($_SERVER["PHP_SELF"])."\" id=\"created-time-buttons\">\n";
         echo "      <input type=\"hidden\" name=\"store\" value=\"$storeid\">\n";
         echo "      <input type=\"hidden\" name=\"orderby\" value=\"$orderby\">";
-        echo "      <button type=\"submit\" name=\"page\" value=\"$pageNext\">Next</button>\n";
+        echo "      <button type=\"submit\" name=\"page\" value=\"$pageNext\"><span class=\"material-icons\">arrow_forward_ios</span></button>\n";
         echo "  </form>";
     } 
     else if ($page == ceil(sizeof($products)/2)) {
         echo "  <form method=\"get\" action=\"".htmlspecialchars($_SERVER["PHP_SELF"])."\" id=\"created-time-buttons\">\n";
         echo "      <input type=\"hidden\" name=\"store\" value=\"$storeid\">\n";
         echo "      <input type=\"hidden\" name=\"orderby\" value=\"$orderby\">";
-        echo "      <button type=\"submit\" name=\"page\" value=\"$pagePrev\">Previous</button>\n";
+        echo "      <button type=\"submit\" name=\"page\" value=\"$pagePrev\"><span class=\"material-icons\">arrow_back_ios</span></button>\n";
         echo "  </form>";
     }
     else {
         echo "  <form method=\"get\" action=\"".htmlspecialchars($_SERVER["PHP_SELF"])."\" id=\"created-time-buttons\">\n";
         echo "      <input type=\"hidden\" name=\"store\" value=\"$storeid\">\n";
         echo "      <input type=\"hidden\" name=\"orderby\" value=\"$orderby\">";
-        echo "      <button type=\"submit\" name=\"page\" value=\"$pagePrev\">Previous</button>\n";
-        echo "      <button type=\"submit\" name=\"page\" value=\"$pageNext\">Next</button>\n";
+        echo "      <button type=\"submit\" name=\"page\" value=\"$pagePrev\"><span class=\"material-icons\">arrow_back_ios</span></button>\n";
+        echo "      <button type=\"submit\" name=\"page\" value=\"$pageNext\"><span class=\"material-icons\">arrow_forward_ios</span></button>\n";
         echo "  </form>";
     }
     ?>
@@ -213,9 +213,12 @@ else if (isset($_GET['orderby']) && $_GET['orderby'] === 'oldest') {
 
     <!--Footer section with navigation bar-->
     <footer>
-        <a href="copyright.php">Copyright</a>
-        <a href="tos.php">Terms of Service</a>
-        <a href="privacypolicy.php">Privacy Policy</a>
+    <?php
+        echo
+        "<a href=\"store-copyright.php?store=$storeid\">Copyright</a>
+        <a href=\"store-tos.php?store=$storeid\">Terms of Service</a>
+        <a href=\"store-privacypolicy.php?store=$storeid\">Privacy Policy</a>";
+        ?>
         <div id="brief-description">
             <em>
                 <h3>by <strong>THE GANG</strong></h3>
@@ -233,7 +236,6 @@ else if (isset($_GET['orderby']) && $_GET['orderby'] === 'oldest') {
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="javascript/navbar.js" async></script>
     <script src="../javascript/cookie.js"></script>
 </body>
 
