@@ -91,11 +91,12 @@ require 'mall_store_functions.php';
             }
             //default display in alphabet order
             echo "<div class=\"flex-container\">";
-            $alphabet = alphabet_display();
-            foreach ($alphabet as $a) {
-                $id = $a['id'];
-                $name = $a['name'];
-                echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+            $stores = read_all_stores();
+            foreach ($stores as $s) {
+                $id = $s['id'];
+                $name = $s['name'];
+                $category = $s['category_id'];
+                echo "<div class=\"item\"><a href=\"store-home.php?id=$id&category=$category\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
             }
             echo "</div>";
             ?>
@@ -125,7 +126,6 @@ require 'mall_store_functions.php';
 
     <!--Link to external JavaScript file-->
     <script src="javascript/cookie.js"></script>
-    <script src="javascript/browse-store.js"></script>
 </body>
 
 </html>
