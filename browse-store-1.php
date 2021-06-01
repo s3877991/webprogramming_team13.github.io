@@ -51,8 +51,8 @@ function keepFieldSelected($str) {
                     <a href="">STORES <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
-                        <li><a class="active" href="browse-store-1.php?letter-start=All&act=Browse">by NAME</a></li>
-                        <li><a class="active" href="browse-store-2.php?category=All&act=Browse">by CATEGORY</a></li>
+                        <li><a href="browse-store-1.php">by NAME</a></li>
+                        <li><a href="browse-store-2.php">by CATEGORY</a></li>
                     </ul>
                 </li>
                 <li><a href="contactus.php">CONTACT US</a></li>
@@ -124,17 +124,17 @@ function keepFieldSelected($str) {
                 if ($a['name'][0] === $_GET['letter-start']) {
                     $id = $a['id'];
                     $name = $a['name'];
-                    echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                    echo "<div class=\"item\"><a href=\"store-home.php?store=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
                 }
                 elseif ($a['name'][0] === '2' && $_GET['letter-start'] === '#') {
                     $id = $a['id'];
                     $name = $a['name'];
-                    echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                    echo "<div class=\"item\"><a href=\"store-home.php?store=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
                 }
                 elseif (empty($_GET['letter-start']) || $_GET['letter-start'] === 'All') {
                     $id = $a['id'];
                     $name = $a['name'];
-                    echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                    echo "<div class=\"item\"><a href=\"store-home.php?store=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
                 }
             }   
             echo "</div>";
