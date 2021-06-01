@@ -100,7 +100,7 @@ if (isset($_POST['add-to-cart'])) {
                     <input type=\"checkbox\" id=\"dropdown-sub\">
                     <ul class=\"sub-menu\">
                         <li><a href=\"browse-products-1.php?store=$store_id\">by CATEGORY</a></li>
-                        <li><a href=\"browse-products-2.php?store=$store_id\">by CREATED TIME</a></li>
+                        <li><a href=\"browse-products-2.php?store=$store_id&orderby=none\">by CREATED TIME</a></li>
                     </ul>
                 </li>
                 <li><a href=\"store-contact-us.php?store=$store_id\">CONTACT</a></li>

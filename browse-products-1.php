@@ -74,7 +74,7 @@ $id = $store['id'];
                     <input type=\"checkbox\" id=\"dropdown-sub\">
                     <ul class=\"sub-menu\">
                         <li><a class=\"active\" href=\"browse-products-1.php?store=$id\">by CATEGORY</a></li>
-                        <li><a href=\"browse-products-2.php?store=$id\">by CREATED TIME</a></li>
+                        <li><a href=\"browse-products-2.php?store=$id&orderby=none\">by CREATED TIME</a></li>
                     </ul>
                 </li>
                 <li><a href=\"store-contact-us.php?store=$id\">CONTACT</a></li>
