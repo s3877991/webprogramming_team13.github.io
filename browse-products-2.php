@@ -121,11 +121,11 @@ else if (isset($_GET['orderby']) && $_GET['orderby'] === 'oldest') {
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
                     <label for=\"dropdown-sub\" class=\"toggle\">PRODUCTS <span class=\"material-icons\">expand_more</span></label>
-                    <a href=\"#\">PRODUCTS <span class=\"material-icons\">expand_more</span></a>
+                    <a class=\"active\" href=\"#\">PRODUCTS <span class=\"material-icons\">expand_more</span></a>
                     <input type=\"checkbox\" id=\"dropdown-sub\">
                     <ul class=\"sub-menu\">
                         <li><a href=\"browse-products-1.php?store=$storeid\">by CATEGORY</a></li>
-                        <li><a href=\"browse-products-2.php?store=$storeid&orderby=none\">by CREATED TIME</a></li>
+                        <li><a class=\"active\" href=\"browse-products-2.php?store=$storeid&orderby=none\">by CREATED TIME</a></li>
                     </ul>
                 </li>
                 <li><a href=\"store-contact-us.php?store=$storeid\">CONTACT</a></li>
