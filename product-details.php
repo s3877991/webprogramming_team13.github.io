@@ -23,6 +23,27 @@ if (isset($_GET['id'])) {
 $products = read_all_products();
 $stores = read_all_stores();
 $product = get_product($product_id);
+
+// echo '<pre>';
+// echo print_r($product);
+// echo '</pre>';
+
+// When users click "Add to cart" button, the product information will be stored and it will be reused in "Your cart" page.
+if (isset($_POST['add-to-cart'])) {
+    $added_product = [
+        'name' => $product['name'],
+        'price' => $product['price'],
+        'store' => $product['store_id'],
+        'incart' => 1
+    ];
+    $_SESSION['cart'][$product_id] = $added_product;
+}
+
+// if (isset($_SESSION['cart'])) {
+//    echo "<pre>";
+//    print_r($_SESSION['cart']);
+//    echo "</pre>";
+// }
 ?>
 
 <!-- HTML Code Area -->
@@ -79,7 +100,7 @@ $product = get_product($product_id);
                     <input type=\"checkbox\" id=\"dropdown-sub\">
                     <ul class=\"sub-menu\">
                         <li><a href=\"browse-products-1.php?store=$store_id\">by CATEGORY</a></li>
-                        <li><a href=\"browse-products-2.php?store=$store_id&orderby=none\">by CREATED TIME</a></li>
+                        <li><a href=\"browse-products-2.php?store=$store_id\">by CREATED TIME</a></li>
                     </ul>
                 </li>
                 <li><a href=\"store-contact-us.php?store=$store_id\">CONTACT</a></li>
@@ -114,14 +135,24 @@ $product = get_product($product_id);
                         </h1>
                     </h3>
 
-                    <div class="button-container">
-                        <div class="buttons">
-                            <button type="button" id="add-to-cart" name="add-to-cart">Add to cart</button>
+                    <form method="post" action="product-details.php?id=<?= $product_id ?>">
+                        <div class="button-container">
+                            <div class="buttons">
+                                <button type="submit" id="add-to-cart" name="add-to-cart">Add to cart</button>
+                            </div>
+                            <div class="buttons">
+                                <button type="button" id="buy-now">BUY NOW!</button>
+                            </div>
                         </div>
-                        <div class="buttons">
-                            <button type="button" id="buy-now">BUY NOW!</button>
-                        </div>
-                    </div>
+                    </form>
+
+                    <?php
+                    // if (isset($_SESSION['added_products'])) {
+                    //    echo '<pre>';
+                    //    print_r($_SESSION['added_products']);
+                    //    echo '</pre>';
+                    // }
+                    ?>
 
                 </div>
             </div>
@@ -199,8 +230,7 @@ $product = get_product($product_id);
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="../javascript/add-to-cart.js"></script>
-    <script src="../javascript/cookie.js"></script>
+    <script src="javascript/cookie.js"></script>
 </body>
 
 </html>

@@ -236,7 +236,7 @@ else if (isset($_GET['orderby']) && $_GET['orderby'] === 'oldest') {
     </div>
 
     <!--Link to external JavaScript file-->
-    <script src="../javascript/cookie.js"></script>
+    <script src="javascript/cookie.js"></script>
 </body>
 
 </html>
