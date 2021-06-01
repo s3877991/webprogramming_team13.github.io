@@ -5,46 +5,81 @@ function validate_input($data) {
     $data = htmlspecialchars($data);
     return $data;
   }
-/**
-* For printing array data
-*
-* @param string $arr array
-* @param string $returnAsString if true, return the string
-* @return string
-*/
-function printArray($arr, $returnAsString=false ) {
-    $ret  = '<pre>' . print_r($arr, true) . '</pre>';
-    if ($returnAsString)
-        return $ret;
-    else
-        echo $ret;
+function keepFieldSelected($str) {
+    if (isset($_GET['orderby']) && $_GET['orderby'] === $str) {
+        echo "selected";
+    } else {
+        echo "";
+    }
 }
 require 'product_functions.php';
+require 'mall_store_functions.php';
+$storeName = $storeid = "";
 
-$pageNext = $pagePrev = 0;
-$products = read_all_products();
+
+if (!isset($_GET['store'])) {
+    header('location: store-home.php');
+} else {
+    $storeid = validate_input($_GET['store']);
+    $stores = read_all_stores();
+    $storeid_valid = true;
+    $count = 0;
+    foreach ($stores as $store) {
+        if ($storeid == $store['id']) {
+            $count++;
+        }
+    }
+    if ($count == 0) {
+        $storeid_valid = false;
+    }
+    if ($storeid == "" || !$storeid_valid) {
+        header('location: store-home.php');
+    } else {
+        $stores = read_all_stores();
+        foreach ($stores as $store) {
+            if ($storeid == $store['id']) {
+                $storeName = $store['name'];
+                break;
+            }
+        }
+    }
+}
+
+$pageNext = $pagePrev = $totalPageNum = 0;
+$products = read_store_products($storeid);
 $dateTime = array_column($products, 'created_time');
+$orderby = 'none';
+if (isset($_GET['orderby'])) {
+    $orderby = validate_input($_GET['orderby']);
+}
+
+if (isset($_GET['page'])) {
+    $page = validate_input($_GET['page']);
+    if ($page <= 0 || $page > ceil(sizeof($products)/2)) {
+        if (isset($_GET['orderby'])) {
+            header('location: browse-products-2.php?store='.$storeid.'&orderby='.$orderby.'&page=1');
+        } else {
+            header('location: browse-products-2.php?store='.$storeid.'&orderby=none&page=1');
+        }    
+    }
+    else if (is_int($page + 0)) {
+        $pageNext = ++$page;
+        $pagePrev = $page-2;
+        $totalPageNum == ceil(sizeof($products)/2);
+    } 
+} else {
+    if (isset($_GET['orderby'])) {
+        header('location: browse-products-2.php?store='.$storeid.'&orderby='.$orderby.'&page=1');
+    } else {
+        header('location: browse-products-2.php?store='.$storeid.'&orderby=none&page=1');
+    }   
+}
+
 if (isset($_GET['orderby']) && $_GET['orderby'] === 'newest') {
     array_multisort($dateTime, SORT_DESC, $products); 
 }
 else if (isset($_GET['orderby']) && $_GET['orderby'] === 'oldest') {
     array_multisort($dateTime, SORT_ASC, $products); 
-}
-
-if (isset($_GET['page'])) {
-    $page = validate_input($_GET['page']);
-    if ($page <= 0) {
-        header('location: browse-products-2.php?page=1');
-    }
-    else if ($page > sizeof($products)/2) {
-        header('location: browse-products-2.php?page=1');
-    }
-    else if (is_int($page + 0)) {
-        $pageNext = ++$page;
-        $pagePrev = $page-2;
-    } 
-} else {
-    header('location: browse-products-2.php?page=1');
 }
 ?>
 
@@ -69,7 +104,7 @@ if (isset($_GET['page'])) {
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="store-home.php">The Store</a></div>
+            <div id="logo"><a href="store-home.php?store=<?php echo $storeid;?>"><?php echo $storeName; ?></a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -78,23 +113,25 @@ if (isset($_GET['page'])) {
             <input type="checkbox" id="dropdown-main">
 
             <!--Navigation-->
-            <ul class="menu">
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="about-us.php">ABOUT US</a></li>
+            <?php
+            echo
+            "<ul class=\"menu\">
+                <li><a href=\"store-home.php?store=$storeid\">HOME</a></li>
+                <li><a href=\"store-about-us.php?store=$storeid\">ABOUT US</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">PRODUCTS <span
-                            class="material-icons">expand_more</span></label>
-                    <a class="active" href="#">PRODUCTS <span class="material-icons">expand_more</span></a>
-                    <input type="checkbox" id="dropdown-sub">
-                    <ul class="sub-menu">
-                        <li><a href="browse-products-1.php">by CATEGORY</a></li>
-                        <li><a class="active" href="browse-products-2.php">by CREATED TIME</a></li>
+                    <label for=\"dropdown-sub\" class=\"toggle\">PRODUCTS <span class=\"material-icons\">expand_more</span></label>
+                    <a href=\"#\">PRODUCTS <span class=\"material-icons\">expand_more</span></a>
+                    <input type=\"checkbox\" id=\"dropdown-sub\">
+                    <ul class=\"sub-menu\">
+                        <li><a href=\"browse-products-1.php?store=$storeid\">by CATEGORY</a></li>
+                        <li><a href=\"browse-products-2.php?store=$storeid&orderby=none\">by CREATED TIME</a></li>
                     </ul>
                 </li>
-                <li><a href="contact-us.php">CONTACT</a></li>
-                <li class="your-cart"><a href="your-cart.php">YOUR CART</a></li>
-            </ul>
+                <li><a href=\"store-contact-us.php?store=$storeid\">CONTACT</a></li>
+                <li class=\"your-cart\"><a href=\"your-cart.php?store=$storeid\">YOUR CART</a></li>
+            </ul>";
+            ?>
         </nav>
     </header>
 
@@ -104,15 +141,17 @@ if (isset($_GET['page'])) {
         <div class="select">
             <div class="select-container">
                 <!-- <label for="created-date">Created time: </label> -->
-                <form method="get" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                <form method="get" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) . '?store='.$storeid.'&orderby='.$orderby.'&page=1';?>">
                     <select name="orderby" id="created-date">  
-                        <option <?php echo (isset($_GET['orderby']) && $_GET['orderby'] === 'none') ? 'selected' : ''; ?> value="none" selected="selected"> 
+                        <option <?php keepFieldSelected('none') ?> value="none" selected="selected"> 
                         Create time:
                         </option>
-                        <option <?php echo (isset($_GET['orderby']) && $_GET['orderby'] === 'newest') ? 'selected' : ''; ?> id="newest" value="newest" name="newest">
+                        <option <?php keepFieldSelected("newest") ?> id="newest" value="newest" name="newest">
                         Newest first
                         </option>
-                        <option <?php echo (isset($_GET['orderby']) && $_GET['orderby'] === 'oldest') ? 'selected' : ''; ?> id="oldest" value="oldest" name="oldest">Oldest first</option>
+                        <option <?php keepFieldSelected("oldest") ?> id="oldest" value="oldest" name="oldest">Oldest first</option>
+                        <input type="hidden" name="store" value="<?php echo $storeid; ?>">
+                        <input type="hidden" name="page" value="1">
                         <input type="submit" id="order-by-button">
                     </select>
                 </form>
@@ -121,12 +160,13 @@ if (isset($_GET['page'])) {
 
         <!--Products section-->
         <div class="flex-container">
-
             <?php
                 $page = validate_input($_GET['page']);
                 $i1 = $page*2-2;
                 $i2 = $i1 + 1;
-                echo '</ul>';
+                if ($i2 > sizeof($products)-1) {
+                    $i2 = $i1;
+                }
                 for ($i=$i1; $i <= $i2; $i++) {
                     $id = $products[$i]['id'];
                     $name = $products[$i]['name']; 
@@ -137,31 +177,39 @@ if (isset($_GET['page'])) {
                     echo "          <img src=\"images/store-product.png\" alt=\"a shopping bag\">\n";
                     echo "      </div>\n";
                     echo "      <h3 class=\"name\">$name</h3>\n";
-                    echo "      <p class=\"price\">$price</p>\n";
+                    echo "      <p class=\"price\">$$price</p>\n";
                     echo "  </a>\n";
                     echo "</div>";
                 }
             ?>
-    </main>
-
-    <?php
+        </div>
+        <?php
     if ($page <= 1) {
         echo "  <form method=\"get\" action=\"".htmlspecialchars($_SERVER["PHP_SELF"])."\" id=\"created-time-buttons\">\n";
-        echo "        <button type=\"submit\" name=\"page\" value=\"$pageNext\">Next</button>\n";
+        echo "      <input type=\"hidden\" name=\"store\" value=\"$storeid\">\n";
+        echo "      <input type=\"hidden\" name=\"orderby\" value=\"$orderby\">";
+        echo "      <button type=\"submit\" name=\"page\" value=\"$pageNext\">Next</button>\n";
         echo "  </form>";
     } 
-    else if ($page == sizeof($products)/2) {
+    else if ($page == ceil(sizeof($products)/2)) {
         echo "  <form method=\"get\" action=\"".htmlspecialchars($_SERVER["PHP_SELF"])."\" id=\"created-time-buttons\">\n";
-        echo "        <button type=\"submit\" name=\"page\" value=\"$pagePrev\">Previous</button>\n";
+        echo "      <input type=\"hidden\" name=\"store\" value=\"$storeid\">\n";
+        echo "      <input type=\"hidden\" name=\"orderby\" value=\"$orderby\">";
+        echo "      <button type=\"submit\" name=\"page\" value=\"$pagePrev\">Previous</button>\n";
         echo "  </form>";
     }
     else {
         echo "  <form method=\"get\" action=\"".htmlspecialchars($_SERVER["PHP_SELF"])."\" id=\"created-time-buttons\">\n";
-        echo "        <button type=\"submit\" name=\"page\" value=\"$pagePrev\">Previous</button>\n";
-        echo "        <button type=\"submit\" name=\"page\" value=\"$pageNext\">Next</button>\n";
+        echo "      <input type=\"hidden\" name=\"store\" value=\"$storeid\">\n";
+        echo "      <input type=\"hidden\" name=\"orderby\" value=\"$orderby\">";
+        echo "      <button type=\"submit\" name=\"page\" value=\"$pagePrev\">Previous</button>\n";
+        echo "      <button type=\"submit\" name=\"page\" value=\"$pageNext\">Next</button>\n";
         echo "  </form>";
     }
     ?>
+    </main>
+
+   
 
     <!--Footer section with navigation bar-->
     <footer>

@@ -42,7 +42,7 @@
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="store-home.php"><?php echo $storeName; ?></a></div>
+            <div id="logo"><a href="store-home.php?store=<?php echo $storeid;?>"><?php echo $storeName; ?></a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -80,7 +80,7 @@
         <section id="intro">
             <div class="banner">
                 <div class="container">
-                    <h1>The Store</h1>
+                    <h1><?php echo $storeName;?></h1>
                     <p>Welcome to one of the best stores in Shoppiverse Mall</p>
                     <button class="btn"><a href="#sub-sect-1">SHOP NOW!</a></button>
                 </div>
