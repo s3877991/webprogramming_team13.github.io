@@ -1,6 +1,15 @@
 <?php
 session_start();
 require 'mall_store_functions.php';
+
+//function to display chosen value in the select box field after clicking the dropdown options
+function keepFieldSelected($str) {
+    if (isset($_GET['category']) && $_GET['category'] === $str) {
+        echo "selected";
+    } else {
+        echo "";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,23 +67,26 @@ require 'mall_store_functions.php';
 
         <section id="select">
             <div class="select">
+              <form method="get" action='browse-store-2.php'>
                 <label for="category">Your favourite category is</label>
                 <select id="category" name="category">
-                    <option id="all">All</option>
-                    <option id="1" value="department">Department stores</option>
-                    <option id="2" value="grocery">Grocery stores</option>
-                    <option id="3" value="restaurant">Restaurant</option>
-                    <option id="4" value="clothing">Clothing stores</option>
-                    <option id="5" value="accessory">Accessory stores</option>
-                    <option id="6" value="pharmacies">Pharmacies</option>
-                    <option id="7" value="tech">Technology stores</option>
-                    <option id="8" value="pet">Pet stores</option>
-                    <option id="9" value="toy">Toy stores</option>
-                    <option id="10" value="specialty">Specialty stores</option>
-                    <option id="11" value="thrift">Thrift stores</option>
-                    <option id="12" value="services">Services</option>
-                    <option id="13" value="kiosks">Kiosks</option>
+                <option <?php keepFieldSelected("All") ?> value="All">All</option>
+                    <option <?php keepFieldSelected("1") ?> value="1">Department stores</option>
+                    <option <?php keepFieldSelected("2") ?> value="2">Grocery stores</option>
+                    <option <?php keepFieldSelected("3") ?> value="3">Restaurants</option>
+                    <option <?php keepFieldSelected("4") ?> value="4">Clothing stores</option>
+                    <option <?php keepFieldSelected("5") ?> value="5">Accessory stores</option>
+                    <option <?php keepFieldSelected("6") ?> value="6">Pharmacies</option>
+                    <option <?php keepFieldSelected("7") ?> value="7">Technology stores</option>
+                    <option <?php keepFieldSelected("8") ?> value="8">Pet stores</option>
+                    <option <?php keepFieldSelected("9") ?> value="9">Toy stores</option>
+                    <option <?php keepFieldSelected("10") ?> value="10">Specialty stores</option>
+                    <option <?php keepFieldSelected("11") ?> value="11">Thrift stores</option>
+                    <option <?php keepFieldSelected("12") ?> value="12">Services</option>
+                    <option <?php keepFieldSelected("13") ?> value="13">Kiosks</option>
                 </select>
+                <input type="submit" name="act" value="Browse">
+              </form>
             </div>
         </section>
 
@@ -93,9 +105,18 @@ require 'mall_store_functions.php';
             echo "<div class=\"flex-container\">";
             $alphabet = alphabet_display();
             foreach ($alphabet as $a) {
-                $id = $a['id'];
-                $name = $a['name'];
-                echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                if ($a['category_id'] === $_GET['category']) {
+                    $id = $a['id'];
+                    $name = $a['name'];
+                    $category = $a['category_id'];
+                    echo "<div class=\"item\"><a href=\"store-home.php?id=$id&category=$category\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                }
+                elseif (empty($_GET['category']) || $_GET['category'] === 'All') {
+                    $id = $a['id'];
+                    $name = $a['name'];
+                    $category = $a['category_id'];
+                    echo "<div class=\"item\"><a href=\"store-home.php?id=$id&category=$category\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                }
             }
             echo "</div>";
             ?>
@@ -125,7 +146,6 @@ require 'mall_store_functions.php';
 
     <!--Link to external JavaScript file-->
     <script src="javascript/cookie.js"></script>
-    <script src="javascript/browse-store.js"></script>
 </body>
 
 </html>

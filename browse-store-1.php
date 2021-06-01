@@ -1,6 +1,15 @@
 <?php
 session_start();
 require 'mall_store_functions.php';
+
+//function to display chosen value in the select box field after clicking the dropdown options
+function keepFieldSelected($str) {
+    if (isset($_GET['letter-start']) && $_GET['letter-start'] === $str) {
+        echo "selected";
+    } else {
+        echo "";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,37 +67,40 @@ require 'mall_store_functions.php';
 
         <section id="select">
             <div class="select">
+              <form method="get" action="browse-store-1.php">
                 <label for="letter-start">Store names start with letter </label>
                 <select id="letter-start" name="letter-start">
-                    <option id="all">All</option>
-                    <option id="#" value="#">#</option>
-                    <option id="a" value="a">A</option>
-                    <option id="b" value="b">B</option>
-                    <option id="c" value="c">C</option>
-                    <option id="d" value="d">D</option>
-                    <option id="e" value="e">E</option>
-                    <option id="f" value="f">F</option>
-                    <option id="g" value="g">G</option>
-                    <option id="h" value="h">H</option>
-                    <option id="i" value="i">I</option>
-                    <option id="j" value="j">J</option>
-                    <option id="k" value="k">K</option>
-                    <option id="l" value="l">L</option>
-                    <option id="m" value="m">M</option>
-                    <option id="n" value="n">N</option>
-                    <option id="o" value="n">O</option>
-                    <option id="p" value="p">P</option>
-                    <option id="q" value="q">Q</option>
-                    <option id="r" value="r">R</option>
-                    <option id="s" value="s">S</option>
-                    <option id="t" value="t">T</option>
-                    <option id="u" value="u">U</option>
-                    <option id="v" value="v">V</option>
-                    <option id="w" value="w">W</option>
-                    <option id="x" value="x">X</option>
-                    <option id="y" value="y">Y</option>
-                    <option id="z" value="z">Z</option>
+                    <option <?php keepFieldSelected("All") ?> value="All">All</option>
+                    <option <?php keepFieldSelected("#") ?> value="#">#</option>
+                    <option <?php keepFieldSelected("A") ?> value="A">A</option>
+                    <option <?php keepFieldSelected("B") ?> value="B">B</option>
+                    <option <?php keepFieldSelected("C") ?> value="C">C</option>
+                    <option <?php keepFieldSelected("D") ?> value="D">D</option>
+                    <option <?php keepFieldSelected("E") ?> value="E">E</option>
+                    <option <?php keepFieldSelected("F") ?> value="F">F</option>
+                    <option <?php keepFieldSelected("G") ?> value="G">G</option>
+                    <option <?php keepFieldSelected("H") ?> value="H">H</option>
+                    <option <?php keepFieldSelected("I") ?> value="I">I</option>
+                    <option <?php keepFieldSelected("J") ?> value="J">J</option>
+                    <option <?php keepFieldSelected("K") ?> value="K">K</option>
+                    <option <?php keepFieldSelected("L") ?> value="L">L</option>
+                    <option <?php keepFieldSelected("M") ?> value="M">M</option>
+                    <option <?php keepFieldSelected("N") ?> value="N">N</option>
+                    <option <?php keepFieldSelected("O") ?> value="O">O</option>
+                    <option <?php keepFieldSelected("P") ?> value="P">P</option>
+                    <option <?php keepFieldSelected("Q") ?> value="Q">Q</option>
+                    <option <?php keepFieldSelected("R") ?> value="R">R</option>
+                    <option <?php keepFieldSelected("S") ?> value="S">S</option>
+                    <option <?php keepFieldSelected("T") ?> value="T">T</option>
+                    <option <?php keepFieldSelected("U") ?> value="U">U</option>
+                    <option <?php keepFieldSelected("V") ?> value="V">V</option>
+                    <option <?php keepFieldSelected("W") ?> value="W">W</option>
+                    <option <?php keepFieldSelected("X") ?> value="X">X</option>
+                    <option <?php keepFieldSelected("Y") ?> value="Y">Y</option>
+                    <option <?php keepFieldSelected("Z") ?> value="Z">Z</option>
                 </select>
+                <input type="submit" name="act" value="Browse">
+              </form>
             </div>
         </section>
 
@@ -103,14 +115,28 @@ require 'mall_store_functions.php';
                 array_multisort(array_column($alphabet, 'name'), SORT_ASC, $alphabet);
                 return $alphabet;
             }
+            //$search = $_POST['letter-start'];
             //default display in alphabet order
             echo "<div class=\"flex-container\">";
             $alphabet = alphabet_display();
+
             foreach ($alphabet as $a) {
-                $id = $a['id'];
-                $name = $a['name'];
-                echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
-            }
+                if ($a['name'][0] === $_GET['letter-start']) {
+                    $id = $a['id'];
+                    $name = $a['name'];
+                    echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                }
+                elseif ($a['name'][0] === '2' && $_GET['letter-start'] === '#') {
+                    $id = $a['id'];
+                    $name = $a['name'];
+                    echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                }
+                elseif (empty($_GET['letter-start']) || $_GET['letter-start'] === 'All') {
+                    $id = $a['id'];
+                    $name = $a['name'];
+                    echo "<div class=\"item\"><a href=\"store-home.php?id=$id\"><div class=\"image\"><img src=\"images/store.png\" alt=\"a store\"></div><h3 class=\"name\">$name</h3></a></div>";
+                }
+            }   
             echo "</div>";
             ?>
         </section>
@@ -139,7 +165,6 @@ require 'mall_store_functions.php';
 
     <!--Link to external JavaScript file-->
     <script src="javascript/cookie.js"></script>
-    <script src="javascript/browse.js"></script>
 </body>
 
 </html>
