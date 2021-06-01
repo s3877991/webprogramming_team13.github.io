@@ -1,3 +1,53 @@
+<?php
+function validate_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+  }
+/**
+* For printing array data
+*
+* @param string $arr array
+* @param string $returnAsString if true, return the string
+* @return string
+*/
+function printArray($arr, $returnAsString=false ) {
+    $ret  = '<pre>' . print_r($arr, true) . '</pre>';
+    if ($returnAsString)
+        return $ret;
+    else
+        echo $ret;
+}
+require 'product_functions.php';
+
+$pageNext = $pagePrev = 0;
+$products = read_all_products();
+$dateTime = array_column($products, 'created_time');
+if (isset($_GET['orderby']) && $_GET['orderby'] === 'newest') {
+    array_multisort($dateTime, SORT_DESC, $products); 
+}
+else if (isset($_GET['orderby']) && $_GET['orderby'] === 'oldest') {
+    array_multisort($dateTime, SORT_ASC, $products); 
+}
+
+if (isset($_GET['page'])) {
+    $page = validate_input($_GET['page']);
+    if ($page <= 0) {
+        header('location: browse-products-2.php?page=1');
+    }
+    else if ($page > sizeof($products)/2) {
+        header('location: browse-products-2.php?page=1');
+    }
+    else if (is_int($page + 0)) {
+        $pageNext = ++$page;
+        $pagePrev = $page-2;
+    } 
+} else {
+    header('location: browse-products-2.php?page=1');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,11 +79,12 @@
 
             <!--Navigation-->
             <ul class="menu">
-                <li><a href="store-home.php">HOME</a></li>
-                <li><a href="store-about-us.php">ABOUT US</a></li>
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="about-us.php">ABOUT US</a></li>
                 <li>
                     <!--This item has a sub menu. When the mouse cursor point on this item, the sub-menu appears-->
-                    <label for="dropdown-sub" class="toggle">PRODUCTS <span class="material-icons">expand_more</span></label>
+                    <label for="dropdown-sub" class="toggle">PRODUCTS <span
+                            class="material-icons">expand_more</span></label>
                     <a class="active" href="#">PRODUCTS <span class="material-icons">expand_more</span></a>
                     <input type="checkbox" id="dropdown-sub">
                     <ul class="sub-menu">
@@ -41,7 +92,7 @@
                         <li><a class="active" href="browse-products-2.php">by CREATED TIME</a></li>
                     </ul>
                 </li>
-                <li><a href="store-contact-us.php">CONTACT</a></li>
+                <li><a href="contact-us.php">CONTACT</a></li>
                 <li class="your-cart"><a href="your-cart.php">YOUR CART</a></li>
             </ul>
         </nav>
@@ -49,132 +100,74 @@
 
     <!--Main Content-->
     <main>
-
         <!--Select Area-->
         <div class="select">
-
             <div class="select-container">
-                <label for="created-date">Created time: </label>
-                <select id="created-date">
-                    <option id="newest">Newest first</option>
-                    <option id="oldest">Oldest first</option>
-                </select>
+                <!-- <label for="created-date">Created time: </label> -->
+                <form method="get" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                    <select name="orderby" id="created-date">  
+                        <option <?php echo (isset($_GET['orderby']) && $_GET['orderby'] === 'none') ? 'selected' : ''; ?> value="none" selected="selected"> 
+                        Create time:
+                        </option>
+                        <option <?php echo (isset($_GET['orderby']) && $_GET['orderby'] === 'newest') ? 'selected' : ''; ?> id="newest" value="newest" name="newest">
+                        Newest first
+                        </option>
+                        <option <?php echo (isset($_GET['orderby']) && $_GET['orderby'] === 'oldest') ? 'selected' : ''; ?> id="oldest" value="oldest" name="oldest">Oldest first</option>
+                        <input type="submit" id="order-by-button">
+                    </select>
+                </form>
             </div>
-
         </div>
 
         <!--Products section-->
         <div class="flex-container">
 
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="product-details.php">
-                    <div class="image">
-                        <img src="images/store-product.png" alt="a shopping bag">
-                    </div>
-                    <h3 class="name">Product name</h3>
-                    <p class="price">$xxxx.xx</p>
-                </a>
-            </div>
-
-        </div>
-
+            <?php
+                $page = validate_input($_GET['page']);
+                $i1 = $page*2-2;
+                $i2 = $i1 + 1;
+                echo '</ul>';
+                for ($i=$i1; $i <= $i2; $i++) {
+                    $id = $products[$i]['id'];
+                    $name = $products[$i]['name']; 
+                    $price = $products[$i]['price'];
+                    echo "<div class=\"item\">\n";
+                    echo "  <a href=\"product-details.php?id=$id\">\n";
+                    echo "      <div class=\"image\">\n";
+                    echo "          <img src=\"images/store-product.png\" alt=\"a shopping bag\">\n";
+                    echo "      </div>\n";
+                    echo "      <h3 class=\"name\">$name</h3>\n";
+                    echo "      <p class=\"price\">$price</p>\n";
+                    echo "  </a>\n";
+                    echo "</div>";
+                }
+            ?>
     </main>
+
+    <?php
+    if ($page <= 1) {
+        echo "  <form method=\"get\" action=\"".htmlspecialchars($_SERVER["PHP_SELF"])."\" id=\"created-time-buttons\">\n";
+        echo "        <button type=\"submit\" name=\"page\" value=\"$pageNext\">Next</button>\n";
+        echo "  </form>";
+    } 
+    else if ($page == sizeof($products)/2) {
+        echo "  <form method=\"get\" action=\"".htmlspecialchars($_SERVER["PHP_SELF"])."\" id=\"created-time-buttons\">\n";
+        echo "        <button type=\"submit\" name=\"page\" value=\"$pagePrev\">Previous</button>\n";
+        echo "  </form>";
+    }
+    else {
+        echo "  <form method=\"get\" action=\"".htmlspecialchars($_SERVER["PHP_SELF"])."\" id=\"created-time-buttons\">\n";
+        echo "        <button type=\"submit\" name=\"page\" value=\"$pagePrev\">Previous</button>\n";
+        echo "        <button type=\"submit\" name=\"page\" value=\"$pageNext\">Next</button>\n";
+        echo "  </form>";
+    }
+    ?>
 
     <!--Footer section with navigation bar-->
     <footer>
-        <a href="store-copyright.php">Copyright</a>
-        <a href="store-tos.php">Terms of Service</a>
-        <a href="store-privacypolicy.php">Privacy Policy</a>
+        <a href="copyright.php">Copyright</a>
+        <a href="tos.php">Terms of Service</a>
+        <a href="privacypolicy.php">Privacy Policy</a>
         <div id="brief-description">
             <em>
                 <h3>by <strong>THE GANG</strong></h3>
@@ -192,6 +185,7 @@
     </div>
 
     <!--Link to external JavaScript file-->
+    <script src="javascript/navbar.js" async></script>
     <script src="../javascript/cookie.js"></script>
 </body>
 
