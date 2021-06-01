@@ -91,7 +91,7 @@ else {
             <!--Title-->
             <div class="title">
                 <h1>MY ACCOUNT</h1>
-                <button><a href="logout.php">Log Out</a></button>
+                <button><a href="backend/logout.php">Log Out</a></button>
             </div>
 
             <hr>

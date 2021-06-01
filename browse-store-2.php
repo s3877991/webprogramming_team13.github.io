@@ -1,6 +1,12 @@
 <?php
 session_start();
-require 'mall_store_functions.php';
+
+// If file 'install.php' still exists, the current PHP script in this page will be terminated
+// if (file_exists('admin/install.php')) {
+// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+// }
+
+require 'backend/mall_store_functions.php';
 
 //function to display chosen value in the select box field after clicking the dropdown options
 function keepFieldSelected($str) {

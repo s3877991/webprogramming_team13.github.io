@@ -1,4 +1,9 @@
 <?php
+// If file 'install.php' still exists, the current PHP script in this page will be terminated
+// if (file_exists('admin/install.php')) {
+// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+// }
+
 function validate_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
@@ -12,8 +17,8 @@ function keepFieldSelected($str) {
         echo "";
     }
 }
-require 'product_functions.php';
-require 'mall_store_functions.php';
+require 'backend/product_functions.php';
+require 'backend/mall_store_functions.php';
 $storeName = $storeid = "";
 
 

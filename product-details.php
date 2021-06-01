@@ -8,8 +8,8 @@ session_start();
 // }
 
 // Use a function from another PHP file
-require 'product_functions.php';
-require 'mall_store_functions.php';
+require 'backend/product_functions.php';
+require 'backend/mall_store_functions.php';
 
 // When users click a product in mall pages or store pages, they will be directed to product details page displaying that product.
 // If the products they want to access is unavailable. The dead message will appear and the page will be terminated.

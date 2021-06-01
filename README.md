@@ -32,8 +32,8 @@ PHAN DO NGOC LINH:
     + Task #4: Contact Us form requirements ==> COMPLETED.
 
 3. Fullstack Assignment (25%):
-    + Task #7: Implement the behavior in Store Home page ==> .
-    + Task #8: Implement the behavior in Browse Products page ==> .
+    + Task #7: Implement the behavior in Store Home page ==> COMPLETED.
+    + Task #8: Implement the behavior in Browse Products page ==> COMPLETED.
 
 
 NGUYEN HAI MINH TRANG:
@@ -88,7 +88,7 @@ NGUYEN LINH CHI:
 
 3. Fullstack Assignment (25%):
     + Task #2: Display stores and products based on data from CSV files ==> COMPLETED.
-    + Task #6: Implement the behavior in browse stores pages ==> .
+    + Task #6: Implement the behavior in browse stores pages ==> COMPLETED.
 
 
 # References:

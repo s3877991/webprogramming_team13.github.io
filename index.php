@@ -6,8 +6,8 @@ session_start();
 // die("You have to delete <code>'install.php'</code> file manually to activate the System!");
 // }
 
-require 'mall_store_functions.php';
-require 'product_functions.php';
+require 'backend/mall_store_functions.php';
+require 'backend/product_functions.php';
 ?>
 
 <!DOCTYPE html>

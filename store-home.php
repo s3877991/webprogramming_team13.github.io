@@ -1,25 +1,32 @@
 <?php
-    session_start();
-    require 'product_functions.php';
-    require 'mall_store_functions.php';
-    function validate_input($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-    }
-    if (!isset($_GET['store'])) {
-        header('location: index.php');
-    } else {
-        $storeid = validate_input($_GET['store']);
-        $stores = read_all_stores();
-        foreach ($stores as $store) {
-            if ($storeid == $store['id']) {
-                $storeName = $store['name'];
-                break;
-            }
+session_start();
+
+// If file 'install.php' still exists, the current PHP script in this page will be terminated
+// if (file_exists('admin/install.php')) {
+// die("You have to delete <code>'install.php'</code> file manually to activate the System!");
+// }
+
+require 'backend/product_functions.php';
+require 'backend/mall_store_functions.php';
+function validate_input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+if (!isset($_GET['store'])) {
+    header('location: index.php');
+} else {
+    $storeid = validate_input($_GET['store']);
+    $stores = read_all_stores();
+    foreach ($stores as $store) {
+        if ($storeid == $store['id']) {
+            $storeName = $store['name'];
+            break;
         }
     }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,7 +49,7 @@
     <header>
         <nav>
             <!--Logo of the website name-->
-            <div id="logo"><a href="store-home.php?store=<?php echo $storeid;?>"><?php echo $storeName; ?></a></div>
+            <div id="logo"><a href="store-home.php?store=<?php echo $storeid; ?>"><?php echo $storeName; ?></a></div>
 
             <!--When the website is used in small-screen devices, the navigation icon appears-->
             <label for="dropdown-main" class="toggle" id="main-toggle">
@@ -80,7 +87,7 @@
         <section id="intro">
             <div class="banner">
                 <div class="container">
-                    <h1><?php echo $storeName;?></h1>
+                    <h1><?php echo $storeName; ?></h1>
                     <p>Welcome to one of the best stores in Shoppiverse Mall</p>
                     <button class="btn"><a href="#sub-sect-1">SHOP NOW!</a></button>
                 </div>

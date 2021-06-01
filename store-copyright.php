@@ -5,7 +5,7 @@
 // }
 
 // Use a function from another PHP file
-require 'mall_store_functions.php';
+require 'backend/mall_store_functions.php';
 
 // When users click a link in navigation bar store pages, they will be directed to page with that link.
 // If that link is unavailable, he dead message will appear and the script in this page will be terminated.
