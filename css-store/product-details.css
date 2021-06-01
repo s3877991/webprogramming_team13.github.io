@@ -36,6 +36,24 @@ main {
     color: #f00;
     font-size: 25px;
 }
+/* Quantity modifier */
+.quantity {
+    text-align: center;
+    margin: 40px 0;
+}
+.quantity input {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-bottom: 1px solid;
+}
+.quantity label {
+    font-size: 25px;
+    font-weight: bold;
+}
 /* Button Area */
 .button-container button {
     font-size: 25px;
