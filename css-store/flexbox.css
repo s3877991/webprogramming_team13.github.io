@@ -37,6 +37,10 @@
     transition: 0.5s;
 }
 
+#created-time-buttons {
+    text-align: center;
+}
+
 /* Make the page responsive */
 @media screen and (max-width: 470px) {
     .item {
