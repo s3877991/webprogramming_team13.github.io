@@ -1,7 +1,4 @@
 <?php
-// session_start();
-// unset($_SESSION);
-
 // If file 'install.php' still exists, the current PHP script in this file will be terminated
 // if (file_exists('admin/install.php')) {
 // die("You have to delete <code>'install.php'</code> file manually to activate the System!");
@@ -16,7 +13,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors++;
     } else {
         $fname = validate_input($_POST["first-name"]);
-        // check if name only contains letters and whitespace
         if (!preg_match("/^[A-Za-z]{2,}$/", $fname)) {
             $errors++;
         }
@@ -26,7 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors++;
     } else {
         $lname = validate_input($_POST["last-name"]);
-        // check if name only contains letters and whitespace
         if (!preg_match("/^[A-Za-z]{2,}$/", $lname)) {
             $errors++;
         }
@@ -36,7 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors++;
     } else {
         $email = validate_input($_POST["email"]);
-        // check if e-mail address is well-formed
         if (!preg_match('/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/', $email)) {
             $errors++;
             echo 'email';
@@ -58,8 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors++;
     } else {
         $phone = validate_input($_POST["phone"]);
-        // check if name only contains letters and whitespace
-        if (!preg_match("/^([0-9]([-. ]?)){9,11}[^-. ]$/", $phone)) {
+        if (!preg_match("/^([0-9][-. ]?){8,10}[0-9]$/", $phone)) {
             $errors++;
             echo 'phone';
         } else {
@@ -80,7 +73,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors++;
     } else {
         $password = validate_input($_POST["password"]);
-        // check if name only contains letters and whitespace
         if (!preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,20}$/", $password)) {
             $errors++;
             echo 'pass';
@@ -91,7 +83,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors++;
     } else {
         $retypepassword = validate_input($_POST["retype-password"]);
-        // check if name only contains letters and whitespace
         if ($password != $retypepassword) {
             $errors++;
             echo 'repass';
@@ -102,7 +93,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors++;
     } else {
         $address = validate_input($_POST["address"]);
-        // check if name only contains letters and whitespace
         if (!preg_match("/^([a-zA-Z0-9]{2,}[\/]*[a-zA-Z0-9]*[ ]?[a-zA-Z0-9 ]+[- ]*[a-zA-Z0-9 ]*)+$/", $address)) {
             $errors++;
             echo 'add';
@@ -113,7 +103,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors++;
     } else {
         $city = validate_input($_POST["city"]);
-        // check if name only contains letters and whitespace
         if (!preg_match("/^([a-zA-Z]{2,}[ ]*[a-zA-Z]+)+$/", $city)) {
             $errors++;
             echo 'city';
@@ -124,7 +113,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors++;
     } else {
         $zip = validate_input($_POST["zip"]);
-        // check if name only contains letters and whitespace
         if (!preg_match("/^[0-9]{4,6}$/", $zip)) {
             $errors++;
             echo 'zip';
@@ -160,7 +148,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo 'buss1';
         } else {
             $businessname = validate_input($_POST["business-name"]);
-            // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z-' ]*$/", $businessname)) {
                 $errors++;
                 echo 'buss';
@@ -173,7 +160,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo 'store1';
         } else {
             $storename = validate_input($_POST["store-name"]);
-            // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z-' ]*$/", $storename)) {
                 $errors++;
                 echo 'store';
@@ -185,7 +171,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo 'cate1';
         } else {
             $storecategory = validate_input($_POST["store-category"]);
-            // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z-' ]*$/", $storecategory)) {
                 $errors++;
                 echo 'cate';
@@ -200,12 +185,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (file_exists($filename)) {
             $fp = fopen($filename, "a");
             fputcsv($fp, $list);
-            // fwrite($fp, $userInfo . "\n");
             fclose($fp);
         } else {
             $fp = fopen($filename, "w");
             fputcsv($fp, $list);
-            // fwrite($fp, $userInfo . "\n");
             fclose($fp);
         }
         header('location: login.php');
