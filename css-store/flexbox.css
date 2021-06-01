@@ -37,8 +37,26 @@
     transition: 0.5s;
 }
 
+/* Pagination buttons */
 #created-time-buttons {
     text-align: center;
+}
+#created-time-buttons button {
+    width: 40px;
+    height: 40px;
+    padding: 7.5px 0 0 7px;
+    text-align: center;
+    margin: 0 25px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    background-color: #eee;
+    border: none;
+    border-radius: 50%;
+}
+#created-time-buttons button:hover {
+    background-color: #ddd;
+    transition: 0.5s;
 }
 
 /* Make the page responsive */
