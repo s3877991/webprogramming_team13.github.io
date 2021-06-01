@@ -46,7 +46,7 @@ if (!isset($_GET['store'])) {
 }
 
 $pageNext = $pagePrev = $totalPageNum = 0;
-$products = read_all_products($storeid);
+$products = read_store_products($storeid);
 $dateTime = array_column($products, 'created_time');
 $orderby = 'none';
 if (isset($_GET['orderby'])) {
@@ -218,7 +218,7 @@ else if (isset($_GET['orderby']) && $_GET['orderby'] === 'oldest') {
         "<a href=\"store-copyright.php?store=$storeid\">Copyright</a>
         <a href=\"store-tos.php?store=$storeid\">Terms of Service</a>
         <a href=\"store-privacypolicy.php?store=$storeid\">Privacy Policy</a>";
-        ?>
+        ?>        
         <div id="brief-description">
             <em>
                 <h3>by <strong>THE GANG</strong></h3>
