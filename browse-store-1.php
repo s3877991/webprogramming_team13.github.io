@@ -2,6 +2,7 @@
 session_start();
 require 'mall_store_functions.php';
 
+//function to display chosen value in the select box field after clicking the dropdown options
 function keepFieldSelected($str) {
     if (isset($_GET['letter-start']) && $_GET['letter-start'] === $str) {
         echo "selected";
