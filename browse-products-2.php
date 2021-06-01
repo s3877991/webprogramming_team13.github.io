@@ -213,9 +213,12 @@ else if (isset($_GET['orderby']) && $_GET['orderby'] === 'oldest') {
 
     <!--Footer section with navigation bar-->
     <footer>
-        <a href="copyright.php">Copyright</a>
-        <a href="tos.php">Terms of Service</a>
-        <a href="privacypolicy.php">Privacy Policy</a>
+    <?php
+        echo
+        "<a href=\"store-copyright.php?store=$storeid\">Copyright</a>
+        <a href=\"store-tos.php?store=$storeid\">Terms of Service</a>
+        <a href=\"store-privacypolicy.php?store=$storeid\">Privacy Policy</a>";
+        ?>
         <div id="brief-description">
             <em>
                 <h3>by <strong>THE GANG</strong></h3>
