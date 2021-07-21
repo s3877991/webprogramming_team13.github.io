@@ -153,9 +153,12 @@ if (!isset($_GET['store'])) {
 
     <!--Footer section with navigation bar-->
     <footer>
-        <a href="store-copyright.php">Copyright</a>
-        <a href="store-tos.php">Terms of Service</a>
-        <a href="store-privacypolicy.php">Privacy Policy</a>
+        <?php
+        echo
+        "<a href=\"store-copyright.php?store=$id\">Copyright</a>
+        <a href=\"store-tos.php?store=$id\">Terms of Service</a>
+        <a href=\"store-privacypolicy.php?store=$id\">Privacy Policy</a>";
+        ?>
         <div id="brief-description">
             <em>
                 <h3>by <strong>THE GANG</strong></h3>
