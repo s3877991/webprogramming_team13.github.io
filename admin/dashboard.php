@@ -5,10 +5,11 @@
 // Start the session
 session_start();
 
-// If file 'install.php' still exists, the current PHP script in this file will be terminated
-if (file_exists('install.php')) {
-    die("You have to delete <code>'install.php'</code> file manually to activate the System");
+/* If file 'install.php' still exists, the current PHP script in this file will be terminated
+ if (file_exists('admin/install.php')) {
+    die("You have to delete <code>'install.php'</code> file manually to activate the System!");
 }
+*/
 
 // Check if admin has logged in or not
 if (!isset($_SESSION['username'])) {
@@ -131,7 +132,7 @@ if (!isset($_SESSION['username'])) {
 
                     <div class="item">
                         <div class="avatar-preview">
-                            <img src="images/chi-avatar.png" alt="anonymous face inside a circle icon" name>
+                            <img src="images/chi-avatar.png" alt="anonymous face inside a circle icon">
                         </div>
                         <div class="avatar-change">
                             <input type="file" name="chi_avatar" accept=".png, .jpg">
