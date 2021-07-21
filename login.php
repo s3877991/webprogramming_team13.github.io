@@ -1,10 +1,11 @@
 <?php
 session_start();
 
-// If file 'install.php' still exists, the current PHP script in this file will be terminated
-if (file_exists('admin/install.php')) {
+/* If file 'install.php' still exists, the current PHP script in this file will be terminated
+ if (file_exists('admin/install.php')) {
     die("You have to delete <code>'install.php'</code> file manually to activate the System!");
 }
+*/
 
 
 if (isset($_SESSION["email"])) {
